@@ -285,7 +285,7 @@ proc loginDialog(): VNode =
 setRenderer loginDialog
 ```
 
-Full example [here](https://github.com/pragmagic/karax/blob/master/examples/login.nim)
+Full example [here](https://github.com/planety/karax/blob/master/examples/login.nim)
 
 This code still has a bug though, when you run it, the ``login`` button is not
 disabled until some input fields are validated! This is easily fixed,
@@ -316,7 +316,7 @@ type ``RouterData``. Here is the relevant excerpt from the famous "Todo App" exa
   setRenderer createDom
 ```
 
-Full example [here](https://github.com/pragmagic/karax/blob/master/examples/todoapp/todoapp.nim)
+Full example [here](https://github.com/planety/karax/blob/master/examples/todoapp/todoapp.nim)
 
 
 ## Server Side HTML Rendering
