@@ -296,7 +296,7 @@ proc style*(a: StyleAttr; val: kstring): VStyle {.noSideEffect.} =
     result[] = @[]
   result.setAttr a, val
 
-proc toCss*(a: string): VStyle =
+proc toCSS*(a: string): VStyle =
   ##[
   See example in hellostyle.nim
   Allows passing a css string directly, eg:

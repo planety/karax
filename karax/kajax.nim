@@ -129,4 +129,3 @@ proc ajaxDelete*(url: cstring; headers: openarray[(cstring, cstring)];
 
 proc toJson*[T](data: T): cstring {.importc: "JSON.stringify".}
 proc fromJson*[T](blob: cstring): T {.importc: "JSON.parse".}
-

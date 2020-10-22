@@ -1,6 +1,7 @@
 
-import macros, kbase
-from strutils import `%`
+import std/[macros]
+import ./kbase
+from std/strutils import `%`
 
 macro fieldNamesAsArray*(t: typed; pattern = "$1"): untyped =
   var impl = getTypeImpl(getTypeImpl(t)[1])
@@ -35,4 +36,5 @@ when isMainModule:
       more, here*: float
 
   const myObjectFields = fieldNamesAsArray(MyObject, "MyObject_$1")
-  for f in myObjectFields: echo f
+  for f in myObjectFields: 
+    echo f

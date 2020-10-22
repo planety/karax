@@ -1,14 +1,15 @@
 ## Virtual DOM implementation for Karax.
 
 when defined(js):
-  from kdom import Event, Node
+  from ./kdom import Event, Node
 else:
   type
     Event* = ref object
     Node* = ref object
 
-import macros, vstyles, kbase
-from strutils import toUpperAscii, toLowerAscii, tokenize
+import std/macros
+import ./vstyles, ./kbase
+from std/strutils import toUpperAscii, toLowerAscii, tokenize
 
 type
   VNodeKind* {.pure.} = enum
@@ -104,9 +105,13 @@ type
 
 macro buildLookupTables(): untyped =
   var a = newTree(nnkBracket)
-  for i in low(VNodeKind)..high(VNodeKind):
+  for i in low(VNodeKind) .. high(VNodeKind):
     let x = $i
-    let y = if x[0] == '#': x else: toUpperAscii(x)
+    let y = 
+      if x[0] == '#': 
+        x 
+      else: 
+        toUpperAscii(x)
     a.add(newCall("kstring", newLit(y)))
   var e = newTree(nnkBracket)
   for i in low(EventKind)..high(EventKind):
@@ -258,31 +263,40 @@ proc `[]=`*(x: VNode; idx: int; y: VNode) = x.kids[idx] = y
 
 proc add*(parent, kid: VNode) =
   when not defined(js) and not defined(nimNoNil):
-    if parent.kids.isNil: parent.kids = @[]
+    if parent.kids.isNil:
+      parent.kids = @[]
   parent.kids.add kid
 
 proc delete*(parent: VNode; position: int) =
   parent.kids.delete(position)
+
 proc insert*(parent, kid: VNode; position: int) =
    parent.kids.insert(kid, position)
+
 proc newVNode*(kind: VNodeKind): VNode = VNode(kind: kind, index: -1)
 
 proc tree*(kind: VNodeKind; kids: varargs[VNode]): VNode =
   result = newVNode(kind)
-  for k in kids: result.add k
+  for k in kids:
+    result.add k
 
 proc tree*(kind: VNodeKind; attrs: openarray[(kstring, kstring)];
            kids: varargs[VNode]): VNode =
   result = tree(kind, kids)
-  for a in attrs: result.setAttr(a[0], a[1])
+  for a in attrs:
+    result.setAttr(a[0], a[1])
 
 when defined(js):
-  proc text*(s: string): VNode = VNode(kind: VNodeKind.text, text: kstring(s), index: -1)
-proc text*(s: kstring): VNode = VNode(kind: VNodeKind.text, text: s, index: -1)
+  proc text*(s: string): VNode = 
+    VNode(kind: VNodeKind.text, text: kstring(s), index: -1)
+
+proc text*(s: kstring): VNode =
+  VNode(kind: VNodeKind.text, text: s, index: -1)
 
 when defined(js):
   proc verbatim*(s: string): VNode =
     VNode(kind: VNodeKind.verbatim, text: kstring(s), index: -1)
+
 proc verbatim*(s: kstring): VNode =
   VNode(kind: VNodeKind.verbatim, text: s, index: -1)
 
@@ -291,14 +305,15 @@ iterator items*(n: VNode): VNode =
   for i in 0..<n.kids.len: yield n.kids[i]
 
 iterator attrs*(n: VNode): (kstring, kstring) =
-  for i in countup(0, n.attrs.len-2, 2):
+  for i in countup(0, n.attrs.len - 2, 2):
     yield (n.attrs[i], n.attrs[i+1])
 
 proc sameAttrs*(a, b: VNode): bool =
   if a.attrs.len == b.attrs.len:
     result = true
     for i in 0 ..< a.attrs.len:
-      if a.attrs[i] != b.attrs[i]: return false
+      if a.attrs[i] != b.attrs[i]:
+        return false
 
 proc addEventListener*(n: VNode; event: EventKind; handler: EventHandler) =
   n.events.add((event, handler, nil))
@@ -307,15 +322,20 @@ when kstring is cstring:
   proc len(a: kstring): int =
     # xxx: maybe move where kstring is defined
     # without this, `n.field.len` fails on js (non web) platform
-    if a == nil: 0 else: a.len
+    if a == nil:
+      0
+    else:
+      a.len
 
 template toStringAttr(field) =
   if n.field.len > 0:
     result.add " " & astToStr(field) & " = " & $n.field
 
 proc toString*(n: VNode; result: var string; indent: int) =
-  for i in 1..indent: result.add ' '
-  if result.len > 0: result.add '\L'
+  for i in 1..indent:
+    result.add ' '
+  if result.len > 0:
+    result.add '\L'
   result.add "<" & $n.kind
   toStringAttr(id)
   toStringAttr(class)
@@ -330,7 +350,8 @@ proc toString*(n: VNode; result: var string; indent: int) =
       result.add n.text
     for child in items(n):
       toString(child, result, indent+2)
-  for i in 1..indent: result.add ' '
+  for i in 1..indent:
+    result.add ' '
   result.add "\L</" & $n.kind & ">"
 
 when false:
@@ -374,7 +395,8 @@ proc add*(result: var string, n: VNode, indent = 0, indWidth = 2) =
       of '>': result.add("&gt;")
       of '&': result.add("&amp;")
       of '"': result.add("&quot;")
-      else: result.add(c)
+      else:
+        result.add(c)
 
   proc addEscaped(result: var string, s: kstring) =
     ## same as ``result.add(escape(s))``, but more efficient.
@@ -386,11 +408,13 @@ proc add*(result: var string, n: VNode, indent = 0, indWidth = 2) =
       of '"': result.add("&quot;")
       of '\'': result.add("&#x27;")
       of '/': result.add("&#x2F;")
-      else: result.add(c)
+      else:
+        result.add(c)
 
   proc addIndent(result: var string, indent: int) =
     result.add("\n")
-    for i in 1..indent: result.add(' ')
+    for i in 1..indent:
+      result.add(' ')
 
   if n.kind == VNodeKind.text:
     result.addEscaped(n.text)
@@ -417,9 +441,11 @@ proc add*(result: var string, n: VNode, indent = 0, indWidth = 2) =
     if n.style != nil:
       result.add " style=\""
       for k, v in pairs(n.style):
-        if v.len == 0: continue
+        if v.len == 0:
+          continue
         for t in tokenize($k, seps={'A' .. 'Z'}):
-          if t.isSep: result.add '-'
+          if t.isSep:
+            result.add '-'
           result.add toLowerAscii(t.token)
         result.add ": "
         result.add v
@@ -457,7 +483,6 @@ proc add*(result: var string, n: VNode, indent = 0, indWidth = 2) =
       result.add(kind)
       result.add(">")
 
-
 proc `$`*(n: VNode): kstring =
   when defined(js):
     var res = ""
@@ -470,7 +495,9 @@ proc `$`*(n: VNode): kstring =
 proc getVNodeById*(n: VNode; id: cstring): VNode =
   ## Get the VNode that was marked with ``id``. Returns ``nil``
   ## if no node exists.
-  if n.id == id: return n
+  if n.id == id:
+    return n
   for i in 0..<n.len:
     result = getVNodeById(n[i], id)
-    if result != nil: return result
+    if result != nil:
+      return result

@@ -1,6 +1,8 @@
 
-import macros, vdom, compact, kbase
-from strutils import startsWith, toLowerAscii
+import std/macros
+from std/strutils import startsWith, toLowerAscii
+
+import ./vdom, ./compact, ./kbase
 
 when defined(js):
   import karax

@@ -7,7 +7,7 @@ license       = "MIT"
 
 # Dependencies
 
-requires "nim >= 0.18.0"
+requires "nim >= 1.4.0"
 requires "ws"
 requires "dotenv"
 skipDirs = @["examples", "experiments", "tests"]

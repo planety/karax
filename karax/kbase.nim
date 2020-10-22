@@ -5,4 +5,3 @@ when defined(js):
   type kstring* = cstring
 else:
   type kstring* = string
-
