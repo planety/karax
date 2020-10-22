@@ -824,7 +824,7 @@ var NNI11697028 = {kind: 2, offset: 0, typ: null, name: null, len: 120, sons: {"
 NTI11697028.node = NNI11697028;
 NTI11700037.base = NTI11700022;
 NTI11700039.base = NTI2421015;
-var NNI11697152 = {kind: 2, offset: 0, typ: null, name: null, len: 36, sons: {"0": {kind: 1, offset: 0, typ: NTI11697152, name: "onclick", len: 0, sons: null}, 
+var NNI11697152 = {kind: 2, offset: 0, typ: null, name: null, len: 37, sons: {"0": {kind: 1, offset: 0, typ: NTI11697152, name: "onclick", len: 0, sons: null}, 
 "1": {kind: 1, offset: 1, typ: NTI11697152, name: "oncontextmenu", len: 0, sons: null}, 
 "2": {kind: 1, offset: 2, typ: NTI11697152, name: "ondblclick", len: 0, sons: null}, 
 "3": {kind: 1, offset: 3, typ: NTI11697152, name: "onkeyup", len: 0, sons: null}, 
@@ -859,7 +859,8 @@ var NNI11697152 = {kind: 2, offset: 0, typ: null, name: null, len: 36, sons: {"0
 "32": {kind: 1, offset: 32, typ: NTI11697152, name: "ontransitioncancel", len: 0, sons: null}, 
 "33": {kind: 1, offset: 33, typ: NTI11697152, name: "ontransitionend", len: 0, sons: null}, 
 "34": {kind: 1, offset: 34, typ: NTI11697152, name: "ontransitionrun", len: 0, sons: null}, 
-"35": {kind: 1, offset: 35, typ: NTI11697152, name: "ontransitionstart", len: 0, sons: null}}};
+"35": {kind: 1, offset: 35, typ: NTI11697152, name: "ontransitionstart", len: 0, sons: null}, 
+"36": {kind: 1, offset: 36, typ: NTI11697152, name: "onwheel", len: 0, sons: null}}};
 NTI11697152.node = NNI11697152;
 var NNI11700030 = {kind: 2, len: 3, offset: 0, typ: null, name: null, sons: [{kind: 1, offset: "Field0", len: 0, typ: NTI11697152, name: "Field0", sons: null}, 
 {kind: 1, offset: "Field1", len: 0, typ: NTI11700074, name: "Field1", sons: null}, 
@@ -1158,7 +1159,7 @@ function chckIndx(i_2715086, a_2715087, b_2715088) {
   return result_2715089;
 
 }
-      var toEventName_11700012 = ["click", "contextmenu", "dblclick", "keyup", "keydown", "keypressed", "focus", "blur", "change", "scroll", "mousedown", "mouseenter", "mouseleave", "mousemove", "mouseout", "mouseover", "mouseup", "drag", "dragend", "dragenter", "dragleave", "dragover", "dragstart", "drop", "submit", "input", "animationstart", "animationend", "animationiteration", "keyupenter", "keyuplater", "load", "transitioncancel", "transitionend", "transitionrun", "transitionstart"];
+      var toEventName_11700012 = ["click", "contextmenu", "dblclick", "keyup", "keydown", "keypressed", "focus", "blur", "change", "scroll", "mousedown", "mouseenter", "mouseleave", "mousemove", "mouseout", "mouseover", "mouseup", "drag", "dragend", "dragenter", "dragleave", "dragover", "dragstart", "drop", "submit", "input", "animationstart", "animationend", "animationiteration", "keyupenter", "keyuplater", "load", "transitioncancel", "transitionend", "transitionrun", "transitionstart", "wheel"];
 function rawEcho() {
           var buf = "";
       for (var i = 0; i < arguments.length; ++i) {
@@ -3624,7 +3625,7 @@ framePtr = F;
 framePtr = F.prev;
 var F={procname:"module vdom",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\vdom.nim",line:0};
 framePtr = F;
-F.line = 206;
+F.line = 208;
 var gid_11735032 = [0];
 framePtr = F.prev;
 var F={procname:"module vdom",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\vdom.nim",line:0};
@@ -5087,7 +5088,7 @@ function raiseIndexError(i_2675047, a_2675048, b_2675049) {
 function valueHEX3D_11700140(n_11700142, v_11700143) {
   var F={procname:"vdom.value=",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\vdom.nim",line:0};
   framePtr = F;
-    F.line = 170;
+    F.line = 172;
     n_11700142.text = v_11700143;
   framePtr = F.prev;
 
@@ -5098,7 +5099,7 @@ function value_11700123(n_11700125) {
 
   var F={procname:"vdom.value",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\vdom.nim",line:0};
   framePtr = F;
-    F.line = 169;
+    F.line = 171;
     result_11700126 = n_11700125.text;
   framePtr = F.prev;
 
@@ -5500,11 +5501,11 @@ function toDom_12245154(n_12245156, useAttachedNode_12245157, kxi_12245158) {
         F.line = 194;
         var k_12370016 = null;
         L2: do {
-          F.line = 305;
+          F.line = 307;
           var i_12985324 = 0;
           F.line = 104;
           var colontmp__12985325 = 0;
-          F.line = 305;
+          F.line = 307;
           colontmp__12985325 = (n_12245156.kids).length;
           F.line = 106;
           var i_12985326 = 0;
@@ -5512,7 +5513,7 @@ function toDom_12245154(n_12245156, useAttachedNode_12245157, kxi_12245158) {
             F.line = 107;
               L4: while (true) {
               if (!(i_12985326 < colontmp__12985325)) break L4;
-                F.line = 305;
+                F.line = 307;
                 i_12985324 = i_12985326;
                 F.line = 194;
                 k_12370016 = n_12245156.kids[chckIndx(i_12985324, 0, (n_12245156.kids).length-1)];
@@ -5547,11 +5548,11 @@ function toDom_12245154(n_12245156, useAttachedNode_12245157, kxi_12245158) {
       F.line = 205;
       var v_12385002 = null;
       L6: do {
-        F.line = 308;
+        F.line = 310;
         var i_12985337 = 0;
         F.line = 39;
         var colontmp__12985338 = 0;
-        F.line = 308;
+        F.line = 310;
         colontmp__12985338 = subInt((n_12245156.attrs).length, 2);
         F.line = 56;
         var res_12985339 = 0;
@@ -5559,11 +5560,11 @@ function toDom_12245154(n_12245156, useAttachedNode_12245157, kxi_12245158) {
           F.line = 57;
             L8: while (true) {
             if (!(res_12985339 <= colontmp__12985338)) break L8;
-              F.line = 308;
+              F.line = 310;
               i_12985337 = res_12985339;
               F.line = 205;
               k_12385001 = n_12245156.attrs[chckIndx(i_12985337, 0, (n_12245156.attrs).length-1)];
-              F.line = 309;
+              F.line = 311;
               v_12385002 = n_12245156.attrs[chckIndx(addInt(i_12985337, 1), 0, (n_12245156.attrs).length-1)];
               if (!((v_12385002 == null))) {
               F.line = 207;
@@ -5612,7 +5613,7 @@ function len_11785014(x_11785016) {
 
   var F={procname:"vdom.len",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\vdom.nim",line:0};
   framePtr = F;
-    F.line = 260;
+    F.line = 262;
     result_11785017 = (x_11785016.kids).length;
   framePtr = F.prev;
 
@@ -5624,7 +5625,7 @@ function HEX5BHEX5D_11785036(x_11785038, idx_11785039) {
 
   var F={procname:"vdom.[]",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\vdom.nim",line:0};
   framePtr = F;
-    F.line = 261;
+    F.line = 263;
     result_11785040 = x_11785038.kids[chckIndx(idx_11785039, 0, (x_11785038.kids).length-1)];
   framePtr = F.prev;
 
@@ -5787,14 +5788,14 @@ function sameAttrs_11796079(a_11796081, b_11796082) {
   framePtr = F;
   BeforeRet: do {
     if (((a_11796081.attrs).length == (b_11796082.attrs).length)) {
-    F.line = 313;
+    F.line = 315;
     result_11796083 = true;
     L1: do {
-      F.line = 314;
+      F.line = 316;
       var i_11796106 = 0;
       F.line = 104;
       var colontmp__12985417 = 0;
-      F.line = 314;
+      F.line = 316;
       colontmp__12985417 = (a_11796081.attrs).length;
       F.line = 106;
       var i_12985418 = 0;
@@ -5802,10 +5803,10 @@ function sameAttrs_11796079(a_11796081, b_11796082) {
         F.line = 107;
           L3: while (true) {
           if (!(i_12985418 < colontmp__12985417)) break L3;
-            F.line = 314;
+            F.line = 316;
             i_11796106 = i_12985418;
             if (!((a_11796081.attrs[chckIndx(i_11796106, 0, (a_11796081.attrs).length-1)] == b_11796082.attrs[chckIndx(i_11796106, 0, (b_11796082.attrs).length-1)]))) {
-            F.line = 316;
+            F.line = 318;
             result_11796083 = false;
             break BeforeRet;
             }
@@ -6020,7 +6021,7 @@ function updateStyles_12470034(newNode_12470036, oldNode_12470037) {
 function takeOverAttr_11735214(newNode_11735216, oldNode_11735217) {
   var F={procname:"vdom.takeOverAttr",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\vdom.nim",line:0};
   framePtr = F;
-    F.line = 244;
+    F.line = 246;
     oldNode_11735217.attrs = newNode_11735216.attrs;
   framePtr = F.prev;
 
@@ -6036,11 +6037,11 @@ function updateAttributes_12480052(newNode_12480054, oldNode_12480055) {
       F.line = 325;
       var __12485010 = null;
       L2: do {
-        F.line = 308;
+        F.line = 310;
         var i_12985423 = 0;
         F.line = 39;
         var colontmp__12985424 = 0;
-        F.line = 308;
+        F.line = 310;
         colontmp__12985424 = subInt((oldNode_12480055.attrs).length, 2);
         F.line = 56;
         var res_12985425 = 0;
@@ -6048,11 +6049,11 @@ function updateAttributes_12480052(newNode_12480054, oldNode_12480055) {
           F.line = 57;
             L4: while (true) {
             if (!(res_12985425 <= colontmp__12985424)) break L4;
-              F.line = 308;
+              F.line = 310;
               i_12985423 = res_12985425;
               F.line = 325;
               k_12485009 = oldNode_12480055.attrs[chckIndx(i_12985423, 0, (oldNode_12480055.attrs).length-1)];
-              F.line = 309;
+              F.line = 311;
               __12485010 = oldNode_12480055.attrs[chckIndx(addInt(i_12985423, 1), 0, (oldNode_12480055.attrs).length-1)];
               F.line = 326;
               oldNode_12480055.dom.removeAttribute(k_12485009);
@@ -6068,11 +6069,11 @@ function updateAttributes_12480052(newNode_12480054, oldNode_12480055) {
       F.line = 327;
       var v_12485012 = null;
       L6: do {
-        F.line = 308;
+        F.line = 310;
         var i_12985431 = 0;
         F.line = 39;
         var colontmp__12985432 = 0;
-        F.line = 308;
+        F.line = 310;
         colontmp__12985432 = subInt((newNode_12480054.attrs).length, 2);
         F.line = 56;
         var res_12985433 = 0;
@@ -6080,11 +6081,11 @@ function updateAttributes_12480052(newNode_12480054, oldNode_12480055) {
           F.line = 57;
             L8: while (true) {
             if (!(res_12985433 <= colontmp__12985432)) break L8;
-              F.line = 308;
+              F.line = 310;
               i_12985431 = res_12985433;
               F.line = 327;
               k_12485011 = newNode_12480054.attrs[chckIndx(i_12985431, 0, (newNode_12480054.attrs).length-1)];
-              F.line = 309;
+              F.line = 311;
               v_12485012 = newNode_12480054.attrs[chckIndx(addInt(i_12985431, 1), 0, (newNode_12480054.attrs).length-1)];
               if (!((v_12485012 == null))) {
               F.line = 329;
@@ -6484,7 +6485,7 @@ function moveDom_12500063(dest_12500065, src_12500066) {
 function HEX5BHEX5DHEX3D_11785054(x_11785056, idx_11785057, y_11785058) {
   var F={procname:"vdom.[]=",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\vdom.nim",line:0};
   framePtr = F;
-    F.line = 262;
+    F.line = 264;
     x_11785056.kids[chckIndx(idx_11785057, 0, (x_11785056.kids).length-1)] = y_11785058;
   framePtr = F.prev;
 
@@ -6794,7 +6795,7 @@ function newVNode_11795428(kind_11795430) {
 
   var F={procname:"vdom.newVNode",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\vdom.nim",line:0};
   framePtr = F;
-    F.line = 276;
+    F.line = 278;
     result_11795431 = {kind: kind_11795430, index: -1, m_type: NTI11700031, id: null, class: null, text: null, kids: [], attrs: [], events: [], style: null, dom: null};
   framePtr = F.prev;
 
@@ -6804,7 +6805,7 @@ function newVNode_11795428(kind_11795430) {
 function add_11785072(parent_11785074, kid_11785075) {
   var F={procname:"vdom.add",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\vdom.nim",line:0};
   framePtr = F;
-    F.line = 268;
+    F.line = 270;
     parent_11785074.kids.push(kid_11785075);;
   framePtr = F.prev;
 
@@ -6815,10 +6816,10 @@ function tree_11795445(kind_11795447, kids_11795449) {
 
   var F={procname:"vdom.tree",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\vdom.nim",line:0};
   framePtr = F;
-    F.line = 279;
+    F.line = 281;
     result_11795450 = newVNode_11795428(kind_11795447);
     L1: do {
-      F.line = 280;
+      F.line = 282;
       var k_11795483 = null;
       var k_11795483_Idx = 0;
       F.line = 8;
@@ -6827,9 +6828,9 @@ function tree_11795445(kind_11795447, kids_11795449) {
         F.line = 9;
           L3: while (true) {
           if (!(i_12985470 < (kids_11795449).length)) break L3;
-            F.line = 280;
+            F.line = 282;
             k_11795483 = kids_11795449; k_11795483_Idx = chckIndx(i_12985470, 0, (kids_11795449).length-1);
-            F.line = 281;
+            F.line = 283;
             add_11785072(result_11795450, k_11795483[k_11795483_Idx]);
             F.line = 11;
             i_12985470 = addInt(i_12985470, 1);
@@ -6846,16 +6847,16 @@ function setAttr_11735105(n_11735107, key_11735108, val_11735109) {
   framePtr = F;
   BeforeRet: do {
     if (((n_11735107.attrs).length == 0)) {
-    F.line = 230;
+    F.line = 232;
     n_11735107.attrs = nimCopy(null, [key_11735108, val_11735109], NTI11735125);
     }
     else {
       L1: do {
-        F.line = 232;
+        F.line = 234;
         var i_11735138 = 0;
         F.line = 39;
         var colontmp__12985482 = 0;
-        F.line = 232;
+        F.line = 234;
         colontmp__12985482 = subInt((n_11735107.attrs).length, 2);
         F.line = 56;
         var res_12985483 = 0;
@@ -6863,12 +6864,12 @@ function setAttr_11735105(n_11735107, key_11735108, val_11735109) {
           F.line = 57;
             L3: while (true) {
             if (!(res_12985483 <= colontmp__12985482)) break L3;
-              F.line = 232;
+              F.line = 234;
               i_11735138 = res_12985483;
               if ((n_11735107.attrs[chckIndx(i_11735138, 0, (n_11735107.attrs).length-1)] == key_11735108)) {
-              F.line = 234;
+              F.line = 236;
               n_11735107.attrs[chckIndx(addInt(i_11735138, 1), 0, (n_11735107.attrs).length-1)] = val_11735109;
-              F.line = 235;
+              F.line = 237;
               break BeforeRet;
               }
               
@@ -6877,9 +6878,9 @@ function setAttr_11735105(n_11735107, key_11735108, val_11735109) {
             }
         } while(false);
       } while(false);
-      F.line = 236;
+      F.line = 238;
       n_11735107.attrs.push(key_11735108);;
-      F.line = 237;
+      F.line = 239;
       n_11735107.attrs.push(val_11735109);;
     }
     
@@ -6893,7 +6894,7 @@ function text_11795801(s_11795803) {
 
   var F={procname:"vdom.text",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\vdom.nim",line:0};
   framePtr = F;
-    F.line = 294;
+    F.line = 296;
     result_11795804 = {kind: 0, text: s_11795803, index: -1, m_type: NTI11700031, id: null, class: null, kids: [], attrs: [], events: [], style: null, dom: null};
   framePtr = F.prev;
 
@@ -6903,7 +6904,7 @@ function text_11795801(s_11795803) {
 function addEventListener_11800014(n_11800016, event_11800017, handler_11800018) {
   var F={procname:"vdom.addEventListener",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\vdom.nim",line:0};
   framePtr = F;
-    F.line = 319;
+    F.line = 321;
     n_11800016.events.push({Field0: event_11800017, Field1: handler_11800018, Field2: null});;
   framePtr = F.prev;
 
@@ -7061,7 +7062,7 @@ function text_11795582(s_11795584) {
 
   var F={procname:"vdom.text",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\vdom.nim",line:0};
   framePtr = F;
-    F.line = 291;
+    F.line = 293;
     result_11795585 = {kind: 0, text: toJSStr(s_11795584), index: -1, m_type: NTI11700031, id: null, class: null, kids: [], attrs: [], events: [], style: null, dom: null};
   framePtr = F.prev;
 

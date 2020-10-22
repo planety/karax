@@ -1,4 +1,4 @@
-import vdom, kdom, vstyles, karax, karaxdsl, jdict, jstrutils
+import ../src/karax/[vdom, kdom, vstyles, karax, karaxdsl, jdict, jstrutils]
 
 var contents: seq[cstring] = @[]
 

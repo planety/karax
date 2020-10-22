@@ -1,4 +1,4 @@
-import kdom, kajax
+import ../src/karax/[kdom, kajax]
 
 proc cb(httpStatus: int, response: cstring) =
   echo "Worked!"

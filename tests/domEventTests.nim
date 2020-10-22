@@ -1,4 +1,5 @@
-import times, jstrutils, strutils, kdom, karax, karaxdsl, vdom, tables
+import std/[times, strutils, tables]
+import ../src/karax/[jstrutils, kdom, karax, karaxdsl, vdom]
 
 var
   results: seq[cstring]
@@ -13,7 +14,7 @@ var
   test12Failure = false
 
 proc getLogText(text: string): cstring =
-  result = "[$#]: $#" % [format(getLocalTime(getTime()), "HH:mm:ss"), $text]
+  result = "[$#]: $#" % [format(local(getTime()), "HH:mm:ss"), $text]
 
 proc log(text: string, clear: bool = false) =
   if clear:
@@ -570,7 +571,7 @@ proc startTests() =
   log "This test checks that drag events are fired."
   testRunning[0] = true
   for evt in [Drag, DragEnd, DragEnter, DragExit, DragLeave, DragOver, DragStart, Drop]:
-    dragEventsCompleted.add(evt, false)
+    dragEventsCompleted[evt] = false
   initKbEvents()
   initMouseEvents()
   initDragEvents()

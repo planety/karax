@@ -1,5 +1,5 @@
 
-import vdom, kdom, vstyles, karax, karaxdsl, jdict, jstrutils, reactive
+import ../src/karax/[vdom, kdom, vstyles, karax, karaxdsl, jdict, jstrutils, reactive]
 
 proc textInput*(text: RString; focus: RBool): VNode {.track.} =
   proc onFlip(ev: Event; target: VNode) =

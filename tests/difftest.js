@@ -789,7 +789,7 @@ NTI10527028.node = NNI10527028;
 NTI10530022.base = NTI10530031;
 NTI10530037.base = NTI10530022;
 NTI10530039.base = NTI1208015;
-var NNI10527152 = {kind: 2, offset: 0, typ: null, name: null, len: 36, sons: {"0": {kind: 1, offset: 0, typ: NTI10527152, name: "onclick", len: 0, sons: null}, 
+var NNI10527152 = {kind: 2, offset: 0, typ: null, name: null, len: 37, sons: {"0": {kind: 1, offset: 0, typ: NTI10527152, name: "onclick", len: 0, sons: null}, 
 "1": {kind: 1, offset: 1, typ: NTI10527152, name: "oncontextmenu", len: 0, sons: null}, 
 "2": {kind: 1, offset: 2, typ: NTI10527152, name: "ondblclick", len: 0, sons: null}, 
 "3": {kind: 1, offset: 3, typ: NTI10527152, name: "onkeyup", len: 0, sons: null}, 
@@ -824,7 +824,8 @@ var NNI10527152 = {kind: 2, offset: 0, typ: null, name: null, len: 36, sons: {"0
 "32": {kind: 1, offset: 32, typ: NTI10527152, name: "ontransitioncancel", len: 0, sons: null}, 
 "33": {kind: 1, offset: 33, typ: NTI10527152, name: "ontransitionend", len: 0, sons: null}, 
 "34": {kind: 1, offset: 34, typ: NTI10527152, name: "ontransitionrun", len: 0, sons: null}, 
-"35": {kind: 1, offset: 35, typ: NTI10527152, name: "ontransitionstart", len: 0, sons: null}}};
+"35": {kind: 1, offset: 35, typ: NTI10527152, name: "ontransitionstart", len: 0, sons: null}, 
+"36": {kind: 1, offset: 36, typ: NTI10527152, name: "onwheel", len: 0, sons: null}}};
 NTI10527152.node = NNI10527152;
 var NNI10530030 = {kind: 2, len: 3, offset: 0, typ: null, name: null, sons: [{kind: 1, offset: "Field0", len: 0, typ: NTI10527152, name: "Field0", sons: null}, 
 {kind: 1, offset: "Field1", len: 0, typ: NTI10530074, name: "Field1", sons: null}, 
@@ -1147,7 +1148,7 @@ function subInt(a_1480437, b_1480438) {
 
   
 }
-      var toEventName_10530012 = ["click", "contextmenu", "dblclick", "keyup", "keydown", "keypressed", "focus", "blur", "change", "scroll", "mousedown", "mouseenter", "mouseleave", "mousemove", "mouseout", "mouseover", "mouseup", "drag", "dragend", "dragenter", "dragleave", "dragover", "dragstart", "drop", "submit", "input", "animationstart", "animationend", "animationiteration", "keyupenter", "keyuplater", "load", "transitioncancel", "transitionend", "transitionrun", "transitionstart"];
+      var toEventName_10530012 = ["click", "contextmenu", "dblclick", "keyup", "keydown", "keypressed", "focus", "blur", "change", "scroll", "mousedown", "mouseenter", "mouseleave", "mousemove", "mouseout", "mouseover", "mouseup", "drag", "dragend", "dragenter", "dragleave", "dragover", "dragstart", "drop", "submit", "input", "animationstart", "animationend", "animationiteration", "keyupenter", "keyuplater", "load", "transitioncancel", "transitionend", "transitionrun", "transitionstart", "wheel"];
 function nimMin(a_1480803, b_1480804) {
     var Tmp1;
 
@@ -3643,7 +3644,7 @@ framePtr = F;
 framePtr = F.prev;
 var F={procname:"module vdom",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\vdom.nim",line:0};
 framePtr = F;
-F.line = 206;
+F.line = 208;
 var gid_10565032 = [0];
 framePtr = F.prev;
 var F={procname:"module vdom",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\vdom.nim",line:0};
@@ -4706,7 +4707,7 @@ function newVNode_10625428(kind_10625430) {
 
   var F={procname:"vdom.newVNode",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\vdom.nim",line:0};
   framePtr = F;
-    F.line = 276;
+    F.line = 278;
     result_10625431 = {kind: kind_10625430, index: -1, m_type: NTI10530031, id: null, class: null, text: null, kids: [], attrs: [], events: [], style: null, dom: null};
   framePtr = F.prev;
 
@@ -4894,7 +4895,7 @@ function raiseIndexError(i_1460047, a_1460048, b_1460049) {
 function add_10615072(parent_10615074, kid_10615075) {
   var F={procname:"vdom.add",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\vdom.nim",line:0};
   framePtr = F;
-    F.line = 268;
+    F.line = 270;
     parent_10615074.kids.push(kid_10615075);;
   framePtr = F.prev;
 
@@ -4916,10 +4917,10 @@ function tree_10625445(kind_10625447, kids_10625449) {
 
   var F={procname:"vdom.tree",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\vdom.nim",line:0};
   framePtr = F;
-    F.line = 279;
+    F.line = 281;
     result_10625450 = newVNode_10625428(kind_10625447);
     L1: do {
-      F.line = 280;
+      F.line = 282;
       var k_10625483 = null;
       var k_10625483_Idx = 0;
       F.line = 8;
@@ -4928,9 +4929,9 @@ function tree_10625445(kind_10625447, kids_10625449) {
         F.line = 9;
           L3: while (true) {
           if (!(i_12265408 < (kids_10625449).length)) break L3;
-            F.line = 280;
+            F.line = 282;
             k_10625483 = kids_10625449; k_10625483_Idx = chckIndx(i_12265408, 0, (kids_10625449).length-1);
-            F.line = 281;
+            F.line = 283;
             add_10615072(result_10625450, k_10625483[k_10625483_Idx]);
             F.line = 11;
             i_12265408 = addInt(i_12265408, 1);
@@ -4947,7 +4948,7 @@ function text_10625582(s_10625584) {
 
   var F={procname:"vdom.text",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\vdom.nim",line:0};
   framePtr = F;
-    F.line = 291;
+    F.line = 293;
     result_10625585 = {kind: 0, text: toJSStr(s_10625584), index: -1, m_type: NTI10530031, id: null, class: null, kids: [], attrs: [], events: [], style: null, dom: null};
   framePtr = F.prev;
 
@@ -4959,7 +4960,7 @@ function len_10615014(x_10615016) {
 
   var F={procname:"vdom.len",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\vdom.nim",line:0};
   framePtr = F;
-    F.line = 260;
+    F.line = 262;
     result_10615017 = (x_10615016.kids).length;
   framePtr = F.prev;
 
@@ -4971,7 +4972,7 @@ function HEX5BHEX5D_10615036(x_10615038, idx_10615039) {
 
   var F={procname:"vdom.[]",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\vdom.nim",line:0};
   framePtr = F;
-    F.line = 261;
+    F.line = 263;
     result_10615040 = x_10615038.kids[chckIndx(idx_10615039, 0, (x_10615038.kids).length-1)];
   framePtr = F.prev;
 
@@ -5052,14 +5053,14 @@ function sameAttrs_10626079(a_10626081, b_10626082) {
   framePtr = F;
   BeforeRet: do {
     if (((a_10626081.attrs).length == (b_10626082.attrs).length)) {
-    F.line = 313;
+    F.line = 315;
     result_10626083 = true;
     L1: do {
-      F.line = 314;
+      F.line = 316;
       var i_10626106 = 0;
       F.line = 104;
       var colontmp__12265481 = 0;
-      F.line = 314;
+      F.line = 316;
       colontmp__12265481 = (a_10626081.attrs).length;
       F.line = 106;
       var i_12265482 = 0;
@@ -5067,10 +5068,10 @@ function sameAttrs_10626079(a_10626081, b_10626082) {
         F.line = 107;
           L3: while (true) {
           if (!(i_12265482 < colontmp__12265481)) break L3;
-            F.line = 314;
+            F.line = 316;
             i_10626106 = i_12265482;
             if (!((a_10626081.attrs[chckIndx(i_10626106, 0, (a_10626081.attrs).length-1)] == b_10626082.attrs[chckIndx(i_10626106, 0, (b_10626082.attrs).length-1)]))) {
-            F.line = 316;
+            F.line = 318;
             result_10626083 = false;
             break BeforeRet;
             }
@@ -5316,7 +5317,7 @@ function updateStyles_11300034(newNode_11300036, oldNode_11300037) {
 function takeOverAttr_10565214(newNode_10565216, oldNode_10565217) {
   var F={procname:"vdom.takeOverAttr",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\vdom.nim",line:0};
   framePtr = F;
-    F.line = 244;
+    F.line = 246;
     oldNode_10565217.attrs = newNode_10565216.attrs;
   framePtr = F.prev;
 
@@ -5332,11 +5333,11 @@ function updateAttributes_11310052(newNode_11310054, oldNode_11310055) {
       F.line = 325;
       var __11315010 = null;
       L2: do {
-        F.line = 308;
+        F.line = 310;
         var i_12265501 = 0;
         F.line = 39;
         var colontmp__12265502 = 0;
-        F.line = 308;
+        F.line = 310;
         colontmp__12265502 = subInt((oldNode_11310055.attrs).length, 2);
         F.line = 56;
         var res_12265503 = 0;
@@ -5344,11 +5345,11 @@ function updateAttributes_11310052(newNode_11310054, oldNode_11310055) {
           F.line = 57;
             L4: while (true) {
             if (!(res_12265503 <= colontmp__12265502)) break L4;
-              F.line = 308;
+              F.line = 310;
               i_12265501 = res_12265503;
               F.line = 325;
               k_11315009 = oldNode_11310055.attrs[chckIndx(i_12265501, 0, (oldNode_11310055.attrs).length-1)];
-              F.line = 309;
+              F.line = 311;
               __11315010 = oldNode_11310055.attrs[chckIndx(addInt(i_12265501, 1), 0, (oldNode_11310055.attrs).length-1)];
               F.line = 326;
               oldNode_11310055.dom.removeAttribute(k_11315009);
@@ -5364,11 +5365,11 @@ function updateAttributes_11310052(newNode_11310054, oldNode_11310055) {
       F.line = 327;
       var v_11315012 = null;
       L6: do {
-        F.line = 308;
+        F.line = 310;
         var i_12265509 = 0;
         F.line = 39;
         var colontmp__12265510 = 0;
-        F.line = 308;
+        F.line = 310;
         colontmp__12265510 = subInt((newNode_11310054.attrs).length, 2);
         F.line = 56;
         var res_12265511 = 0;
@@ -5376,11 +5377,11 @@ function updateAttributes_11310052(newNode_11310054, oldNode_11310055) {
           F.line = 57;
             L8: while (true) {
             if (!(res_12265511 <= colontmp__12265510)) break L8;
-              F.line = 308;
+              F.line = 310;
               i_12265509 = res_12265511;
               F.line = 327;
               k_11315011 = newNode_11310054.attrs[chckIndx(i_12265509, 0, (newNode_11310054.attrs).length-1)];
-              F.line = 309;
+              F.line = 311;
               v_11315012 = newNode_11310054.attrs[chckIndx(addInt(i_12265509, 1), 0, (newNode_11310054.attrs).length-1)];
               if (!((v_11315012 == null))) {
               F.line = 329;
@@ -5436,7 +5437,7 @@ function removeAllEventHandlers_10962408(d_10962410) {
 function valueHEX3D_10530140(n_10530142, v_10530143) {
   var F={procname:"vdom.value=",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\vdom.nim",line:0};
   framePtr = F;
-    F.line = 170;
+    F.line = 172;
     n_10530142.text = v_10530143;
   framePtr = F.prev;
 
@@ -5474,7 +5475,7 @@ function value_10530123(n_10530125) {
 
   var F={procname:"vdom.value",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\vdom.nim",line:0};
   framePtr = F;
-    F.line = 169;
+    F.line = 171;
     result_10530126 = n_10530125.text;
   framePtr = F.prev;
 
@@ -6141,11 +6142,11 @@ function toDom_11075154(n_11075156, useAttachedNode_11075157, kxi_11075158) {
         F.line = 194;
         var k_11200016 = null;
         L2: do {
-          F.line = 305;
+          F.line = 307;
           var i_12265539 = 0;
           F.line = 104;
           var colontmp__12265540 = 0;
-          F.line = 305;
+          F.line = 307;
           colontmp__12265540 = (n_11075156.kids).length;
           F.line = 106;
           var i_12265541 = 0;
@@ -6153,7 +6154,7 @@ function toDom_11075154(n_11075156, useAttachedNode_11075157, kxi_11075158) {
             F.line = 107;
               L4: while (true) {
               if (!(i_12265541 < colontmp__12265540)) break L4;
-                F.line = 305;
+                F.line = 307;
                 i_12265539 = i_12265541;
                 F.line = 194;
                 k_11200016 = n_11075156.kids[chckIndx(i_12265539, 0, (n_11075156.kids).length-1)];
@@ -6188,11 +6189,11 @@ function toDom_11075154(n_11075156, useAttachedNode_11075157, kxi_11075158) {
       F.line = 205;
       var v_11215002 = null;
       L6: do {
-        F.line = 308;
+        F.line = 310;
         var i_12265545 = 0;
         F.line = 39;
         var colontmp__12265546 = 0;
-        F.line = 308;
+        F.line = 310;
         colontmp__12265546 = subInt((n_11075156.attrs).length, 2);
         F.line = 56;
         var res_12265547 = 0;
@@ -6200,11 +6201,11 @@ function toDom_11075154(n_11075156, useAttachedNode_11075157, kxi_11075158) {
           F.line = 57;
             L8: while (true) {
             if (!(res_12265547 <= colontmp__12265546)) break L8;
-              F.line = 308;
+              F.line = 310;
               i_12265545 = res_12265547;
               F.line = 205;
               k_11215001 = n_11075156.attrs[chckIndx(i_12265545, 0, (n_11075156.attrs).length-1)];
-              F.line = 309;
+              F.line = 311;
               v_11215002 = n_11075156.attrs[chckIndx(addInt(i_12265545, 1), 0, (n_11075156.attrs).length-1)];
               if (!((v_11215002 == null))) {
               F.line = 207;
@@ -6609,7 +6610,7 @@ function text_10625801(s_10625803) {
 
   var F={procname:"vdom.text",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\vdom.nim",line:0};
   framePtr = F;
-    F.line = 294;
+    F.line = 296;
     result_10625804 = {kind: 0, text: s_10625803, index: -1, m_type: NTI10530031, id: null, class: null, kids: [], attrs: [], events: [], style: null, dom: null};
   framePtr = F.prev;
 

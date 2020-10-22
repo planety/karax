@@ -10,940 +10,901 @@ if (typeof Uint16Array === 'undefined') Uint16Array = Array;
 if (typeof Uint32Array === 'undefined') Uint32Array = Array;
 if (typeof Float32Array === 'undefined') Float32Array = Array;
 if (typeof Float64Array === 'undefined') Float64Array = Array;
-var NTI12132211 = {size: 0, kind: 18, base: null, node: null, finalizer: null};
-var NTI11651033 = {size: 0, kind: 18, base: null, node: null, finalizer: null};
-var NTI11651034 = {size: 0,kind: 22,base: null,node: null,finalizer: null};
-var NTI11700076 = {size: 0,kind: 25,base: null,node: null,finalizer: null};
-var NTI11700074 = {size: 0,kind: 25,base: null,node: null,finalizer: null};
-var NTI11697152 = {size: 0, kind: 14, base: null, node: null, finalizer: null};
-var NTI11700030 = {size: 0, kind: 18, base: null, node: null, finalizer: null};
-var NTI11700018 = {size: 0,kind: 24,base: null,node: null,finalizer: null};
-var NTI11700039 = {size: 0,kind: 24,base: null,node: null,finalizer: null};
-var NTI11700037 = {size: 0,kind: 24,base: null,node: null,finalizer: null};
-var NTI11697028 = {size: 0, kind: 14, base: null, node: null, finalizer: null};
-var NTI11700031 = {size: 0, kind: 17, base: null, node: null, finalizer: null};
-var NTI11700022 = {size: 0,kind: 22,base: null,node: null,finalizer: null};
-var NTI3088476 = {size: 0,kind: 25,base: null,node: null,finalizer: null};
-var NTI3088472 = {size: 0,kind: 25,base: null,node: null,finalizer: null};
-var NTI3088468 = {size: 0,kind: 25,base: null,node: null,finalizer: null};
-var NTI3088464 = {size: 0,kind: 25,base: null,node: null,finalizer: null};
-var NTI3088460 = {size: 0,kind: 25,base: null,node: null,finalizer: null};
-var NTI3088456 = {size: 0,kind: 25,base: null,node: null,finalizer: null};
-var NTI3088452 = {size: 0,kind: 25,base: null,node: null,finalizer: null};
-var NTI3088448 = {size: 0,kind: 25,base: null,node: null,finalizer: null};
-var NTI3088444 = {size: 0,kind: 25,base: null,node: null,finalizer: null};
-var NTI3088440 = {size: 0,kind: 25,base: null,node: null,finalizer: null};
-var NTI3088436 = {size: 0,kind: 25,base: null,node: null,finalizer: null};
-var NTI3088432 = {size: 0,kind: 25,base: null,node: null,finalizer: null};
-var NTI3088428 = {size: 0,kind: 25,base: null,node: null,finalizer: null};
-var NTI3088424 = {size: 0,kind: 25,base: null,node: null,finalizer: null};
-var NTI3088420 = {size: 0,kind: 25,base: null,node: null,finalizer: null};
-var NTI3088416 = {size: 0,kind: 25,base: null,node: null,finalizer: null};
-var NTI3088412 = {size: 0,kind: 25,base: null,node: null,finalizer: null};
-var NTI3088408 = {size: 0,kind: 25,base: null,node: null,finalizer: null};
-var NTI3088404 = {size: 0,kind: 25,base: null,node: null,finalizer: null};
-var NTI3088400 = {size: 0,kind: 25,base: null,node: null,finalizer: null};
-var NTI3088396 = {size: 0,kind: 25,base: null,node: null,finalizer: null};
-var NTI3088392 = {size: 0,kind: 25,base: null,node: null,finalizer: null};
-var NTI3088388 = {size: 0,kind: 25,base: null,node: null,finalizer: null};
-var NTI3088205 = {size: 0, kind: 17, base: null, node: null, finalizer: null};
-var NTI3088291 = {size: 0,kind: 22,base: null,node: null,finalizer: null};
-var NTI3089626 = {size: 0,kind: 25,base: null,node: null,finalizer: null};
-var NTI3089617 = {size: 0,kind: 25,base: null,node: null,finalizer: null};
-var NTI3089616 = {size: 0, kind: 18, base: null, node: null, finalizer: null};
-var NTI3088385 = {size: 0,kind: 22,base: null,node: null,finalizer: null};
-var NTI3089624 = {size: 0, kind: 18, base: null, node: null, finalizer: null};
-var NTI3088387 = {size: 0,kind: 22,base: null,node: null,finalizer: null};
-var NTI3088269 = {size: 0, kind: 17, base: null, node: null, finalizer: null};
-var NTI3088267 = {size: 0,kind: 22,base: null,node: null,finalizer: null};
-var NTI3088659 = {size: 0,kind: 24,base: null,node: null,finalizer: null};
-var NTI3088273 = {size: 0, kind: 17, base: null, node: null, finalizer: null};
-var NTI3088271 = {size: 0,kind: 22,base: null,node: null,finalizer: null};
-var NTI3088657 = {size: 0,kind: 24,base: null,node: null,finalizer: null};
-var NTI3088655 = {size: 0,kind: 24,base: null,node: null,finalizer: null};
-var NTI3088289 = {size: 0, kind: 17, base: null, node: null, finalizer: null};
-var NTI3088287 = {size: 0,kind: 22,base: null,node: null,finalizer: null};
-var NTI3088653 = {size: 0,kind: 24,base: null,node: null,finalizer: null};
-var NTI3088651 = {size: 0,kind: 24,base: null,node: null,finalizer: null};
-var NTI3088277 = {size: 0, kind: 17, base: null, node: null, finalizer: null};
-var NTI3088275 = {size: 0,kind: 22,base: null,node: null,finalizer: null};
-var NTI3088649 = {size: 0,kind: 24,base: null,node: null,finalizer: null};
-var NTI3088673 = {size: 0,kind: 24,base: null,node: null,finalizer: null};
-var NTI3088281 = {size: 0, kind: 17, base: null, node: null, finalizer: null};
-var NTI3088279 = {size: 0,kind: 22,base: null,node: null,finalizer: null};
-var NTI3088671 = {size: 0,kind: 24,base: null,node: null,finalizer: null};
-var NTI3088765 = {size: 0,kind: 24,base: null,node: null,finalizer: null};
-var NTI3088285 = {size: 0, kind: 17, base: null, node: null, finalizer: null};
-var NTI3088283 = {size: 0,kind: 22,base: null,node: null,finalizer: null};
-var NTI2421064 = {size: 0,kind: 1,base: null,node: null,finalizer: null};
-var NTI3088231 = {size: 0, kind: 17, base: null, node: null, finalizer: null};
-var NTI3088229 = {size: 0,kind: 22,base: null,node: null,finalizer: null};
-var NTI3088245 = {size: 0, kind: 17, base: null, node: null, finalizer: null};
-var NTI3088243 = {size: 0,kind: 22,base: null,node: null,finalizer: null};
-var NTI3088241 = {size: 0, kind: 17, base: null, node: null, finalizer: null};
-var NTI3088239 = {size: 0,kind: 22,base: null,node: null,finalizer: null};
-var NTI3088233 = {size: 0, kind: 14, base: null, node: null, finalizer: null};
-var NTI3088613 = {size: 0,kind: 24,base: null,node: null,finalizer: null};
-var NTI3088611 = {size: 0,kind: 24,base: null,node: null,finalizer: null};
-var NTI3088609 = {size: 0,kind: 24,base: null,node: null,finalizer: null};
-var NTI3088237 = {size: 0, kind: 17, base: null, node: null, finalizer: null};
-var NTI3088235 = {size: 0,kind: 22,base: null,node: null,finalizer: null};
-var NTI12132207 = {size: 0, kind: 14, base: null, node: null, finalizer: null};
-var NTI12132209 = {size: 0, kind: 18, base: null, node: null, finalizer: null};
-var NTI3088293 = {size: 0, kind: 17, base: null, node: null, finalizer: null};
-var NTI2427649 = {size: 0, kind: 17, base: null, node: null, finalizer: null};
-var NTI2427641 = {size: 0, kind: 17, base: null, node: null, finalizer: null};
-var NTI2427619 = {size: 0, kind: 17, base: null, node: null, finalizer: null};
-var NTI2427633 = {size: 0, kind: 17, base: null, node: null, finalizer: null};
-var NTI2427637 = {size: 0, kind: 17, base: null, node: null, finalizer: null};
-var NTI2421044 = {size: 0,kind: 31,base: null,node: null,finalizer: null};
-var NTI2615043 = {size: 0, kind: 18, base: null, node: null, finalizer: null};
-var NTI2427408 = {size: 0, kind: 17, base: null, node: null, finalizer: null};
-var NTI2427728 = {size: 0,kind: 22,base: null,node: null,finalizer: null};
-var NTI2421013 = {size: 0,kind: 28,base: null,node: null,finalizer: null};
-var NTI2421015 = {size: 0,kind: 29,base: null,node: null,finalizer: null};
-var NTI2427723 = {size: 0,kind: 22,base: null,node: null,finalizer: null};
-var NTI2427617 = {size: 0, kind: 17, base: null, node: null, finalizer: null};
-NTI2427723.base = NTI2427617;
-NTI2427728.base = NTI2427617;
-var NNI2427617 = {kind: 2, len: 5, offset: 0, typ: null, name: null, sons: [{kind: 1, offset: "parent", len: 0, typ: NTI2427723, name: "parent", sons: null}, 
-{kind: 1, offset: "name", len: 0, typ: NTI2421015, name: "name", sons: null}, 
-{kind: 1, offset: "message", len: 0, typ: NTI2421013, name: "msg", sons: null}, 
-{kind: 1, offset: "trace", len: 0, typ: NTI2421013, name: "trace", sons: null}, 
-{kind: 1, offset: "up", len: 0, typ: NTI2427728, name: "up", sons: null}]};
-NTI2427617.node = NNI2427617;
-var NNI2427408 = {kind: 2, len: 0, offset: 0, typ: null, name: null, sons: []};
-NTI2427408.node = NNI2427408;
-NTI2427617.base = NTI2427408;
-var NNI2615043 = {kind: 2, len: 3, offset: 0, typ: null, name: null, sons: [{kind: 1, offset: "Field0", len: 0, typ: NTI2421015, name: "Field0", sons: null}, 
-{kind: 1, offset: "Field1", len: 0, typ: NTI2421044, name: "Field1", sons: null}, 
-{kind: 1, offset: "Field2", len: 0, typ: NTI2421015, name: "Field2", sons: null}]};
-NTI2615043.node = NNI2615043;
-var NNI2427637 = {kind: 2, len: 0, offset: 0, typ: null, name: null, sons: []};
-NTI2427637.node = NNI2427637;
-var NNI2427633 = {kind: 2, len: 0, offset: 0, typ: null, name: null, sons: []};
-NTI2427633.node = NNI2427633;
-var NNI2427619 = {kind: 2, len: 0, offset: 0, typ: null, name: null, sons: []};
-NTI2427619.node = NNI2427619;
-NTI2427619.base = NTI2427617;
-NTI2427633.base = NTI2427619;
-NTI2427637.base = NTI2427633;
-var NNI2427641 = {kind: 2, len: 0, offset: 0, typ: null, name: null, sons: []};
-NTI2427641.node = NNI2427641;
-NTI2427641.base = NTI2427619;
-var NNI2427649 = {kind: 2, len: 0, offset: 0, typ: null, name: null, sons: []};
-NTI2427649.node = NNI2427649;
-NTI2427649.base = NTI2427619;
-var NNI3088293 = {kind: 2, len: 368, offset: 0, typ: null, name: null, sons: [{kind: 1, offset: "alignContent", len: 0, typ: NTI2421015, name: "alignContent", sons: null}, 
-{kind: 1, offset: "alignItems", len: 0, typ: NTI2421015, name: "alignItems", sons: null}, 
-{kind: 1, offset: "alignSelf", len: 0, typ: NTI2421015, name: "alignSelf", sons: null}, 
-{kind: 1, offset: "all", len: 0, typ: NTI2421015, name: "all", sons: null}, 
-{kind: 1, offset: "animation", len: 0, typ: NTI2421015, name: "animation", sons: null}, 
-{kind: 1, offset: "animationDelay", len: 0, typ: NTI2421015, name: "animationDelay", sons: null}, 
-{kind: 1, offset: "animationDirection", len: 0, typ: NTI2421015, name: "animationDirection", sons: null}, 
-{kind: 1, offset: "animationDuration", len: 0, typ: NTI2421015, name: "animationDuration", sons: null}, 
-{kind: 1, offset: "animationFillMode", len: 0, typ: NTI2421015, name: "animationFillMode", sons: null}, 
-{kind: 1, offset: "animationIterationCount", len: 0, typ: NTI2421015, name: "animationIterationCount", sons: null}, 
-{kind: 1, offset: "animationName", len: 0, typ: NTI2421015, name: "animationName", sons: null}, 
-{kind: 1, offset: "animationPlayState", len: 0, typ: NTI2421015, name: "animationPlayState", sons: null}, 
-{kind: 1, offset: "animationTimingFunction", len: 0, typ: NTI2421015, name: "animationTimingFunction", sons: null}, 
-{kind: 1, offset: "backdropFilter", len: 0, typ: NTI2421015, name: "backdropFilter", sons: null}, 
-{kind: 1, offset: "backfaceVisibility", len: 0, typ: NTI2421015, name: "backfaceVisibility", sons: null}, 
-{kind: 1, offset: "background", len: 0, typ: NTI2421015, name: "background", sons: null}, 
-{kind: 1, offset: "backgroundAttachment", len: 0, typ: NTI2421015, name: "backgroundAttachment", sons: null}, 
-{kind: 1, offset: "backgroundBlendMode", len: 0, typ: NTI2421015, name: "backgroundBlendMode", sons: null}, 
-{kind: 1, offset: "backgroundClip", len: 0, typ: NTI2421015, name: "backgroundClip", sons: null}, 
-{kind: 1, offset: "backgroundColor", len: 0, typ: NTI2421015, name: "backgroundColor", sons: null}, 
-{kind: 1, offset: "backgroundImage", len: 0, typ: NTI2421015, name: "backgroundImage", sons: null}, 
-{kind: 1, offset: "backgroundOrigin", len: 0, typ: NTI2421015, name: "backgroundOrigin", sons: null}, 
-{kind: 1, offset: "backgroundPosition", len: 0, typ: NTI2421015, name: "backgroundPosition", sons: null}, 
-{kind: 1, offset: "backgroundRepeat", len: 0, typ: NTI2421015, name: "backgroundRepeat", sons: null}, 
-{kind: 1, offset: "backgroundSize", len: 0, typ: NTI2421015, name: "backgroundSize", sons: null}, 
-{kind: 1, offset: "blockSize", len: 0, typ: NTI2421015, name: "blockSize", sons: null}, 
-{kind: 1, offset: "border", len: 0, typ: NTI2421015, name: "border", sons: null}, 
-{kind: 1, offset: "borderBlock", len: 0, typ: NTI2421015, name: "borderBlock", sons: null}, 
-{kind: 1, offset: "borderBlockColor", len: 0, typ: NTI2421015, name: "borderBlockColor", sons: null}, 
-{kind: 1, offset: "borderBlockEnd", len: 0, typ: NTI2421015, name: "borderBlockEnd", sons: null}, 
-{kind: 1, offset: "borderBlockEndColor", len: 0, typ: NTI2421015, name: "borderBlockEndColor", sons: null}, 
-{kind: 1, offset: "borderBlockEndStyle", len: 0, typ: NTI2421015, name: "borderBlockEndStyle", sons: null}, 
-{kind: 1, offset: "borderBlockEndWidth", len: 0, typ: NTI2421015, name: "borderBlockEndWidth", sons: null}, 
-{kind: 1, offset: "borderBlockStart", len: 0, typ: NTI2421015, name: "borderBlockStart", sons: null}, 
-{kind: 1, offset: "borderBlockStartColor", len: 0, typ: NTI2421015, name: "borderBlockStartColor", sons: null}, 
-{kind: 1, offset: "borderBlockStartStyle", len: 0, typ: NTI2421015, name: "borderBlockStartStyle", sons: null}, 
-{kind: 1, offset: "borderBlockStartWidth", len: 0, typ: NTI2421015, name: "borderBlockStartWidth", sons: null}, 
-{kind: 1, offset: "borderBlockStyle", len: 0, typ: NTI2421015, name: "borderBlockStyle", sons: null}, 
-{kind: 1, offset: "borderBlockWidth", len: 0, typ: NTI2421015, name: "borderBlockWidth", sons: null}, 
-{kind: 1, offset: "borderBottom", len: 0, typ: NTI2421015, name: "borderBottom", sons: null}, 
-{kind: 1, offset: "borderBottomColor", len: 0, typ: NTI2421015, name: "borderBottomColor", sons: null}, 
-{kind: 1, offset: "borderBottomLeftRadius", len: 0, typ: NTI2421015, name: "borderBottomLeftRadius", sons: null}, 
-{kind: 1, offset: "borderBottomRightRadius", len: 0, typ: NTI2421015, name: "borderBottomRightRadius", sons: null}, 
-{kind: 1, offset: "borderBottomStyle", len: 0, typ: NTI2421015, name: "borderBottomStyle", sons: null}, 
-{kind: 1, offset: "borderBottomWidth", len: 0, typ: NTI2421015, name: "borderBottomWidth", sons: null}, 
-{kind: 1, offset: "borderCollapse", len: 0, typ: NTI2421015, name: "borderCollapse", sons: null}, 
-{kind: 1, offset: "borderColor", len: 0, typ: NTI2421015, name: "borderColor", sons: null}, 
-{kind: 1, offset: "borderEndEndRadius", len: 0, typ: NTI2421015, name: "borderEndEndRadius", sons: null}, 
-{kind: 1, offset: "borderEndStartRadius", len: 0, typ: NTI2421015, name: "borderEndStartRadius", sons: null}, 
-{kind: 1, offset: "borderImage", len: 0, typ: NTI2421015, name: "borderImage", sons: null}, 
-{kind: 1, offset: "borderImageOutset", len: 0, typ: NTI2421015, name: "borderImageOutset", sons: null}, 
-{kind: 1, offset: "borderImageRepeat", len: 0, typ: NTI2421015, name: "borderImageRepeat", sons: null}, 
-{kind: 1, offset: "borderImageSlice", len: 0, typ: NTI2421015, name: "borderImageSlice", sons: null}, 
-{kind: 1, offset: "borderImageSource", len: 0, typ: NTI2421015, name: "borderImageSource", sons: null}, 
-{kind: 1, offset: "borderImageWidth", len: 0, typ: NTI2421015, name: "borderImageWidth", sons: null}, 
-{kind: 1, offset: "borderInline", len: 0, typ: NTI2421015, name: "borderInline", sons: null}, 
-{kind: 1, offset: "borderInlineColor", len: 0, typ: NTI2421015, name: "borderInlineColor", sons: null}, 
-{kind: 1, offset: "borderInlineEnd", len: 0, typ: NTI2421015, name: "borderInlineEnd", sons: null}, 
-{kind: 1, offset: "borderInlineEndColor", len: 0, typ: NTI2421015, name: "borderInlineEndColor", sons: null}, 
-{kind: 1, offset: "borderInlineEndStyle", len: 0, typ: NTI2421015, name: "borderInlineEndStyle", sons: null}, 
-{kind: 1, offset: "borderInlineEndWidth", len: 0, typ: NTI2421015, name: "borderInlineEndWidth", sons: null}, 
-{kind: 1, offset: "borderInlineStart", len: 0, typ: NTI2421015, name: "borderInlineStart", sons: null}, 
-{kind: 1, offset: "borderInlineStartColor", len: 0, typ: NTI2421015, name: "borderInlineStartColor", sons: null}, 
-{kind: 1, offset: "borderInlineStartStyle", len: 0, typ: NTI2421015, name: "borderInlineStartStyle", sons: null}, 
-{kind: 1, offset: "borderInlineStartWidth", len: 0, typ: NTI2421015, name: "borderInlineStartWidth", sons: null}, 
-{kind: 1, offset: "borderInlineStyle", len: 0, typ: NTI2421015, name: "borderInlineStyle", sons: null}, 
-{kind: 1, offset: "borderInlineWidth", len: 0, typ: NTI2421015, name: "borderInlineWidth", sons: null}, 
-{kind: 1, offset: "borderLeft", len: 0, typ: NTI2421015, name: "borderLeft", sons: null}, 
-{kind: 1, offset: "borderLeftColor", len: 0, typ: NTI2421015, name: "borderLeftColor", sons: null}, 
-{kind: 1, offset: "borderLeftStyle", len: 0, typ: NTI2421015, name: "borderLeftStyle", sons: null}, 
-{kind: 1, offset: "borderLeftWidth", len: 0, typ: NTI2421015, name: "borderLeftWidth", sons: null}, 
-{kind: 1, offset: "borderRadius", len: 0, typ: NTI2421015, name: "borderRadius", sons: null}, 
-{kind: 1, offset: "borderRight", len: 0, typ: NTI2421015, name: "borderRight", sons: null}, 
-{kind: 1, offset: "borderRightColor", len: 0, typ: NTI2421015, name: "borderRightColor", sons: null}, 
-{kind: 1, offset: "borderRightStyle", len: 0, typ: NTI2421015, name: "borderRightStyle", sons: null}, 
-{kind: 1, offset: "borderRightWidth", len: 0, typ: NTI2421015, name: "borderRightWidth", sons: null}, 
-{kind: 1, offset: "borderSpacing", len: 0, typ: NTI2421015, name: "borderSpacing", sons: null}, 
-{kind: 1, offset: "borderStartEndRadius", len: 0, typ: NTI2421015, name: "borderStartEndRadius", sons: null}, 
-{kind: 1, offset: "borderStartStartRadius", len: 0, typ: NTI2421015, name: "borderStartStartRadius", sons: null}, 
-{kind: 1, offset: "borderStyle", len: 0, typ: NTI2421015, name: "borderStyle", sons: null}, 
-{kind: 1, offset: "borderTop", len: 0, typ: NTI2421015, name: "borderTop", sons: null}, 
-{kind: 1, offset: "borderTopColor", len: 0, typ: NTI2421015, name: "borderTopColor", sons: null}, 
-{kind: 1, offset: "borderTopLeftRadius", len: 0, typ: NTI2421015, name: "borderTopLeftRadius", sons: null}, 
-{kind: 1, offset: "borderTopRightRadius", len: 0, typ: NTI2421015, name: "borderTopRightRadius", sons: null}, 
-{kind: 1, offset: "borderTopStyle", len: 0, typ: NTI2421015, name: "borderTopStyle", sons: null}, 
-{kind: 1, offset: "borderTopWidth", len: 0, typ: NTI2421015, name: "borderTopWidth", sons: null}, 
-{kind: 1, offset: "borderWidth", len: 0, typ: NTI2421015, name: "borderWidth", sons: null}, 
-{kind: 1, offset: "bottom", len: 0, typ: NTI2421015, name: "bottom", sons: null}, 
-{kind: 1, offset: "boxDecorationBreak", len: 0, typ: NTI2421015, name: "boxDecorationBreak", sons: null}, 
-{kind: 1, offset: "boxShadow", len: 0, typ: NTI2421015, name: "boxShadow", sons: null}, 
-{kind: 1, offset: "boxSizing", len: 0, typ: NTI2421015, name: "boxSizing", sons: null}, 
-{kind: 1, offset: "breakAfter", len: 0, typ: NTI2421015, name: "breakAfter", sons: null}, 
-{kind: 1, offset: "breakBefore", len: 0, typ: NTI2421015, name: "breakBefore", sons: null}, 
-{kind: 1, offset: "breakInside", len: 0, typ: NTI2421015, name: "breakInside", sons: null}, 
-{kind: 1, offset: "captionSide", len: 0, typ: NTI2421015, name: "captionSide", sons: null}, 
-{kind: 1, offset: "caretColor", len: 0, typ: NTI2421015, name: "caretColor", sons: null}, 
-{kind: 1, offset: "clear", len: 0, typ: NTI2421015, name: "clear", sons: null}, 
-{kind: 1, offset: "clip", len: 0, typ: NTI2421015, name: "clip", sons: null}, 
-{kind: 1, offset: "clipPath", len: 0, typ: NTI2421015, name: "clipPath", sons: null}, 
-{kind: 1, offset: "color", len: 0, typ: NTI2421015, name: "color", sons: null}, 
-{kind: 1, offset: "colorAdjust", len: 0, typ: NTI2421015, name: "colorAdjust", sons: null}, 
-{kind: 1, offset: "columnCount", len: 0, typ: NTI2421015, name: "columnCount", sons: null}, 
-{kind: 1, offset: "columnFill", len: 0, typ: NTI2421015, name: "columnFill", sons: null}, 
-{kind: 1, offset: "columnGap", len: 0, typ: NTI2421015, name: "columnGap", sons: null}, 
-{kind: 1, offset: "columnRule", len: 0, typ: NTI2421015, name: "columnRule", sons: null}, 
-{kind: 1, offset: "columnRuleColor", len: 0, typ: NTI2421015, name: "columnRuleColor", sons: null}, 
-{kind: 1, offset: "columnRuleStyle", len: 0, typ: NTI2421015, name: "columnRuleStyle", sons: null}, 
-{kind: 1, offset: "columnRuleWidth", len: 0, typ: NTI2421015, name: "columnRuleWidth", sons: null}, 
-{kind: 1, offset: "columnSpan", len: 0, typ: NTI2421015, name: "columnSpan", sons: null}, 
-{kind: 1, offset: "columnWidth", len: 0, typ: NTI2421015, name: "columnWidth", sons: null}, 
-{kind: 1, offset: "columns", len: 0, typ: NTI2421015, name: "columns", sons: null}, 
-{kind: 1, offset: "contain", len: 0, typ: NTI2421015, name: "contain", sons: null}, 
-{kind: 1, offset: "content", len: 0, typ: NTI2421015, name: "content", sons: null}, 
-{kind: 1, offset: "counterIncrement", len: 0, typ: NTI2421015, name: "counterIncrement", sons: null}, 
-{kind: 1, offset: "counterReset", len: 0, typ: NTI2421015, name: "counterReset", sons: null}, 
-{kind: 1, offset: "counterSet", len: 0, typ: NTI2421015, name: "counterSet", sons: null}, 
-{kind: 1, offset: "cursor", len: 0, typ: NTI2421015, name: "cursor", sons: null}, 
-{kind: 1, offset: "direction", len: 0, typ: NTI2421015, name: "direction", sons: null}, 
-{kind: 1, offset: "display", len: 0, typ: NTI2421015, name: "display", sons: null}, 
-{kind: 1, offset: "emptyCells", len: 0, typ: NTI2421015, name: "emptyCells", sons: null}, 
-{kind: 1, offset: "filter", len: 0, typ: NTI2421015, name: "filter", sons: null}, 
-{kind: 1, offset: "flex", len: 0, typ: NTI2421015, name: "flex", sons: null}, 
-{kind: 1, offset: "flexBasis", len: 0, typ: NTI2421015, name: "flexBasis", sons: null}, 
-{kind: 1, offset: "flexDirection", len: 0, typ: NTI2421015, name: "flexDirection", sons: null}, 
-{kind: 1, offset: "flexFlow", len: 0, typ: NTI2421015, name: "flexFlow", sons: null}, 
-{kind: 1, offset: "flexGrow", len: 0, typ: NTI2421015, name: "flexGrow", sons: null}, 
-{kind: 1, offset: "flexShrink", len: 0, typ: NTI2421015, name: "flexShrink", sons: null}, 
-{kind: 1, offset: "flexWrap", len: 0, typ: NTI2421015, name: "flexWrap", sons: null}, 
-{kind: 1, offset: "cssFloat", len: 0, typ: NTI2421015, name: "cssFloat", sons: null}, 
-{kind: 1, offset: "font", len: 0, typ: NTI2421015, name: "font", sons: null}, 
-{kind: 1, offset: "fontFamily", len: 0, typ: NTI2421015, name: "fontFamily", sons: null}, 
-{kind: 1, offset: "fontFeatureSettings", len: 0, typ: NTI2421015, name: "fontFeatureSettings", sons: null}, 
-{kind: 1, offset: "fontKerning", len: 0, typ: NTI2421015, name: "fontKerning", sons: null}, 
-{kind: 1, offset: "fontLanguageOverride", len: 0, typ: NTI2421015, name: "fontLanguageOverride", sons: null}, 
-{kind: 1, offset: "fontOpticalSizing", len: 0, typ: NTI2421015, name: "fontOpticalSizing", sons: null}, 
-{kind: 1, offset: "fontSize", len: 0, typ: NTI2421015, name: "fontSize", sons: null}, 
-{kind: 1, offset: "fontSizeAdjust", len: 0, typ: NTI2421015, name: "fontSizeAdjust", sons: null}, 
-{kind: 1, offset: "fontStretch", len: 0, typ: NTI2421015, name: "fontStretch", sons: null}, 
-{kind: 1, offset: "fontStyle", len: 0, typ: NTI2421015, name: "fontStyle", sons: null}, 
-{kind: 1, offset: "fontSynthesis", len: 0, typ: NTI2421015, name: "fontSynthesis", sons: null}, 
-{kind: 1, offset: "fontVariant", len: 0, typ: NTI2421015, name: "fontVariant", sons: null}, 
-{kind: 1, offset: "fontVariantAlternates", len: 0, typ: NTI2421015, name: "fontVariantAlternates", sons: null}, 
-{kind: 1, offset: "fontVariantCaps", len: 0, typ: NTI2421015, name: "fontVariantCaps", sons: null}, 
-{kind: 1, offset: "fontVariantEastAsian", len: 0, typ: NTI2421015, name: "fontVariantEastAsian", sons: null}, 
-{kind: 1, offset: "fontVariantLigatures", len: 0, typ: NTI2421015, name: "fontVariantLigatures", sons: null}, 
-{kind: 1, offset: "fontVariantNumeric", len: 0, typ: NTI2421015, name: "fontVariantNumeric", sons: null}, 
-{kind: 1, offset: "fontVariantPosition", len: 0, typ: NTI2421015, name: "fontVariantPosition", sons: null}, 
-{kind: 1, offset: "fontVariationSettings", len: 0, typ: NTI2421015, name: "fontVariationSettings", sons: null}, 
-{kind: 1, offset: "fontWeight", len: 0, typ: NTI2421015, name: "fontWeight", sons: null}, 
-{kind: 1, offset: "gap", len: 0, typ: NTI2421015, name: "gap", sons: null}, 
-{kind: 1, offset: "grid", len: 0, typ: NTI2421015, name: "grid", sons: null}, 
-{kind: 1, offset: "gridArea", len: 0, typ: NTI2421015, name: "gridArea", sons: null}, 
-{kind: 1, offset: "gridAutoColumns", len: 0, typ: NTI2421015, name: "gridAutoColumns", sons: null}, 
-{kind: 1, offset: "gridAutoFlow", len: 0, typ: NTI2421015, name: "gridAutoFlow", sons: null}, 
-{kind: 1, offset: "gridAutoRows", len: 0, typ: NTI2421015, name: "gridAutoRows", sons: null}, 
-{kind: 1, offset: "gridColumn", len: 0, typ: NTI2421015, name: "gridColumn", sons: null}, 
-{kind: 1, offset: "gridColumnEnd", len: 0, typ: NTI2421015, name: "gridColumnEnd", sons: null}, 
-{kind: 1, offset: "gridColumnStart", len: 0, typ: NTI2421015, name: "gridColumnStart", sons: null}, 
-{kind: 1, offset: "gridRow", len: 0, typ: NTI2421015, name: "gridRow", sons: null}, 
-{kind: 1, offset: "gridRowEnd", len: 0, typ: NTI2421015, name: "gridRowEnd", sons: null}, 
-{kind: 1, offset: "gridRowStart", len: 0, typ: NTI2421015, name: "gridRowStart", sons: null}, 
-{kind: 1, offset: "gridTemplate", len: 0, typ: NTI2421015, name: "gridTemplate", sons: null}, 
-{kind: 1, offset: "gridTemplateAreas", len: 0, typ: NTI2421015, name: "gridTemplateAreas", sons: null}, 
-{kind: 1, offset: "gridTemplateColumns", len: 0, typ: NTI2421015, name: "gridTemplateColumns", sons: null}, 
-{kind: 1, offset: "gridTemplateRows", len: 0, typ: NTI2421015, name: "gridTemplateRows", sons: null}, 
-{kind: 1, offset: "hangingPunctuation", len: 0, typ: NTI2421015, name: "hangingPunctuation", sons: null}, 
-{kind: 1, offset: "height", len: 0, typ: NTI2421015, name: "height", sons: null}, 
-{kind: 1, offset: "hyphens", len: 0, typ: NTI2421015, name: "hyphens", sons: null}, 
-{kind: 1, offset: "imageOrientation", len: 0, typ: NTI2421015, name: "imageOrientation", sons: null}, 
-{kind: 1, offset: "imageRendering", len: 0, typ: NTI2421015, name: "imageRendering", sons: null}, 
-{kind: 1, offset: "inlineSize", len: 0, typ: NTI2421015, name: "inlineSize", sons: null}, 
-{kind: 1, offset: "inset", len: 0, typ: NTI2421015, name: "inset", sons: null}, 
-{kind: 1, offset: "insetBlock", len: 0, typ: NTI2421015, name: "insetBlock", sons: null}, 
-{kind: 1, offset: "insetBlockEnd", len: 0, typ: NTI2421015, name: "insetBlockEnd", sons: null}, 
-{kind: 1, offset: "insetBlockStart", len: 0, typ: NTI2421015, name: "insetBlockStart", sons: null}, 
-{kind: 1, offset: "insetInline", len: 0, typ: NTI2421015, name: "insetInline", sons: null}, 
-{kind: 1, offset: "insetInlineEnd", len: 0, typ: NTI2421015, name: "insetInlineEnd", sons: null}, 
-{kind: 1, offset: "insetInlineStart", len: 0, typ: NTI2421015, name: "insetInlineStart", sons: null}, 
-{kind: 1, offset: "isolation", len: 0, typ: NTI2421015, name: "isolation", sons: null}, 
-{kind: 1, offset: "justifyContent", len: 0, typ: NTI2421015, name: "justifyContent", sons: null}, 
-{kind: 1, offset: "justifyItems", len: 0, typ: NTI2421015, name: "justifyItems", sons: null}, 
-{kind: 1, offset: "justifySelf", len: 0, typ: NTI2421015, name: "justifySelf", sons: null}, 
-{kind: 1, offset: "left", len: 0, typ: NTI2421015, name: "left", sons: null}, 
-{kind: 1, offset: "letterSpacing", len: 0, typ: NTI2421015, name: "letterSpacing", sons: null}, 
-{kind: 1, offset: "lineBreak", len: 0, typ: NTI2421015, name: "lineBreak", sons: null}, 
-{kind: 1, offset: "lineHeight", len: 0, typ: NTI2421015, name: "lineHeight", sons: null}, 
-{kind: 1, offset: "listStyle", len: 0, typ: NTI2421015, name: "listStyle", sons: null}, 
-{kind: 1, offset: "listStyleImage", len: 0, typ: NTI2421015, name: "listStyleImage", sons: null}, 
-{kind: 1, offset: "listStylePosition", len: 0, typ: NTI2421015, name: "listStylePosition", sons: null}, 
-{kind: 1, offset: "listStyleType", len: 0, typ: NTI2421015, name: "listStyleType", sons: null}, 
-{kind: 1, offset: "margin", len: 0, typ: NTI2421015, name: "margin", sons: null}, 
-{kind: 1, offset: "marginBlock", len: 0, typ: NTI2421015, name: "marginBlock", sons: null}, 
-{kind: 1, offset: "marginBlockEnd", len: 0, typ: NTI2421015, name: "marginBlockEnd", sons: null}, 
-{kind: 1, offset: "marginBlockStart", len: 0, typ: NTI2421015, name: "marginBlockStart", sons: null}, 
-{kind: 1, offset: "marginBottom", len: 0, typ: NTI2421015, name: "marginBottom", sons: null}, 
-{kind: 1, offset: "marginInline", len: 0, typ: NTI2421015, name: "marginInline", sons: null}, 
-{kind: 1, offset: "marginInlineEnd", len: 0, typ: NTI2421015, name: "marginInlineEnd", sons: null}, 
-{kind: 1, offset: "marginInlineStart", len: 0, typ: NTI2421015, name: "marginInlineStart", sons: null}, 
-{kind: 1, offset: "marginLeft", len: 0, typ: NTI2421015, name: "marginLeft", sons: null}, 
-{kind: 1, offset: "marginRight", len: 0, typ: NTI2421015, name: "marginRight", sons: null}, 
-{kind: 1, offset: "marginTop", len: 0, typ: NTI2421015, name: "marginTop", sons: null}, 
-{kind: 1, offset: "mask", len: 0, typ: NTI2421015, name: "mask", sons: null}, 
-{kind: 1, offset: "maskBorder", len: 0, typ: NTI2421015, name: "maskBorder", sons: null}, 
-{kind: 1, offset: "maskBorderMode", len: 0, typ: NTI2421015, name: "maskBorderMode", sons: null}, 
-{kind: 1, offset: "maskBorderOutset", len: 0, typ: NTI2421015, name: "maskBorderOutset", sons: null}, 
-{kind: 1, offset: "maskBorderRepeat", len: 0, typ: NTI2421015, name: "maskBorderRepeat", sons: null}, 
-{kind: 1, offset: "maskBorderSlice", len: 0, typ: NTI2421015, name: "maskBorderSlice", sons: null}, 
-{kind: 1, offset: "maskBorderSource", len: 0, typ: NTI2421015, name: "maskBorderSource", sons: null}, 
-{kind: 1, offset: "maskBorderWidth", len: 0, typ: NTI2421015, name: "maskBorderWidth", sons: null}, 
-{kind: 1, offset: "maskClip", len: 0, typ: NTI2421015, name: "maskClip", sons: null}, 
-{kind: 1, offset: "maskComposite", len: 0, typ: NTI2421015, name: "maskComposite", sons: null}, 
-{kind: 1, offset: "maskImage", len: 0, typ: NTI2421015, name: "maskImage", sons: null}, 
-{kind: 1, offset: "maskMode", len: 0, typ: NTI2421015, name: "maskMode", sons: null}, 
-{kind: 1, offset: "maskOrigin", len: 0, typ: NTI2421015, name: "maskOrigin", sons: null}, 
-{kind: 1, offset: "maskPosition", len: 0, typ: NTI2421015, name: "maskPosition", sons: null}, 
-{kind: 1, offset: "maskRepeat", len: 0, typ: NTI2421015, name: "maskRepeat", sons: null}, 
-{kind: 1, offset: "maskSize", len: 0, typ: NTI2421015, name: "maskSize", sons: null}, 
-{kind: 1, offset: "maskType", len: 0, typ: NTI2421015, name: "maskType", sons: null}, 
-{kind: 1, offset: "maxBlockSize", len: 0, typ: NTI2421015, name: "maxBlockSize", sons: null}, 
-{kind: 1, offset: "maxHeight", len: 0, typ: NTI2421015, name: "maxHeight", sons: null}, 
-{kind: 1, offset: "maxInlineSize", len: 0, typ: NTI2421015, name: "maxInlineSize", sons: null}, 
-{kind: 1, offset: "maxWidth", len: 0, typ: NTI2421015, name: "maxWidth", sons: null}, 
-{kind: 1, offset: "minBlockSize", len: 0, typ: NTI2421015, name: "minBlockSize", sons: null}, 
-{kind: 1, offset: "minHeight", len: 0, typ: NTI2421015, name: "minHeight", sons: null}, 
-{kind: 1, offset: "minInlineSize", len: 0, typ: NTI2421015, name: "minInlineSize", sons: null}, 
-{kind: 1, offset: "minWidth", len: 0, typ: NTI2421015, name: "minWidth", sons: null}, 
-{kind: 1, offset: "mixBlendMode", len: 0, typ: NTI2421015, name: "mixBlendMode", sons: null}, 
-{kind: 1, offset: "objectFit", len: 0, typ: NTI2421015, name: "objectFit", sons: null}, 
-{kind: 1, offset: "objectPosition", len: 0, typ: NTI2421015, name: "objectPosition", sons: null}, 
-{kind: 1, offset: "offset", len: 0, typ: NTI2421015, name: "offset", sons: null}, 
-{kind: 1, offset: "offsetAnchor", len: 0, typ: NTI2421015, name: "offsetAnchor", sons: null}, 
-{kind: 1, offset: "offsetDistance", len: 0, typ: NTI2421015, name: "offsetDistance", sons: null}, 
-{kind: 1, offset: "offsetPath", len: 0, typ: NTI2421015, name: "offsetPath", sons: null}, 
-{kind: 1, offset: "offsetRotate", len: 0, typ: NTI2421015, name: "offsetRotate", sons: null}, 
-{kind: 1, offset: "opacity", len: 0, typ: NTI2421015, name: "opacity", sons: null}, 
-{kind: 1, offset: "order", len: 0, typ: NTI2421015, name: "order", sons: null}, 
-{kind: 1, offset: "orphans", len: 0, typ: NTI2421015, name: "orphans", sons: null}, 
-{kind: 1, offset: "outline", len: 0, typ: NTI2421015, name: "outline", sons: null}, 
-{kind: 1, offset: "outlineColor", len: 0, typ: NTI2421015, name: "outlineColor", sons: null}, 
-{kind: 1, offset: "outlineOffset", len: 0, typ: NTI2421015, name: "outlineOffset", sons: null}, 
-{kind: 1, offset: "outlineStyle", len: 0, typ: NTI2421015, name: "outlineStyle", sons: null}, 
-{kind: 1, offset: "outlineWidth", len: 0, typ: NTI2421015, name: "outlineWidth", sons: null}, 
-{kind: 1, offset: "overflow", len: 0, typ: NTI2421015, name: "overflow", sons: null}, 
-{kind: 1, offset: "overflowAnchor", len: 0, typ: NTI2421015, name: "overflowAnchor", sons: null}, 
-{kind: 1, offset: "overflowBlock", len: 0, typ: NTI2421015, name: "overflowBlock", sons: null}, 
-{kind: 1, offset: "overflowInline", len: 0, typ: NTI2421015, name: "overflowInline", sons: null}, 
-{kind: 1, offset: "overflowWrap", len: 0, typ: NTI2421015, name: "overflowWrap", sons: null}, 
-{kind: 1, offset: "overflowX", len: 0, typ: NTI2421015, name: "overflowX", sons: null}, 
-{kind: 1, offset: "overflowY", len: 0, typ: NTI2421015, name: "overflowY", sons: null}, 
-{kind: 1, offset: "overscrollBehavior", len: 0, typ: NTI2421015, name: "overscrollBehavior", sons: null}, 
-{kind: 1, offset: "overscrollBehaviorBlock", len: 0, typ: NTI2421015, name: "overscrollBehaviorBlock", sons: null}, 
-{kind: 1, offset: "overscrollBehaviorInline", len: 0, typ: NTI2421015, name: "overscrollBehaviorInline", sons: null}, 
-{kind: 1, offset: "overscrollBehaviorX", len: 0, typ: NTI2421015, name: "overscrollBehaviorX", sons: null}, 
-{kind: 1, offset: "overscrollBehaviorY", len: 0, typ: NTI2421015, name: "overscrollBehaviorY", sons: null}, 
-{kind: 1, offset: "padding", len: 0, typ: NTI2421015, name: "padding", sons: null}, 
-{kind: 1, offset: "paddingBlock", len: 0, typ: NTI2421015, name: "paddingBlock", sons: null}, 
-{kind: 1, offset: "paddingBlockEnd", len: 0, typ: NTI2421015, name: "paddingBlockEnd", sons: null}, 
-{kind: 1, offset: "paddingBlockStart", len: 0, typ: NTI2421015, name: "paddingBlockStart", sons: null}, 
-{kind: 1, offset: "paddingBottom", len: 0, typ: NTI2421015, name: "paddingBottom", sons: null}, 
-{kind: 1, offset: "paddingInline", len: 0, typ: NTI2421015, name: "paddingInline", sons: null}, 
-{kind: 1, offset: "paddingInlineEnd", len: 0, typ: NTI2421015, name: "paddingInlineEnd", sons: null}, 
-{kind: 1, offset: "paddingInlineStart", len: 0, typ: NTI2421015, name: "paddingInlineStart", sons: null}, 
-{kind: 1, offset: "paddingLeft", len: 0, typ: NTI2421015, name: "paddingLeft", sons: null}, 
-{kind: 1, offset: "paddingRight", len: 0, typ: NTI2421015, name: "paddingRight", sons: null}, 
-{kind: 1, offset: "paddingTop", len: 0, typ: NTI2421015, name: "paddingTop", sons: null}, 
-{kind: 1, offset: "pageBreakAfter", len: 0, typ: NTI2421015, name: "pageBreakAfter", sons: null}, 
-{kind: 1, offset: "pageBreakBefore", len: 0, typ: NTI2421015, name: "pageBreakBefore", sons: null}, 
-{kind: 1, offset: "pageBreakInside", len: 0, typ: NTI2421015, name: "pageBreakInside", sons: null}, 
-{kind: 1, offset: "paintOrder", len: 0, typ: NTI2421015, name: "paintOrder", sons: null}, 
-{kind: 1, offset: "perspective", len: 0, typ: NTI2421015, name: "perspective", sons: null}, 
-{kind: 1, offset: "perspectiveOrigin", len: 0, typ: NTI2421015, name: "perspectiveOrigin", sons: null}, 
-{kind: 1, offset: "placeContent", len: 0, typ: NTI2421015, name: "placeContent", sons: null}, 
-{kind: 1, offset: "placeItems", len: 0, typ: NTI2421015, name: "placeItems", sons: null}, 
-{kind: 1, offset: "placeSelf", len: 0, typ: NTI2421015, name: "placeSelf", sons: null}, 
-{kind: 1, offset: "pointerEvents", len: 0, typ: NTI2421015, name: "pointerEvents", sons: null}, 
-{kind: 1, offset: "position", len: 0, typ: NTI2421015, name: "position", sons: null}, 
-{kind: 1, offset: "quotes", len: 0, typ: NTI2421015, name: "quotes", sons: null}, 
-{kind: 1, offset: "resize", len: 0, typ: NTI2421015, name: "resize", sons: null}, 
-{kind: 1, offset: "right", len: 0, typ: NTI2421015, name: "right", sons: null}, 
-{kind: 1, offset: "rotate", len: 0, typ: NTI2421015, name: "rotate", sons: null}, 
-{kind: 1, offset: "rowGap", len: 0, typ: NTI2421015, name: "rowGap", sons: null}, 
-{kind: 1, offset: "scale", len: 0, typ: NTI2421015, name: "scale", sons: null}, 
-{kind: 1, offset: "scrollBehavior", len: 0, typ: NTI2421015, name: "scrollBehavior", sons: null}, 
-{kind: 1, offset: "scrollMargin", len: 0, typ: NTI2421015, name: "scrollMargin", sons: null}, 
-{kind: 1, offset: "scrollMarginBlock", len: 0, typ: NTI2421015, name: "scrollMarginBlock", sons: null}, 
-{kind: 1, offset: "scrollMarginBlockEnd", len: 0, typ: NTI2421015, name: "scrollMarginBlockEnd", sons: null}, 
-{kind: 1, offset: "scrollMarginBlockStart", len: 0, typ: NTI2421015, name: "scrollMarginBlockStart", sons: null}, 
-{kind: 1, offset: "scrollMarginBottom", len: 0, typ: NTI2421015, name: "scrollMarginBottom", sons: null}, 
-{kind: 1, offset: "scrollMarginInline", len: 0, typ: NTI2421015, name: "scrollMarginInline", sons: null}, 
-{kind: 1, offset: "scrollMarginInlineEnd", len: 0, typ: NTI2421015, name: "scrollMarginInlineEnd", sons: null}, 
-{kind: 1, offset: "scrollMarginInlineStart", len: 0, typ: NTI2421015, name: "scrollMarginInlineStart", sons: null}, 
-{kind: 1, offset: "scrollMarginLeft", len: 0, typ: NTI2421015, name: "scrollMarginLeft", sons: null}, 
-{kind: 1, offset: "scrollMarginRight", len: 0, typ: NTI2421015, name: "scrollMarginRight", sons: null}, 
-{kind: 1, offset: "scrollMarginTop", len: 0, typ: NTI2421015, name: "scrollMarginTop", sons: null}, 
-{kind: 1, offset: "scrollPadding", len: 0, typ: NTI2421015, name: "scrollPadding", sons: null}, 
-{kind: 1, offset: "scrollPaddingBlock", len: 0, typ: NTI2421015, name: "scrollPaddingBlock", sons: null}, 
-{kind: 1, offset: "scrollPaddingBlockEnd", len: 0, typ: NTI2421015, name: "scrollPaddingBlockEnd", sons: null}, 
-{kind: 1, offset: "scrollPaddingBlockStart", len: 0, typ: NTI2421015, name: "scrollPaddingBlockStart", sons: null}, 
-{kind: 1, offset: "scrollPaddingBottom", len: 0, typ: NTI2421015, name: "scrollPaddingBottom", sons: null}, 
-{kind: 1, offset: "scrollPaddingInline", len: 0, typ: NTI2421015, name: "scrollPaddingInline", sons: null}, 
-{kind: 1, offset: "scrollPaddingInlineEnd", len: 0, typ: NTI2421015, name: "scrollPaddingInlineEnd", sons: null}, 
-{kind: 1, offset: "scrollPaddingInlineStart", len: 0, typ: NTI2421015, name: "scrollPaddingInlineStart", sons: null}, 
-{kind: 1, offset: "scrollPaddingLeft", len: 0, typ: NTI2421015, name: "scrollPaddingLeft", sons: null}, 
-{kind: 1, offset: "scrollPaddingRight", len: 0, typ: NTI2421015, name: "scrollPaddingRight", sons: null}, 
-{kind: 1, offset: "scrollPaddingTop", len: 0, typ: NTI2421015, name: "scrollPaddingTop", sons: null}, 
-{kind: 1, offset: "scrollSnapAlign", len: 0, typ: NTI2421015, name: "scrollSnapAlign", sons: null}, 
-{kind: 1, offset: "scrollSnapStop", len: 0, typ: NTI2421015, name: "scrollSnapStop", sons: null}, 
-{kind: 1, offset: "scrollSnapType", len: 0, typ: NTI2421015, name: "scrollSnapType", sons: null}, 
-{kind: 1, offset: "scrollbar3dLightColor", len: 0, typ: NTI2421015, name: "scrollbar3dLightColor", sons: null}, 
-{kind: 1, offset: "scrollbarArrowColor", len: 0, typ: NTI2421015, name: "scrollbarArrowColor", sons: null}, 
-{kind: 1, offset: "scrollbarBaseColor", len: 0, typ: NTI2421015, name: "scrollbarBaseColor", sons: null}, 
-{kind: 1, offset: "scrollbarColor", len: 0, typ: NTI2421015, name: "scrollbarColor", sons: null}, 
-{kind: 1, offset: "scrollbarDarkshadowColor", len: 0, typ: NTI2421015, name: "scrollbarDarkshadowColor", sons: null}, 
-{kind: 1, offset: "scrollbarFaceColor", len: 0, typ: NTI2421015, name: "scrollbarFaceColor", sons: null}, 
-{kind: 1, offset: "scrollbarHighlightColor", len: 0, typ: NTI2421015, name: "scrollbarHighlightColor", sons: null}, 
-{kind: 1, offset: "scrollbarShadowColor", len: 0, typ: NTI2421015, name: "scrollbarShadowColor", sons: null}, 
-{kind: 1, offset: "scrollbarTrackColor", len: 0, typ: NTI2421015, name: "scrollbarTrackColor", sons: null}, 
-{kind: 1, offset: "scrollbarWidth", len: 0, typ: NTI2421015, name: "scrollbarWidth", sons: null}, 
-{kind: 1, offset: "shapeImageThreshold", len: 0, typ: NTI2421015, name: "shapeImageThreshold", sons: null}, 
-{kind: 1, offset: "shapeMargin", len: 0, typ: NTI2421015, name: "shapeMargin", sons: null}, 
-{kind: 1, offset: "shapeOutside", len: 0, typ: NTI2421015, name: "shapeOutside", sons: null}, 
-{kind: 1, offset: "tabSize", len: 0, typ: NTI2421015, name: "tabSize", sons: null}, 
-{kind: 1, offset: "tableLayout", len: 0, typ: NTI2421015, name: "tableLayout", sons: null}, 
-{kind: 1, offset: "textAlign", len: 0, typ: NTI2421015, name: "textAlign", sons: null}, 
-{kind: 1, offset: "textAlignLast", len: 0, typ: NTI2421015, name: "textAlignLast", sons: null}, 
-{kind: 1, offset: "textCombineUpright", len: 0, typ: NTI2421015, name: "textCombineUpright", sons: null}, 
-{kind: 1, offset: "textDecoration", len: 0, typ: NTI2421015, name: "textDecoration", sons: null}, 
-{kind: 1, offset: "textDecorationColor", len: 0, typ: NTI2421015, name: "textDecorationColor", sons: null}, 
-{kind: 1, offset: "textDecorationLine", len: 0, typ: NTI2421015, name: "textDecorationLine", sons: null}, 
-{kind: 1, offset: "textDecorationSkipInk", len: 0, typ: NTI2421015, name: "textDecorationSkipInk", sons: null}, 
-{kind: 1, offset: "textDecorationStyle", len: 0, typ: NTI2421015, name: "textDecorationStyle", sons: null}, 
-{kind: 1, offset: "textDecorationThickness", len: 0, typ: NTI2421015, name: "textDecorationThickness", sons: null}, 
-{kind: 1, offset: "textEmphasis", len: 0, typ: NTI2421015, name: "textEmphasis", sons: null}, 
-{kind: 1, offset: "textEmphasisColor", len: 0, typ: NTI2421015, name: "textEmphasisColor", sons: null}, 
-{kind: 1, offset: "textEmphasisPosition", len: 0, typ: NTI2421015, name: "textEmphasisPosition", sons: null}, 
-{kind: 1, offset: "textEmphasisStyle", len: 0, typ: NTI2421015, name: "textEmphasisStyle", sons: null}, 
-{kind: 1, offset: "textIndent", len: 0, typ: NTI2421015, name: "textIndent", sons: null}, 
-{kind: 1, offset: "textJustify", len: 0, typ: NTI2421015, name: "textJustify", sons: null}, 
-{kind: 1, offset: "textOrientation", len: 0, typ: NTI2421015, name: "textOrientation", sons: null}, 
-{kind: 1, offset: "textOverflow", len: 0, typ: NTI2421015, name: "textOverflow", sons: null}, 
-{kind: 1, offset: "textRendering", len: 0, typ: NTI2421015, name: "textRendering", sons: null}, 
-{kind: 1, offset: "textShadow", len: 0, typ: NTI2421015, name: "textShadow", sons: null}, 
-{kind: 1, offset: "textTransform", len: 0, typ: NTI2421015, name: "textTransform", sons: null}, 
-{kind: 1, offset: "textUnderlineOffset", len: 0, typ: NTI2421015, name: "textUnderlineOffset", sons: null}, 
-{kind: 1, offset: "textUnderlinePosition", len: 0, typ: NTI2421015, name: "textUnderlinePosition", sons: null}, 
-{kind: 1, offset: "top", len: 0, typ: NTI2421015, name: "top", sons: null}, 
-{kind: 1, offset: "touchAction", len: 0, typ: NTI2421015, name: "touchAction", sons: null}, 
-{kind: 1, offset: "transform", len: 0, typ: NTI2421015, name: "transform", sons: null}, 
-{kind: 1, offset: "transformBox", len: 0, typ: NTI2421015, name: "transformBox", sons: null}, 
-{kind: 1, offset: "transformOrigin", len: 0, typ: NTI2421015, name: "transformOrigin", sons: null}, 
-{kind: 1, offset: "transformStyle", len: 0, typ: NTI2421015, name: "transformStyle", sons: null}, 
-{kind: 1, offset: "transition", len: 0, typ: NTI2421015, name: "transition", sons: null}, 
-{kind: 1, offset: "transitionDelay", len: 0, typ: NTI2421015, name: "transitionDelay", sons: null}, 
-{kind: 1, offset: "transitionDuration", len: 0, typ: NTI2421015, name: "transitionDuration", sons: null}, 
-{kind: 1, offset: "transitionProperty", len: 0, typ: NTI2421015, name: "transitionProperty", sons: null}, 
-{kind: 1, offset: "transitionTimingFunction", len: 0, typ: NTI2421015, name: "transitionTimingFunction", sons: null}, 
-{kind: 1, offset: "translate", len: 0, typ: NTI2421015, name: "translate", sons: null}, 
-{kind: 1, offset: "unicodeBidi", len: 0, typ: NTI2421015, name: "unicodeBidi", sons: null}, 
-{kind: 1, offset: "verticalAlign", len: 0, typ: NTI2421015, name: "verticalAlign", sons: null}, 
-{kind: 1, offset: "visibility", len: 0, typ: NTI2421015, name: "visibility", sons: null}, 
-{kind: 1, offset: "whiteSpace", len: 0, typ: NTI2421015, name: "whiteSpace", sons: null}, 
-{kind: 1, offset: "widows", len: 0, typ: NTI2421015, name: "widows", sons: null}, 
-{kind: 1, offset: "width", len: 0, typ: NTI2421015, name: "width", sons: null}, 
-{kind: 1, offset: "willChange", len: 0, typ: NTI2421015, name: "willChange", sons: null}, 
-{kind: 1, offset: "wordBreak", len: 0, typ: NTI2421015, name: "wordBreak", sons: null}, 
-{kind: 1, offset: "wordSpacing", len: 0, typ: NTI2421015, name: "wordSpacing", sons: null}, 
-{kind: 1, offset: "writingMode", len: 0, typ: NTI2421015, name: "writingMode", sons: null}, 
-{kind: 1, offset: "zIndex", len: 0, typ: NTI2421015, name: "zIndex", sons: null}]};
-NTI3088293.node = NNI3088293;
-NTI3088293.base = NTI2427408;
-var NNI12132207 = {kind: 2, offset: 0, typ: null, name: null, len: 6, sons: {"0": {kind: 1, offset: 0, typ: NTI12132207, name: "pkReplace", len: 0, sons: null}, 
-"1": {kind: 1, offset: 1, typ: NTI12132207, name: "pkRemove", len: 0, sons: null}, 
-"2": {kind: 1, offset: 2, typ: NTI12132207, name: "pkAppend", len: 0, sons: null}, 
-"3": {kind: 1, offset: 3, typ: NTI12132207, name: "pkInsertBefore", len: 0, sons: null}, 
-"4": {kind: 1, offset: 4, typ: NTI12132207, name: "pkDetach", len: 0, sons: null}, 
-"5": {kind: 1, offset: 5, typ: NTI12132207, name: "pkSame", len: 0, sons: null}}};
-NTI12132207.node = NNI12132207;
-NTI3088609.base = NTI3088235;
-NTI3088611.base = NTI3088235;
-NTI3088613.base = NTI3088235;
-var NNI3088233 = {kind: 2, offset: 0, typ: null, name: null, len: 12, sons: {"1": {kind: 1, offset: 1, typ: NTI3088233, name: "ElementNode", len: 0, sons: null}, 
-"2": {kind: 1, offset: 2, typ: NTI3088233, name: "AttributeNode", len: 0, sons: null}, 
-"3": {kind: 1, offset: 3, typ: NTI3088233, name: "TextNode", len: 0, sons: null}, 
-"4": {kind: 1, offset: 4, typ: NTI3088233, name: "CDATANode", len: 0, sons: null}, 
-"5": {kind: 1, offset: 5, typ: NTI3088233, name: "EntityRefNode", len: 0, sons: null}, 
-"6": {kind: 1, offset: 6, typ: NTI3088233, name: "EntityNode", len: 0, sons: null}, 
-"7": {kind: 1, offset: 7, typ: NTI3088233, name: "ProcessingInstructionNode", len: 0, sons: null}, 
-"8": {kind: 1, offset: 8, typ: NTI3088233, name: "CommentNode", len: 0, sons: null}, 
-"9": {kind: 1, offset: 9, typ: NTI3088233, name: "DocumentNode", len: 0, sons: null}, 
-"10": {kind: 1, offset: 10, typ: NTI3088233, name: "DocumentTypeNode", len: 0, sons: null}, 
-"11": {kind: 1, offset: 11, typ: NTI3088233, name: "DocumentFragmentNode", len: 0, sons: null}, 
-"12": {kind: 1, offset: 12, typ: NTI3088233, name: "NotationNode", len: 0, sons: null}}};
-NTI3088233.node = NNI3088233;
-var NNI3088231 = {kind: 2, len: 0, offset: 0, typ: null, name: null, sons: []};
-NTI3088231.node = NNI3088231;
-NTI3088231.base = NTI2427408;
-NTI3088229.base = NTI3088231;
-NTI3088765.base = NTI3088243;
-var NNI3088285 = {kind: 2, len: 10, offset: 0, typ: null, name: null, sons: [{kind: 1, offset: "acceptCharset", len: 0, typ: NTI2421015, name: "acceptCharset", sons: null}, 
-{kind: 1, offset: "action", len: 0, typ: NTI2421015, name: "action", sons: null}, 
-{kind: 1, offset: "autocomplete", len: 0, typ: NTI2421015, name: "autocomplete", sons: null}, 
-{kind: 1, offset: "elements", len: 0, typ: NTI3088765, name: "elements", sons: null}, 
-{kind: 1, offset: "encoding", len: 0, typ: NTI2421015, name: "encoding", sons: null}, 
-{kind: 1, offset: "enctype", len: 0, typ: NTI2421015, name: "enctype", sons: null}, 
-{kind: 1, offset: "length", len: 0, typ: NTI2421044, name: "length", sons: null}, 
-{kind: 1, offset: "method", len: 0, typ: NTI2421015, name: "method", sons: null}, 
-{kind: 1, offset: "noValidate", len: 0, typ: NTI2421064, name: "noValidate", sons: null}, 
-{kind: 1, offset: "target", len: 0, typ: NTI2421015, name: "target", sons: null}]};
-NTI3088285.node = NNI3088285;
-NTI3088285.base = NTI3088245;
-NTI3088283.base = NTI3088285;
-var NNI3088281 = {kind: 2, len: 5, offset: 0, typ: null, name: null, sons: [{kind: 1, offset: "defaultSelected", len: 0, typ: NTI2421064, name: "defaultSelected", sons: null}, 
-{kind: 1, offset: "selected", len: 0, typ: NTI2421064, name: "selected", sons: null}, 
-{kind: 1, offset: "selectedIndex", len: 0, typ: NTI2421044, name: "selectedIndex", sons: null}, 
-{kind: 1, offset: "text", len: 0, typ: NTI2421015, name: "text", sons: null}, 
-{kind: 1, offset: "value", len: 0, typ: NTI2421015, name: "value", sons: null}]};
-NTI3088281.node = NNI3088281;
-NTI3088281.base = NTI3088245;
-NTI3088279.base = NTI3088281;
-NTI3088671.base = NTI3088279;
-NTI3088673.base = NTI3088279;
-var NNI3088245 = {kind: 2, len: 20, offset: 0, typ: null, name: null, sons: [{kind: 1, offset: "className", len: 0, typ: NTI2421015, name: "className", sons: null}, 
-{kind: 1, offset: "classList", len: 0, typ: NTI3088229, name: "classList", sons: null}, 
-{kind: 1, offset: "checked", len: 0, typ: NTI2421064, name: "checked", sons: null}, 
-{kind: 1, offset: "defaultChecked", len: 0, typ: NTI2421064, name: "defaultChecked", sons: null}, 
-{kind: 1, offset: "defaultValue", len: 0, typ: NTI2421015, name: "defaultValue", sons: null}, 
-{kind: 1, offset: "disabled", len: 0, typ: NTI2421064, name: "disabled", sons: null}, 
-{kind: 1, offset: "form", len: 0, typ: NTI3088283, name: "form", sons: null}, 
-{kind: 1, offset: "name", len: 0, typ: NTI2421015, name: "name", sons: null}, 
-{kind: 1, offset: "readOnly", len: 0, typ: NTI2421064, name: "readOnly", sons: null}, 
-{kind: 1, offset: "options", len: 0, typ: NTI3088671, name: "options", sons: null}, 
-{kind: 1, offset: "selectedOptions", len: 0, typ: NTI3088673, name: "selectedOptions", sons: null}, 
-{kind: 1, offset: "clientWidth", len: 0, typ: NTI2421044, name: "clientWidth", sons: null}, 
-{kind: 1, offset: "clientHeight", len: 0, typ: NTI2421044, name: "clientHeight", sons: null}, 
-{kind: 1, offset: "contentEditable", len: 0, typ: NTI2421015, name: "contentEditable", sons: null}, 
-{kind: 1, offset: "isContentEditable", len: 0, typ: NTI2421064, name: "isContentEditable", sons: null}, 
-{kind: 1, offset: "dir", len: 0, typ: NTI2421015, name: "dir", sons: null}, 
-{kind: 1, offset: "offsetHeight", len: 0, typ: NTI2421044, name: "offsetHeight", sons: null}, 
-{kind: 1, offset: "offsetWidth", len: 0, typ: NTI2421044, name: "offsetWidth", sons: null}, 
-{kind: 1, offset: "offsetLeft", len: 0, typ: NTI2421044, name: "offsetLeft", sons: null}, 
-{kind: 1, offset: "offsetTop", len: 0, typ: NTI2421044, name: "offsetTop", sons: null}]};
-NTI3088245.node = NNI3088245;
-NTI3088245.base = NTI3088237;
-NTI3088243.base = NTI3088245;
-var NNI3088277 = {kind: 2, len: 3, offset: 0, typ: null, name: null, sons: [{kind: 1, offset: "text", len: 0, typ: NTI2421015, name: "text", sons: null}, 
-{kind: 1, offset: "x", len: 0, typ: NTI2421044, name: "x", sons: null}, 
-{kind: 1, offset: "y", len: 0, typ: NTI2421044, name: "y", sons: null}]};
-NTI3088277.node = NNI3088277;
-NTI3088277.base = NTI3088245;
-NTI3088275.base = NTI3088277;
-NTI3088649.base = NTI3088275;
-NTI3088651.base = NTI3088283;
-var NNI3088289 = {kind: 2, len: 8, offset: 0, typ: null, name: null, sons: [{kind: 1, offset: "border", len: 0, typ: NTI2421044, name: "border", sons: null}, 
-{kind: 1, offset: "complete", len: 0, typ: NTI2421064, name: "complete", sons: null}, 
-{kind: 1, offset: "height", len: 0, typ: NTI2421044, name: "height", sons: null}, 
-{kind: 1, offset: "hspace", len: 0, typ: NTI2421044, name: "hspace", sons: null}, 
-{kind: 1, offset: "lowsrc", len: 0, typ: NTI2421015, name: "lowsrc", sons: null}, 
-{kind: 1, offset: "src", len: 0, typ: NTI2421015, name: "src", sons: null}, 
-{kind: 1, offset: "vspace", len: 0, typ: NTI2421044, name: "vspace", sons: null}, 
-{kind: 1, offset: "width", len: 0, typ: NTI2421044, name: "width", sons: null}]};
-NTI3088289.node = NNI3088289;
-NTI3088289.base = NTI3088245;
-NTI3088287.base = NTI3088289;
-NTI3088653.base = NTI3088287;
-NTI3088655.base = NTI3088243;
-var NNI3088273 = {kind: 2, len: 6, offset: 0, typ: null, name: null, sons: [{kind: 1, offset: "height", len: 0, typ: NTI2421044, name: "height", sons: null}, 
-{kind: 1, offset: "hspace", len: 0, typ: NTI2421044, name: "hspace", sons: null}, 
-{kind: 1, offset: "src", len: 0, typ: NTI2421015, name: "src", sons: null}, 
-{kind: 1, offset: "width", len: 0, typ: NTI2421044, name: "width", sons: null}, 
-{kind: 1, offset: "type", len: 0, typ: NTI2421015, name: "type", sons: null}, 
-{kind: 1, offset: "vspace", len: 0, typ: NTI2421044, name: "vspace", sons: null}]};
-NTI3088273.node = NNI3088273;
-NTI3088273.base = NTI3088245;
-NTI3088271.base = NTI3088273;
-NTI3088657.base = NTI3088271;
-var NNI3088269 = {kind: 2, len: 4, offset: 0, typ: null, name: null, sons: [{kind: 1, offset: "target", len: 0, typ: NTI2421015, name: "target", sons: null}, 
-{kind: 1, offset: "text", len: 0, typ: NTI2421015, name: "text", sons: null}, 
-{kind: 1, offset: "x", len: 0, typ: NTI2421044, name: "x", sons: null}, 
-{kind: 1, offset: "y", len: 0, typ: NTI2421044, name: "y", sons: null}]};
-NTI3088269.node = NNI3088269;
-NTI3088269.base = NTI3088245;
-NTI3088267.base = NTI3088269;
-NTI3088659.base = NTI3088267;
-var NNI3089616 = {kind: 1, offset: "then", len: 0, typ: NTI3089617, name: "then", sons: null};
-NTI3089616.node = NNI3089616;
-NTI3088385.base = NTI3089616;
-var NNI3089624 = {kind: 2, len: 2, offset: 0, typ: null, name: null, sons: [{kind: 1, offset: "ready", len: 0, typ: NTI3088385, name: "ready", sons: null}, 
-{kind: 1, offset: "onloadingdone", len: 0, typ: NTI3089626, name: "onloadingdone", sons: null}]};
-NTI3089624.node = NNI3089624;
-NTI3088387.base = NTI3089624;
-var NNI3088241 = {kind: 2, len: 22, offset: 0, typ: null, name: null, sons: [{kind: 1, offset: "activeElement", len: 0, typ: NTI3088243, name: "activeElement", sons: null}, 
-{kind: 1, offset: "alinkColor", len: 0, typ: NTI2421015, name: "alinkColor", sons: null}, 
-{kind: 1, offset: "bgColor", len: 0, typ: NTI2421015, name: "bgColor", sons: null}, 
-{kind: 1, offset: "body", len: 0, typ: NTI3088243, name: "body", sons: null}, 
-{kind: 1, offset: "charset", len: 0, typ: NTI2421015, name: "charset", sons: null}, 
-{kind: 1, offset: "cookie", len: 0, typ: NTI2421015, name: "cookie", sons: null}, 
-{kind: 1, offset: "defaultCharset", len: 0, typ: NTI2421015, name: "defaultCharset", sons: null}, 
-{kind: 1, offset: "fgColor", len: 0, typ: NTI2421015, name: "fgColor", sons: null}, 
-{kind: 1, offset: "head", len: 0, typ: NTI3088243, name: "head", sons: null}, 
-{kind: 1, offset: "lastModified", len: 0, typ: NTI2421015, name: "lastModified", sons: null}, 
-{kind: 1, offset: "linkColor", len: 0, typ: NTI2421015, name: "linkColor", sons: null}, 
-{kind: 1, offset: "referrer", len: 0, typ: NTI2421015, name: "referrer", sons: null}, 
-{kind: 1, offset: "title", len: 0, typ: NTI2421015, name: "title", sons: null}, 
-{kind: 1, offset: "URL", len: 0, typ: NTI2421015, name: "URL", sons: null}, 
-{kind: 1, offset: "vlinkColor", len: 0, typ: NTI2421015, name: "vlinkColor", sons: null}, 
-{kind: 1, offset: "anchors", len: 0, typ: NTI3088649, name: "anchors", sons: null}, 
-{kind: 1, offset: "forms", len: 0, typ: NTI3088651, name: "forms", sons: null}, 
-{kind: 1, offset: "images", len: 0, typ: NTI3088653, name: "images", sons: null}, 
-{kind: 1, offset: "applets", len: 0, typ: NTI3088655, name: "applets", sons: null}, 
-{kind: 1, offset: "embeds", len: 0, typ: NTI3088657, name: "embeds", sons: null}, 
-{kind: 1, offset: "links", len: 0, typ: NTI3088659, name: "links", sons: null}, 
-{kind: 1, offset: "fonts", len: 0, typ: NTI3088387, name: "fonts", sons: null}]};
-NTI3088241.node = NNI3088241;
-NTI3088241.base = NTI3088237;
-NTI3088239.base = NTI3088241;
-NTI3088291.base = NTI3088293;
-var NNI3088237 = {kind: 2, len: 22, offset: 0, typ: null, name: null, sons: [{kind: 1, offset: "attributes", len: 0, typ: NTI3088609, name: "attributes", sons: null}, 
-{kind: 1, offset: "childNodes", len: 0, typ: NTI3088611, name: "childNodes", sons: null}, 
-{kind: 1, offset: "children", len: 0, typ: NTI3088613, name: "children", sons: null}, 
-{kind: 1, offset: "data", len: 0, typ: NTI2421015, name: "data", sons: null}, 
-{kind: 1, offset: "firstChild", len: 0, typ: NTI3088235, name: "firstChild", sons: null}, 
-{kind: 1, offset: "lastChild", len: 0, typ: NTI3088235, name: "lastChild", sons: null}, 
-{kind: 1, offset: "nextSibling", len: 0, typ: NTI3088235, name: "nextSibling", sons: null}, 
-{kind: 1, offset: "nodeName", len: 0, typ: NTI2421015, name: "nodeName", sons: null}, 
-{kind: 1, offset: "nodeType", len: 0, typ: NTI3088233, name: "nodeType", sons: null}, 
-{kind: 1, offset: "nodeValue", len: 0, typ: NTI2421015, name: "nodeValue", sons: null}, 
-{kind: 1, offset: "parentNode", len: 0, typ: NTI3088235, name: "parentNode", sons: null}, 
-{kind: 1, offset: "content", len: 0, typ: NTI3088235, name: "content", sons: null}, 
-{kind: 1, offset: "previousSibling", len: 0, typ: NTI3088235, name: "previousSibling", sons: null}, 
-{kind: 1, offset: "ownerDocument", len: 0, typ: NTI3088239, name: "ownerDocument", sons: null}, 
-{kind: 1, offset: "innerHTML", len: 0, typ: NTI2421015, name: "innerHTML", sons: null}, 
-{kind: 1, offset: "outerHTML", len: 0, typ: NTI2421015, name: "outerHTML", sons: null}, 
-{kind: 1, offset: "innerText", len: 0, typ: NTI2421015, name: "innerText", sons: null}, 
-{kind: 1, offset: "textContent", len: 0, typ: NTI2421015, name: "textContent", sons: null}, 
-{kind: 1, offset: "style", len: 0, typ: NTI3088291, name: "style", sons: null}, 
-{kind: 1, offset: "baseURI", len: 0, typ: NTI2421015, name: "baseURI", sons: null}, 
-{kind: 1, offset: "parentElement", len: 0, typ: NTI3088243, name: "parentElement", sons: null}, 
-{kind: 1, offset: "isConnected", len: 0, typ: NTI2421064, name: "isConnected", sons: null}]};
-NTI3088237.node = NNI3088237;
-var NNI3088205 = {kind: 2, len: 23, offset: 0, typ: null, name: null, sons: [{kind: 1, offset: "onabort", len: 0, typ: NTI3088388, name: "onabort", sons: null}, 
-{kind: 1, offset: "onblur", len: 0, typ: NTI3088392, name: "onblur", sons: null}, 
-{kind: 1, offset: "onchange", len: 0, typ: NTI3088396, name: "onchange", sons: null}, 
-{kind: 1, offset: "onclick", len: 0, typ: NTI3088400, name: "onclick", sons: null}, 
-{kind: 1, offset: "ondblclick", len: 0, typ: NTI3088404, name: "ondblclick", sons: null}, 
-{kind: 1, offset: "onerror", len: 0, typ: NTI3088408, name: "onerror", sons: null}, 
-{kind: 1, offset: "onfocus", len: 0, typ: NTI3088412, name: "onfocus", sons: null}, 
-{kind: 1, offset: "onkeydown", len: 0, typ: NTI3088416, name: "onkeydown", sons: null}, 
-{kind: 1, offset: "onkeypress", len: 0, typ: NTI3088420, name: "onkeypress", sons: null}, 
-{kind: 1, offset: "onkeyup", len: 0, typ: NTI3088424, name: "onkeyup", sons: null}, 
-{kind: 1, offset: "onload", len: 0, typ: NTI3088428, name: "onload", sons: null}, 
-{kind: 1, offset: "onmousedown", len: 0, typ: NTI3088432, name: "onmousedown", sons: null}, 
-{kind: 1, offset: "onmousemove", len: 0, typ: NTI3088436, name: "onmousemove", sons: null}, 
-{kind: 1, offset: "onmouseout", len: 0, typ: NTI3088440, name: "onmouseout", sons: null}, 
-{kind: 1, offset: "onmouseover", len: 0, typ: NTI3088444, name: "onmouseover", sons: null}, 
-{kind: 1, offset: "onmouseup", len: 0, typ: NTI3088448, name: "onmouseup", sons: null}, 
-{kind: 1, offset: "onreset", len: 0, typ: NTI3088452, name: "onreset", sons: null}, 
-{kind: 1, offset: "onselect", len: 0, typ: NTI3088456, name: "onselect", sons: null}, 
-{kind: 1, offset: "onsubmit", len: 0, typ: NTI3088460, name: "onsubmit", sons: null}, 
-{kind: 1, offset: "onunload", len: 0, typ: NTI3088464, name: "onunload", sons: null}, 
-{kind: 1, offset: "onloadstart", len: 0, typ: NTI3088468, name: "onloadstart", sons: null}, 
-{kind: 1, offset: "onprogress", len: 0, typ: NTI3088472, name: "onprogress", sons: null}, 
-{kind: 1, offset: "onloadend", len: 0, typ: NTI3088476, name: "onloadend", sons: null}]};
-NTI3088205.node = NNI3088205;
-NTI3088205.base = NTI2427408;
-NTI3088237.base = NTI3088205;
-NTI3088235.base = NTI3088237;
-var NNI11697028 = {kind: 2, offset: 0, typ: null, name: null, len: 120, sons: {"0": {kind: 1, offset: 0, typ: NTI11697028, name: "#text", len: 0, sons: null}, 
-"1": {kind: 1, offset: 1, typ: NTI11697028, name: "#int", len: 0, sons: null}, 
-"2": {kind: 1, offset: 2, typ: NTI11697028, name: "#bool", len: 0, sons: null}, 
-"3": {kind: 1, offset: 3, typ: NTI11697028, name: "#vthunk", len: 0, sons: null}, 
-"4": {kind: 1, offset: 4, typ: NTI11697028, name: "#dthunk", len: 0, sons: null}, 
-"5": {kind: 1, offset: 5, typ: NTI11697028, name: "#component", len: 0, sons: null}, 
-"6": {kind: 1, offset: 6, typ: NTI11697028, name: "#verbatim", len: 0, sons: null}, 
-"7": {kind: 1, offset: 7, typ: NTI11697028, name: "html", len: 0, sons: null}, 
-"8": {kind: 1, offset: 8, typ: NTI11697028, name: "head", len: 0, sons: null}, 
-"9": {kind: 1, offset: 9, typ: NTI11697028, name: "title", len: 0, sons: null}, 
-"10": {kind: 1, offset: 10, typ: NTI11697028, name: "base", len: 0, sons: null}, 
-"11": {kind: 1, offset: 11, typ: NTI11697028, name: "link", len: 0, sons: null}, 
-"12": {kind: 1, offset: 12, typ: NTI11697028, name: "meta", len: 0, sons: null}, 
-"13": {kind: 1, offset: 13, typ: NTI11697028, name: "style", len: 0, sons: null}, 
-"14": {kind: 1, offset: 14, typ: NTI11697028, name: "script", len: 0, sons: null}, 
-"15": {kind: 1, offset: 15, typ: NTI11697028, name: "noscript", len: 0, sons: null}, 
-"16": {kind: 1, offset: 16, typ: NTI11697028, name: "body", len: 0, sons: null}, 
-"17": {kind: 1, offset: 17, typ: NTI11697028, name: "section", len: 0, sons: null}, 
-"18": {kind: 1, offset: 18, typ: NTI11697028, name: "nav", len: 0, sons: null}, 
-"19": {kind: 1, offset: 19, typ: NTI11697028, name: "article", len: 0, sons: null}, 
-"20": {kind: 1, offset: 20, typ: NTI11697028, name: "aside", len: 0, sons: null}, 
-"21": {kind: 1, offset: 21, typ: NTI11697028, name: "h1", len: 0, sons: null}, 
-"22": {kind: 1, offset: 22, typ: NTI11697028, name: "h2", len: 0, sons: null}, 
-"23": {kind: 1, offset: 23, typ: NTI11697028, name: "h3", len: 0, sons: null}, 
-"24": {kind: 1, offset: 24, typ: NTI11697028, name: "h4", len: 0, sons: null}, 
-"25": {kind: 1, offset: 25, typ: NTI11697028, name: "h5", len: 0, sons: null}, 
-"26": {kind: 1, offset: 26, typ: NTI11697028, name: "h6", len: 0, sons: null}, 
-"27": {kind: 1, offset: 27, typ: NTI11697028, name: "header", len: 0, sons: null}, 
-"28": {kind: 1, offset: 28, typ: NTI11697028, name: "footer", len: 0, sons: null}, 
-"29": {kind: 1, offset: 29, typ: NTI11697028, name: "address", len: 0, sons: null}, 
-"30": {kind: 1, offset: 30, typ: NTI11697028, name: "main", len: 0, sons: null}, 
-"31": {kind: 1, offset: 31, typ: NTI11697028, name: "p", len: 0, sons: null}, 
-"32": {kind: 1, offset: 32, typ: NTI11697028, name: "hr", len: 0, sons: null}, 
-"33": {kind: 1, offset: 33, typ: NTI11697028, name: "pre", len: 0, sons: null}, 
-"34": {kind: 1, offset: 34, typ: NTI11697028, name: "blockquote", len: 0, sons: null}, 
-"35": {kind: 1, offset: 35, typ: NTI11697028, name: "ol", len: 0, sons: null}, 
-"36": {kind: 1, offset: 36, typ: NTI11697028, name: "ul", len: 0, sons: null}, 
-"37": {kind: 1, offset: 37, typ: NTI11697028, name: "li", len: 0, sons: null}, 
-"38": {kind: 1, offset: 38, typ: NTI11697028, name: "dl", len: 0, sons: null}, 
-"39": {kind: 1, offset: 39, typ: NTI11697028, name: "dt", len: 0, sons: null}, 
-"40": {kind: 1, offset: 40, typ: NTI11697028, name: "dd", len: 0, sons: null}, 
-"41": {kind: 1, offset: 41, typ: NTI11697028, name: "figure", len: 0, sons: null}, 
-"42": {kind: 1, offset: 42, typ: NTI11697028, name: "figcaption", len: 0, sons: null}, 
-"43": {kind: 1, offset: 43, typ: NTI11697028, name: "div", len: 0, sons: null}, 
-"44": {kind: 1, offset: 44, typ: NTI11697028, name: "a", len: 0, sons: null}, 
-"45": {kind: 1, offset: 45, typ: NTI11697028, name: "em", len: 0, sons: null}, 
-"46": {kind: 1, offset: 46, typ: NTI11697028, name: "strong", len: 0, sons: null}, 
-"47": {kind: 1, offset: 47, typ: NTI11697028, name: "small", len: 0, sons: null}, 
-"48": {kind: 1, offset: 48, typ: NTI11697028, name: "s", len: 0, sons: null}, 
-"49": {kind: 1, offset: 49, typ: NTI11697028, name: "cite", len: 0, sons: null}, 
-"50": {kind: 1, offset: 50, typ: NTI11697028, name: "quote", len: 0, sons: null}, 
-"51": {kind: 1, offset: 51, typ: NTI11697028, name: "dfn", len: 0, sons: null}, 
-"52": {kind: 1, offset: 52, typ: NTI11697028, name: "abbr", len: 0, sons: null}, 
-"53": {kind: 1, offset: 53, typ: NTI11697028, name: "data", len: 0, sons: null}, 
-"54": {kind: 1, offset: 54, typ: NTI11697028, name: "time", len: 0, sons: null}, 
-"55": {kind: 1, offset: 55, typ: NTI11697028, name: "code", len: 0, sons: null}, 
-"56": {kind: 1, offset: 56, typ: NTI11697028, name: "var", len: 0, sons: null}, 
-"57": {kind: 1, offset: 57, typ: NTI11697028, name: "samp", len: 0, sons: null}, 
-"58": {kind: 1, offset: 58, typ: NTI11697028, name: "kdb", len: 0, sons: null}, 
-"59": {kind: 1, offset: 59, typ: NTI11697028, name: "sub", len: 0, sons: null}, 
-"60": {kind: 1, offset: 60, typ: NTI11697028, name: "sup", len: 0, sons: null}, 
-"61": {kind: 1, offset: 61, typ: NTI11697028, name: "i", len: 0, sons: null}, 
-"62": {kind: 1, offset: 62, typ: NTI11697028, name: "b", len: 0, sons: null}, 
-"63": {kind: 1, offset: 63, typ: NTI11697028, name: "u", len: 0, sons: null}, 
-"64": {kind: 1, offset: 64, typ: NTI11697028, name: "mark", len: 0, sons: null}, 
-"65": {kind: 1, offset: 65, typ: NTI11697028, name: "ruby", len: 0, sons: null}, 
-"66": {kind: 1, offset: 66, typ: NTI11697028, name: "rt", len: 0, sons: null}, 
-"67": {kind: 1, offset: 67, typ: NTI11697028, name: "rp", len: 0, sons: null}, 
-"68": {kind: 1, offset: 68, typ: NTI11697028, name: "bdi", len: 0, sons: null}, 
-"69": {kind: 1, offset: 69, typ: NTI11697028, name: "dbo", len: 0, sons: null}, 
-"70": {kind: 1, offset: 70, typ: NTI11697028, name: "span", len: 0, sons: null}, 
-"71": {kind: 1, offset: 71, typ: NTI11697028, name: "br", len: 0, sons: null}, 
-"72": {kind: 1, offset: 72, typ: NTI11697028, name: "wbr", len: 0, sons: null}, 
-"73": {kind: 1, offset: 73, typ: NTI11697028, name: "ins", len: 0, sons: null}, 
-"74": {kind: 1, offset: 74, typ: NTI11697028, name: "del", len: 0, sons: null}, 
-"75": {kind: 1, offset: 75, typ: NTI11697028, name: "img", len: 0, sons: null}, 
-"76": {kind: 1, offset: 76, typ: NTI11697028, name: "iframe", len: 0, sons: null}, 
-"77": {kind: 1, offset: 77, typ: NTI11697028, name: "embed", len: 0, sons: null}, 
-"78": {kind: 1, offset: 78, typ: NTI11697028, name: "object", len: 0, sons: null}, 
-"79": {kind: 1, offset: 79, typ: NTI11697028, name: "param", len: 0, sons: null}, 
-"80": {kind: 1, offset: 80, typ: NTI11697028, name: "video", len: 0, sons: null}, 
-"81": {kind: 1, offset: 81, typ: NTI11697028, name: "audio", len: 0, sons: null}, 
-"82": {kind: 1, offset: 82, typ: NTI11697028, name: "source", len: 0, sons: null}, 
-"83": {kind: 1, offset: 83, typ: NTI11697028, name: "track", len: 0, sons: null}, 
-"84": {kind: 1, offset: 84, typ: NTI11697028, name: "canvas", len: 0, sons: null}, 
-"85": {kind: 1, offset: 85, typ: NTI11697028, name: "map", len: 0, sons: null}, 
-"86": {kind: 1, offset: 86, typ: NTI11697028, name: "area", len: 0, sons: null}, 
-"87": {kind: 1, offset: 87, typ: NTI11697028, name: "svg", len: 0, sons: null}, 
-"88": {kind: 1, offset: 88, typ: NTI11697028, name: "math", len: 0, sons: null}, 
-"89": {kind: 1, offset: 89, typ: NTI11697028, name: "path", len: 0, sons: null}, 
-"90": {kind: 1, offset: 90, typ: NTI11697028, name: "circle", len: 0, sons: null}, 
-"91": {kind: 1, offset: 91, typ: NTI11697028, name: "table", len: 0, sons: null}, 
-"92": {kind: 1, offset: 92, typ: NTI11697028, name: "caption", len: 0, sons: null}, 
-"93": {kind: 1, offset: 93, typ: NTI11697028, name: "colgroup", len: 0, sons: null}, 
-"94": {kind: 1, offset: 94, typ: NTI11697028, name: "col", len: 0, sons: null}, 
-"95": {kind: 1, offset: 95, typ: NTI11697028, name: "tbody", len: 0, sons: null}, 
-"96": {kind: 1, offset: 96, typ: NTI11697028, name: "thead", len: 0, sons: null}, 
-"97": {kind: 1, offset: 97, typ: NTI11697028, name: "tfoot", len: 0, sons: null}, 
-"98": {kind: 1, offset: 98, typ: NTI11697028, name: "tr", len: 0, sons: null}, 
-"99": {kind: 1, offset: 99, typ: NTI11697028, name: "td", len: 0, sons: null}, 
-"100": {kind: 1, offset: 100, typ: NTI11697028, name: "th", len: 0, sons: null}, 
-"101": {kind: 1, offset: 101, typ: NTI11697028, name: "form", len: 0, sons: null}, 
-"102": {kind: 1, offset: 102, typ: NTI11697028, name: "fieldset", len: 0, sons: null}, 
-"103": {kind: 1, offset: 103, typ: NTI11697028, name: "legend", len: 0, sons: null}, 
-"104": {kind: 1, offset: 104, typ: NTI11697028, name: "label", len: 0, sons: null}, 
-"105": {kind: 1, offset: 105, typ: NTI11697028, name: "input", len: 0, sons: null}, 
-"106": {kind: 1, offset: 106, typ: NTI11697028, name: "button", len: 0, sons: null}, 
-"107": {kind: 1, offset: 107, typ: NTI11697028, name: "select", len: 0, sons: null}, 
-"108": {kind: 1, offset: 108, typ: NTI11697028, name: "datalist", len: 0, sons: null}, 
-"109": {kind: 1, offset: 109, typ: NTI11697028, name: "optgroup", len: 0, sons: null}, 
-"110": {kind: 1, offset: 110, typ: NTI11697028, name: "option", len: 0, sons: null}, 
-"111": {kind: 1, offset: 111, typ: NTI11697028, name: "textarea", len: 0, sons: null}, 
-"112": {kind: 1, offset: 112, typ: NTI11697028, name: "keygen", len: 0, sons: null}, 
-"113": {kind: 1, offset: 113, typ: NTI11697028, name: "output", len: 0, sons: null}, 
-"114": {kind: 1, offset: 114, typ: NTI11697028, name: "progress", len: 0, sons: null}, 
-"115": {kind: 1, offset: 115, typ: NTI11697028, name: "meter", len: 0, sons: null}, 
-"116": {kind: 1, offset: 116, typ: NTI11697028, name: "details", len: 0, sons: null}, 
-"117": {kind: 1, offset: 117, typ: NTI11697028, name: "summary", len: 0, sons: null}, 
-"118": {kind: 1, offset: 118, typ: NTI11697028, name: "command", len: 0, sons: null}, 
-"119": {kind: 1, offset: 119, typ: NTI11697028, name: "menu", len: 0, sons: null}}};
-NTI11697028.node = NNI11697028;
-NTI11700037.base = NTI11700022;
-NTI11700039.base = NTI2421015;
-var NNI11697152 = {kind: 2, offset: 0, typ: null, name: null, len: 37, sons: {"0": {kind: 1, offset: 0, typ: NTI11697152, name: "onclick", len: 0, sons: null}, 
-"1": {kind: 1, offset: 1, typ: NTI11697152, name: "oncontextmenu", len: 0, sons: null}, 
-"2": {kind: 1, offset: 2, typ: NTI11697152, name: "ondblclick", len: 0, sons: null}, 
-"3": {kind: 1, offset: 3, typ: NTI11697152, name: "onkeyup", len: 0, sons: null}, 
-"4": {kind: 1, offset: 4, typ: NTI11697152, name: "onkeydown", len: 0, sons: null}, 
-"5": {kind: 1, offset: 5, typ: NTI11697152, name: "onkeypressed", len: 0, sons: null}, 
-"6": {kind: 1, offset: 6, typ: NTI11697152, name: "onfocus", len: 0, sons: null}, 
-"7": {kind: 1, offset: 7, typ: NTI11697152, name: "onblur", len: 0, sons: null}, 
-"8": {kind: 1, offset: 8, typ: NTI11697152, name: "onchange", len: 0, sons: null}, 
-"9": {kind: 1, offset: 9, typ: NTI11697152, name: "onscroll", len: 0, sons: null}, 
-"10": {kind: 1, offset: 10, typ: NTI11697152, name: "onmousedown", len: 0, sons: null}, 
-"11": {kind: 1, offset: 11, typ: NTI11697152, name: "onmouseenter", len: 0, sons: null}, 
-"12": {kind: 1, offset: 12, typ: NTI11697152, name: "onmouseleave", len: 0, sons: null}, 
-"13": {kind: 1, offset: 13, typ: NTI11697152, name: "onmousemove", len: 0, sons: null}, 
-"14": {kind: 1, offset: 14, typ: NTI11697152, name: "onmouseout", len: 0, sons: null}, 
-"15": {kind: 1, offset: 15, typ: NTI11697152, name: "onmouseover", len: 0, sons: null}, 
-"16": {kind: 1, offset: 16, typ: NTI11697152, name: "onmouseup", len: 0, sons: null}, 
-"17": {kind: 1, offset: 17, typ: NTI11697152, name: "ondrag", len: 0, sons: null}, 
-"18": {kind: 1, offset: 18, typ: NTI11697152, name: "ondragend", len: 0, sons: null}, 
-"19": {kind: 1, offset: 19, typ: NTI11697152, name: "ondragenter", len: 0, sons: null}, 
-"20": {kind: 1, offset: 20, typ: NTI11697152, name: "ondragleave", len: 0, sons: null}, 
-"21": {kind: 1, offset: 21, typ: NTI11697152, name: "ondragover", len: 0, sons: null}, 
-"22": {kind: 1, offset: 22, typ: NTI11697152, name: "ondragstart", len: 0, sons: null}, 
-"23": {kind: 1, offset: 23, typ: NTI11697152, name: "ondrop", len: 0, sons: null}, 
-"24": {kind: 1, offset: 24, typ: NTI11697152, name: "onsubmit", len: 0, sons: null}, 
-"25": {kind: 1, offset: 25, typ: NTI11697152, name: "oninput", len: 0, sons: null}, 
-"26": {kind: 1, offset: 26, typ: NTI11697152, name: "onanimationstart", len: 0, sons: null}, 
-"27": {kind: 1, offset: 27, typ: NTI11697152, name: "onanimationend", len: 0, sons: null}, 
-"28": {kind: 1, offset: 28, typ: NTI11697152, name: "onanimationiteration", len: 0, sons: null}, 
-"29": {kind: 1, offset: 29, typ: NTI11697152, name: "onkeyupenter", len: 0, sons: null}, 
-"30": {kind: 1, offset: 30, typ: NTI11697152, name: "onkeyuplater", len: 0, sons: null}, 
-"31": {kind: 1, offset: 31, typ: NTI11697152, name: "onload", len: 0, sons: null}, 
-"32": {kind: 1, offset: 32, typ: NTI11697152, name: "ontransitioncancel", len: 0, sons: null}, 
-"33": {kind: 1, offset: 33, typ: NTI11697152, name: "ontransitionend", len: 0, sons: null}, 
-"34": {kind: 1, offset: 34, typ: NTI11697152, name: "ontransitionrun", len: 0, sons: null}, 
-"35": {kind: 1, offset: 35, typ: NTI11697152, name: "ontransitionstart", len: 0, sons: null}, 
-"36": {kind: 1, offset: 36, typ: NTI11697152, name: "onwheel", len: 0, sons: null}}};
-NTI11697152.node = NNI11697152;
-var NNI11700030 = {kind: 2, len: 3, offset: 0, typ: null, name: null, sons: [{kind: 1, offset: "Field0", len: 0, typ: NTI11697152, name: "Field0", sons: null}, 
-{kind: 1, offset: "Field1", len: 0, typ: NTI11700074, name: "Field1", sons: null}, 
-{kind: 1, offset: "Field2", len: 0, typ: NTI11700076, name: "Field2", sons: null}]};
-NTI11700030.node = NNI11700030;
-NTI11700018.base = NTI11700030;
-var NNI11651033 = {kind: 2, len: 0, offset: 0, typ: null, name: null, sons: []};
-NTI11651033.node = NNI11651033;
-NTI11651034.base = NTI11651033;
-var NNI11700031 = {kind: 2, len: 10, offset: 0, typ: null, name: null, sons: [{kind: 1, offset: "kind", len: 0, typ: NTI11697028, name: "kind", sons: null}, 
-{kind: 1, offset: "index", len: 0, typ: NTI2421044, name: "index", sons: null}, 
-{kind: 1, offset: "id", len: 0, typ: NTI2421015, name: "id", sons: null}, 
-{kind: 1, offset: "class", len: 0, typ: NTI2421015, name: "class", sons: null}, 
-{kind: 1, offset: "text", len: 0, typ: NTI2421015, name: "text", sons: null}, 
-{kind: 1, offset: "kids", len: 0, typ: NTI11700037, name: "kids", sons: null}, 
-{kind: 1, offset: "attrs", len: 0, typ: NTI11700039, name: "attrs", sons: null}, 
-{kind: 1, offset: "events", len: 0, typ: NTI11700018, name: "events", sons: null}, 
-{kind: 1, offset: "style", len: 0, typ: NTI11651034, name: "style", sons: null}, 
-{kind: 1, offset: "dom", len: 0, typ: NTI3088235, name: "dom", sons: null}]};
-NTI11700031.node = NNI11700031;
-NTI11700031.base = NTI2427408;
-NTI11700022.base = NTI11700031;
-var NNI12132209 = {kind: 2, len: 5, offset: 0, typ: null, name: null, sons: [{kind: 1, offset: "k", len: 0, typ: NTI12132207, name: "k", sons: null}, 
-{kind: 1, offset: "parent", len: 0, typ: NTI3088235, name: "parent", sons: null}, 
-{kind: 1, offset: "current", len: 0, typ: NTI3088235, name: "current", sons: null}, 
-{kind: 1, offset: "newNode", len: 0, typ: NTI11700022, name: "newNode", sons: null}, 
-{kind: 1, offset: "oldNode", len: 0, typ: NTI11700022, name: "oldNode", sons: null}]};
-NTI12132209.node = NNI12132209;
-var NNI12132211 = {kind: 2, len: 3, offset: 0, typ: null, name: null, sons: [{kind: 1, offset: "parent", len: 0, typ: NTI11700022, name: "parent", sons: null}, 
-{kind: 1, offset: "newChild", len: 0, typ: NTI11700022, name: "newChild", sons: null}, 
-{kind: 1, offset: "pos", len: 0, typ: NTI2421044, name: "pos", sons: null}]};
-NTI12132211.node = NNI12132211;
-function cstrToNimstr(c_2690079) {
-      var ln = c_2690079.length;
+var NTI13347211 = {size: 0, kind: 18, base: null, node: null, finalizer: null};
+var NTI12866033 = {size: 0, kind: 18, base: null, node: null, finalizer: null};
+var NTI12866034 = {size: 0,kind: 22,base: null,node: null,finalizer: null};
+var NTI12915076 = {size: 0,kind: 25,base: null,node: null,finalizer: null};
+var NTI12915074 = {size: 0,kind: 25,base: null,node: null,finalizer: null};
+var NTI12912152 = {size: 0, kind: 14, base: null, node: null, finalizer: null};
+var NTI12915030 = {size: 0, kind: 18, base: null, node: null, finalizer: null};
+var NTI12915018 = {size: 0,kind: 24,base: null,node: null,finalizer: null};
+var NTI12915039 = {size: 0,kind: 24,base: null,node: null,finalizer: null};
+var NTI12915037 = {size: 0,kind: 24,base: null,node: null,finalizer: null};
+var NTI12912028 = {size: 0, kind: 14, base: null, node: null, finalizer: null};
+var NTI12915031 = {size: 0, kind: 17, base: null, node: null, finalizer: null};
+var NTI12915022 = {size: 0,kind: 22,base: null,node: null,finalizer: null};
+var NTI4303476 = {size: 0,kind: 25,base: null,node: null,finalizer: null};
+var NTI4303472 = {size: 0,kind: 25,base: null,node: null,finalizer: null};
+var NTI4303468 = {size: 0,kind: 25,base: null,node: null,finalizer: null};
+var NTI4303464 = {size: 0,kind: 25,base: null,node: null,finalizer: null};
+var NTI4303460 = {size: 0,kind: 25,base: null,node: null,finalizer: null};
+var NTI4303456 = {size: 0,kind: 25,base: null,node: null,finalizer: null};
+var NTI4303452 = {size: 0,kind: 25,base: null,node: null,finalizer: null};
+var NTI4303448 = {size: 0,kind: 25,base: null,node: null,finalizer: null};
+var NTI4303444 = {size: 0,kind: 25,base: null,node: null,finalizer: null};
+var NTI4303440 = {size: 0,kind: 25,base: null,node: null,finalizer: null};
+var NTI4303436 = {size: 0,kind: 25,base: null,node: null,finalizer: null};
+var NTI4303432 = {size: 0,kind: 25,base: null,node: null,finalizer: null};
+var NTI4303428 = {size: 0,kind: 25,base: null,node: null,finalizer: null};
+var NTI4303424 = {size: 0,kind: 25,base: null,node: null,finalizer: null};
+var NTI4303420 = {size: 0,kind: 25,base: null,node: null,finalizer: null};
+var NTI4303416 = {size: 0,kind: 25,base: null,node: null,finalizer: null};
+var NTI4303412 = {size: 0,kind: 25,base: null,node: null,finalizer: null};
+var NTI4303408 = {size: 0,kind: 25,base: null,node: null,finalizer: null};
+var NTI4303404 = {size: 0,kind: 25,base: null,node: null,finalizer: null};
+var NTI4303400 = {size: 0,kind: 25,base: null,node: null,finalizer: null};
+var NTI4303396 = {size: 0,kind: 25,base: null,node: null,finalizer: null};
+var NTI4303392 = {size: 0,kind: 25,base: null,node: null,finalizer: null};
+var NTI4303388 = {size: 0,kind: 25,base: null,node: null,finalizer: null};
+var NTI4303205 = {size: 0, kind: 17, base: null, node: null, finalizer: null};
+var NTI4303291 = {size: 0,kind: 22,base: null,node: null,finalizer: null};
+var NTI4304626 = {size: 0,kind: 25,base: null,node: null,finalizer: null};
+var NTI4304617 = {size: 0,kind: 25,base: null,node: null,finalizer: null};
+var NTI4304616 = {size: 0, kind: 18, base: null, node: null, finalizer: null};
+var NTI4303385 = {size: 0,kind: 22,base: null,node: null,finalizer: null};
+var NTI4304624 = {size: 0, kind: 18, base: null, node: null, finalizer: null};
+var NTI4303387 = {size: 0,kind: 22,base: null,node: null,finalizer: null};
+var NTI4303269 = {size: 0, kind: 17, base: null, node: null, finalizer: null};
+var NTI4303267 = {size: 0,kind: 22,base: null,node: null,finalizer: null};
+var NTI4303659 = {size: 0,kind: 24,base: null,node: null,finalizer: null};
+var NTI4303273 = {size: 0, kind: 17, base: null, node: null, finalizer: null};
+var NTI4303271 = {size: 0,kind: 22,base: null,node: null,finalizer: null};
+var NTI4303657 = {size: 0,kind: 24,base: null,node: null,finalizer: null};
+var NTI4303655 = {size: 0,kind: 24,base: null,node: null,finalizer: null};
+var NTI4303289 = {size: 0, kind: 17, base: null, node: null, finalizer: null};
+var NTI4303287 = {size: 0,kind: 22,base: null,node: null,finalizer: null};
+var NTI4303653 = {size: 0,kind: 24,base: null,node: null,finalizer: null};
+var NTI4303651 = {size: 0,kind: 24,base: null,node: null,finalizer: null};
+var NTI4303277 = {size: 0, kind: 17, base: null, node: null, finalizer: null};
+var NTI4303275 = {size: 0,kind: 22,base: null,node: null,finalizer: null};
+var NTI4303649 = {size: 0,kind: 24,base: null,node: null,finalizer: null};
+var NTI4303673 = {size: 0,kind: 24,base: null,node: null,finalizer: null};
+var NTI4303281 = {size: 0, kind: 17, base: null, node: null, finalizer: null};
+var NTI4303279 = {size: 0,kind: 22,base: null,node: null,finalizer: null};
+var NTI4303671 = {size: 0,kind: 24,base: null,node: null,finalizer: null};
+var NTI4303765 = {size: 0,kind: 24,base: null,node: null,finalizer: null};
+var NTI4303285 = {size: 0, kind: 17, base: null, node: null, finalizer: null};
+var NTI4303283 = {size: 0,kind: 22,base: null,node: null,finalizer: null};
+var NTI3638064 = {size: 0,kind: 1,base: null,node: null,finalizer: null};
+var NTI4303231 = {size: 0, kind: 17, base: null, node: null, finalizer: null};
+var NTI4303229 = {size: 0,kind: 22,base: null,node: null,finalizer: null};
+var NTI4303245 = {size: 0, kind: 17, base: null, node: null, finalizer: null};
+var NTI4303243 = {size: 0,kind: 22,base: null,node: null,finalizer: null};
+var NTI4303241 = {size: 0, kind: 17, base: null, node: null, finalizer: null};
+var NTI4303239 = {size: 0,kind: 22,base: null,node: null,finalizer: null};
+var NTI4303233 = {size: 0, kind: 14, base: null, node: null, finalizer: null};
+var NTI4303613 = {size: 0,kind: 24,base: null,node: null,finalizer: null};
+var NTI4303611 = {size: 0,kind: 24,base: null,node: null,finalizer: null};
+var NTI4303609 = {size: 0,kind: 24,base: null,node: null,finalizer: null};
+var NTI4303237 = {size: 0, kind: 17, base: null, node: null, finalizer: null};
+var NTI4303235 = {size: 0,kind: 22,base: null,node: null,finalizer: null};
+var NTI13347207 = {size: 0, kind: 14, base: null, node: null, finalizer: null};
+var NTI13347209 = {size: 0, kind: 18, base: null, node: null, finalizer: null};
+var NTI4303293 = {size: 0, kind: 17, base: null, node: null, finalizer: null};
+var NTI3644649 = {size: 0, kind: 17, base: null, node: null, finalizer: null};
+var NTI3644641 = {size: 0, kind: 17, base: null, node: null, finalizer: null};
+var NTI3638044 = {size: 0,kind: 31,base: null,node: null,finalizer: null};
+var NTI3830043 = {size: 0, kind: 18, base: null, node: null, finalizer: null};
+var NTI3644408 = {size: 0, kind: 17, base: null, node: null, finalizer: null};
+var NTI3644728 = {size: 0,kind: 22,base: null,node: null,finalizer: null};
+var NTI3638013 = {size: 0,kind: 28,base: null,node: null,finalizer: null};
+var NTI3638015 = {size: 0,kind: 29,base: null,node: null,finalizer: null};
+var NTI3644723 = {size: 0,kind: 22,base: null,node: null,finalizer: null};
+var NTI3644617 = {size: 0, kind: 17, base: null, node: null, finalizer: null};
+var NTI3644619 = {size: 0, kind: 17, base: null, node: null, finalizer: null};
+var NTI3644633 = {size: 0, kind: 17, base: null, node: null, finalizer: null};
+var NTI3644637 = {size: 0, kind: 17, base: null, node: null, finalizer: null};
+var NNI3644637 = {kind: 2, len: 0, offset: 0, typ: null, name: null, sons: []};
+NTI3644637.node = NNI3644637;
+var NNI3644633 = {kind: 2, len: 0, offset: 0, typ: null, name: null, sons: []};
+NTI3644633.node = NNI3644633;
+var NNI3644619 = {kind: 2, len: 0, offset: 0, typ: null, name: null, sons: []};
+NTI3644619.node = NNI3644619;
+NTI3644723.base = NTI3644617;
+NTI3644728.base = NTI3644617;
+var NNI3644617 = {kind: 2, len: 5, offset: 0, typ: null, name: null, sons: [{kind: 1, offset: "parent", len: 0, typ: NTI3644723, name: "parent", sons: null}, 
+{kind: 1, offset: "name", len: 0, typ: NTI3638015, name: "name", sons: null}, 
+{kind: 1, offset: "message", len: 0, typ: NTI3638013, name: "msg", sons: null}, 
+{kind: 1, offset: "trace", len: 0, typ: NTI3638013, name: "trace", sons: null}, 
+{kind: 1, offset: "up", len: 0, typ: NTI3644728, name: "up", sons: null}]};
+NTI3644617.node = NNI3644617;
+var NNI3644408 = {kind: 2, len: 0, offset: 0, typ: null, name: null, sons: []};
+NTI3644408.node = NNI3644408;
+NTI3644617.base = NTI3644408;
+NTI3644619.base = NTI3644617;
+NTI3644633.base = NTI3644619;
+NTI3644637.base = NTI3644633;
+var NNI3830043 = {kind: 2, len: 3, offset: 0, typ: null, name: null, sons: [{kind: 1, offset: "Field0", len: 0, typ: NTI3638015, name: "Field0", sons: null}, 
+{kind: 1, offset: "Field1", len: 0, typ: NTI3638044, name: "Field1", sons: null}, 
+{kind: 1, offset: "Field2", len: 0, typ: NTI3638015, name: "Field2", sons: null}]};
+NTI3830043.node = NNI3830043;
+var NNI3644641 = {kind: 2, len: 0, offset: 0, typ: null, name: null, sons: []};
+NTI3644641.node = NNI3644641;
+NTI3644641.base = NTI3644619;
+var NNI3644649 = {kind: 2, len: 0, offset: 0, typ: null, name: null, sons: []};
+NTI3644649.node = NNI3644649;
+NTI3644649.base = NTI3644619;
+var NNI4303293 = {kind: 2, len: 368, offset: 0, typ: null, name: null, sons: [{kind: 1, offset: "alignContent", len: 0, typ: NTI3638015, name: "alignContent", sons: null}, 
+{kind: 1, offset: "alignItems", len: 0, typ: NTI3638015, name: "alignItems", sons: null}, 
+{kind: 1, offset: "alignSelf", len: 0, typ: NTI3638015, name: "alignSelf", sons: null}, 
+{kind: 1, offset: "all", len: 0, typ: NTI3638015, name: "all", sons: null}, 
+{kind: 1, offset: "animation", len: 0, typ: NTI3638015, name: "animation", sons: null}, 
+{kind: 1, offset: "animationDelay", len: 0, typ: NTI3638015, name: "animationDelay", sons: null}, 
+{kind: 1, offset: "animationDirection", len: 0, typ: NTI3638015, name: "animationDirection", sons: null}, 
+{kind: 1, offset: "animationDuration", len: 0, typ: NTI3638015, name: "animationDuration", sons: null}, 
+{kind: 1, offset: "animationFillMode", len: 0, typ: NTI3638015, name: "animationFillMode", sons: null}, 
+{kind: 1, offset: "animationIterationCount", len: 0, typ: NTI3638015, name: "animationIterationCount", sons: null}, 
+{kind: 1, offset: "animationName", len: 0, typ: NTI3638015, name: "animationName", sons: null}, 
+{kind: 1, offset: "animationPlayState", len: 0, typ: NTI3638015, name: "animationPlayState", sons: null}, 
+{kind: 1, offset: "animationTimingFunction", len: 0, typ: NTI3638015, name: "animationTimingFunction", sons: null}, 
+{kind: 1, offset: "backdropFilter", len: 0, typ: NTI3638015, name: "backdropFilter", sons: null}, 
+{kind: 1, offset: "backfaceVisibility", len: 0, typ: NTI3638015, name: "backfaceVisibility", sons: null}, 
+{kind: 1, offset: "background", len: 0, typ: NTI3638015, name: "background", sons: null}, 
+{kind: 1, offset: "backgroundAttachment", len: 0, typ: NTI3638015, name: "backgroundAttachment", sons: null}, 
+{kind: 1, offset: "backgroundBlendMode", len: 0, typ: NTI3638015, name: "backgroundBlendMode", sons: null}, 
+{kind: 1, offset: "backgroundClip", len: 0, typ: NTI3638015, name: "backgroundClip", sons: null}, 
+{kind: 1, offset: "backgroundColor", len: 0, typ: NTI3638015, name: "backgroundColor", sons: null}, 
+{kind: 1, offset: "backgroundImage", len: 0, typ: NTI3638015, name: "backgroundImage", sons: null}, 
+{kind: 1, offset: "backgroundOrigin", len: 0, typ: NTI3638015, name: "backgroundOrigin", sons: null}, 
+{kind: 1, offset: "backgroundPosition", len: 0, typ: NTI3638015, name: "backgroundPosition", sons: null}, 
+{kind: 1, offset: "backgroundRepeat", len: 0, typ: NTI3638015, name: "backgroundRepeat", sons: null}, 
+{kind: 1, offset: "backgroundSize", len: 0, typ: NTI3638015, name: "backgroundSize", sons: null}, 
+{kind: 1, offset: "blockSize", len: 0, typ: NTI3638015, name: "blockSize", sons: null}, 
+{kind: 1, offset: "border", len: 0, typ: NTI3638015, name: "border", sons: null}, 
+{kind: 1, offset: "borderBlock", len: 0, typ: NTI3638015, name: "borderBlock", sons: null}, 
+{kind: 1, offset: "borderBlockColor", len: 0, typ: NTI3638015, name: "borderBlockColor", sons: null}, 
+{kind: 1, offset: "borderBlockEnd", len: 0, typ: NTI3638015, name: "borderBlockEnd", sons: null}, 
+{kind: 1, offset: "borderBlockEndColor", len: 0, typ: NTI3638015, name: "borderBlockEndColor", sons: null}, 
+{kind: 1, offset: "borderBlockEndStyle", len: 0, typ: NTI3638015, name: "borderBlockEndStyle", sons: null}, 
+{kind: 1, offset: "borderBlockEndWidth", len: 0, typ: NTI3638015, name: "borderBlockEndWidth", sons: null}, 
+{kind: 1, offset: "borderBlockStart", len: 0, typ: NTI3638015, name: "borderBlockStart", sons: null}, 
+{kind: 1, offset: "borderBlockStartColor", len: 0, typ: NTI3638015, name: "borderBlockStartColor", sons: null}, 
+{kind: 1, offset: "borderBlockStartStyle", len: 0, typ: NTI3638015, name: "borderBlockStartStyle", sons: null}, 
+{kind: 1, offset: "borderBlockStartWidth", len: 0, typ: NTI3638015, name: "borderBlockStartWidth", sons: null}, 
+{kind: 1, offset: "borderBlockStyle", len: 0, typ: NTI3638015, name: "borderBlockStyle", sons: null}, 
+{kind: 1, offset: "borderBlockWidth", len: 0, typ: NTI3638015, name: "borderBlockWidth", sons: null}, 
+{kind: 1, offset: "borderBottom", len: 0, typ: NTI3638015, name: "borderBottom", sons: null}, 
+{kind: 1, offset: "borderBottomColor", len: 0, typ: NTI3638015, name: "borderBottomColor", sons: null}, 
+{kind: 1, offset: "borderBottomLeftRadius", len: 0, typ: NTI3638015, name: "borderBottomLeftRadius", sons: null}, 
+{kind: 1, offset: "borderBottomRightRadius", len: 0, typ: NTI3638015, name: "borderBottomRightRadius", sons: null}, 
+{kind: 1, offset: "borderBottomStyle", len: 0, typ: NTI3638015, name: "borderBottomStyle", sons: null}, 
+{kind: 1, offset: "borderBottomWidth", len: 0, typ: NTI3638015, name: "borderBottomWidth", sons: null}, 
+{kind: 1, offset: "borderCollapse", len: 0, typ: NTI3638015, name: "borderCollapse", sons: null}, 
+{kind: 1, offset: "borderColor", len: 0, typ: NTI3638015, name: "borderColor", sons: null}, 
+{kind: 1, offset: "borderEndEndRadius", len: 0, typ: NTI3638015, name: "borderEndEndRadius", sons: null}, 
+{kind: 1, offset: "borderEndStartRadius", len: 0, typ: NTI3638015, name: "borderEndStartRadius", sons: null}, 
+{kind: 1, offset: "borderImage", len: 0, typ: NTI3638015, name: "borderImage", sons: null}, 
+{kind: 1, offset: "borderImageOutset", len: 0, typ: NTI3638015, name: "borderImageOutset", sons: null}, 
+{kind: 1, offset: "borderImageRepeat", len: 0, typ: NTI3638015, name: "borderImageRepeat", sons: null}, 
+{kind: 1, offset: "borderImageSlice", len: 0, typ: NTI3638015, name: "borderImageSlice", sons: null}, 
+{kind: 1, offset: "borderImageSource", len: 0, typ: NTI3638015, name: "borderImageSource", sons: null}, 
+{kind: 1, offset: "borderImageWidth", len: 0, typ: NTI3638015, name: "borderImageWidth", sons: null}, 
+{kind: 1, offset: "borderInline", len: 0, typ: NTI3638015, name: "borderInline", sons: null}, 
+{kind: 1, offset: "borderInlineColor", len: 0, typ: NTI3638015, name: "borderInlineColor", sons: null}, 
+{kind: 1, offset: "borderInlineEnd", len: 0, typ: NTI3638015, name: "borderInlineEnd", sons: null}, 
+{kind: 1, offset: "borderInlineEndColor", len: 0, typ: NTI3638015, name: "borderInlineEndColor", sons: null}, 
+{kind: 1, offset: "borderInlineEndStyle", len: 0, typ: NTI3638015, name: "borderInlineEndStyle", sons: null}, 
+{kind: 1, offset: "borderInlineEndWidth", len: 0, typ: NTI3638015, name: "borderInlineEndWidth", sons: null}, 
+{kind: 1, offset: "borderInlineStart", len: 0, typ: NTI3638015, name: "borderInlineStart", sons: null}, 
+{kind: 1, offset: "borderInlineStartColor", len: 0, typ: NTI3638015, name: "borderInlineStartColor", sons: null}, 
+{kind: 1, offset: "borderInlineStartStyle", len: 0, typ: NTI3638015, name: "borderInlineStartStyle", sons: null}, 
+{kind: 1, offset: "borderInlineStartWidth", len: 0, typ: NTI3638015, name: "borderInlineStartWidth", sons: null}, 
+{kind: 1, offset: "borderInlineStyle", len: 0, typ: NTI3638015, name: "borderInlineStyle", sons: null}, 
+{kind: 1, offset: "borderInlineWidth", len: 0, typ: NTI3638015, name: "borderInlineWidth", sons: null}, 
+{kind: 1, offset: "borderLeft", len: 0, typ: NTI3638015, name: "borderLeft", sons: null}, 
+{kind: 1, offset: "borderLeftColor", len: 0, typ: NTI3638015, name: "borderLeftColor", sons: null}, 
+{kind: 1, offset: "borderLeftStyle", len: 0, typ: NTI3638015, name: "borderLeftStyle", sons: null}, 
+{kind: 1, offset: "borderLeftWidth", len: 0, typ: NTI3638015, name: "borderLeftWidth", sons: null}, 
+{kind: 1, offset: "borderRadius", len: 0, typ: NTI3638015, name: "borderRadius", sons: null}, 
+{kind: 1, offset: "borderRight", len: 0, typ: NTI3638015, name: "borderRight", sons: null}, 
+{kind: 1, offset: "borderRightColor", len: 0, typ: NTI3638015, name: "borderRightColor", sons: null}, 
+{kind: 1, offset: "borderRightStyle", len: 0, typ: NTI3638015, name: "borderRightStyle", sons: null}, 
+{kind: 1, offset: "borderRightWidth", len: 0, typ: NTI3638015, name: "borderRightWidth", sons: null}, 
+{kind: 1, offset: "borderSpacing", len: 0, typ: NTI3638015, name: "borderSpacing", sons: null}, 
+{kind: 1, offset: "borderStartEndRadius", len: 0, typ: NTI3638015, name: "borderStartEndRadius", sons: null}, 
+{kind: 1, offset: "borderStartStartRadius", len: 0, typ: NTI3638015, name: "borderStartStartRadius", sons: null}, 
+{kind: 1, offset: "borderStyle", len: 0, typ: NTI3638015, name: "borderStyle", sons: null}, 
+{kind: 1, offset: "borderTop", len: 0, typ: NTI3638015, name: "borderTop", sons: null}, 
+{kind: 1, offset: "borderTopColor", len: 0, typ: NTI3638015, name: "borderTopColor", sons: null}, 
+{kind: 1, offset: "borderTopLeftRadius", len: 0, typ: NTI3638015, name: "borderTopLeftRadius", sons: null}, 
+{kind: 1, offset: "borderTopRightRadius", len: 0, typ: NTI3638015, name: "borderTopRightRadius", sons: null}, 
+{kind: 1, offset: "borderTopStyle", len: 0, typ: NTI3638015, name: "borderTopStyle", sons: null}, 
+{kind: 1, offset: "borderTopWidth", len: 0, typ: NTI3638015, name: "borderTopWidth", sons: null}, 
+{kind: 1, offset: "borderWidth", len: 0, typ: NTI3638015, name: "borderWidth", sons: null}, 
+{kind: 1, offset: "bottom", len: 0, typ: NTI3638015, name: "bottom", sons: null}, 
+{kind: 1, offset: "boxDecorationBreak", len: 0, typ: NTI3638015, name: "boxDecorationBreak", sons: null}, 
+{kind: 1, offset: "boxShadow", len: 0, typ: NTI3638015, name: "boxShadow", sons: null}, 
+{kind: 1, offset: "boxSizing", len: 0, typ: NTI3638015, name: "boxSizing", sons: null}, 
+{kind: 1, offset: "breakAfter", len: 0, typ: NTI3638015, name: "breakAfter", sons: null}, 
+{kind: 1, offset: "breakBefore", len: 0, typ: NTI3638015, name: "breakBefore", sons: null}, 
+{kind: 1, offset: "breakInside", len: 0, typ: NTI3638015, name: "breakInside", sons: null}, 
+{kind: 1, offset: "captionSide", len: 0, typ: NTI3638015, name: "captionSide", sons: null}, 
+{kind: 1, offset: "caretColor", len: 0, typ: NTI3638015, name: "caretColor", sons: null}, 
+{kind: 1, offset: "clear", len: 0, typ: NTI3638015, name: "clear", sons: null}, 
+{kind: 1, offset: "clip", len: 0, typ: NTI3638015, name: "clip", sons: null}, 
+{kind: 1, offset: "clipPath", len: 0, typ: NTI3638015, name: "clipPath", sons: null}, 
+{kind: 1, offset: "color", len: 0, typ: NTI3638015, name: "color", sons: null}, 
+{kind: 1, offset: "colorAdjust", len: 0, typ: NTI3638015, name: "colorAdjust", sons: null}, 
+{kind: 1, offset: "columnCount", len: 0, typ: NTI3638015, name: "columnCount", sons: null}, 
+{kind: 1, offset: "columnFill", len: 0, typ: NTI3638015, name: "columnFill", sons: null}, 
+{kind: 1, offset: "columnGap", len: 0, typ: NTI3638015, name: "columnGap", sons: null}, 
+{kind: 1, offset: "columnRule", len: 0, typ: NTI3638015, name: "columnRule", sons: null}, 
+{kind: 1, offset: "columnRuleColor", len: 0, typ: NTI3638015, name: "columnRuleColor", sons: null}, 
+{kind: 1, offset: "columnRuleStyle", len: 0, typ: NTI3638015, name: "columnRuleStyle", sons: null}, 
+{kind: 1, offset: "columnRuleWidth", len: 0, typ: NTI3638015, name: "columnRuleWidth", sons: null}, 
+{kind: 1, offset: "columnSpan", len: 0, typ: NTI3638015, name: "columnSpan", sons: null}, 
+{kind: 1, offset: "columnWidth", len: 0, typ: NTI3638015, name: "columnWidth", sons: null}, 
+{kind: 1, offset: "columns", len: 0, typ: NTI3638015, name: "columns", sons: null}, 
+{kind: 1, offset: "contain", len: 0, typ: NTI3638015, name: "contain", sons: null}, 
+{kind: 1, offset: "content", len: 0, typ: NTI3638015, name: "content", sons: null}, 
+{kind: 1, offset: "counterIncrement", len: 0, typ: NTI3638015, name: "counterIncrement", sons: null}, 
+{kind: 1, offset: "counterReset", len: 0, typ: NTI3638015, name: "counterReset", sons: null}, 
+{kind: 1, offset: "counterSet", len: 0, typ: NTI3638015, name: "counterSet", sons: null}, 
+{kind: 1, offset: "cursor", len: 0, typ: NTI3638015, name: "cursor", sons: null}, 
+{kind: 1, offset: "direction", len: 0, typ: NTI3638015, name: "direction", sons: null}, 
+{kind: 1, offset: "display", len: 0, typ: NTI3638015, name: "display", sons: null}, 
+{kind: 1, offset: "emptyCells", len: 0, typ: NTI3638015, name: "emptyCells", sons: null}, 
+{kind: 1, offset: "filter", len: 0, typ: NTI3638015, name: "filter", sons: null}, 
+{kind: 1, offset: "flex", len: 0, typ: NTI3638015, name: "flex", sons: null}, 
+{kind: 1, offset: "flexBasis", len: 0, typ: NTI3638015, name: "flexBasis", sons: null}, 
+{kind: 1, offset: "flexDirection", len: 0, typ: NTI3638015, name: "flexDirection", sons: null}, 
+{kind: 1, offset: "flexFlow", len: 0, typ: NTI3638015, name: "flexFlow", sons: null}, 
+{kind: 1, offset: "flexGrow", len: 0, typ: NTI3638015, name: "flexGrow", sons: null}, 
+{kind: 1, offset: "flexShrink", len: 0, typ: NTI3638015, name: "flexShrink", sons: null}, 
+{kind: 1, offset: "flexWrap", len: 0, typ: NTI3638015, name: "flexWrap", sons: null}, 
+{kind: 1, offset: "cssFloat", len: 0, typ: NTI3638015, name: "cssFloat", sons: null}, 
+{kind: 1, offset: "font", len: 0, typ: NTI3638015, name: "font", sons: null}, 
+{kind: 1, offset: "fontFamily", len: 0, typ: NTI3638015, name: "fontFamily", sons: null}, 
+{kind: 1, offset: "fontFeatureSettings", len: 0, typ: NTI3638015, name: "fontFeatureSettings", sons: null}, 
+{kind: 1, offset: "fontKerning", len: 0, typ: NTI3638015, name: "fontKerning", sons: null}, 
+{kind: 1, offset: "fontLanguageOverride", len: 0, typ: NTI3638015, name: "fontLanguageOverride", sons: null}, 
+{kind: 1, offset: "fontOpticalSizing", len: 0, typ: NTI3638015, name: "fontOpticalSizing", sons: null}, 
+{kind: 1, offset: "fontSize", len: 0, typ: NTI3638015, name: "fontSize", sons: null}, 
+{kind: 1, offset: "fontSizeAdjust", len: 0, typ: NTI3638015, name: "fontSizeAdjust", sons: null}, 
+{kind: 1, offset: "fontStretch", len: 0, typ: NTI3638015, name: "fontStretch", sons: null}, 
+{kind: 1, offset: "fontStyle", len: 0, typ: NTI3638015, name: "fontStyle", sons: null}, 
+{kind: 1, offset: "fontSynthesis", len: 0, typ: NTI3638015, name: "fontSynthesis", sons: null}, 
+{kind: 1, offset: "fontVariant", len: 0, typ: NTI3638015, name: "fontVariant", sons: null}, 
+{kind: 1, offset: "fontVariantAlternates", len: 0, typ: NTI3638015, name: "fontVariantAlternates", sons: null}, 
+{kind: 1, offset: "fontVariantCaps", len: 0, typ: NTI3638015, name: "fontVariantCaps", sons: null}, 
+{kind: 1, offset: "fontVariantEastAsian", len: 0, typ: NTI3638015, name: "fontVariantEastAsian", sons: null}, 
+{kind: 1, offset: "fontVariantLigatures", len: 0, typ: NTI3638015, name: "fontVariantLigatures", sons: null}, 
+{kind: 1, offset: "fontVariantNumeric", len: 0, typ: NTI3638015, name: "fontVariantNumeric", sons: null}, 
+{kind: 1, offset: "fontVariantPosition", len: 0, typ: NTI3638015, name: "fontVariantPosition", sons: null}, 
+{kind: 1, offset: "fontVariationSettings", len: 0, typ: NTI3638015, name: "fontVariationSettings", sons: null}, 
+{kind: 1, offset: "fontWeight", len: 0, typ: NTI3638015, name: "fontWeight", sons: null}, 
+{kind: 1, offset: "gap", len: 0, typ: NTI3638015, name: "gap", sons: null}, 
+{kind: 1, offset: "grid", len: 0, typ: NTI3638015, name: "grid", sons: null}, 
+{kind: 1, offset: "gridArea", len: 0, typ: NTI3638015, name: "gridArea", sons: null}, 
+{kind: 1, offset: "gridAutoColumns", len: 0, typ: NTI3638015, name: "gridAutoColumns", sons: null}, 
+{kind: 1, offset: "gridAutoFlow", len: 0, typ: NTI3638015, name: "gridAutoFlow", sons: null}, 
+{kind: 1, offset: "gridAutoRows", len: 0, typ: NTI3638015, name: "gridAutoRows", sons: null}, 
+{kind: 1, offset: "gridColumn", len: 0, typ: NTI3638015, name: "gridColumn", sons: null}, 
+{kind: 1, offset: "gridColumnEnd", len: 0, typ: NTI3638015, name: "gridColumnEnd", sons: null}, 
+{kind: 1, offset: "gridColumnStart", len: 0, typ: NTI3638015, name: "gridColumnStart", sons: null}, 
+{kind: 1, offset: "gridRow", len: 0, typ: NTI3638015, name: "gridRow", sons: null}, 
+{kind: 1, offset: "gridRowEnd", len: 0, typ: NTI3638015, name: "gridRowEnd", sons: null}, 
+{kind: 1, offset: "gridRowStart", len: 0, typ: NTI3638015, name: "gridRowStart", sons: null}, 
+{kind: 1, offset: "gridTemplate", len: 0, typ: NTI3638015, name: "gridTemplate", sons: null}, 
+{kind: 1, offset: "gridTemplateAreas", len: 0, typ: NTI3638015, name: "gridTemplateAreas", sons: null}, 
+{kind: 1, offset: "gridTemplateColumns", len: 0, typ: NTI3638015, name: "gridTemplateColumns", sons: null}, 
+{kind: 1, offset: "gridTemplateRows", len: 0, typ: NTI3638015, name: "gridTemplateRows", sons: null}, 
+{kind: 1, offset: "hangingPunctuation", len: 0, typ: NTI3638015, name: "hangingPunctuation", sons: null}, 
+{kind: 1, offset: "height", len: 0, typ: NTI3638015, name: "height", sons: null}, 
+{kind: 1, offset: "hyphens", len: 0, typ: NTI3638015, name: "hyphens", sons: null}, 
+{kind: 1, offset: "imageOrientation", len: 0, typ: NTI3638015, name: "imageOrientation", sons: null}, 
+{kind: 1, offset: "imageRendering", len: 0, typ: NTI3638015, name: "imageRendering", sons: null}, 
+{kind: 1, offset: "inlineSize", len: 0, typ: NTI3638015, name: "inlineSize", sons: null}, 
+{kind: 1, offset: "inset", len: 0, typ: NTI3638015, name: "inset", sons: null}, 
+{kind: 1, offset: "insetBlock", len: 0, typ: NTI3638015, name: "insetBlock", sons: null}, 
+{kind: 1, offset: "insetBlockEnd", len: 0, typ: NTI3638015, name: "insetBlockEnd", sons: null}, 
+{kind: 1, offset: "insetBlockStart", len: 0, typ: NTI3638015, name: "insetBlockStart", sons: null}, 
+{kind: 1, offset: "insetInline", len: 0, typ: NTI3638015, name: "insetInline", sons: null}, 
+{kind: 1, offset: "insetInlineEnd", len: 0, typ: NTI3638015, name: "insetInlineEnd", sons: null}, 
+{kind: 1, offset: "insetInlineStart", len: 0, typ: NTI3638015, name: "insetInlineStart", sons: null}, 
+{kind: 1, offset: "isolation", len: 0, typ: NTI3638015, name: "isolation", sons: null}, 
+{kind: 1, offset: "justifyContent", len: 0, typ: NTI3638015, name: "justifyContent", sons: null}, 
+{kind: 1, offset: "justifyItems", len: 0, typ: NTI3638015, name: "justifyItems", sons: null}, 
+{kind: 1, offset: "justifySelf", len: 0, typ: NTI3638015, name: "justifySelf", sons: null}, 
+{kind: 1, offset: "left", len: 0, typ: NTI3638015, name: "left", sons: null}, 
+{kind: 1, offset: "letterSpacing", len: 0, typ: NTI3638015, name: "letterSpacing", sons: null}, 
+{kind: 1, offset: "lineBreak", len: 0, typ: NTI3638015, name: "lineBreak", sons: null}, 
+{kind: 1, offset: "lineHeight", len: 0, typ: NTI3638015, name: "lineHeight", sons: null}, 
+{kind: 1, offset: "listStyle", len: 0, typ: NTI3638015, name: "listStyle", sons: null}, 
+{kind: 1, offset: "listStyleImage", len: 0, typ: NTI3638015, name: "listStyleImage", sons: null}, 
+{kind: 1, offset: "listStylePosition", len: 0, typ: NTI3638015, name: "listStylePosition", sons: null}, 
+{kind: 1, offset: "listStyleType", len: 0, typ: NTI3638015, name: "listStyleType", sons: null}, 
+{kind: 1, offset: "margin", len: 0, typ: NTI3638015, name: "margin", sons: null}, 
+{kind: 1, offset: "marginBlock", len: 0, typ: NTI3638015, name: "marginBlock", sons: null}, 
+{kind: 1, offset: "marginBlockEnd", len: 0, typ: NTI3638015, name: "marginBlockEnd", sons: null}, 
+{kind: 1, offset: "marginBlockStart", len: 0, typ: NTI3638015, name: "marginBlockStart", sons: null}, 
+{kind: 1, offset: "marginBottom", len: 0, typ: NTI3638015, name: "marginBottom", sons: null}, 
+{kind: 1, offset: "marginInline", len: 0, typ: NTI3638015, name: "marginInline", sons: null}, 
+{kind: 1, offset: "marginInlineEnd", len: 0, typ: NTI3638015, name: "marginInlineEnd", sons: null}, 
+{kind: 1, offset: "marginInlineStart", len: 0, typ: NTI3638015, name: "marginInlineStart", sons: null}, 
+{kind: 1, offset: "marginLeft", len: 0, typ: NTI3638015, name: "marginLeft", sons: null}, 
+{kind: 1, offset: "marginRight", len: 0, typ: NTI3638015, name: "marginRight", sons: null}, 
+{kind: 1, offset: "marginTop", len: 0, typ: NTI3638015, name: "marginTop", sons: null}, 
+{kind: 1, offset: "mask", len: 0, typ: NTI3638015, name: "mask", sons: null}, 
+{kind: 1, offset: "maskBorder", len: 0, typ: NTI3638015, name: "maskBorder", sons: null}, 
+{kind: 1, offset: "maskBorderMode", len: 0, typ: NTI3638015, name: "maskBorderMode", sons: null}, 
+{kind: 1, offset: "maskBorderOutset", len: 0, typ: NTI3638015, name: "maskBorderOutset", sons: null}, 
+{kind: 1, offset: "maskBorderRepeat", len: 0, typ: NTI3638015, name: "maskBorderRepeat", sons: null}, 
+{kind: 1, offset: "maskBorderSlice", len: 0, typ: NTI3638015, name: "maskBorderSlice", sons: null}, 
+{kind: 1, offset: "maskBorderSource", len: 0, typ: NTI3638015, name: "maskBorderSource", sons: null}, 
+{kind: 1, offset: "maskBorderWidth", len: 0, typ: NTI3638015, name: "maskBorderWidth", sons: null}, 
+{kind: 1, offset: "maskClip", len: 0, typ: NTI3638015, name: "maskClip", sons: null}, 
+{kind: 1, offset: "maskComposite", len: 0, typ: NTI3638015, name: "maskComposite", sons: null}, 
+{kind: 1, offset: "maskImage", len: 0, typ: NTI3638015, name: "maskImage", sons: null}, 
+{kind: 1, offset: "maskMode", len: 0, typ: NTI3638015, name: "maskMode", sons: null}, 
+{kind: 1, offset: "maskOrigin", len: 0, typ: NTI3638015, name: "maskOrigin", sons: null}, 
+{kind: 1, offset: "maskPosition", len: 0, typ: NTI3638015, name: "maskPosition", sons: null}, 
+{kind: 1, offset: "maskRepeat", len: 0, typ: NTI3638015, name: "maskRepeat", sons: null}, 
+{kind: 1, offset: "maskSize", len: 0, typ: NTI3638015, name: "maskSize", sons: null}, 
+{kind: 1, offset: "maskType", len: 0, typ: NTI3638015, name: "maskType", sons: null}, 
+{kind: 1, offset: "maxBlockSize", len: 0, typ: NTI3638015, name: "maxBlockSize", sons: null}, 
+{kind: 1, offset: "maxHeight", len: 0, typ: NTI3638015, name: "maxHeight", sons: null}, 
+{kind: 1, offset: "maxInlineSize", len: 0, typ: NTI3638015, name: "maxInlineSize", sons: null}, 
+{kind: 1, offset: "maxWidth", len: 0, typ: NTI3638015, name: "maxWidth", sons: null}, 
+{kind: 1, offset: "minBlockSize", len: 0, typ: NTI3638015, name: "minBlockSize", sons: null}, 
+{kind: 1, offset: "minHeight", len: 0, typ: NTI3638015, name: "minHeight", sons: null}, 
+{kind: 1, offset: "minInlineSize", len: 0, typ: NTI3638015, name: "minInlineSize", sons: null}, 
+{kind: 1, offset: "minWidth", len: 0, typ: NTI3638015, name: "minWidth", sons: null}, 
+{kind: 1, offset: "mixBlendMode", len: 0, typ: NTI3638015, name: "mixBlendMode", sons: null}, 
+{kind: 1, offset: "objectFit", len: 0, typ: NTI3638015, name: "objectFit", sons: null}, 
+{kind: 1, offset: "objectPosition", len: 0, typ: NTI3638015, name: "objectPosition", sons: null}, 
+{kind: 1, offset: "offset", len: 0, typ: NTI3638015, name: "offset", sons: null}, 
+{kind: 1, offset: "offsetAnchor", len: 0, typ: NTI3638015, name: "offsetAnchor", sons: null}, 
+{kind: 1, offset: "offsetDistance", len: 0, typ: NTI3638015, name: "offsetDistance", sons: null}, 
+{kind: 1, offset: "offsetPath", len: 0, typ: NTI3638015, name: "offsetPath", sons: null}, 
+{kind: 1, offset: "offsetRotate", len: 0, typ: NTI3638015, name: "offsetRotate", sons: null}, 
+{kind: 1, offset: "opacity", len: 0, typ: NTI3638015, name: "opacity", sons: null}, 
+{kind: 1, offset: "order", len: 0, typ: NTI3638015, name: "order", sons: null}, 
+{kind: 1, offset: "orphans", len: 0, typ: NTI3638015, name: "orphans", sons: null}, 
+{kind: 1, offset: "outline", len: 0, typ: NTI3638015, name: "outline", sons: null}, 
+{kind: 1, offset: "outlineColor", len: 0, typ: NTI3638015, name: "outlineColor", sons: null}, 
+{kind: 1, offset: "outlineOffset", len: 0, typ: NTI3638015, name: "outlineOffset", sons: null}, 
+{kind: 1, offset: "outlineStyle", len: 0, typ: NTI3638015, name: "outlineStyle", sons: null}, 
+{kind: 1, offset: "outlineWidth", len: 0, typ: NTI3638015, name: "outlineWidth", sons: null}, 
+{kind: 1, offset: "overflow", len: 0, typ: NTI3638015, name: "overflow", sons: null}, 
+{kind: 1, offset: "overflowAnchor", len: 0, typ: NTI3638015, name: "overflowAnchor", sons: null}, 
+{kind: 1, offset: "overflowBlock", len: 0, typ: NTI3638015, name: "overflowBlock", sons: null}, 
+{kind: 1, offset: "overflowInline", len: 0, typ: NTI3638015, name: "overflowInline", sons: null}, 
+{kind: 1, offset: "overflowWrap", len: 0, typ: NTI3638015, name: "overflowWrap", sons: null}, 
+{kind: 1, offset: "overflowX", len: 0, typ: NTI3638015, name: "overflowX", sons: null}, 
+{kind: 1, offset: "overflowY", len: 0, typ: NTI3638015, name: "overflowY", sons: null}, 
+{kind: 1, offset: "overscrollBehavior", len: 0, typ: NTI3638015, name: "overscrollBehavior", sons: null}, 
+{kind: 1, offset: "overscrollBehaviorBlock", len: 0, typ: NTI3638015, name: "overscrollBehaviorBlock", sons: null}, 
+{kind: 1, offset: "overscrollBehaviorInline", len: 0, typ: NTI3638015, name: "overscrollBehaviorInline", sons: null}, 
+{kind: 1, offset: "overscrollBehaviorX", len: 0, typ: NTI3638015, name: "overscrollBehaviorX", sons: null}, 
+{kind: 1, offset: "overscrollBehaviorY", len: 0, typ: NTI3638015, name: "overscrollBehaviorY", sons: null}, 
+{kind: 1, offset: "padding", len: 0, typ: NTI3638015, name: "padding", sons: null}, 
+{kind: 1, offset: "paddingBlock", len: 0, typ: NTI3638015, name: "paddingBlock", sons: null}, 
+{kind: 1, offset: "paddingBlockEnd", len: 0, typ: NTI3638015, name: "paddingBlockEnd", sons: null}, 
+{kind: 1, offset: "paddingBlockStart", len: 0, typ: NTI3638015, name: "paddingBlockStart", sons: null}, 
+{kind: 1, offset: "paddingBottom", len: 0, typ: NTI3638015, name: "paddingBottom", sons: null}, 
+{kind: 1, offset: "paddingInline", len: 0, typ: NTI3638015, name: "paddingInline", sons: null}, 
+{kind: 1, offset: "paddingInlineEnd", len: 0, typ: NTI3638015, name: "paddingInlineEnd", sons: null}, 
+{kind: 1, offset: "paddingInlineStart", len: 0, typ: NTI3638015, name: "paddingInlineStart", sons: null}, 
+{kind: 1, offset: "paddingLeft", len: 0, typ: NTI3638015, name: "paddingLeft", sons: null}, 
+{kind: 1, offset: "paddingRight", len: 0, typ: NTI3638015, name: "paddingRight", sons: null}, 
+{kind: 1, offset: "paddingTop", len: 0, typ: NTI3638015, name: "paddingTop", sons: null}, 
+{kind: 1, offset: "pageBreakAfter", len: 0, typ: NTI3638015, name: "pageBreakAfter", sons: null}, 
+{kind: 1, offset: "pageBreakBefore", len: 0, typ: NTI3638015, name: "pageBreakBefore", sons: null}, 
+{kind: 1, offset: "pageBreakInside", len: 0, typ: NTI3638015, name: "pageBreakInside", sons: null}, 
+{kind: 1, offset: "paintOrder", len: 0, typ: NTI3638015, name: "paintOrder", sons: null}, 
+{kind: 1, offset: "perspective", len: 0, typ: NTI3638015, name: "perspective", sons: null}, 
+{kind: 1, offset: "perspectiveOrigin", len: 0, typ: NTI3638015, name: "perspectiveOrigin", sons: null}, 
+{kind: 1, offset: "placeContent", len: 0, typ: NTI3638015, name: "placeContent", sons: null}, 
+{kind: 1, offset: "placeItems", len: 0, typ: NTI3638015, name: "placeItems", sons: null}, 
+{kind: 1, offset: "placeSelf", len: 0, typ: NTI3638015, name: "placeSelf", sons: null}, 
+{kind: 1, offset: "pointerEvents", len: 0, typ: NTI3638015, name: "pointerEvents", sons: null}, 
+{kind: 1, offset: "position", len: 0, typ: NTI3638015, name: "position", sons: null}, 
+{kind: 1, offset: "quotes", len: 0, typ: NTI3638015, name: "quotes", sons: null}, 
+{kind: 1, offset: "resize", len: 0, typ: NTI3638015, name: "resize", sons: null}, 
+{kind: 1, offset: "right", len: 0, typ: NTI3638015, name: "right", sons: null}, 
+{kind: 1, offset: "rotate", len: 0, typ: NTI3638015, name: "rotate", sons: null}, 
+{kind: 1, offset: "rowGap", len: 0, typ: NTI3638015, name: "rowGap", sons: null}, 
+{kind: 1, offset: "scale", len: 0, typ: NTI3638015, name: "scale", sons: null}, 
+{kind: 1, offset: "scrollBehavior", len: 0, typ: NTI3638015, name: "scrollBehavior", sons: null}, 
+{kind: 1, offset: "scrollMargin", len: 0, typ: NTI3638015, name: "scrollMargin", sons: null}, 
+{kind: 1, offset: "scrollMarginBlock", len: 0, typ: NTI3638015, name: "scrollMarginBlock", sons: null}, 
+{kind: 1, offset: "scrollMarginBlockEnd", len: 0, typ: NTI3638015, name: "scrollMarginBlockEnd", sons: null}, 
+{kind: 1, offset: "scrollMarginBlockStart", len: 0, typ: NTI3638015, name: "scrollMarginBlockStart", sons: null}, 
+{kind: 1, offset: "scrollMarginBottom", len: 0, typ: NTI3638015, name: "scrollMarginBottom", sons: null}, 
+{kind: 1, offset: "scrollMarginInline", len: 0, typ: NTI3638015, name: "scrollMarginInline", sons: null}, 
+{kind: 1, offset: "scrollMarginInlineEnd", len: 0, typ: NTI3638015, name: "scrollMarginInlineEnd", sons: null}, 
+{kind: 1, offset: "scrollMarginInlineStart", len: 0, typ: NTI3638015, name: "scrollMarginInlineStart", sons: null}, 
+{kind: 1, offset: "scrollMarginLeft", len: 0, typ: NTI3638015, name: "scrollMarginLeft", sons: null}, 
+{kind: 1, offset: "scrollMarginRight", len: 0, typ: NTI3638015, name: "scrollMarginRight", sons: null}, 
+{kind: 1, offset: "scrollMarginTop", len: 0, typ: NTI3638015, name: "scrollMarginTop", sons: null}, 
+{kind: 1, offset: "scrollPadding", len: 0, typ: NTI3638015, name: "scrollPadding", sons: null}, 
+{kind: 1, offset: "scrollPaddingBlock", len: 0, typ: NTI3638015, name: "scrollPaddingBlock", sons: null}, 
+{kind: 1, offset: "scrollPaddingBlockEnd", len: 0, typ: NTI3638015, name: "scrollPaddingBlockEnd", sons: null}, 
+{kind: 1, offset: "scrollPaddingBlockStart", len: 0, typ: NTI3638015, name: "scrollPaddingBlockStart", sons: null}, 
+{kind: 1, offset: "scrollPaddingBottom", len: 0, typ: NTI3638015, name: "scrollPaddingBottom", sons: null}, 
+{kind: 1, offset: "scrollPaddingInline", len: 0, typ: NTI3638015, name: "scrollPaddingInline", sons: null}, 
+{kind: 1, offset: "scrollPaddingInlineEnd", len: 0, typ: NTI3638015, name: "scrollPaddingInlineEnd", sons: null}, 
+{kind: 1, offset: "scrollPaddingInlineStart", len: 0, typ: NTI3638015, name: "scrollPaddingInlineStart", sons: null}, 
+{kind: 1, offset: "scrollPaddingLeft", len: 0, typ: NTI3638015, name: "scrollPaddingLeft", sons: null}, 
+{kind: 1, offset: "scrollPaddingRight", len: 0, typ: NTI3638015, name: "scrollPaddingRight", sons: null}, 
+{kind: 1, offset: "scrollPaddingTop", len: 0, typ: NTI3638015, name: "scrollPaddingTop", sons: null}, 
+{kind: 1, offset: "scrollSnapAlign", len: 0, typ: NTI3638015, name: "scrollSnapAlign", sons: null}, 
+{kind: 1, offset: "scrollSnapStop", len: 0, typ: NTI3638015, name: "scrollSnapStop", sons: null}, 
+{kind: 1, offset: "scrollSnapType", len: 0, typ: NTI3638015, name: "scrollSnapType", sons: null}, 
+{kind: 1, offset: "scrollbar3dLightColor", len: 0, typ: NTI3638015, name: "scrollbar3dLightColor", sons: null}, 
+{kind: 1, offset: "scrollbarArrowColor", len: 0, typ: NTI3638015, name: "scrollbarArrowColor", sons: null}, 
+{kind: 1, offset: "scrollbarBaseColor", len: 0, typ: NTI3638015, name: "scrollbarBaseColor", sons: null}, 
+{kind: 1, offset: "scrollbarColor", len: 0, typ: NTI3638015, name: "scrollbarColor", sons: null}, 
+{kind: 1, offset: "scrollbarDarkshadowColor", len: 0, typ: NTI3638015, name: "scrollbarDarkshadowColor", sons: null}, 
+{kind: 1, offset: "scrollbarFaceColor", len: 0, typ: NTI3638015, name: "scrollbarFaceColor", sons: null}, 
+{kind: 1, offset: "scrollbarHighlightColor", len: 0, typ: NTI3638015, name: "scrollbarHighlightColor", sons: null}, 
+{kind: 1, offset: "scrollbarShadowColor", len: 0, typ: NTI3638015, name: "scrollbarShadowColor", sons: null}, 
+{kind: 1, offset: "scrollbarTrackColor", len: 0, typ: NTI3638015, name: "scrollbarTrackColor", sons: null}, 
+{kind: 1, offset: "scrollbarWidth", len: 0, typ: NTI3638015, name: "scrollbarWidth", sons: null}, 
+{kind: 1, offset: "shapeImageThreshold", len: 0, typ: NTI3638015, name: "shapeImageThreshold", sons: null}, 
+{kind: 1, offset: "shapeMargin", len: 0, typ: NTI3638015, name: "shapeMargin", sons: null}, 
+{kind: 1, offset: "shapeOutside", len: 0, typ: NTI3638015, name: "shapeOutside", sons: null}, 
+{kind: 1, offset: "tabSize", len: 0, typ: NTI3638015, name: "tabSize", sons: null}, 
+{kind: 1, offset: "tableLayout", len: 0, typ: NTI3638015, name: "tableLayout", sons: null}, 
+{kind: 1, offset: "textAlign", len: 0, typ: NTI3638015, name: "textAlign", sons: null}, 
+{kind: 1, offset: "textAlignLast", len: 0, typ: NTI3638015, name: "textAlignLast", sons: null}, 
+{kind: 1, offset: "textCombineUpright", len: 0, typ: NTI3638015, name: "textCombineUpright", sons: null}, 
+{kind: 1, offset: "textDecoration", len: 0, typ: NTI3638015, name: "textDecoration", sons: null}, 
+{kind: 1, offset: "textDecorationColor", len: 0, typ: NTI3638015, name: "textDecorationColor", sons: null}, 
+{kind: 1, offset: "textDecorationLine", len: 0, typ: NTI3638015, name: "textDecorationLine", sons: null}, 
+{kind: 1, offset: "textDecorationSkipInk", len: 0, typ: NTI3638015, name: "textDecorationSkipInk", sons: null}, 
+{kind: 1, offset: "textDecorationStyle", len: 0, typ: NTI3638015, name: "textDecorationStyle", sons: null}, 
+{kind: 1, offset: "textDecorationThickness", len: 0, typ: NTI3638015, name: "textDecorationThickness", sons: null}, 
+{kind: 1, offset: "textEmphasis", len: 0, typ: NTI3638015, name: "textEmphasis", sons: null}, 
+{kind: 1, offset: "textEmphasisColor", len: 0, typ: NTI3638015, name: "textEmphasisColor", sons: null}, 
+{kind: 1, offset: "textEmphasisPosition", len: 0, typ: NTI3638015, name: "textEmphasisPosition", sons: null}, 
+{kind: 1, offset: "textEmphasisStyle", len: 0, typ: NTI3638015, name: "textEmphasisStyle", sons: null}, 
+{kind: 1, offset: "textIndent", len: 0, typ: NTI3638015, name: "textIndent", sons: null}, 
+{kind: 1, offset: "textJustify", len: 0, typ: NTI3638015, name: "textJustify", sons: null}, 
+{kind: 1, offset: "textOrientation", len: 0, typ: NTI3638015, name: "textOrientation", sons: null}, 
+{kind: 1, offset: "textOverflow", len: 0, typ: NTI3638015, name: "textOverflow", sons: null}, 
+{kind: 1, offset: "textRendering", len: 0, typ: NTI3638015, name: "textRendering", sons: null}, 
+{kind: 1, offset: "textShadow", len: 0, typ: NTI3638015, name: "textShadow", sons: null}, 
+{kind: 1, offset: "textTransform", len: 0, typ: NTI3638015, name: "textTransform", sons: null}, 
+{kind: 1, offset: "textUnderlineOffset", len: 0, typ: NTI3638015, name: "textUnderlineOffset", sons: null}, 
+{kind: 1, offset: "textUnderlinePosition", len: 0, typ: NTI3638015, name: "textUnderlinePosition", sons: null}, 
+{kind: 1, offset: "top", len: 0, typ: NTI3638015, name: "top", sons: null}, 
+{kind: 1, offset: "touchAction", len: 0, typ: NTI3638015, name: "touchAction", sons: null}, 
+{kind: 1, offset: "transform", len: 0, typ: NTI3638015, name: "transform", sons: null}, 
+{kind: 1, offset: "transformBox", len: 0, typ: NTI3638015, name: "transformBox", sons: null}, 
+{kind: 1, offset: "transformOrigin", len: 0, typ: NTI3638015, name: "transformOrigin", sons: null}, 
+{kind: 1, offset: "transformStyle", len: 0, typ: NTI3638015, name: "transformStyle", sons: null}, 
+{kind: 1, offset: "transition", len: 0, typ: NTI3638015, name: "transition", sons: null}, 
+{kind: 1, offset: "transitionDelay", len: 0, typ: NTI3638015, name: "transitionDelay", sons: null}, 
+{kind: 1, offset: "transitionDuration", len: 0, typ: NTI3638015, name: "transitionDuration", sons: null}, 
+{kind: 1, offset: "transitionProperty", len: 0, typ: NTI3638015, name: "transitionProperty", sons: null}, 
+{kind: 1, offset: "transitionTimingFunction", len: 0, typ: NTI3638015, name: "transitionTimingFunction", sons: null}, 
+{kind: 1, offset: "translate", len: 0, typ: NTI3638015, name: "translate", sons: null}, 
+{kind: 1, offset: "unicodeBidi", len: 0, typ: NTI3638015, name: "unicodeBidi", sons: null}, 
+{kind: 1, offset: "verticalAlign", len: 0, typ: NTI3638015, name: "verticalAlign", sons: null}, 
+{kind: 1, offset: "visibility", len: 0, typ: NTI3638015, name: "visibility", sons: null}, 
+{kind: 1, offset: "whiteSpace", len: 0, typ: NTI3638015, name: "whiteSpace", sons: null}, 
+{kind: 1, offset: "widows", len: 0, typ: NTI3638015, name: "widows", sons: null}, 
+{kind: 1, offset: "width", len: 0, typ: NTI3638015, name: "width", sons: null}, 
+{kind: 1, offset: "willChange", len: 0, typ: NTI3638015, name: "willChange", sons: null}, 
+{kind: 1, offset: "wordBreak", len: 0, typ: NTI3638015, name: "wordBreak", sons: null}, 
+{kind: 1, offset: "wordSpacing", len: 0, typ: NTI3638015, name: "wordSpacing", sons: null}, 
+{kind: 1, offset: "writingMode", len: 0, typ: NTI3638015, name: "writingMode", sons: null}, 
+{kind: 1, offset: "zIndex", len: 0, typ: NTI3638015, name: "zIndex", sons: null}]};
+NTI4303293.node = NNI4303293;
+NTI4303293.base = NTI3644408;
+var NNI13347207 = {kind: 2, offset: 0, typ: null, name: null, len: 6, sons: {"0": {kind: 1, offset: 0, typ: NTI13347207, name: "pkReplace", len: 0, sons: null}, 
+"1": {kind: 1, offset: 1, typ: NTI13347207, name: "pkRemove", len: 0, sons: null}, 
+"2": {kind: 1, offset: 2, typ: NTI13347207, name: "pkAppend", len: 0, sons: null}, 
+"3": {kind: 1, offset: 3, typ: NTI13347207, name: "pkInsertBefore", len: 0, sons: null}, 
+"4": {kind: 1, offset: 4, typ: NTI13347207, name: "pkDetach", len: 0, sons: null}, 
+"5": {kind: 1, offset: 5, typ: NTI13347207, name: "pkSame", len: 0, sons: null}}};
+NTI13347207.node = NNI13347207;
+NTI4303609.base = NTI4303235;
+NTI4303611.base = NTI4303235;
+NTI4303613.base = NTI4303235;
+var NNI4303233 = {kind: 2, offset: 0, typ: null, name: null, len: 12, sons: {"1": {kind: 1, offset: 1, typ: NTI4303233, name: "ElementNode", len: 0, sons: null}, 
+"2": {kind: 1, offset: 2, typ: NTI4303233, name: "AttributeNode", len: 0, sons: null}, 
+"3": {kind: 1, offset: 3, typ: NTI4303233, name: "TextNode", len: 0, sons: null}, 
+"4": {kind: 1, offset: 4, typ: NTI4303233, name: "CDATANode", len: 0, sons: null}, 
+"5": {kind: 1, offset: 5, typ: NTI4303233, name: "EntityRefNode", len: 0, sons: null}, 
+"6": {kind: 1, offset: 6, typ: NTI4303233, name: "EntityNode", len: 0, sons: null}, 
+"7": {kind: 1, offset: 7, typ: NTI4303233, name: "ProcessingInstructionNode", len: 0, sons: null}, 
+"8": {kind: 1, offset: 8, typ: NTI4303233, name: "CommentNode", len: 0, sons: null}, 
+"9": {kind: 1, offset: 9, typ: NTI4303233, name: "DocumentNode", len: 0, sons: null}, 
+"10": {kind: 1, offset: 10, typ: NTI4303233, name: "DocumentTypeNode", len: 0, sons: null}, 
+"11": {kind: 1, offset: 11, typ: NTI4303233, name: "DocumentFragmentNode", len: 0, sons: null}, 
+"12": {kind: 1, offset: 12, typ: NTI4303233, name: "NotationNode", len: 0, sons: null}}};
+NTI4303233.node = NNI4303233;
+var NNI4303231 = {kind: 2, len: 0, offset: 0, typ: null, name: null, sons: []};
+NTI4303231.node = NNI4303231;
+NTI4303231.base = NTI3644408;
+NTI4303229.base = NTI4303231;
+NTI4303765.base = NTI4303243;
+var NNI4303285 = {kind: 2, len: 10, offset: 0, typ: null, name: null, sons: [{kind: 1, offset: "acceptCharset", len: 0, typ: NTI3638015, name: "acceptCharset", sons: null}, 
+{kind: 1, offset: "action", len: 0, typ: NTI3638015, name: "action", sons: null}, 
+{kind: 1, offset: "autocomplete", len: 0, typ: NTI3638015, name: "autocomplete", sons: null}, 
+{kind: 1, offset: "elements", len: 0, typ: NTI4303765, name: "elements", sons: null}, 
+{kind: 1, offset: "encoding", len: 0, typ: NTI3638015, name: "encoding", sons: null}, 
+{kind: 1, offset: "enctype", len: 0, typ: NTI3638015, name: "enctype", sons: null}, 
+{kind: 1, offset: "length", len: 0, typ: NTI3638044, name: "length", sons: null}, 
+{kind: 1, offset: "method", len: 0, typ: NTI3638015, name: "method", sons: null}, 
+{kind: 1, offset: "noValidate", len: 0, typ: NTI3638064, name: "noValidate", sons: null}, 
+{kind: 1, offset: "target", len: 0, typ: NTI3638015, name: "target", sons: null}]};
+NTI4303285.node = NNI4303285;
+NTI4303285.base = NTI4303245;
+NTI4303283.base = NTI4303285;
+var NNI4303281 = {kind: 2, len: 5, offset: 0, typ: null, name: null, sons: [{kind: 1, offset: "defaultSelected", len: 0, typ: NTI3638064, name: "defaultSelected", sons: null}, 
+{kind: 1, offset: "selected", len: 0, typ: NTI3638064, name: "selected", sons: null}, 
+{kind: 1, offset: "selectedIndex", len: 0, typ: NTI3638044, name: "selectedIndex", sons: null}, 
+{kind: 1, offset: "text", len: 0, typ: NTI3638015, name: "text", sons: null}, 
+{kind: 1, offset: "value", len: 0, typ: NTI3638015, name: "value", sons: null}]};
+NTI4303281.node = NNI4303281;
+NTI4303281.base = NTI4303245;
+NTI4303279.base = NTI4303281;
+NTI4303671.base = NTI4303279;
+NTI4303673.base = NTI4303279;
+var NNI4303245 = {kind: 2, len: 20, offset: 0, typ: null, name: null, sons: [{kind: 1, offset: "className", len: 0, typ: NTI3638015, name: "className", sons: null}, 
+{kind: 1, offset: "classList", len: 0, typ: NTI4303229, name: "classList", sons: null}, 
+{kind: 1, offset: "checked", len: 0, typ: NTI3638064, name: "checked", sons: null}, 
+{kind: 1, offset: "defaultChecked", len: 0, typ: NTI3638064, name: "defaultChecked", sons: null}, 
+{kind: 1, offset: "defaultValue", len: 0, typ: NTI3638015, name: "defaultValue", sons: null}, 
+{kind: 1, offset: "disabled", len: 0, typ: NTI3638064, name: "disabled", sons: null}, 
+{kind: 1, offset: "form", len: 0, typ: NTI4303283, name: "form", sons: null}, 
+{kind: 1, offset: "name", len: 0, typ: NTI3638015, name: "name", sons: null}, 
+{kind: 1, offset: "readOnly", len: 0, typ: NTI3638064, name: "readOnly", sons: null}, 
+{kind: 1, offset: "options", len: 0, typ: NTI4303671, name: "options", sons: null}, 
+{kind: 1, offset: "selectedOptions", len: 0, typ: NTI4303673, name: "selectedOptions", sons: null}, 
+{kind: 1, offset: "clientWidth", len: 0, typ: NTI3638044, name: "clientWidth", sons: null}, 
+{kind: 1, offset: "clientHeight", len: 0, typ: NTI3638044, name: "clientHeight", sons: null}, 
+{kind: 1, offset: "contentEditable", len: 0, typ: NTI3638015, name: "contentEditable", sons: null}, 
+{kind: 1, offset: "isContentEditable", len: 0, typ: NTI3638064, name: "isContentEditable", sons: null}, 
+{kind: 1, offset: "dir", len: 0, typ: NTI3638015, name: "dir", sons: null}, 
+{kind: 1, offset: "offsetHeight", len: 0, typ: NTI3638044, name: "offsetHeight", sons: null}, 
+{kind: 1, offset: "offsetWidth", len: 0, typ: NTI3638044, name: "offsetWidth", sons: null}, 
+{kind: 1, offset: "offsetLeft", len: 0, typ: NTI3638044, name: "offsetLeft", sons: null}, 
+{kind: 1, offset: "offsetTop", len: 0, typ: NTI3638044, name: "offsetTop", sons: null}]};
+NTI4303245.node = NNI4303245;
+NTI4303245.base = NTI4303237;
+NTI4303243.base = NTI4303245;
+var NNI4303277 = {kind: 2, len: 3, offset: 0, typ: null, name: null, sons: [{kind: 1, offset: "text", len: 0, typ: NTI3638015, name: "text", sons: null}, 
+{kind: 1, offset: "x", len: 0, typ: NTI3638044, name: "x", sons: null}, 
+{kind: 1, offset: "y", len: 0, typ: NTI3638044, name: "y", sons: null}]};
+NTI4303277.node = NNI4303277;
+NTI4303277.base = NTI4303245;
+NTI4303275.base = NTI4303277;
+NTI4303649.base = NTI4303275;
+NTI4303651.base = NTI4303283;
+var NNI4303289 = {kind: 2, len: 8, offset: 0, typ: null, name: null, sons: [{kind: 1, offset: "border", len: 0, typ: NTI3638044, name: "border", sons: null}, 
+{kind: 1, offset: "complete", len: 0, typ: NTI3638064, name: "complete", sons: null}, 
+{kind: 1, offset: "height", len: 0, typ: NTI3638044, name: "height", sons: null}, 
+{kind: 1, offset: "hspace", len: 0, typ: NTI3638044, name: "hspace", sons: null}, 
+{kind: 1, offset: "lowsrc", len: 0, typ: NTI3638015, name: "lowsrc", sons: null}, 
+{kind: 1, offset: "src", len: 0, typ: NTI3638015, name: "src", sons: null}, 
+{kind: 1, offset: "vspace", len: 0, typ: NTI3638044, name: "vspace", sons: null}, 
+{kind: 1, offset: "width", len: 0, typ: NTI3638044, name: "width", sons: null}]};
+NTI4303289.node = NNI4303289;
+NTI4303289.base = NTI4303245;
+NTI4303287.base = NTI4303289;
+NTI4303653.base = NTI4303287;
+NTI4303655.base = NTI4303243;
+var NNI4303273 = {kind: 2, len: 6, offset: 0, typ: null, name: null, sons: [{kind: 1, offset: "height", len: 0, typ: NTI3638044, name: "height", sons: null}, 
+{kind: 1, offset: "hspace", len: 0, typ: NTI3638044, name: "hspace", sons: null}, 
+{kind: 1, offset: "src", len: 0, typ: NTI3638015, name: "src", sons: null}, 
+{kind: 1, offset: "width", len: 0, typ: NTI3638044, name: "width", sons: null}, 
+{kind: 1, offset: "type", len: 0, typ: NTI3638015, name: "type", sons: null}, 
+{kind: 1, offset: "vspace", len: 0, typ: NTI3638044, name: "vspace", sons: null}]};
+NTI4303273.node = NNI4303273;
+NTI4303273.base = NTI4303245;
+NTI4303271.base = NTI4303273;
+NTI4303657.base = NTI4303271;
+var NNI4303269 = {kind: 2, len: 4, offset: 0, typ: null, name: null, sons: [{kind: 1, offset: "target", len: 0, typ: NTI3638015, name: "target", sons: null}, 
+{kind: 1, offset: "text", len: 0, typ: NTI3638015, name: "text", sons: null}, 
+{kind: 1, offset: "x", len: 0, typ: NTI3638044, name: "x", sons: null}, 
+{kind: 1, offset: "y", len: 0, typ: NTI3638044, name: "y", sons: null}]};
+NTI4303269.node = NNI4303269;
+NTI4303269.base = NTI4303245;
+NTI4303267.base = NTI4303269;
+NTI4303659.base = NTI4303267;
+var NNI4304616 = {kind: 1, offset: "then", len: 0, typ: NTI4304617, name: "then", sons: null};
+NTI4304616.node = NNI4304616;
+NTI4303385.base = NTI4304616;
+var NNI4304624 = {kind: 2, len: 2, offset: 0, typ: null, name: null, sons: [{kind: 1, offset: "ready", len: 0, typ: NTI4303385, name: "ready", sons: null}, 
+{kind: 1, offset: "onloadingdone", len: 0, typ: NTI4304626, name: "onloadingdone", sons: null}]};
+NTI4304624.node = NNI4304624;
+NTI4303387.base = NTI4304624;
+var NNI4303241 = {kind: 2, len: 22, offset: 0, typ: null, name: null, sons: [{kind: 1, offset: "activeElement", len: 0, typ: NTI4303243, name: "activeElement", sons: null}, 
+{kind: 1, offset: "alinkColor", len: 0, typ: NTI3638015, name: "alinkColor", sons: null}, 
+{kind: 1, offset: "bgColor", len: 0, typ: NTI3638015, name: "bgColor", sons: null}, 
+{kind: 1, offset: "body", len: 0, typ: NTI4303243, name: "body", sons: null}, 
+{kind: 1, offset: "charset", len: 0, typ: NTI3638015, name: "charset", sons: null}, 
+{kind: 1, offset: "cookie", len: 0, typ: NTI3638015, name: "cookie", sons: null}, 
+{kind: 1, offset: "defaultCharset", len: 0, typ: NTI3638015, name: "defaultCharset", sons: null}, 
+{kind: 1, offset: "fgColor", len: 0, typ: NTI3638015, name: "fgColor", sons: null}, 
+{kind: 1, offset: "head", len: 0, typ: NTI4303243, name: "head", sons: null}, 
+{kind: 1, offset: "lastModified", len: 0, typ: NTI3638015, name: "lastModified", sons: null}, 
+{kind: 1, offset: "linkColor", len: 0, typ: NTI3638015, name: "linkColor", sons: null}, 
+{kind: 1, offset: "referrer", len: 0, typ: NTI3638015, name: "referrer", sons: null}, 
+{kind: 1, offset: "title", len: 0, typ: NTI3638015, name: "title", sons: null}, 
+{kind: 1, offset: "URL", len: 0, typ: NTI3638015, name: "URL", sons: null}, 
+{kind: 1, offset: "vlinkColor", len: 0, typ: NTI3638015, name: "vlinkColor", sons: null}, 
+{kind: 1, offset: "anchors", len: 0, typ: NTI4303649, name: "anchors", sons: null}, 
+{kind: 1, offset: "forms", len: 0, typ: NTI4303651, name: "forms", sons: null}, 
+{kind: 1, offset: "images", len: 0, typ: NTI4303653, name: "images", sons: null}, 
+{kind: 1, offset: "applets", len: 0, typ: NTI4303655, name: "applets", sons: null}, 
+{kind: 1, offset: "embeds", len: 0, typ: NTI4303657, name: "embeds", sons: null}, 
+{kind: 1, offset: "links", len: 0, typ: NTI4303659, name: "links", sons: null}, 
+{kind: 1, offset: "fonts", len: 0, typ: NTI4303387, name: "fonts", sons: null}]};
+NTI4303241.node = NNI4303241;
+NTI4303241.base = NTI4303237;
+NTI4303239.base = NTI4303241;
+NTI4303291.base = NTI4303293;
+var NNI4303237 = {kind: 2, len: 22, offset: 0, typ: null, name: null, sons: [{kind: 1, offset: "attributes", len: 0, typ: NTI4303609, name: "attributes", sons: null}, 
+{kind: 1, offset: "childNodes", len: 0, typ: NTI4303611, name: "childNodes", sons: null}, 
+{kind: 1, offset: "children", len: 0, typ: NTI4303613, name: "children", sons: null}, 
+{kind: 1, offset: "data", len: 0, typ: NTI3638015, name: "data", sons: null}, 
+{kind: 1, offset: "firstChild", len: 0, typ: NTI4303235, name: "firstChild", sons: null}, 
+{kind: 1, offset: "lastChild", len: 0, typ: NTI4303235, name: "lastChild", sons: null}, 
+{kind: 1, offset: "nextSibling", len: 0, typ: NTI4303235, name: "nextSibling", sons: null}, 
+{kind: 1, offset: "nodeName", len: 0, typ: NTI3638015, name: "nodeName", sons: null}, 
+{kind: 1, offset: "nodeType", len: 0, typ: NTI4303233, name: "nodeType", sons: null}, 
+{kind: 1, offset: "nodeValue", len: 0, typ: NTI3638015, name: "nodeValue", sons: null}, 
+{kind: 1, offset: "parentNode", len: 0, typ: NTI4303235, name: "parentNode", sons: null}, 
+{kind: 1, offset: "content", len: 0, typ: NTI4303235, name: "content", sons: null}, 
+{kind: 1, offset: "previousSibling", len: 0, typ: NTI4303235, name: "previousSibling", sons: null}, 
+{kind: 1, offset: "ownerDocument", len: 0, typ: NTI4303239, name: "ownerDocument", sons: null}, 
+{kind: 1, offset: "innerHTML", len: 0, typ: NTI3638015, name: "innerHTML", sons: null}, 
+{kind: 1, offset: "outerHTML", len: 0, typ: NTI3638015, name: "outerHTML", sons: null}, 
+{kind: 1, offset: "innerText", len: 0, typ: NTI3638015, name: "innerText", sons: null}, 
+{kind: 1, offset: "textContent", len: 0, typ: NTI3638015, name: "textContent", sons: null}, 
+{kind: 1, offset: "style", len: 0, typ: NTI4303291, name: "style", sons: null}, 
+{kind: 1, offset: "baseURI", len: 0, typ: NTI3638015, name: "baseURI", sons: null}, 
+{kind: 1, offset: "parentElement", len: 0, typ: NTI4303243, name: "parentElement", sons: null}, 
+{kind: 1, offset: "isConnected", len: 0, typ: NTI3638064, name: "isConnected", sons: null}]};
+NTI4303237.node = NNI4303237;
+var NNI4303205 = {kind: 2, len: 23, offset: 0, typ: null, name: null, sons: [{kind: 1, offset: "onabort", len: 0, typ: NTI4303388, name: "onabort", sons: null}, 
+{kind: 1, offset: "onblur", len: 0, typ: NTI4303392, name: "onblur", sons: null}, 
+{kind: 1, offset: "onchange", len: 0, typ: NTI4303396, name: "onchange", sons: null}, 
+{kind: 1, offset: "onclick", len: 0, typ: NTI4303400, name: "onclick", sons: null}, 
+{kind: 1, offset: "ondblclick", len: 0, typ: NTI4303404, name: "ondblclick", sons: null}, 
+{kind: 1, offset: "onerror", len: 0, typ: NTI4303408, name: "onerror", sons: null}, 
+{kind: 1, offset: "onfocus", len: 0, typ: NTI4303412, name: "onfocus", sons: null}, 
+{kind: 1, offset: "onkeydown", len: 0, typ: NTI4303416, name: "onkeydown", sons: null}, 
+{kind: 1, offset: "onkeypress", len: 0, typ: NTI4303420, name: "onkeypress", sons: null}, 
+{kind: 1, offset: "onkeyup", len: 0, typ: NTI4303424, name: "onkeyup", sons: null}, 
+{kind: 1, offset: "onload", len: 0, typ: NTI4303428, name: "onload", sons: null}, 
+{kind: 1, offset: "onmousedown", len: 0, typ: NTI4303432, name: "onmousedown", sons: null}, 
+{kind: 1, offset: "onmousemove", len: 0, typ: NTI4303436, name: "onmousemove", sons: null}, 
+{kind: 1, offset: "onmouseout", len: 0, typ: NTI4303440, name: "onmouseout", sons: null}, 
+{kind: 1, offset: "onmouseover", len: 0, typ: NTI4303444, name: "onmouseover", sons: null}, 
+{kind: 1, offset: "onmouseup", len: 0, typ: NTI4303448, name: "onmouseup", sons: null}, 
+{kind: 1, offset: "onreset", len: 0, typ: NTI4303452, name: "onreset", sons: null}, 
+{kind: 1, offset: "onselect", len: 0, typ: NTI4303456, name: "onselect", sons: null}, 
+{kind: 1, offset: "onsubmit", len: 0, typ: NTI4303460, name: "onsubmit", sons: null}, 
+{kind: 1, offset: "onunload", len: 0, typ: NTI4303464, name: "onunload", sons: null}, 
+{kind: 1, offset: "onloadstart", len: 0, typ: NTI4303468, name: "onloadstart", sons: null}, 
+{kind: 1, offset: "onprogress", len: 0, typ: NTI4303472, name: "onprogress", sons: null}, 
+{kind: 1, offset: "onloadend", len: 0, typ: NTI4303476, name: "onloadend", sons: null}]};
+NTI4303205.node = NNI4303205;
+NTI4303205.base = NTI3644408;
+NTI4303237.base = NTI4303205;
+NTI4303235.base = NTI4303237;
+var NNI12912028 = {kind: 2, offset: 0, typ: null, name: null, len: 120, sons: {"0": {kind: 1, offset: 0, typ: NTI12912028, name: "#text", len: 0, sons: null}, 
+"1": {kind: 1, offset: 1, typ: NTI12912028, name: "#int", len: 0, sons: null}, 
+"2": {kind: 1, offset: 2, typ: NTI12912028, name: "#bool", len: 0, sons: null}, 
+"3": {kind: 1, offset: 3, typ: NTI12912028, name: "#vthunk", len: 0, sons: null}, 
+"4": {kind: 1, offset: 4, typ: NTI12912028, name: "#dthunk", len: 0, sons: null}, 
+"5": {kind: 1, offset: 5, typ: NTI12912028, name: "#component", len: 0, sons: null}, 
+"6": {kind: 1, offset: 6, typ: NTI12912028, name: "#verbatim", len: 0, sons: null}, 
+"7": {kind: 1, offset: 7, typ: NTI12912028, name: "html", len: 0, sons: null}, 
+"8": {kind: 1, offset: 8, typ: NTI12912028, name: "head", len: 0, sons: null}, 
+"9": {kind: 1, offset: 9, typ: NTI12912028, name: "title", len: 0, sons: null}, 
+"10": {kind: 1, offset: 10, typ: NTI12912028, name: "base", len: 0, sons: null}, 
+"11": {kind: 1, offset: 11, typ: NTI12912028, name: "link", len: 0, sons: null}, 
+"12": {kind: 1, offset: 12, typ: NTI12912028, name: "meta", len: 0, sons: null}, 
+"13": {kind: 1, offset: 13, typ: NTI12912028, name: "style", len: 0, sons: null}, 
+"14": {kind: 1, offset: 14, typ: NTI12912028, name: "script", len: 0, sons: null}, 
+"15": {kind: 1, offset: 15, typ: NTI12912028, name: "noscript", len: 0, sons: null}, 
+"16": {kind: 1, offset: 16, typ: NTI12912028, name: "body", len: 0, sons: null}, 
+"17": {kind: 1, offset: 17, typ: NTI12912028, name: "section", len: 0, sons: null}, 
+"18": {kind: 1, offset: 18, typ: NTI12912028, name: "nav", len: 0, sons: null}, 
+"19": {kind: 1, offset: 19, typ: NTI12912028, name: "article", len: 0, sons: null}, 
+"20": {kind: 1, offset: 20, typ: NTI12912028, name: "aside", len: 0, sons: null}, 
+"21": {kind: 1, offset: 21, typ: NTI12912028, name: "h1", len: 0, sons: null}, 
+"22": {kind: 1, offset: 22, typ: NTI12912028, name: "h2", len: 0, sons: null}, 
+"23": {kind: 1, offset: 23, typ: NTI12912028, name: "h3", len: 0, sons: null}, 
+"24": {kind: 1, offset: 24, typ: NTI12912028, name: "h4", len: 0, sons: null}, 
+"25": {kind: 1, offset: 25, typ: NTI12912028, name: "h5", len: 0, sons: null}, 
+"26": {kind: 1, offset: 26, typ: NTI12912028, name: "h6", len: 0, sons: null}, 
+"27": {kind: 1, offset: 27, typ: NTI12912028, name: "header", len: 0, sons: null}, 
+"28": {kind: 1, offset: 28, typ: NTI12912028, name: "footer", len: 0, sons: null}, 
+"29": {kind: 1, offset: 29, typ: NTI12912028, name: "address", len: 0, sons: null}, 
+"30": {kind: 1, offset: 30, typ: NTI12912028, name: "main", len: 0, sons: null}, 
+"31": {kind: 1, offset: 31, typ: NTI12912028, name: "p", len: 0, sons: null}, 
+"32": {kind: 1, offset: 32, typ: NTI12912028, name: "hr", len: 0, sons: null}, 
+"33": {kind: 1, offset: 33, typ: NTI12912028, name: "pre", len: 0, sons: null}, 
+"34": {kind: 1, offset: 34, typ: NTI12912028, name: "blockquote", len: 0, sons: null}, 
+"35": {kind: 1, offset: 35, typ: NTI12912028, name: "ol", len: 0, sons: null}, 
+"36": {kind: 1, offset: 36, typ: NTI12912028, name: "ul", len: 0, sons: null}, 
+"37": {kind: 1, offset: 37, typ: NTI12912028, name: "li", len: 0, sons: null}, 
+"38": {kind: 1, offset: 38, typ: NTI12912028, name: "dl", len: 0, sons: null}, 
+"39": {kind: 1, offset: 39, typ: NTI12912028, name: "dt", len: 0, sons: null}, 
+"40": {kind: 1, offset: 40, typ: NTI12912028, name: "dd", len: 0, sons: null}, 
+"41": {kind: 1, offset: 41, typ: NTI12912028, name: "figure", len: 0, sons: null}, 
+"42": {kind: 1, offset: 42, typ: NTI12912028, name: "figcaption", len: 0, sons: null}, 
+"43": {kind: 1, offset: 43, typ: NTI12912028, name: "div", len: 0, sons: null}, 
+"44": {kind: 1, offset: 44, typ: NTI12912028, name: "a", len: 0, sons: null}, 
+"45": {kind: 1, offset: 45, typ: NTI12912028, name: "em", len: 0, sons: null}, 
+"46": {kind: 1, offset: 46, typ: NTI12912028, name: "strong", len: 0, sons: null}, 
+"47": {kind: 1, offset: 47, typ: NTI12912028, name: "small", len: 0, sons: null}, 
+"48": {kind: 1, offset: 48, typ: NTI12912028, name: "s", len: 0, sons: null}, 
+"49": {kind: 1, offset: 49, typ: NTI12912028, name: "cite", len: 0, sons: null}, 
+"50": {kind: 1, offset: 50, typ: NTI12912028, name: "quote", len: 0, sons: null}, 
+"51": {kind: 1, offset: 51, typ: NTI12912028, name: "dfn", len: 0, sons: null}, 
+"52": {kind: 1, offset: 52, typ: NTI12912028, name: "abbr", len: 0, sons: null}, 
+"53": {kind: 1, offset: 53, typ: NTI12912028, name: "data", len: 0, sons: null}, 
+"54": {kind: 1, offset: 54, typ: NTI12912028, name: "time", len: 0, sons: null}, 
+"55": {kind: 1, offset: 55, typ: NTI12912028, name: "code", len: 0, sons: null}, 
+"56": {kind: 1, offset: 56, typ: NTI12912028, name: "var", len: 0, sons: null}, 
+"57": {kind: 1, offset: 57, typ: NTI12912028, name: "samp", len: 0, sons: null}, 
+"58": {kind: 1, offset: 58, typ: NTI12912028, name: "kdb", len: 0, sons: null}, 
+"59": {kind: 1, offset: 59, typ: NTI12912028, name: "sub", len: 0, sons: null}, 
+"60": {kind: 1, offset: 60, typ: NTI12912028, name: "sup", len: 0, sons: null}, 
+"61": {kind: 1, offset: 61, typ: NTI12912028, name: "i", len: 0, sons: null}, 
+"62": {kind: 1, offset: 62, typ: NTI12912028, name: "b", len: 0, sons: null}, 
+"63": {kind: 1, offset: 63, typ: NTI12912028, name: "u", len: 0, sons: null}, 
+"64": {kind: 1, offset: 64, typ: NTI12912028, name: "mark", len: 0, sons: null}, 
+"65": {kind: 1, offset: 65, typ: NTI12912028, name: "ruby", len: 0, sons: null}, 
+"66": {kind: 1, offset: 66, typ: NTI12912028, name: "rt", len: 0, sons: null}, 
+"67": {kind: 1, offset: 67, typ: NTI12912028, name: "rp", len: 0, sons: null}, 
+"68": {kind: 1, offset: 68, typ: NTI12912028, name: "bdi", len: 0, sons: null}, 
+"69": {kind: 1, offset: 69, typ: NTI12912028, name: "dbo", len: 0, sons: null}, 
+"70": {kind: 1, offset: 70, typ: NTI12912028, name: "span", len: 0, sons: null}, 
+"71": {kind: 1, offset: 71, typ: NTI12912028, name: "br", len: 0, sons: null}, 
+"72": {kind: 1, offset: 72, typ: NTI12912028, name: "wbr", len: 0, sons: null}, 
+"73": {kind: 1, offset: 73, typ: NTI12912028, name: "ins", len: 0, sons: null}, 
+"74": {kind: 1, offset: 74, typ: NTI12912028, name: "del", len: 0, sons: null}, 
+"75": {kind: 1, offset: 75, typ: NTI12912028, name: "img", len: 0, sons: null}, 
+"76": {kind: 1, offset: 76, typ: NTI12912028, name: "iframe", len: 0, sons: null}, 
+"77": {kind: 1, offset: 77, typ: NTI12912028, name: "embed", len: 0, sons: null}, 
+"78": {kind: 1, offset: 78, typ: NTI12912028, name: "object", len: 0, sons: null}, 
+"79": {kind: 1, offset: 79, typ: NTI12912028, name: "param", len: 0, sons: null}, 
+"80": {kind: 1, offset: 80, typ: NTI12912028, name: "video", len: 0, sons: null}, 
+"81": {kind: 1, offset: 81, typ: NTI12912028, name: "audio", len: 0, sons: null}, 
+"82": {kind: 1, offset: 82, typ: NTI12912028, name: "source", len: 0, sons: null}, 
+"83": {kind: 1, offset: 83, typ: NTI12912028, name: "track", len: 0, sons: null}, 
+"84": {kind: 1, offset: 84, typ: NTI12912028, name: "canvas", len: 0, sons: null}, 
+"85": {kind: 1, offset: 85, typ: NTI12912028, name: "map", len: 0, sons: null}, 
+"86": {kind: 1, offset: 86, typ: NTI12912028, name: "area", len: 0, sons: null}, 
+"87": {kind: 1, offset: 87, typ: NTI12912028, name: "svg", len: 0, sons: null}, 
+"88": {kind: 1, offset: 88, typ: NTI12912028, name: "math", len: 0, sons: null}, 
+"89": {kind: 1, offset: 89, typ: NTI12912028, name: "path", len: 0, sons: null}, 
+"90": {kind: 1, offset: 90, typ: NTI12912028, name: "circle", len: 0, sons: null}, 
+"91": {kind: 1, offset: 91, typ: NTI12912028, name: "table", len: 0, sons: null}, 
+"92": {kind: 1, offset: 92, typ: NTI12912028, name: "caption", len: 0, sons: null}, 
+"93": {kind: 1, offset: 93, typ: NTI12912028, name: "colgroup", len: 0, sons: null}, 
+"94": {kind: 1, offset: 94, typ: NTI12912028, name: "col", len: 0, sons: null}, 
+"95": {kind: 1, offset: 95, typ: NTI12912028, name: "tbody", len: 0, sons: null}, 
+"96": {kind: 1, offset: 96, typ: NTI12912028, name: "thead", len: 0, sons: null}, 
+"97": {kind: 1, offset: 97, typ: NTI12912028, name: "tfoot", len: 0, sons: null}, 
+"98": {kind: 1, offset: 98, typ: NTI12912028, name: "tr", len: 0, sons: null}, 
+"99": {kind: 1, offset: 99, typ: NTI12912028, name: "td", len: 0, sons: null}, 
+"100": {kind: 1, offset: 100, typ: NTI12912028, name: "th", len: 0, sons: null}, 
+"101": {kind: 1, offset: 101, typ: NTI12912028, name: "form", len: 0, sons: null}, 
+"102": {kind: 1, offset: 102, typ: NTI12912028, name: "fieldset", len: 0, sons: null}, 
+"103": {kind: 1, offset: 103, typ: NTI12912028, name: "legend", len: 0, sons: null}, 
+"104": {kind: 1, offset: 104, typ: NTI12912028, name: "label", len: 0, sons: null}, 
+"105": {kind: 1, offset: 105, typ: NTI12912028, name: "input", len: 0, sons: null}, 
+"106": {kind: 1, offset: 106, typ: NTI12912028, name: "button", len: 0, sons: null}, 
+"107": {kind: 1, offset: 107, typ: NTI12912028, name: "select", len: 0, sons: null}, 
+"108": {kind: 1, offset: 108, typ: NTI12912028, name: "datalist", len: 0, sons: null}, 
+"109": {kind: 1, offset: 109, typ: NTI12912028, name: "optgroup", len: 0, sons: null}, 
+"110": {kind: 1, offset: 110, typ: NTI12912028, name: "option", len: 0, sons: null}, 
+"111": {kind: 1, offset: 111, typ: NTI12912028, name: "textarea", len: 0, sons: null}, 
+"112": {kind: 1, offset: 112, typ: NTI12912028, name: "keygen", len: 0, sons: null}, 
+"113": {kind: 1, offset: 113, typ: NTI12912028, name: "output", len: 0, sons: null}, 
+"114": {kind: 1, offset: 114, typ: NTI12912028, name: "progress", len: 0, sons: null}, 
+"115": {kind: 1, offset: 115, typ: NTI12912028, name: "meter", len: 0, sons: null}, 
+"116": {kind: 1, offset: 116, typ: NTI12912028, name: "details", len: 0, sons: null}, 
+"117": {kind: 1, offset: 117, typ: NTI12912028, name: "summary", len: 0, sons: null}, 
+"118": {kind: 1, offset: 118, typ: NTI12912028, name: "command", len: 0, sons: null}, 
+"119": {kind: 1, offset: 119, typ: NTI12912028, name: "menu", len: 0, sons: null}}};
+NTI12912028.node = NNI12912028;
+NTI12915037.base = NTI12915022;
+NTI12915039.base = NTI3638015;
+var NNI12912152 = {kind: 2, offset: 0, typ: null, name: null, len: 36, sons: {"0": {kind: 1, offset: 0, typ: NTI12912152, name: "onclick", len: 0, sons: null}, 
+"1": {kind: 1, offset: 1, typ: NTI12912152, name: "oncontextmenu", len: 0, sons: null}, 
+"2": {kind: 1, offset: 2, typ: NTI12912152, name: "ondblclick", len: 0, sons: null}, 
+"3": {kind: 1, offset: 3, typ: NTI12912152, name: "onkeyup", len: 0, sons: null}, 
+"4": {kind: 1, offset: 4, typ: NTI12912152, name: "onkeydown", len: 0, sons: null}, 
+"5": {kind: 1, offset: 5, typ: NTI12912152, name: "onkeypressed", len: 0, sons: null}, 
+"6": {kind: 1, offset: 6, typ: NTI12912152, name: "onfocus", len: 0, sons: null}, 
+"7": {kind: 1, offset: 7, typ: NTI12912152, name: "onblur", len: 0, sons: null}, 
+"8": {kind: 1, offset: 8, typ: NTI12912152, name: "onchange", len: 0, sons: null}, 
+"9": {kind: 1, offset: 9, typ: NTI12912152, name: "onscroll", len: 0, sons: null}, 
+"10": {kind: 1, offset: 10, typ: NTI12912152, name: "onmousedown", len: 0, sons: null}, 
+"11": {kind: 1, offset: 11, typ: NTI12912152, name: "onmouseenter", len: 0, sons: null}, 
+"12": {kind: 1, offset: 12, typ: NTI12912152, name: "onmouseleave", len: 0, sons: null}, 
+"13": {kind: 1, offset: 13, typ: NTI12912152, name: "onmousemove", len: 0, sons: null}, 
+"14": {kind: 1, offset: 14, typ: NTI12912152, name: "onmouseout", len: 0, sons: null}, 
+"15": {kind: 1, offset: 15, typ: NTI12912152, name: "onmouseover", len: 0, sons: null}, 
+"16": {kind: 1, offset: 16, typ: NTI12912152, name: "onmouseup", len: 0, sons: null}, 
+"17": {kind: 1, offset: 17, typ: NTI12912152, name: "ondrag", len: 0, sons: null}, 
+"18": {kind: 1, offset: 18, typ: NTI12912152, name: "ondragend", len: 0, sons: null}, 
+"19": {kind: 1, offset: 19, typ: NTI12912152, name: "ondragenter", len: 0, sons: null}, 
+"20": {kind: 1, offset: 20, typ: NTI12912152, name: "ondragleave", len: 0, sons: null}, 
+"21": {kind: 1, offset: 21, typ: NTI12912152, name: "ondragover", len: 0, sons: null}, 
+"22": {kind: 1, offset: 22, typ: NTI12912152, name: "ondragstart", len: 0, sons: null}, 
+"23": {kind: 1, offset: 23, typ: NTI12912152, name: "ondrop", len: 0, sons: null}, 
+"24": {kind: 1, offset: 24, typ: NTI12912152, name: "onsubmit", len: 0, sons: null}, 
+"25": {kind: 1, offset: 25, typ: NTI12912152, name: "oninput", len: 0, sons: null}, 
+"26": {kind: 1, offset: 26, typ: NTI12912152, name: "onanimationstart", len: 0, sons: null}, 
+"27": {kind: 1, offset: 27, typ: NTI12912152, name: "onanimationend", len: 0, sons: null}, 
+"28": {kind: 1, offset: 28, typ: NTI12912152, name: "onanimationiteration", len: 0, sons: null}, 
+"29": {kind: 1, offset: 29, typ: NTI12912152, name: "onkeyupenter", len: 0, sons: null}, 
+"30": {kind: 1, offset: 30, typ: NTI12912152, name: "onkeyuplater", len: 0, sons: null}, 
+"31": {kind: 1, offset: 31, typ: NTI12912152, name: "onload", len: 0, sons: null}, 
+"32": {kind: 1, offset: 32, typ: NTI12912152, name: "ontransitioncancel", len: 0, sons: null}, 
+"33": {kind: 1, offset: 33, typ: NTI12912152, name: "ontransitionend", len: 0, sons: null}, 
+"34": {kind: 1, offset: 34, typ: NTI12912152, name: "ontransitionrun", len: 0, sons: null}, 
+"35": {kind: 1, offset: 35, typ: NTI12912152, name: "ontransitionstart", len: 0, sons: null}}};
+NTI12912152.node = NNI12912152;
+var NNI12915030 = {kind: 2, len: 3, offset: 0, typ: null, name: null, sons: [{kind: 1, offset: "Field0", len: 0, typ: NTI12912152, name: "Field0", sons: null}, 
+{kind: 1, offset: "Field1", len: 0, typ: NTI12915074, name: "Field1", sons: null}, 
+{kind: 1, offset: "Field2", len: 0, typ: NTI12915076, name: "Field2", sons: null}]};
+NTI12915030.node = NNI12915030;
+NTI12915018.base = NTI12915030;
+var NNI12866033 = {kind: 2, len: 0, offset: 0, typ: null, name: null, sons: []};
+NTI12866033.node = NNI12866033;
+NTI12866034.base = NTI12866033;
+var NNI12915031 = {kind: 2, len: 10, offset: 0, typ: null, name: null, sons: [{kind: 1, offset: "kind", len: 0, typ: NTI12912028, name: "kind", sons: null}, 
+{kind: 1, offset: "index", len: 0, typ: NTI3638044, name: "index", sons: null}, 
+{kind: 1, offset: "id", len: 0, typ: NTI3638015, name: "id", sons: null}, 
+{kind: 1, offset: "class", len: 0, typ: NTI3638015, name: "class", sons: null}, 
+{kind: 1, offset: "text", len: 0, typ: NTI3638015, name: "text", sons: null}, 
+{kind: 1, offset: "kids", len: 0, typ: NTI12915037, name: "kids", sons: null}, 
+{kind: 1, offset: "attrs", len: 0, typ: NTI12915039, name: "attrs", sons: null}, 
+{kind: 1, offset: "events", len: 0, typ: NTI12915018, name: "events", sons: null}, 
+{kind: 1, offset: "style", len: 0, typ: NTI12866034, name: "style", sons: null}, 
+{kind: 1, offset: "dom", len: 0, typ: NTI4303235, name: "dom", sons: null}]};
+NTI12915031.node = NNI12915031;
+NTI12915031.base = NTI3644408;
+NTI12915022.base = NTI12915031;
+var NNI13347209 = {kind: 2, len: 5, offset: 0, typ: null, name: null, sons: [{kind: 1, offset: "k", len: 0, typ: NTI13347207, name: "k", sons: null}, 
+{kind: 1, offset: "parent", len: 0, typ: NTI4303235, name: "parent", sons: null}, 
+{kind: 1, offset: "current", len: 0, typ: NTI4303235, name: "current", sons: null}, 
+{kind: 1, offset: "newNode", len: 0, typ: NTI12915022, name: "newNode", sons: null}, 
+{kind: 1, offset: "oldNode", len: 0, typ: NTI12915022, name: "oldNode", sons: null}]};
+NTI13347209.node = NNI13347209;
+var NNI13347211 = {kind: 2, len: 3, offset: 0, typ: null, name: null, sons: [{kind: 1, offset: "parent", len: 0, typ: NTI12915022, name: "parent", sons: null}, 
+{kind: 1, offset: "newChild", len: 0, typ: NTI12915022, name: "newChild", sons: null}, 
+{kind: 1, offset: "pos", len: 0, typ: NTI3638044, name: "pos", sons: null}]};
+NTI13347211.node = NNI13347211;
+function makeNimstrLit(c_3905062) {
+      var ln = c_3905062.length;
   var result = new Array(ln);
-  var r = 0;
   for (var i = 0; i < ln; ++i) {
-    var ch = c_2690079.charCodeAt(i);
-
-    if (ch < 128) {
-      result[r] = ch;
-    }
-    else {
-      if (ch < 2048) {
-        result[r] = (ch >> 6) | 192;
-      }
-      else {
-        if (ch < 55296 || ch >= 57344) {
-          result[r] = (ch >> 12) | 224;
-        }
-        else {
-            ++i;
-            ch = 65536 + (((ch & 1023) << 10) | (c_2690079.charCodeAt(i) & 1023));
-            result[r] = (ch >> 18) | 240;
-            ++r;
-            result[r] = ((ch >> 12) & 63) | 128;
-        }
-        ++r;
-        result[r] = ((ch >> 6) & 63) | 128;
-      }
-      ++r;
-      result[r] = (ch & 63) | 128;
-    }
-    ++r;
+    result[i] = c_3905062.charCodeAt(i);
   }
   return result;
   
 
   
 }
-function makeNimstrLit(c_2690062) {
-      var ln = c_2690062.length;
-  var result = new Array(ln);
-  for (var i = 0; i < ln; ++i) {
-    result[i] = c_2690062.charCodeAt(i);
-  }
-  return result;
-  
-
-  
-}
-function arrayConstr(len_2715067, value_2715068, typ_2715069) {
-        var result = new Array(len_2715067);
-    for (var i = 0; i < len_2715067; ++i) result[i] = nimCopy(null, value_2715068, typ_2715069);
+function arrayConstr(len_3930067, value_3930068, typ_3930069) {
+        var result = new Array(len_3930067);
+    for (var i = 0; i < len_3930067; ++i) result[i] = nimCopy(null, value_3930068, typ_3930069);
     return result;
   
 
@@ -967,197 +928,235 @@ function setConstr() {
   
 }
 var ConstSet1 = setConstr(17, 16, 4, 18, 27, 19, 23, 22, 21);
-function nimCopy(dest_2705023, src_2705024, ti_2705025) {
-  var result_2710219 = null;
+function nimCopy(dest_3920023, src_3920024, ti_3920025) {
+  var result_3925219 = null;
 
-    switch (ti_2705025.kind) {
+    switch (ti_3920025.kind) {
     case 21:
     case 22:
     case 23:
     case 5:
-      if (!(isFatPointer_2700401(ti_2705025))) {
-      result_2710219 = src_2705024;
+      if (!(isFatPointer_3915401(ti_3920025))) {
+      result_3925219 = src_3920024;
       }
       else {
-        result_2710219 = [src_2705024[0], src_2705024[1]];
+        result_3925219 = [src_3920024[0], src_3920024[1]];
       }
       
       break;
     case 19:
-            if (dest_2705023 === null || dest_2705023 === undefined) {
-        dest_2705023 = {};
+            if (dest_3920023 === null || dest_3920023 === undefined) {
+        dest_3920023 = {};
       }
       else {
-        for (var key in dest_2705023) { delete dest_2705023[key]; }
+        for (var key in dest_3920023) { delete dest_3920023[key]; }
       }
-      for (var key in src_2705024) { dest_2705023[key] = src_2705024[key]; }
-      result_2710219 = dest_2705023;
+      for (var key in src_3920024) { dest_3920023[key] = src_3920024[key]; }
+      result_3925219 = dest_3920023;
     
       break;
     case 18:
     case 17:
-      if (!((ti_2705025.base == null))) {
-      result_2710219 = nimCopy(dest_2705023, src_2705024, ti_2705025.base);
+      if (!((ti_3920025.base == null))) {
+      result_3925219 = nimCopy(dest_3920023, src_3920024, ti_3920025.base);
       }
       else {
-      if ((ti_2705025.kind == 17)) {
-      result_2710219 = (dest_2705023 === null || dest_2705023 === undefined) ? {m_type: ti_2705025} : dest_2705023;
+      if ((ti_3920025.kind == 17)) {
+      result_3925219 = (dest_3920023 === null || dest_3920023 === undefined) ? {m_type: ti_3920025} : dest_3920023;
       }
       else {
-        result_2710219 = (dest_2705023 === null || dest_2705023 === undefined) ? {} : dest_2705023;
+        result_3925219 = (dest_3920023 === null || dest_3920023 === undefined) ? {} : dest_3920023;
       }
       }
-      nimCopyAux(result_2710219, src_2705024, ti_2705025.node);
+      nimCopyAux(result_3925219, src_3920024, ti_3920025.node);
       break;
     case 24:
     case 4:
     case 27:
     case 16:
-            if (src_2705024 === null) {
-        result_2710219 = null;
+            if (src_3920024 === null) {
+        result_3925219 = null;
       }
       else {
-        if (dest_2705023 === null || dest_2705023 === undefined) {
-          dest_2705023 = new Array(src_2705024.length);
+        if (dest_3920023 === null || dest_3920023 === undefined) {
+          dest_3920023 = new Array(src_3920024.length);
         }
         else {
-          dest_2705023.length = src_2705024.length;
+          dest_3920023.length = src_3920024.length;
         }
-        result_2710219 = dest_2705023;
-        for (var i = 0; i < src_2705024.length; ++i) {
-          result_2710219[i] = nimCopy(result_2710219[i], src_2705024[i], ti_2705025.base);
+        result_3925219 = dest_3920023;
+        for (var i = 0; i < src_3920024.length; ++i) {
+          result_3925219[i] = nimCopy(result_3925219[i], src_3920024[i], ti_3920025.base);
         }
       }
     
       break;
     case 28:
-            if (src_2705024 !== null) {
-        result_2710219 = src_2705024.slice(0);
+            if (src_3920024 !== null) {
+        result_3925219 = src_3920024.slice(0);
       }
     
       break;
     default: 
-      result_2710219 = src_2705024;
+      result_3925219 = src_3920024;
       break;
     }
 
-  return result_2710219;
+  return result_3925219;
 
 }
-function toJSStr(s_2690096) {
+function cstrToNimstr(c_3905079) {
+      var ln = c_3905079.length;
+  var result = new Array(ln);
+  var r = 0;
+  for (var i = 0; i < ln; ++i) {
+    var ch = c_3905079.charCodeAt(i);
+
+    if (ch < 128) {
+      result[r] = ch;
+    }
+    else {
+      if (ch < 2048) {
+        result[r] = (ch >> 6) | 192;
+      }
+      else {
+        if (ch < 55296 || ch >= 57344) {
+          result[r] = (ch >> 12) | 224;
+        }
+        else {
+            ++i;
+            ch = 65536 + (((ch & 1023) << 10) | (c_3905079.charCodeAt(i) & 1023));
+            result[r] = (ch >> 18) | 240;
+            ++r;
+            result[r] = ((ch >> 12) & 63) | 128;
+        }
+        ++r;
+        result[r] = ((ch >> 6) & 63) | 128;
+      }
+      ++r;
+      result[r] = (ch & 63) | 128;
+    }
+    ++r;
+  }
+  return result;
+  
+
+  
+}
+function toJSStr(s_3905096) {
                     var Tmp5;
             var Tmp7;
 
-  var result_2690097 = null;
+  var result_3905097 = null;
 
-    var res_2690170 = newSeq_2690128((s_2690096).length);
-    var i_2690172 = 0;
-    var j_2690174 = 0;
+    var res_3905170 = newSeq_3905128((s_3905096).length);
+    var i_3905172 = 0;
+    var j_3905174 = 0;
     L1: do {
         L2: while (true) {
-        if (!(i_2690172 < (s_2690096).length)) break L2;
-          var c_2690175 = s_2690096[i_2690172];
-          if ((c_2690175 < 128)) {
-          res_2690170[j_2690174] = String.fromCharCode(c_2690175);
-          i_2690172 += 1;
+        if (!(i_3905172 < (s_3905096).length)) break L2;
+          var c_3905175 = s_3905096[i_3905172];
+          if ((c_3905175 < 128)) {
+          res_3905170[j_3905174] = String.fromCharCode(c_3905175);
+          i_3905172 += 1;
           }
           else {
-            var helper_2690198 = newSeq_2690128(0);
+            var helper_3905198 = newSeq_3905128(0);
             L3: do {
                 L4: while (true) {
                 if (!true) break L4;
-                  var code_2690199 = c_2690175.toString(16);
-                  if (((code_2690199).length == 1)) {
-                  helper_2690198.push("%0");;
+                  var code_3905199 = c_3905175.toString(16);
+                  if (((code_3905199).length == 1)) {
+                  helper_3905198.push("%0");;
                   }
                   else {
-                  helper_2690198.push("%");;
+                  helper_3905198.push("%");;
                   }
                   
-                  helper_2690198.push(code_2690199);;
-                  i_2690172 += 1;
-                    if (((s_2690096).length <= i_2690172)) Tmp5 = true; else {                      Tmp5 = (s_2690096[i_2690172] < 128);                    }                  if (Tmp5) {
+                  helper_3905198.push(code_3905199);;
+                  i_3905172 += 1;
+                    if (((s_3905096).length <= i_3905172)) Tmp5 = true; else {                      Tmp5 = (s_3905096[i_3905172] < 128);                    }                  if (Tmp5) {
                   break L3;
                   }
                   
-                  c_2690175 = s_2690096[i_2690172];
+                  c_3905175 = s_3905096[i_3905172];
                 }
             } while(false);
 ++excHandler;
             Tmp7 = framePtr;
             try {
-            res_2690170[j_2690174] = decodeURIComponent(helper_2690198.join(""));
+            res_3905170[j_3905174] = decodeURIComponent(helper_3905198.join(""));
 --excHandler;
 } catch (EXC) {
  var prevJSError = lastJSError;
  lastJSError = EXC;
  --excHandler;
             framePtr = Tmp7;
-            res_2690170[j_2690174] = helper_2690198.join("");
+            res_3905170[j_3905174] = helper_3905198.join("");
             lastJSError = prevJSError;
             } finally {
             framePtr = Tmp7;
             }
           }
           
-          j_2690174 += 1;
+          j_3905174 += 1;
         }
     } while(false);
-    if (res_2690170.length < j_2690174) { for (var i=res_2690170.length;i<j_2690174;++i) res_2690170.push(null); }
-               else { res_2690170.length = j_2690174; };
-    result_2690097 = res_2690170.join("");
+    if (res_3905170.length < j_3905174) { for (var i=res_3905170.length;i<j_3905174;++i) res_3905170.push(null); }
+               else { res_3905170.length = j_3905174; };
+    result_3905097 = res_3905170.join("");
 
-  return result_2690097;
+  return result_3905097;
 
 }
-function raiseException(e_2655218, ename_2655219) {
-    e_2655218.name = ename_2655219;
+function raiseException(e_3870218, ename_3870219) {
+    e_3870218.name = ename_3870219;
     if ((excHandler == 0)) {
-    unhandledException(e_2655218);
+    unhandledException(e_3870218);
     }
     
-    e_2655218.trace = nimCopy(null, rawWriteStackTrace_2645260(), NTI2421013);
-    throw e_2655218;
+    e_3870218.trace = nimCopy(null, rawWriteStackTrace_3860260(), NTI3638013);
+    throw e_3870218;
 
   
 }
-function addInt(a_2695419, b_2695420) {
-        var result = a_2695419 + b_2695420;
+function addInt(a_3910419, b_3910420) {
+        var result = a_3910419 + b_3910420;
     checkOverflowInt(result);
     return result;
   
 
   
 }
-      var toTag_11700006 = ["#text", "#int", "#bool", "#vthunk", "#dthunk", "#component", "#verbatim", "HTML", "HEAD", "TITLE", "BASE", "LINK", "META", "STYLE", "SCRIPT", "NOSCRIPT", "BODY", "SECTION", "NAV", "ARTICLE", "ASIDE", "H1", "H2", "H3", "H4", "H5", "H6", "HEADER", "FOOTER", "ADDRESS", "MAIN", "P", "HR", "PRE", "BLOCKQUOTE", "OL", "UL", "LI", "DL", "DT", "DD", "FIGURE", "FIGCAPTION", "DIV", "A", "EM", "STRONG", "SMALL", "S", "CITE", "QUOTE", "DFN", "ABBR", "DATA", "TIME", "CODE", "VAR", "SAMP", "KDB", "SUB", "SUP", "I", "B", "U", "MARK", "RUBY", "RT", "RP", "BDI", "DBO", "SPAN", "BR", "WBR", "INS", "DEL", "IMG", "IFRAME", "EMBED", "OBJECT", "PARAM", "VIDEO", "AUDIO", "SOURCE", "TRACK", "CANVAS", "MAP", "AREA", "SVG", "MATH", "PATH", "CIRCLE", "TABLE", "CAPTION", "COLGROUP", "COL", "TBODY", "THEAD", "TFOOT", "TR", "TD", "TH", "FORM", "FIELDSET", "LEGEND", "LABEL", "INPUT", "BUTTON", "SELECT", "DATALIST", "OPTGROUP", "OPTION", "TEXTAREA", "KEYGEN", "OUTPUT", "PROGRESS", "METER", "DETAILS", "SUMMARY", "COMMAND", "MENU"];
-function chckIndx(i_2715086, a_2715087, b_2715088) {
+      var toTag_12915006 = ["#text", "#int", "#bool", "#vthunk", "#dthunk", "#component", "#verbatim", "HTML", "HEAD", "TITLE", "BASE", "LINK", "META", "STYLE", "SCRIPT", "NOSCRIPT", "BODY", "SECTION", "NAV", "ARTICLE", "ASIDE", "H1", "H2", "H3", "H4", "H5", "H6", "HEADER", "FOOTER", "ADDRESS", "MAIN", "P", "HR", "PRE", "BLOCKQUOTE", "OL", "UL", "LI", "DL", "DT", "DD", "FIGURE", "FIGCAPTION", "DIV", "A", "EM", "STRONG", "SMALL", "S", "CITE", "QUOTE", "DFN", "ABBR", "DATA", "TIME", "CODE", "VAR", "SAMP", "KDB", "SUB", "SUP", "I", "B", "U", "MARK", "RUBY", "RT", "RP", "BDI", "DBO", "SPAN", "BR", "WBR", "INS", "DEL", "IMG", "IFRAME", "EMBED", "OBJECT", "PARAM", "VIDEO", "AUDIO", "SOURCE", "TRACK", "CANVAS", "MAP", "AREA", "SVG", "MATH", "PATH", "CIRCLE", "TABLE", "CAPTION", "COLGROUP", "COL", "TBODY", "THEAD", "TFOOT", "TR", "TD", "TH", "FORM", "FIELDSET", "LEGEND", "LABEL", "INPUT", "BUTTON", "SELECT", "DATALIST", "OPTGROUP", "OPTION", "TEXTAREA", "KEYGEN", "OUTPUT", "PROGRESS", "METER", "DETAILS", "SUMMARY", "COMMAND", "MENU"];
+function chckIndx(i_3930086, a_3930087, b_3930088) {
       var Tmp1;
 
-  var result_2715089 = 0;
+  var result_3930089 = 0;
 
   BeforeRet: do {
-      if (!(a_2715087 <= i_2715086)) Tmp1 = false; else {        Tmp1 = (i_2715086 <= b_2715088);      }    if (Tmp1) {
-    result_2715089 = i_2715086;
+      if (!(a_3930087 <= i_3930086)) Tmp1 = false; else {        Tmp1 = (i_3930086 <= b_3930088);      }    if (Tmp1) {
+    result_3930089 = i_3930086;
     break BeforeRet;
     }
     else {
-    raiseIndexError(i_2715086, a_2715087, b_2715088);
+    raiseIndexError(i_3930086, a_3930087, b_3930088);
     }
     
   } while (false);
 
-  return result_2715089;
+  return result_3930089;
 
 }
-function subInt(a_2695437, b_2695438) {
-        var result = a_2695437 - b_2695438;
+function subInt(a_3910437, b_3910438) {
+        var result = a_3910437 - b_3910438;
     checkOverflowInt(result);
     return result;
   
 
   
 }
-      var toEventName_11700012 = ["click", "contextmenu", "dblclick", "keyup", "keydown", "keypressed", "focus", "blur", "change", "scroll", "mousedown", "mouseenter", "mouseleave", "mousemove", "mouseout", "mouseover", "mouseup", "drag", "dragend", "dragenter", "dragleave", "dragover", "dragstart", "drop", "submit", "input", "animationstart", "animationend", "animationiteration", "keyupenter", "keyuplater", "load", "transitioncancel", "transitionend", "transitionrun", "transitionstart", "wheel"];
+      var toEventName_12915012 = ["click", "contextmenu", "dblclick", "keyup", "keydown", "keypressed", "focus", "blur", "change", "scroll", "mousedown", "mouseenter", "mouseleave", "mousemove", "mouseout", "mouseover", "mouseup", "drag", "dragend", "dragenter", "dragleave", "dragover", "dragstart", "drop", "submit", "input", "animationstart", "animationend", "animationiteration", "keyupenter", "keyuplater", "load", "transitioncancel", "transitionend", "transitionrun", "transitionstart"];
 function rawEcho() {
           var buf = "";
       for (var i = 0; i < arguments.length; ++i) {
@@ -1168,30 +1167,31 @@ function rawEcho() {
 
   
 }
-function nimMin(a_2695803, b_2695804) {
+function nimMin(a_3910803, b_3910804) {
     var Tmp1;
 
-  var result_2695805 = 0;
+  var result_3910805 = 0;
 
   BeforeRet: do {
-    if ((a_2695803 <= b_2695804)) {
-    Tmp1 = a_2695803;
+    if ((a_3910803 <= b_3910804)) {
+    Tmp1 = a_3910803;
     }
     else {
-    Tmp1 = b_2695804;
+    Tmp1 = b_3910804;
     }
     
-    result_2695805 = Tmp1;
+    result_3910805 = Tmp1;
     break BeforeRet;
   } while (false);
 
-  return result_2695805;
+  return result_3910805;
 
 }
-var globalRaiseHook_2592018 = [null];
-var localRaiseHook_2592023 = [null];
-var outOfMemHook_2592026 = [null];
-var unhandledExceptionHook_2592031 = [null];
+    var toStyleAttrName_12870006 = ["alignContent", "alignItems", "alignSelf", "animation", "animationDelay", "animationDirection", "animationDuration", "animationFillMode", "animationIterationCount", "animationName", "animationTimingFunction", "animationPlayState", "background", "backgroundAttachment", "backgroundColor", "backgroundImage", "backgroundPosition", "backgroundRepeat", "backgroundClip", "backgroundOrigin", "backgroundSize", "backfaceVisibility", "border", "borderBottom", "borderBottomColor", "borderBottomLeftRadius", "borderBottomRightRadius", "borderBottomStyle", "borderBottomWidth", "borderCollapse", "borderColor", "borderImage", "borderImageOutset", "borderImageRepeat", "borderImageSlice", "borderImageSource", "borderImageWidth", "borderLeft", "borderLeftColor", "borderLeftStyle", "borderLeftWidth", "borderRadius", "borderRight", "borderRightColor", "borderRightStyle", "borderRightWidth", "borderSpacing", "borderStyle", "borderTop", "borderTopColor", "borderTopLeftRadius", "borderTopRightRadius", "borderTopStyle", "borderTopWidth", "borderWidth", "bottom", "boxDecorationBreak", "boxShadow", "boxSizing", "captionSide", "clear", "clip", "color", "columnCount", "columnFill", "columnGap", "columnRule", "columnRuleColor", "columnRuleStyle", "columnRuleWidth", "columns", "columnSpan", "columnWidth", "content", "counterIncrement", "counterReset", "cursor", "direction", "display", "emptyCells", "filter", "flex", "flexBasis", "flexDirection", "flexFlow", "flexGrow", "flexShrink", "flexWrap", "cssFloat", "font", "fontFamily", "fontSize", "fontSizeAdjust", "fontStretch", "fontStyle", "fontVariant", "fontWeight", "hangingPunctuation", "height", "hyphens", "icon", "imageOrientation", "justifyContent", "left", "letterSpacing", "lineHeight", "listStyle", "listStyleImage", "listStylePosition", "listStyleType", "margin", "marginBottom", "marginLeft", "marginRight", "marginTop", "maxHeight", "maxWidth", "minHeight", "minWidth", "navDown", "navIndex", "navLeft", "navRight", "navUp", "opacity", "order", "orphans", "outline", "outlineColor", "outlineOffset", "outlineStyle", "outlineWidth", "overflow", "overflowX", "overflowY", "padding", "paddingBottom", "paddingLeft", "paddingRight", "paddingTop", "pageBreakAfter", "pageBreakBefore", "pageBreakInside", "perspective", "perspectiveOrigin", "pointerEvents", "position", "quotes", "resize", "right", "scrollbar3dLightColor", "scrollbarArrowColor", "scrollbarBaseColor", "scrollbarDarkshadowColor", "scrollbarFaceColor", "scrollbarHighlightColor", "scrollbarShadowColor", "scrollbarTrackColor", "tableLayout", "tabSize", "textAlign", "textAlignLast", "textDecoration", "textDecorationColor", "textDecorationLine", "textDecorationStyle", "textIndent", "textJustify", "textOverflow", "textShadow", "textTransform", "top", "transform", "transformOrigin", "transformStyle", "transition", "transitionDelay", "transitionDuration", "transitionProperty", "transitionTimingFunction", "unicodeBidi", "userSelect", "verticalAlign", "visibility", "whiteSpace", "width", "wordBreak", "wordSpacing", "wordWrap", "widows", "zIndex"];
+var globalRaiseHook_3807018 = [null];
+var localRaiseHook_3807023 = [null];
+var outOfMemHook_3807026 = [null];
+var unhandledExceptionHook_3807031 = [null];
 if (!Math.trunc) {
   Math.trunc = function(v) {
     v = +v;
@@ -1200,24 +1200,27 @@ if (!Math.trunc) {
   };
 }
 
-var F={procname:"module prelude",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\prelude.nim",line:0};
+var F={procname:"module scrollapp_simple",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\experiments\\scrollapp_simple.nim",line:0};
 framePtr = F;
 framePtr = F.prev;
-var F={procname:"module kbase",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\kbase.nim",line:0};
+var F={procname:"module prelude",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\prelude.nim",line:0};
 framePtr = F;
 framePtr = F.prev;
-var F={procname:"module kbase",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\kbase.nim",line:0};
+var F={procname:"module kbase",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\kbase.nim",line:0};
 framePtr = F;
 framePtr = F.prev;
-var F={procname:"module kbase",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\kbase.nim",line:0};
+var F={procname:"module kbase",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\kbase.nim",line:0};
 framePtr = F;
 framePtr = F.prev;
-var F={procname:"module karax",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\karax.nim",line:0};
+var F={procname:"module kbase",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\kbase.nim",line:0};
 framePtr = F;
 framePtr = F.prev;
-var F={procname:"module kdom",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\kdom.nim",line:0};
+var F={procname:"module karax",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\karax.nim",line:0};
 framePtr = F;
 framePtr = F.prev;
+var F={procname:"module kdom",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\kdom.nim",line:0};
+framePtr = F;
+framePtr = F.prev;
 var F={procname:"module dom",prev:framePtr,filename:"C:\\Users\\blue\\.choosenim\\toolchains\\nim-#devel\\lib\\js\\dom.nim",line:0};
 framePtr = F;
 framePtr = F.prev;
@@ -1746,19 +1749,19 @@ framePtr = F.prev;
 var F={procname:"module dom",prev:framePtr,filename:"C:\\Users\\blue\\.choosenim\\toolchains\\nim-#devel\\lib\\js\\dom.nim",line:0};
 framePtr = F;
 framePtr = F.prev;
-var F={procname:"module kdom",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\kdom.nim",line:0};
+var F={procname:"module kdom",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\kdom.nim",line:0};
 framePtr = F;
 framePtr = F.prev;
-var F={procname:"module kdom",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\kdom.nim",line:0};
+var F={procname:"module kdom",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\kdom.nim",line:0};
 framePtr = F;
 framePtr = F.prev;
-var F={procname:"module kdom",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\kdom.nim",line:0};
+var F={procname:"module kdom",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\kdom.nim",line:0};
 framePtr = F;
 framePtr = F.prev;
-var F={procname:"module kdom",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\kdom.nim",line:0};
+var F={procname:"module kdom",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\kdom.nim",line:0};
 framePtr = F;
 framePtr = F.prev;
-var F={procname:"module vdom",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\vdom.nim",line:0};
+var F={procname:"module vdom",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\vdom.nim",line:0};
 framePtr = F;
 framePtr = F.prev;
 var F={procname:"module macros",prev:framePtr,filename:"C:\\Users\\blue\\.choosenim\\toolchains\\nim-#devel\\lib\\core\\macros.nim",line:0};
@@ -2340,10 +2343,10 @@ framePtr = F.prev;
 var F={procname:"module macros",prev:framePtr,filename:"C:\\Users\\blue\\.choosenim\\toolchains\\nim-#devel\\lib\\core\\macros.nim",line:0};
 framePtr = F;
 framePtr = F.prev;
-var F={procname:"module vdom",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\vdom.nim",line:0};
+var F={procname:"module vdom",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\vdom.nim",line:0};
 framePtr = F;
 framePtr = F.prev;
-var F={procname:"module vstyles",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\vstyles.nim",line:0};
+var F={procname:"module vstyles",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\vstyles.nim",line:0};
 framePtr = F;
 framePtr = F.prev;
 var F={procname:"module strutils",prev:framePtr,filename:"C:\\Users\\blue\\.choosenim\\toolchains\\nim-#devel\\lib\\pure\\strutils.nim",line:0};
@@ -3411,318 +3414,318 @@ framePtr = F.prev;
 var F={procname:"module strutils",prev:framePtr,filename:"C:\\Users\\blue\\.choosenim\\toolchains\\nim-#devel\\lib\\pure\\strutils.nim",line:0};
 framePtr = F;
 framePtr = F.prev;
-var F={procname:"module vstyles",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\vstyles.nim",line:0};
+var F={procname:"module vstyles",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\vstyles.nim",line:0};
 framePtr = F;
 framePtr = F.prev;
-var F={procname:"module vstyles",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\vstyles.nim",line:0};
+var F={procname:"module vstyles",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\vstyles.nim",line:0};
 framePtr = F;
 framePtr = F.prev;
-var F={procname:"module jdict",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\jdict.nim",line:0};
+var F={procname:"module jdict",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\jdict.nim",line:0};
 framePtr = F;
 framePtr = F.prev;
-var F={procname:"module jdict",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\jdict.nim",line:0};
+var F={procname:"module jdict",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\jdict.nim",line:0};
 framePtr = F;
 framePtr = F.prev;
-var F={procname:"module jdict",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\jdict.nim",line:0};
+var F={procname:"module jdict",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\jdict.nim",line:0};
 framePtr = F;
 framePtr = F.prev;
-var F={procname:"module jdict",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\jdict.nim",line:0};
+var F={procname:"module jdict",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\jdict.nim",line:0};
 framePtr = F;
 framePtr = F.prev;
-var F={procname:"module jdict",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\jdict.nim",line:0};
+var F={procname:"module jdict",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\jdict.nim",line:0};
 framePtr = F;
 framePtr = F.prev;
-var F={procname:"module jdict",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\jdict.nim",line:0};
+var F={procname:"module jdict",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\jdict.nim",line:0};
 framePtr = F;
 framePtr = F.prev;
-var F={procname:"module jdict",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\jdict.nim",line:0};
+var F={procname:"module jdict",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\jdict.nim",line:0};
 framePtr = F;
 framePtr = F.prev;
-var F={procname:"module jdict",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\jdict.nim",line:0};
+var F={procname:"module jdict",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\jdict.nim",line:0};
 framePtr = F;
 framePtr = F.prev;
-var F={procname:"module jdict",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\jdict.nim",line:0};
+var F={procname:"module jdict",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\jdict.nim",line:0};
 framePtr = F;
 framePtr = F.prev;
-var F={procname:"module jdict",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\jdict.nim",line:0};
+var F={procname:"module jdict",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\jdict.nim",line:0};
 framePtr = F;
 framePtr = F.prev;
-var F={procname:"module jdict",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\jdict.nim",line:0};
+var F={procname:"module jdict",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\jdict.nim",line:0};
 framePtr = F;
 framePtr = F.prev;
-var F={procname:"module jdict",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\jdict.nim",line:0};
+var F={procname:"module jdict",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\jdict.nim",line:0};
 framePtr = F;
 framePtr = F.prev;
-var F={procname:"module jdict",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\jdict.nim",line:0};
+var F={procname:"module jdict",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\jdict.nim",line:0};
 framePtr = F;
 framePtr = F.prev;
-var F={procname:"module jdict",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\jdict.nim",line:0};
+var F={procname:"module jdict",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\jdict.nim",line:0};
 framePtr = F;
 framePtr = F.prev;
-var F={procname:"module jdict",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\jdict.nim",line:0};
+var F={procname:"module jdict",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\jdict.nim",line:0};
 framePtr = F;
 framePtr = F.prev;
-var F={procname:"module vstyles",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\vstyles.nim",line:0};
+var F={procname:"module vstyles",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\vstyles.nim",line:0};
 framePtr = F;
 framePtr = F.prev;
-var F={procname:"module vstyles",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\vstyles.nim",line:0};
+var F={procname:"module vstyles",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\vstyles.nim",line:0};
 framePtr = F;
 framePtr = F.prev;
-var F={procname:"module vstyles",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\vstyles.nim",line:0};
+var F={procname:"module vstyles",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\vstyles.nim",line:0};
 framePtr = F;
 framePtr = F.prev;
-var F={procname:"module vstyles",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\vstyles.nim",line:0};
+var F={procname:"module vstyles",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\vstyles.nim",line:0};
 framePtr = F;
 framePtr = F.prev;
-var F={procname:"module vstyles",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\vstyles.nim",line:0};
+var F={procname:"module vstyles",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\vstyles.nim",line:0};
 framePtr = F;
 framePtr = F.prev;
-var F={procname:"module vstyles",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\vstyles.nim",line:0};
+var F={procname:"module vstyles",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\vstyles.nim",line:0};
 framePtr = F;
 framePtr = F.prev;
-var F={procname:"module vstyles",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\vstyles.nim",line:0};
+var F={procname:"module vstyles",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\vstyles.nim",line:0};
 framePtr = F;
 framePtr = F.prev;
-var F={procname:"module vstyles",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\vstyles.nim",line:0};
+var F={procname:"module vstyles",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\vstyles.nim",line:0};
 framePtr = F;
 framePtr = F.prev;
-var F={procname:"module vstyles",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\vstyles.nim",line:0};
+var F={procname:"module vstyles",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\vstyles.nim",line:0};
 framePtr = F;
 framePtr = F.prev;
-var F={procname:"module vstyles",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\vstyles.nim",line:0};
+var F={procname:"module vstyles",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\vstyles.nim",line:0};
 framePtr = F;
 framePtr = F.prev;
-var F={procname:"module vstyles",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\vstyles.nim",line:0};
+var F={procname:"module vstyles",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\vstyles.nim",line:0};
 framePtr = F;
 framePtr = F.prev;
-var F={procname:"module vstyles",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\vstyles.nim",line:0};
+var F={procname:"module vstyles",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\vstyles.nim",line:0};
 framePtr = F;
 framePtr = F.prev;
-var F={procname:"module vstyles",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\vstyles.nim",line:0};
+var F={procname:"module vstyles",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\vstyles.nim",line:0};
 framePtr = F;
 framePtr = F.prev;
-var F={procname:"module jstrutils",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\jstrutils.nim",line:0};
+var F={procname:"module jstrutils",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\jstrutils.nim",line:0};
 framePtr = F;
 framePtr = F.prev;
-var F={procname:"module jstrutils",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\jstrutils.nim",line:0};
+var F={procname:"module jstrutils",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\jstrutils.nim",line:0};
 framePtr = F;
 framePtr = F.prev;
-var F={procname:"module jstrutils",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\jstrutils.nim",line:0};
+var F={procname:"module jstrutils",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\jstrutils.nim",line:0};
 framePtr = F;
 framePtr = F.prev;
-var F={procname:"module jstrutils",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\jstrutils.nim",line:0};
+var F={procname:"module jstrutils",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\jstrutils.nim",line:0};
 framePtr = F;
 framePtr = F.prev;
-var F={procname:"module jstrutils",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\jstrutils.nim",line:0};
+var F={procname:"module jstrutils",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\jstrutils.nim",line:0};
 framePtr = F;
 framePtr = F.prev;
-var F={procname:"module jstrutils",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\jstrutils.nim",line:0};
+var F={procname:"module jstrutils",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\jstrutils.nim",line:0};
 framePtr = F;
 framePtr = F.prev;
-var F={procname:"module jstrutils",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\jstrutils.nim",line:0};
+var F={procname:"module jstrutils",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\jstrutils.nim",line:0};
 framePtr = F;
 framePtr = F.prev;
-var F={procname:"module jstrutils",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\jstrutils.nim",line:0};
+var F={procname:"module jstrutils",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\jstrutils.nim",line:0};
 framePtr = F;
 framePtr = F.prev;
-var F={procname:"module jstrutils",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\jstrutils.nim",line:0};
+var F={procname:"module jstrutils",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\jstrutils.nim",line:0};
 framePtr = F;
 framePtr = F.prev;
-var F={procname:"module jstrutils",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\jstrutils.nim",line:0};
+var F={procname:"module jstrutils",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\jstrutils.nim",line:0};
 framePtr = F;
 framePtr = F.prev;
-var F={procname:"module jstrutils",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\jstrutils.nim",line:0};
+var F={procname:"module jstrutils",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\jstrutils.nim",line:0};
 framePtr = F;
 framePtr = F.prev;
-var F={procname:"module jstrutils",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\jstrutils.nim",line:0};
+var F={procname:"module jstrutils",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\jstrutils.nim",line:0};
 framePtr = F;
 framePtr = F.prev;
-var F={procname:"module jstrutils",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\jstrutils.nim",line:0};
+var F={procname:"module jstrutils",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\jstrutils.nim",line:0};
 framePtr = F;
 framePtr = F.prev;
-var F={procname:"module jstrutils",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\jstrutils.nim",line:0};
+var F={procname:"module jstrutils",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\jstrutils.nim",line:0};
 framePtr = F;
 framePtr = F.prev;
-var F={procname:"module jstrutils",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\jstrutils.nim",line:0};
+var F={procname:"module jstrutils",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\jstrutils.nim",line:0};
 framePtr = F;
 framePtr = F.prev;
-var F={procname:"module jstrutils",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\jstrutils.nim",line:0};
+var F={procname:"module jstrutils",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\jstrutils.nim",line:0};
 framePtr = F;
 framePtr = F.prev;
-var F={procname:"module jstrutils",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\jstrutils.nim",line:0};
+var F={procname:"module jstrutils",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\jstrutils.nim",line:0};
 framePtr = F;
 framePtr = F.prev;
-var F={procname:"module jstrutils",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\jstrutils.nim",line:0};
+var F={procname:"module jstrutils",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\jstrutils.nim",line:0};
 framePtr = F;
 framePtr = F.prev;
-var F={procname:"module vstyles",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\vstyles.nim",line:0};
+var F={procname:"module vstyles",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\vstyles.nim",line:0};
 framePtr = F;
 framePtr = F.prev;
-var F={procname:"module vstyles",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\vstyles.nim",line:0};
+var F={procname:"module vstyles",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\vstyles.nim",line:0};
 framePtr = F;
 framePtr = F.prev;
-var F={procname:"module vstyles",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\vstyles.nim",line:0};
+var F={procname:"module vstyles",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\vstyles.nim",line:0};
 framePtr = F;
 framePtr = F.prev;
-var F={procname:"module vstyles",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\vstyles.nim",line:0};
+var F={procname:"module vstyles",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\vstyles.nim",line:0};
 framePtr = F;
 framePtr = F.prev;
-var F={procname:"module vdom",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\vdom.nim",line:0};
+var F={procname:"module vdom",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\vdom.nim",line:0};
 framePtr = F;
 framePtr = F.prev;
-var F={procname:"module vdom",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\vdom.nim",line:0};
+var F={procname:"module vdom",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\vdom.nim",line:0};
 framePtr = F;
 framePtr = F.prev;
-var F={procname:"module vdom",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\vdom.nim",line:0};
+var F={procname:"module vdom",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\vdom.nim",line:0};
 framePtr = F;
 framePtr = F.prev;
-var F={procname:"module vdom",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\vdom.nim",line:0};
+var F={procname:"module vdom",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\vdom.nim",line:0};
 framePtr = F;
 framePtr = F.prev;
-var F={procname:"module vdom",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\vdom.nim",line:0};
+var F={procname:"module vdom",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\vdom.nim",line:0};
 framePtr = F;
 framePtr = F.prev;
-var F={procname:"module vdom",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\vdom.nim",line:0};
+var F={procname:"module vdom",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\vdom.nim",line:0};
 framePtr = F;
 framePtr = F.prev;
-var F={procname:"module vdom",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\vdom.nim",line:0};
+var F={procname:"module vdom",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\vdom.nim",line:0};
 framePtr = F;
 framePtr = F.prev;
-var F={procname:"module vdom",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\vdom.nim",line:0};
+var F={procname:"module vdom",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\vdom.nim",line:0};
 framePtr = F;
 framePtr = F.prev;
-var F={procname:"module vdom",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\vdom.nim",line:0};
+var F={procname:"module vdom",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\vdom.nim",line:0};
 framePtr = F;
 framePtr = F.prev;
-var F={procname:"module vdom",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\vdom.nim",line:0};
+var F={procname:"module vdom",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\vdom.nim",line:0};
 framePtr = F;
 framePtr = F.prev;
-var F={procname:"module vdom",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\vdom.nim",line:0};
+var F={procname:"module vdom",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\vdom.nim",line:0};
 framePtr = F;
 framePtr = F.prev;
-var F={procname:"module vdom",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\vdom.nim",line:0};
+var F={procname:"module vdom",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\vdom.nim",line:0};
 framePtr = F;
 framePtr = F.prev;
-var F={procname:"module vdom",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\vdom.nim",line:0};
+var F={procname:"module vdom",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\vdom.nim",line:0};
 framePtr = F;
 framePtr = F.prev;
-var F={procname:"module vdom",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\vdom.nim",line:0};
+var F={procname:"module vdom",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\vdom.nim",line:0};
 framePtr = F;
 framePtr = F.prev;
-var F={procname:"module vdom",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\vdom.nim",line:0};
+var F={procname:"module vdom",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\vdom.nim",line:0};
 framePtr = F;
 framePtr = F.prev;
-var F={procname:"module vdom",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\vdom.nim",line:0};
+var F={procname:"module vdom",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\vdom.nim",line:0};
 framePtr = F;
 framePtr = F.prev;
-var F={procname:"module vdom",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\vdom.nim",line:0};
+var F={procname:"module vdom",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\vdom.nim",line:0};
 framePtr = F;
 framePtr = F.prev;
-var F={procname:"module vdom",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\vdom.nim",line:0};
+var F={procname:"module vdom",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\vdom.nim",line:0};
 framePtr = F;
 framePtr = F.prev;
-var F={procname:"module vdom",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\vdom.nim",line:0};
+var F={procname:"module vdom",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\vdom.nim",line:0};
 framePtr = F;
-F.line = 208;
-var gid_11735032 = [0];
+F.line = 206;
+var gid_12950032 = [0];
 framePtr = F.prev;
-var F={procname:"module vdom",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\vdom.nim",line:0};
+var F={procname:"module vdom",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\vdom.nim",line:0};
 framePtr = F;
 framePtr = F.prev;
-var F={procname:"module vdom",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\vdom.nim",line:0};
+var F={procname:"module vdom",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\vdom.nim",line:0};
 framePtr = F;
 framePtr = F.prev;
-var F={procname:"module vdom",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\vdom.nim",line:0};
+var F={procname:"module vdom",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\vdom.nim",line:0};
 framePtr = F;
 framePtr = F.prev;
-var F={procname:"module vdom",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\vdom.nim",line:0};
+var F={procname:"module vdom",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\vdom.nim",line:0};
 framePtr = F;
 framePtr = F.prev;
-var F={procname:"module vdom",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\vdom.nim",line:0};
+var F={procname:"module vdom",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\vdom.nim",line:0};
 framePtr = F;
 framePtr = F.prev;
-var F={procname:"module vdom",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\vdom.nim",line:0};
+var F={procname:"module vdom",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\vdom.nim",line:0};
 framePtr = F;
 framePtr = F.prev;
-var F={procname:"module vdom",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\vdom.nim",line:0};
+var F={procname:"module vdom",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\vdom.nim",line:0};
 framePtr = F;
 framePtr = F.prev;
-var F={procname:"module vdom",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\vdom.nim",line:0};
+var F={procname:"module vdom",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\vdom.nim",line:0};
 framePtr = F;
 framePtr = F.prev;
-var F={procname:"module vdom",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\vdom.nim",line:0};
+var F={procname:"module vdom",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\vdom.nim",line:0};
 framePtr = F;
 framePtr = F.prev;
-var F={procname:"module vdom",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\vdom.nim",line:0};
+var F={procname:"module vdom",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\vdom.nim",line:0};
 framePtr = F;
 framePtr = F.prev;
-var F={procname:"module vdom",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\vdom.nim",line:0};
+var F={procname:"module vdom",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\vdom.nim",line:0};
 framePtr = F;
 framePtr = F.prev;
-var F={procname:"module vdom",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\vdom.nim",line:0};
+var F={procname:"module vdom",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\vdom.nim",line:0};
 framePtr = F;
 framePtr = F.prev;
-var F={procname:"module vdom",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\vdom.nim",line:0};
+var F={procname:"module vdom",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\vdom.nim",line:0};
 framePtr = F;
 framePtr = F.prev;
-var F={procname:"module vdom",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\vdom.nim",line:0};
+var F={procname:"module vdom",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\vdom.nim",line:0};
 framePtr = F;
 framePtr = F.prev;
-var F={procname:"module vdom",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\vdom.nim",line:0};
+var F={procname:"module vdom",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\vdom.nim",line:0};
 framePtr = F;
 framePtr = F.prev;
-var F={procname:"module vdom",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\vdom.nim",line:0};
+var F={procname:"module vdom",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\vdom.nim",line:0};
 framePtr = F;
 framePtr = F.prev;
-var F={procname:"module vdom",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\vdom.nim",line:0};
+var F={procname:"module vdom",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\vdom.nim",line:0};
 framePtr = F;
 framePtr = F.prev;
-var F={procname:"module vdom",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\vdom.nim",line:0};
+var F={procname:"module vdom",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\vdom.nim",line:0};
 framePtr = F;
 framePtr = F.prev;
-var F={procname:"module vdom",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\vdom.nim",line:0};
+var F={procname:"module vdom",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\vdom.nim",line:0};
 framePtr = F;
 framePtr = F.prev;
-var F={procname:"module vdom",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\vdom.nim",line:0};
+var F={procname:"module vdom",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\vdom.nim",line:0};
 framePtr = F;
 framePtr = F.prev;
-var F={procname:"module vdom",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\vdom.nim",line:0};
+var F={procname:"module vdom",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\vdom.nim",line:0};
 framePtr = F;
 framePtr = F.prev;
-var F={procname:"module vdom",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\vdom.nim",line:0};
+var F={procname:"module vdom",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\vdom.nim",line:0};
 framePtr = F;
 framePtr = F.prev;
-var F={procname:"module vdom",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\vdom.nim",line:0};
+var F={procname:"module vdom",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\vdom.nim",line:0};
 framePtr = F;
 framePtr = F.prev;
-var F={procname:"module vdom",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\vdom.nim",line:0};
+var F={procname:"module vdom",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\vdom.nim",line:0};
 framePtr = F;
 framePtr = F.prev;
-var F={procname:"module vdom",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\vdom.nim",line:0};
+var F={procname:"module vdom",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\vdom.nim",line:0};
 framePtr = F;
 framePtr = F.prev;
-var F={procname:"module vdom",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\vdom.nim",line:0};
+var F={procname:"module vdom",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\vdom.nim",line:0};
 framePtr = F;
 framePtr = F.prev;
-var F={procname:"module vdom",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\vdom.nim",line:0};
+var F={procname:"module vdom",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\vdom.nim",line:0};
 framePtr = F;
 framePtr = F.prev;
-var F={procname:"module vdom",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\vdom.nim",line:0};
+var F={procname:"module vdom",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\vdom.nim",line:0};
 framePtr = F;
 framePtr = F.prev;
-var F={procname:"module vdom",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\vdom.nim",line:0};
+var F={procname:"module vdom",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\vdom.nim",line:0};
 framePtr = F;
 framePtr = F.prev;
-var F={procname:"module vdom",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\vdom.nim",line:0};
+var F={procname:"module vdom",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\vdom.nim",line:0};
 framePtr = F;
 framePtr = F.prev;
-var F={procname:"module vdom",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\vdom.nim",line:0};
+var F={procname:"module vdom",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\vdom.nim",line:0};
 framePtr = F;
 framePtr = F.prev;
-var F={procname:"module vdom",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\vdom.nim",line:0};
+var F={procname:"module vdom",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\vdom.nim",line:0};
 framePtr = F;
 framePtr = F.prev;
-var F={procname:"module compact",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\compact.nim",line:0};
+var F={procname:"module compact",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\compact.nim",line:0};
 framePtr = F;
 framePtr = F.prev;
 var F={procname:"module tables",prev:framePtr,filename:"C:\\Users\\blue\\.choosenim\\toolchains\\nim-#devel\\lib\\pure\\collections\\tables.nim",line:0};
@@ -3761,7 +3764,7 @@ framePtr = F.prev;
 var F={procname:"module hashes",prev:framePtr,filename:"C:\\Users\\blue\\.choosenim\\toolchains\\nim-#devel\\lib\\pure\\hashes.nim",line:0};
 framePtr = F;
 F.line = 155;
-var objectID_11870031 = [0];
+var objectID_13085031 = [0];
 framePtr = F.prev;
 var F={procname:"module hashes",prev:framePtr,filename:"C:\\Users\\blue\\.choosenim\\toolchains\\nim-#devel\\lib\\pure\\hashes.nim",line:0};
 framePtr = F;
@@ -4375,315 +4378,315 @@ framePtr = F.prev;
 var F={procname:"module tables",prev:framePtr,filename:"C:\\Users\\blue\\.choosenim\\toolchains\\nim-#devel\\lib\\pure\\collections\\tables.nim",line:0};
 framePtr = F;
 framePtr = F.prev;
-var F={procname:"module compact",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\compact.nim",line:0};
+var F={procname:"module compact",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\compact.nim",line:0};
 framePtr = F;
 framePtr = F.prev;
-var F={procname:"module compact",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\compact.nim",line:0};
+var F={procname:"module compact",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\compact.nim",line:0};
 framePtr = F;
 F.line = 10;
-var vcomponents_12041026 = [{}];
+var vcomponents_13256026 = [{}];
 F.line = 22;
 framePtr = F.prev;
-var F={procname:"module compact",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\compact.nim",line:0};
+var F={procname:"module compact",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\compact.nim",line:0};
 framePtr = F;
 framePtr = F.prev;
-var F={procname:"module compact",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\compact.nim",line:0};
+var F={procname:"module compact",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\compact.nim",line:0};
 framePtr = F;
 framePtr = F.prev;
-var F={procname:"module compact",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\compact.nim",line:0};
+var F={procname:"module compact",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\compact.nim",line:0};
 framePtr = F;
 framePtr = F.prev;
-var F={procname:"module compact",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\compact.nim",line:0};
+var F={procname:"module compact",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\compact.nim",line:0};
 framePtr = F;
 framePtr = F.prev;
-var F={procname:"module compact",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\compact.nim",line:0};
+var F={procname:"module compact",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\compact.nim",line:0};
 framePtr = F;
 framePtr = F.prev;
-var F={procname:"module compact",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\compact.nim",line:0};
+var F={procname:"module compact",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\compact.nim",line:0};
 framePtr = F;
 framePtr = F.prev;
-var F={procname:"module compact",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\compact.nim",line:0};
+var F={procname:"module compact",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\compact.nim",line:0};
 framePtr = F;
 framePtr = F.prev;
-var F={procname:"module compact",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\compact.nim",line:0};
+var F={procname:"module compact",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\compact.nim",line:0};
 framePtr = F;
 framePtr = F.prev;
-var F={procname:"module karax",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\karax.nim",line:0};
+var F={procname:"module karax",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\karax.nim",line:0};
 framePtr = F;
 framePtr = F.prev;
-var F={procname:"module karax",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\karax.nim",line:0};
+var F={procname:"module karax",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\karax.nim",line:0};
 framePtr = F;
 framePtr = F.prev;
-var F={procname:"module karax",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\karax.nim",line:0};
+var F={procname:"module karax",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\karax.nim",line:0};
 framePtr = F;
 framePtr = F.prev;
-var F={procname:"module karax",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\karax.nim",line:0};
+var F={procname:"module karax",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\karax.nim",line:0};
 framePtr = F;
 framePtr = F.prev;
-var F={procname:"module karax",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\karax.nim",line:0};
+var F={procname:"module karax",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\karax.nim",line:0};
 framePtr = F;
 F.line = 55;
-var kxi_12132284 = [null];
+var kxi_13347284 = [null];
 framePtr = F.prev;
-var F={procname:"module karax",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\karax.nim",line:0};
+var F={procname:"module karax",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\karax.nim",line:0};
 framePtr = F;
 framePtr = F.prev;
-var F={procname:"module karax",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\karax.nim",line:0};
+var F={procname:"module karax",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\karax.nim",line:0};
 framePtr = F;
 framePtr = F.prev;
-var F={procname:"module karax",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\karax.nim",line:0};
+var F={procname:"module karax",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\karax.nim",line:0};
 framePtr = F;
 framePtr = F.prev;
-var F={procname:"module karax",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\karax.nim",line:0};
+var F={procname:"module karax",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\karax.nim",line:0};
 framePtr = F;
 framePtr = F.prev;
-var F={procname:"module karax",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\karax.nim",line:0};
+var F={procname:"module karax",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\karax.nim",line:0};
 framePtr = F;
 framePtr = F.prev;
-var F={procname:"module karax",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\karax.nim",line:0};
+var F={procname:"module karax",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\karax.nim",line:0};
 framePtr = F;
 framePtr = F.prev;
-var F={procname:"module karax",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\karax.nim",line:0};
+var F={procname:"module karax",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\karax.nim",line:0};
 framePtr = F;
 framePtr = F.prev;
-var F={procname:"module karax",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\karax.nim",line:0};
+var F={procname:"module karax",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\karax.nim",line:0};
 framePtr = F;
 framePtr = F.prev;
-var F={procname:"module karax",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\karax.nim",line:0};
+var F={procname:"module karax",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\karax.nim",line:0};
 framePtr = F;
 framePtr = F.prev;
-var F={procname:"module karax",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\karax.nim",line:0};
+var F={procname:"module karax",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\karax.nim",line:0};
 framePtr = F;
 framePtr = F.prev;
-var F={procname:"module karax",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\karax.nim",line:0};
+var F={procname:"module karax",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\karax.nim",line:0};
 framePtr = F;
 framePtr = F.prev;
-var F={procname:"module karax",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\karax.nim",line:0};
+var F={procname:"module karax",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\karax.nim",line:0};
 framePtr = F;
 framePtr = F.prev;
-var F={procname:"module karax",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\karax.nim",line:0};
+var F={procname:"module karax",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\karax.nim",line:0};
 framePtr = F;
 framePtr = F.prev;
-var F={procname:"module karax",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\karax.nim",line:0};
+var F={procname:"module karax",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\karax.nim",line:0};
 framePtr = F;
 framePtr = F.prev;
-var F={procname:"module karax",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\karax.nim",line:0};
+var F={procname:"module karax",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\karax.nim",line:0};
 framePtr = F;
 framePtr = F.prev;
-var F={procname:"module karax",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\karax.nim",line:0};
+var F={procname:"module karax",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\karax.nim",line:0};
 framePtr = F;
 framePtr = F.prev;
-var F={procname:"module karax",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\karax.nim",line:0};
+var F={procname:"module karax",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\karax.nim",line:0};
 framePtr = F;
 framePtr = F.prev;
-var F={procname:"module karax",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\karax.nim",line:0};
+var F={procname:"module karax",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\karax.nim",line:0};
 framePtr = F;
 framePtr = F.prev;
-var F={procname:"module karax",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\karax.nim",line:0};
+var F={procname:"module karax",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\karax.nim",line:0};
 framePtr = F;
 framePtr = F.prev;
-var F={procname:"module karax",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\karax.nim",line:0};
+var F={procname:"module karax",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\karax.nim",line:0};
 framePtr = F;
 framePtr = F.prev;
-var F={procname:"module karax",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\karax.nim",line:0};
+var F={procname:"module karax",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\karax.nim",line:0};
 framePtr = F;
 framePtr = F.prev;
-var F={procname:"module karax",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\karax.nim",line:0};
+var F={procname:"module karax",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\karax.nim",line:0};
 framePtr = F;
 framePtr = F.prev;
-var F={procname:"module karax",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\karax.nim",line:0};
+var F={procname:"module karax",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\karax.nim",line:0};
 framePtr = F;
 framePtr = F.prev;
-var F={procname:"module karax",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\karax.nim",line:0};
+var F={procname:"module karax",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\karax.nim",line:0};
 framePtr = F;
 framePtr = F.prev;
-var F={procname:"module karax",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\karax.nim",line:0};
+var F={procname:"module karax",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\karax.nim",line:0};
 framePtr = F;
 framePtr = F.prev;
-var F={procname:"module karax",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\karax.nim",line:0};
+var F={procname:"module karax",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\karax.nim",line:0};
 framePtr = F;
 framePtr = F.prev;
-var F={procname:"module karax",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\karax.nim",line:0};
+var F={procname:"module karax",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\karax.nim",line:0};
 framePtr = F;
 framePtr = F.prev;
-var F={procname:"module karax",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\karax.nim",line:0};
+var F={procname:"module karax",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\karax.nim",line:0};
 framePtr = F;
 framePtr = F.prev;
-var F={procname:"module karax",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\karax.nim",line:0};
+var F={procname:"module karax",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\karax.nim",line:0};
 framePtr = F;
 framePtr = F.prev;
-var F={procname:"module karax",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\karax.nim",line:0};
+var F={procname:"module karax",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\karax.nim",line:0};
 framePtr = F;
 framePtr = F.prev;
-var F={procname:"module karax",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\karax.nim",line:0};
+var F={procname:"module karax",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\karax.nim",line:0};
 framePtr = F;
 framePtr = F.prev;
-var F={procname:"module karax",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\karax.nim",line:0};
+var F={procname:"module karax",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\karax.nim",line:0};
 framePtr = F;
 framePtr = F.prev;
-var F={procname:"module karax",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\karax.nim",line:0};
+var F={procname:"module karax",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\karax.nim",line:0};
 framePtr = F;
 framePtr = F.prev;
-var F={procname:"module karax",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\karax.nim",line:0};
+var F={procname:"module karax",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\karax.nim",line:0};
 framePtr = F;
 framePtr = F.prev;
-var F={procname:"module karax",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\karax.nim",line:0};
+var F={procname:"module karax",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\karax.nim",line:0};
 framePtr = F;
 framePtr = F.prev;
-var F={procname:"module karax",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\karax.nim",line:0};
+var F={procname:"module karax",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\karax.nim",line:0};
 framePtr = F;
 framePtr = F.prev;
-var F={procname:"module karax",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\karax.nim",line:0};
+var F={procname:"module karax",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\karax.nim",line:0};
 framePtr = F;
 framePtr = F.prev;
-var F={procname:"module karax",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\karax.nim",line:0};
+var F={procname:"module karax",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\karax.nim",line:0};
 framePtr = F;
 framePtr = F.prev;
-var F={procname:"module karax",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\karax.nim",line:0};
+var F={procname:"module karax",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\karax.nim",line:0};
 framePtr = F;
 framePtr = F.prev;
-var F={procname:"module karax",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\karax.nim",line:0};
+var F={procname:"module karax",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\karax.nim",line:0};
 framePtr = F;
 framePtr = F.prev;
-var F={procname:"module karax",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\karax.nim",line:0};
+var F={procname:"module karax",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\karax.nim",line:0};
 framePtr = F;
 framePtr = F.prev;
-var F={procname:"module karax",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\karax.nim",line:0};
+var F={procname:"module karax",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\karax.nim",line:0};
 framePtr = F;
 framePtr = F.prev;
-var F={procname:"module karax",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\karax.nim",line:0};
+var F={procname:"module karax",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\karax.nim",line:0};
 framePtr = F;
 framePtr = F.prev;
-var F={procname:"module karax",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\karax.nim",line:0};
+var F={procname:"module karax",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\karax.nim",line:0};
 framePtr = F;
 framePtr = F.prev;
-var F={procname:"module karax",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\karax.nim",line:0};
+var F={procname:"module karax",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\karax.nim",line:0};
 framePtr = F;
 framePtr = F.prev;
-var F={procname:"module karax",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\karax.nim",line:0};
+var F={procname:"module karax",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\karax.nim",line:0};
 framePtr = F;
 framePtr = F.prev;
-var F={procname:"module karax",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\karax.nim",line:0};
+var F={procname:"module karax",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\karax.nim",line:0};
 framePtr = F;
 framePtr = F.prev;
-var F={procname:"module karax",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\karax.nim",line:0};
+var F={procname:"module karax",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\karax.nim",line:0};
 framePtr = F;
 framePtr = F.prev;
-var F={procname:"module karax",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\karax.nim",line:0};
+var F={procname:"module karax",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\karax.nim",line:0};
 framePtr = F;
 framePtr = F.prev;
-var F={procname:"module karax",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\karax.nim",line:0};
+var F={procname:"module karax",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\karax.nim",line:0};
 framePtr = F;
 framePtr = F.prev;
-var F={procname:"module karax",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\karax.nim",line:0};
+var F={procname:"module karax",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\karax.nim",line:0};
 framePtr = F;
 framePtr = F.prev;
-var F={procname:"module karax",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\karax.nim",line:0};
+var F={procname:"module karax",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\karax.nim",line:0};
 framePtr = F;
 framePtr = F.prev;
-var F={procname:"module karax",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\karax.nim",line:0};
+var F={procname:"module karax",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\karax.nim",line:0};
 framePtr = F;
 framePtr = F.prev;
-var F={procname:"module karax",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\karax.nim",line:0};
+var F={procname:"module karax",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\karax.nim",line:0};
 framePtr = F;
 framePtr = F.prev;
-var F={procname:"module karax",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\karax.nim",line:0};
+var F={procname:"module karax",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\karax.nim",line:0};
 framePtr = F;
 framePtr = F.prev;
-var F={procname:"module karax",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\karax.nim",line:0};
+var F={procname:"module karax",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\karax.nim",line:0};
 framePtr = F;
 framePtr = F.prev;
-var F={procname:"module karaxdsl",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\karaxdsl.nim",line:0};
+var F={procname:"module karaxdsl",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\karaxdsl.nim",line:0};
 framePtr = F;
 framePtr = F.prev;
-var F={procname:"module karaxdsl",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\karaxdsl.nim",line:0};
+var F={procname:"module karaxdsl",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\karaxdsl.nim",line:0};
 framePtr = F;
 framePtr = F.prev;
-var F={procname:"module karaxdsl",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\karaxdsl.nim",line:0};
+var F={procname:"module karaxdsl",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\karaxdsl.nim",line:0};
 framePtr = F;
 framePtr = F.prev;
-var F={procname:"module karaxdsl",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\karaxdsl.nim",line:0};
+var F={procname:"module karaxdsl",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\karaxdsl.nim",line:0};
 framePtr = F;
 framePtr = F.prev;
-var F={procname:"module karaxdsl",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\karaxdsl.nim",line:0};
+var F={procname:"module karaxdsl",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\karaxdsl.nim",line:0};
 framePtr = F;
 framePtr = F.prev;
-var F={procname:"module karaxdsl",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\karaxdsl.nim",line:0};
+var F={procname:"module karaxdsl",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\karaxdsl.nim",line:0};
 framePtr = F;
 framePtr = F.prev;
-var F={procname:"module karaxdsl",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\karaxdsl.nim",line:0};
+var F={procname:"module karaxdsl",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\karaxdsl.nim",line:0};
 framePtr = F;
 framePtr = F.prev;
-var F={procname:"module karaxdsl",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\karaxdsl.nim",line:0};
+var F={procname:"module karaxdsl",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\karaxdsl.nim",line:0};
 framePtr = F;
 framePtr = F.prev;
-var F={procname:"module karaxdsl",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\karaxdsl.nim",line:0};
+var F={procname:"module karaxdsl",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\karaxdsl.nim",line:0};
 framePtr = F;
 framePtr = F.prev;
-var F={procname:"module karaxdsl",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\karaxdsl.nim",line:0};
+var F={procname:"module karaxdsl",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\karaxdsl.nim",line:0};
 framePtr = F;
 framePtr = F.prev;
-var F={procname:"module karaxdsl",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\karaxdsl.nim",line:0};
+var F={procname:"module karaxdsl",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\karaxdsl.nim",line:0};
 framePtr = F;
 framePtr = F.prev;
-var F={procname:"module karaxdsl",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\karaxdsl.nim",line:0};
+var F={procname:"module karaxdsl",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\karaxdsl.nim",line:0};
 framePtr = F;
 framePtr = F.prev;
-var F={procname:"module prelude",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\prelude.nim",line:0};
+var F={procname:"module prelude",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\prelude.nim",line:0};
 framePtr = F;
 framePtr = F.prev;
-var F={procname:"module prelude",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\prelude.nim",line:0};
+var F={procname:"module prelude",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\prelude.nim",line:0};
 framePtr = F;
 framePtr = F.prev;
-var F={procname:"module prelude",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\prelude.nim",line:0};
+var F={procname:"module prelude",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\prelude.nim",line:0};
 framePtr = F;
 framePtr = F.prev;
-var F={procname:"module helloworld",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\examples\\helloworld.nim",line:0};
+var F={procname:"module scrollapp_simple",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\experiments\\scrollapp_simple.nim",line:0};
 framePtr = F;
 framePtr = F.prev;
-var F={procname:"module helloworld",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\examples\\helloworld.nim",line:0};
+var F={procname:"module scrollapp_simple",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\experiments\\scrollapp_simple.nim",line:0};
 framePtr = F;
 framePtr = F.prev;
-function add_2592042(x_2592045, x_2592045_Idx, y_2592046) {
-          if (x_2592045[x_2592045_Idx] === null) { x_2592045[x_2592045_Idx] = []; }
-      var off = x_2592045[x_2592045_Idx].length;
-      x_2592045[x_2592045_Idx].length += y_2592046.length;
-      for (var i = 0; i < y_2592046.length; ++i) {
-        x_2592045[x_2592045_Idx][off+i] = y_2592046.charCodeAt(i);
+function add_3807042(x_3807045, x_3807045_Idx, y_3807046) {
+          if (x_3807045[x_3807045_Idx] === null) { x_3807045[x_3807045_Idx] = []; }
+      var off = x_3807045[x_3807045_Idx].length;
+      x_3807045[x_3807045_Idx].length += y_3807046.length;
+      for (var i = 0; i < y_3807046.length; ++i) {
+        x_3807045[x_3807045_Idx][off+i] = y_3807046.charCodeAt(i);
       }
     
 
   
 }
-function isFatPointer_2700401(ti_2700403) {
-  var result_2700404 = false;
+function isFatPointer_3915401(ti_3915403) {
+  var result_3915404 = false;
 
   BeforeRet: do {
-    result_2700404 = !((ConstSet1[ti_2700403.base.kind] != undefined));
+    result_3915404 = !((ConstSet1[ti_3915403.base.kind] != undefined));
     break BeforeRet;
   } while (false);
 
-  return result_2700404;
+  return result_3915404;
 
 }
-function nimCopyAux(dest_2705028, src_2705029, n_2705031) {
-    switch (n_2705031.kind) {
+function nimCopyAux(dest_3920028, src_3920029, n_3920031) {
+    switch (n_3920031.kind) {
     case 0:
       break;
     case 1:
-            dest_2705028[n_2705031.offset] = nimCopy(dest_2705028[n_2705031.offset], src_2705029[n_2705031.offset], n_2705031.typ);
+            dest_3920028[n_3920031.offset] = nimCopy(dest_3920028[n_3920031.offset], src_3920029[n_3920031.offset], n_3920031.typ);
     
       break;
     case 2:
-          for (var i = 0; i < n_2705031.sons.length; i++) {
-      nimCopyAux(dest_2705028, src_2705029, n_2705031.sons[i]);
+          for (var i = 0; i < n_3920031.sons.length; i++) {
+      nimCopyAux(dest_3920028, src_3920029, n_3920031.sons[i]);
     }
     
       break;
     case 3:
-            dest_2705028[n_2705031.offset] = nimCopy(dest_2705028[n_2705031.offset], src_2705029[n_2705031.offset], n_2705031.typ);
-      for (var i = 0; i < n_2705031.sons.length; ++i) {
-        nimCopyAux(dest_2705028, src_2705029, n_2705031.sons[i][1]);
+            dest_3920028[n_3920031.offset] = nimCopy(dest_3920028[n_3920031.offset], src_3920029[n_3920031.offset], n_3920031.typ);
+      for (var i = 0; i < n_3920031.sons.length; ++i) {
+        nimCopyAux(dest_3920028, src_3920029, n_3920031.sons[i][1]);
       }
     
       break;
@@ -4691,254 +4694,283 @@ function nimCopyAux(dest_2705028, src_2705029, n_2705031) {
 
   
 }
-function auxWriteStackTrace_2615038(f_2615040) {
+function auxWriteStackTrace_3830038(f_3830040) {
           var Tmp3;
 
-  var result_2615041 = [[]];
+  var result_3830041 = [[]];
 
-    var it_2615051 = f_2615040;
-    var i_2615053 = 0;
-    var total_2615055 = 0;
-    var tempFrames_2615062 = arrayConstr(64, {Field0: null, Field1: 0, Field2: null}, NTI2615043);
+    var it_3830051 = f_3830040;
+    var i_3830053 = 0;
+    var total_3830055 = 0;
+    var tempFrames_3830062 = arrayConstr(64, {Field0: null, Field1: 0, Field2: null}, NTI3830043);
     L1: do {
         L2: while (true) {
-          if (!!((it_2615051 == null))) Tmp3 = false; else {            Tmp3 = (i_2615053 <= 63);          }        if (!Tmp3) break L2;
-          tempFrames_2615062[i_2615053].Field0 = it_2615051.procname;
-          tempFrames_2615062[i_2615053].Field1 = it_2615051.line;
-          tempFrames_2615062[i_2615053].Field2 = it_2615051.filename;
-          i_2615053 += 1;
-          total_2615055 += 1;
-          it_2615051 = it_2615051.prev;
+          if (!!((it_3830051 == null))) Tmp3 = false; else {            Tmp3 = (i_3830053 <= 63);          }        if (!Tmp3) break L2;
+          tempFrames_3830062[i_3830053].Field0 = it_3830051.procname;
+          tempFrames_3830062[i_3830053].Field1 = it_3830051.line;
+          tempFrames_3830062[i_3830053].Field2 = it_3830051.filename;
+          i_3830053 += 1;
+          total_3830055 += 1;
+          it_3830051 = it_3830051.prev;
         }
     } while(false);
     L4: do {
         L5: while (true) {
-        if (!!((it_2615051 == null))) break L5;
-          total_2615055 += 1;
-          it_2615051 = it_2615051.prev;
+        if (!!((it_3830051 == null))) break L5;
+          total_3830055 += 1;
+          it_3830051 = it_3830051.prev;
         }
     } while(false);
-    result_2615041[0] = nimCopy(null, [], NTI2421013);
-    if (!((total_2615055 == i_2615053))) {
-    result_2615041[0].push.apply(result_2615041[0], makeNimstrLit("("));;
-    result_2615041[0].push.apply(result_2615041[0], cstrToNimstr(((total_2615055 - i_2615053))+""));;
-    result_2615041[0].push.apply(result_2615041[0], makeNimstrLit(" calls omitted) ...\x0A"));;
+    result_3830041[0] = nimCopy(null, [], NTI3638013);
+    if (!((total_3830055 == i_3830053))) {
+    result_3830041[0].push.apply(result_3830041[0], makeNimstrLit("("));;
+    result_3830041[0].push.apply(result_3830041[0], cstrToNimstr(((total_3830055 - i_3830053))+""));;
+    result_3830041[0].push.apply(result_3830041[0], makeNimstrLit(" calls omitted) ...\x0A"));;
     }
     
     L6: do {
-      var j_2630236 = 0;
-      var colontmp__12770081 = 0;
-      colontmp__12770081 = (i_2615053 - 1);
-      var res_12770086 = colontmp__12770081;
+      var j_3845236 = 0;
+      var colontmp__13982087 = 0;
+      colontmp__13982087 = (i_3830053 - 1);
+      var res_13982092 = colontmp__13982087;
       L7: do {
           L8: while (true) {
-          if (!(0 <= res_12770086)) break L8;
-            j_2630236 = res_12770086;
-            result_2615041[0].push.apply(result_2615041[0], cstrToNimstr(tempFrames_2615062[j_2630236].Field2));;
-            if ((0 < tempFrames_2615062[j_2630236].Field1)) {
-            result_2615041[0].push.apply(result_2615041[0], makeNimstrLit("("));;
-            result_2615041[0].push.apply(result_2615041[0], cstrToNimstr((tempFrames_2615062[j_2630236].Field1)+""));;
+          if (!(0 <= res_13982092)) break L8;
+            j_3845236 = res_13982092;
+            result_3830041[0].push.apply(result_3830041[0], cstrToNimstr(tempFrames_3830062[j_3845236].Field2));;
+            if ((0 < tempFrames_3830062[j_3845236].Field1)) {
+            result_3830041[0].push.apply(result_3830041[0], makeNimstrLit("("));;
+            result_3830041[0].push.apply(result_3830041[0], cstrToNimstr((tempFrames_3830062[j_3845236].Field1)+""));;
             if (false) {
-            result_2615041[0].push.apply(result_2615041[0], makeNimstrLit(", "));;
-            result_2615041[0].push.apply(result_2615041[0], makeNimstrLit("0"));;
+            result_3830041[0].push.apply(result_3830041[0], makeNimstrLit(", "));;
+            result_3830041[0].push.apply(result_3830041[0], makeNimstrLit("0"));;
             }
             
-            result_2615041[0].push.apply(result_2615041[0], makeNimstrLit(")"));;
+            result_3830041[0].push.apply(result_3830041[0], makeNimstrLit(")"));;
             }
             
-            result_2615041[0].push.apply(result_2615041[0], makeNimstrLit(" at "));;
-            add_2592042(result_2615041, 0, tempFrames_2615062[j_2630236].Field0);
-            result_2615041[0].push.apply(result_2615041[0], makeNimstrLit("\x0A"));;
-            res_12770086 -= 1;
+            result_3830041[0].push.apply(result_3830041[0], makeNimstrLit(" at "));;
+            add_3807042(result_3830041, 0, tempFrames_3830062[j_3845236].Field0);
+            result_3830041[0].push.apply(result_3830041[0], makeNimstrLit("\x0A"));;
+            res_13982092 -= 1;
           }
       } while(false);
     } while(false);
 
-  return result_2615041[0];
+  return result_3830041[0];
 
 }
-function rawWriteStackTrace_2645260() {
-  var result_2645262 = [];
+function rawWriteStackTrace_3860260() {
+  var result_3860262 = [];
 
     if (!((framePtr == null))) {
-    result_2645262 = nimCopy(null, (makeNimstrLit("Traceback (most recent call last)\x0A") || []).concat(auxWriteStackTrace_2615038(framePtr) || []), NTI2421013);
+    result_3860262 = nimCopy(null, (makeNimstrLit("Traceback (most recent call last)\x0A") || []).concat(auxWriteStackTrace_3830038(framePtr) || []), NTI3638013);
     }
     else {
-      result_2645262 = nimCopy(null, makeNimstrLit("No stack traceback available\x0A"), NTI2421013);
+      result_3860262 = nimCopy(null, makeNimstrLit("No stack traceback available\x0A"), NTI3638013);
     }
     
 
-  return result_2645262;
+  return result_3860262;
 
 }
-function newSeq_2690128(len_2690131) {
-  var result_2690133 = [];
+function newSeq_3905128(len_3905131) {
+  var result_3905133 = [];
 
   var F={procname:"newSeq.newSeq",prev:framePtr,filename:"C:\\Users\\blue\\.choosenim\\toolchains\\nim-#devel\\lib\\system.nim",line:0};
   framePtr = F;
     F.line = 656;
-    result_2690133 = new Array(len_2690131); for (var i=0;i<len_2690131;++i) {result_2690133[i]=null;}  framePtr = F.prev;
+    result_3905133 = new Array(len_3905131); for (var i=0;i<len_3905131;++i) {result_3905133[i]=null;}  framePtr = F.prev;
 
-  return result_2690133;
+  return result_3905133;
 
 }
-function unhandledException(e_2650059) {
-    var buf_2650060 = [[]];
-    if (!(((e_2650059.message).length == 0))) {
-    buf_2650060[0].push.apply(buf_2650060[0], makeNimstrLit("Error: unhandled exception: "));;
-    buf_2650060[0].push.apply(buf_2650060[0], e_2650059.message);;
+function unhandledException(e_3865059) {
+    var buf_3865060 = [[]];
+    if (!(((e_3865059.message).length == 0))) {
+    buf_3865060[0].push.apply(buf_3865060[0], makeNimstrLit("Error: unhandled exception: "));;
+    buf_3865060[0].push.apply(buf_3865060[0], e_3865059.message);;
     }
     else {
-    buf_2650060[0].push.apply(buf_2650060[0], makeNimstrLit("Error: unhandled exception"));;
+    buf_3865060[0].push.apply(buf_3865060[0], makeNimstrLit("Error: unhandled exception"));;
     }
     
-    buf_2650060[0].push.apply(buf_2650060[0], makeNimstrLit(" ["));;
-    add_2592042(buf_2650060, 0, e_2650059.name);
-    buf_2650060[0].push.apply(buf_2650060[0], makeNimstrLit("]\x0A"));;
-    buf_2650060[0].push.apply(buf_2650060[0], rawWriteStackTrace_2645260());;
-    var cbuf_2655201 = toJSStr(buf_2650060[0]);
+    buf_3865060[0].push.apply(buf_3865060[0], makeNimstrLit(" ["));;
+    add_3807042(buf_3865060, 0, e_3865059.name);
+    buf_3865060[0].push.apply(buf_3865060[0], makeNimstrLit("]\x0A"));;
+    buf_3865060[0].push.apply(buf_3865060[0], rawWriteStackTrace_3860260());;
+    var cbuf_3870201 = toJSStr(buf_3865060[0]);
     framePtr = null;
       if (typeof(Error) !== "undefined") {
-    throw new Error(cbuf_2655201);
+    throw new Error(cbuf_3870201);
   }
   else {
-    throw cbuf_2655201;
+    throw cbuf_3870201;
   }
   
 
   
 }
-function newSeq_12685012(len_12685015) {
-  var result_12685017 = [];
-
-  var F={procname:"newSeq.newSeq",prev:framePtr,filename:"C:\\Users\\blue\\.choosenim\\toolchains\\nim-#devel\\lib\\system.nim",line:0};
-  framePtr = F;
-    F.line = 656;
-    result_12685017 = new Array(len_12685015); for (var i=0;i<len_12685015;++i) {result_12685017[i]=({k: 0, parent: null, current: null, newNode: null, oldNode: null});}  framePtr = F.prev;
-
-  return result_12685017;
-
-}
-function newSeq_12685064(len_12685067) {
-  var result_12685069 = [];
-
-  var F={procname:"newSeq.newSeq",prev:framePtr,filename:"C:\\Users\\blue\\.choosenim\\toolchains\\nim-#devel\\lib\\system.nim",line:0};
-  framePtr = F;
-    F.line = 656;
-    result_12685069 = new Array(len_12685067); for (var i=0;i<len_12685067;++i) {result_12685069[i]=({parent: null, newChild: null, pos: 0});}  framePtr = F.prev;
-
-  return result_12685069;
-
-}
 function raiseOverflow() {
-    raiseException({message: makeNimstrLit("over- or underflow"), parent: null, m_type: NTI2427637, name: null, trace: [], up: null}, "OverflowDefect");
+    raiseException({message: makeNimstrLit("over- or underflow"), parent: null, m_type: NTI3644637, name: null, trace: [], up: null}, "OverflowDefect");
 
   
 }
-function checkOverflowInt(a_2695403) {
-        if (a_2695403 > 2147483647 || a_2695403 < -2147483648) raiseOverflow();
+function checkOverflowInt(a_3910403) {
+        if (a_3910403 > 2147483647 || a_3910403 < -2147483648) raiseOverflow();
   
 
   
 }
-function sysFatal_2540418(message_2540422) {
+var F={procname:"module scrollapp_simple",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\experiments\\scrollapp_simple.nim",line:0};
+framePtr = F;
+F.line = 6;
+var entries_13982043 = [[]];
+L1: do {
+  F.line = 7;
+  var i_13982054 = [0];
+  F.line = 77;
+  var res_13982077 = 1;
+  L2: do {
+    F.line = 78;
+      L3: while (true) {
+      if (!(res_13982077 <= 500)) break L3;
+        F.line = 7;
+        i_13982054[0] = res_13982077;
+        F.line = 8;
+        entries_13982043[0].push(("Entry " + ((i_13982054[0])+'')));;
+        F.line = 80;
+        res_13982077 = addInt(res_13982077, 1);
+      }
+  } while(false);
+} while(false);
+framePtr = F.prev;
+var F={procname:"module scrollapp_simple",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\experiments\\scrollapp_simple.nim",line:0};
+framePtr = F;
+framePtr = F.prev;
+var F={procname:"module scrollapp_simple",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\experiments\\scrollapp_simple.nim",line:0};
+framePtr = F;
+framePtr = F.prev;
+function newSeq_13900012(len_13900015) {
+  var result_13900017 = [];
+
+  var F={procname:"newSeq.newSeq",prev:framePtr,filename:"C:\\Users\\blue\\.choosenim\\toolchains\\nim-#devel\\lib\\system.nim",line:0};
+  framePtr = F;
+    F.line = 656;
+    result_13900017 = new Array(len_13900015); for (var i=0;i<len_13900015;++i) {result_13900017[i]=({k: 0, parent: null, current: null, newNode: null, oldNode: null});}  framePtr = F.prev;
+
+  return result_13900017;
+
+}
+function newSeq_13900064(len_13900067) {
+  var result_13900069 = [];
+
+  var F={procname:"newSeq.newSeq",prev:framePtr,filename:"C:\\Users\\blue\\.choosenim\\toolchains\\nim-#devel\\lib\\system.nim",line:0};
+  framePtr = F;
+    F.line = 656;
+    result_13900069 = new Array(len_13900067); for (var i=0;i<len_13900067;++i) {result_13900069[i]=({parent: null, newChild: null, pos: 0});}  framePtr = F.prev;
+
+  return result_13900069;
+
+}
+function sysFatal_3755418(message_3755422) {
   var F={procname:"sysFatal.sysFatal",prev:framePtr,filename:"C:\\Users\\blue\\.choosenim\\toolchains\\nim-#devel\\lib\\system\\fatal.nim",line:0};
   framePtr = F;
     F.line = 49;
-    raiseException({message: nimCopy(null, message_2540422, NTI2421013), m_type: NTI2427641, parent: null, name: null, trace: [], up: null}, "AssertionDefect");
+    raiseException({message: nimCopy(null, message_3755422, NTI3638013), m_type: NTI3644641, parent: null, name: null, trace: [], up: null}, "AssertionDefect");
   framePtr = F.prev;
 
   
 }
-function raiseAssert_2540414(msg_2540416) {
+function raiseAssert_3755414(msg_3755416) {
   var F={procname:"assertions.raiseAssert",prev:framePtr,filename:"C:\\Users\\blue\\.choosenim\\toolchains\\nim-#devel\\lib\\system\\assertions.nim",line:0};
   framePtr = F;
     F.line = 23;
-    sysFatal_2540418(msg_2540416);
+    sysFatal_3755418(msg_3755416);
   framePtr = F.prev;
 
   
 }
-function failedAssertImpl_2540480(msg_2540482) {
+function failedAssertImpl_3755480(msg_3755482) {
   var F={procname:"assertions.failedAssertImpl",prev:framePtr,filename:"C:\\Users\\blue\\.choosenim\\toolchains\\nim-#devel\\lib\\system\\assertions.nim",line:0};
   framePtr = F;
     F.line = 30;
-    raiseAssert_2540414(msg_2540482);
+    raiseAssert_3755414(msg_3755482);
   framePtr = F.prev;
 
   
 }
-function raiseIndexError(i_2675047, a_2675048, b_2675049) {
+function raiseIndexError(i_3890047, a_3890048, b_3890049) {
     var Tmp1;
 
-    if ((b_2675049 < a_2675048)) {
+    if ((b_3890049 < a_3890048)) {
     Tmp1 = makeNimstrLit("index out of bounds, the container is empty");
     }
     else {
-    Tmp1 = (makeNimstrLit("index ") || []).concat(cstrToNimstr((i_2675047)+"") || [],makeNimstrLit(" not in ") || [],cstrToNimstr((a_2675048)+"") || [],makeNimstrLit(" .. ") || [],cstrToNimstr((b_2675049)+"") || []);
+    Tmp1 = (makeNimstrLit("index ") || []).concat(cstrToNimstr((i_3890047)+"") || [],makeNimstrLit(" not in ") || [],cstrToNimstr((a_3890048)+"") || [],makeNimstrLit(" .. ") || [],cstrToNimstr((b_3890049)+"") || []);
     }
     
-    raiseException({message: nimCopy(null, Tmp1, NTI2421013), parent: null, m_type: NTI2427649, name: null, trace: [], up: null}, "IndexDefect");
+    raiseException({message: nimCopy(null, Tmp1, NTI3638013), parent: null, m_type: NTI3644649, name: null, trace: [], up: null}, "IndexDefect");
 
   
 }
-function valueHEX3D_11700140(n_11700142, v_11700143) {
-  var F={procname:"vdom.value=",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\vdom.nim",line:0};
+function valueHEX3D_12915140(n_12915142, v_12915143) {
+  var F={procname:"vdom.value=",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\vdom.nim",line:0};
   framePtr = F;
-    F.line = 172;
-    n_11700142.text = v_11700143;
+    F.line = 170;
+    n_12915142.text = v_12915143;
   framePtr = F.prev;
 
   
 }
-function value_11700123(n_11700125) {
-  var result_11700126 = null;
+function value_12915123(n_12915125) {
+  var result_12915126 = null;
 
-  var F={procname:"vdom.value",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\vdom.nim",line:0};
+  var F={procname:"vdom.value",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\vdom.nim",line:0};
   framePtr = F;
-    F.line = 171;
-    result_11700126 = n_11700125.text;
+    F.line = 169;
+    result_12915126 = n_12915125.text;
   framePtr = F.prev;
 
-  return result_11700126;
+  return result_12915126;
 
 }
-function addEventShell_12132375(d_12132377, name_12132378, h_12132379) {
-  var F={procname:"karax.addEventShell",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\karax.nim",line:0};
+function addEventShell_13347375(d_13347377, name_13347378, h_13347379) {
+  var F={procname:"karax.addEventShell",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\karax.nim",line:0};
   framePtr = F;
     F.line = 89;
-    d_12132377.addEventListener(name_12132378, h_12132379, false);
-    if ((d_12132377.karaxEvents == null)) {
+    d_13347377.addEventListener(name_13347378, h_13347379, false);
+    if ((d_13347377.karaxEvents == null)) {
     F.line = 91;
-    d_12132377.karaxEvents = new Array(0);
+    d_13347377.karaxEvents = new Array(0);
     }
     
     F.line = 92;
-    d_12132377.karaxEvents.push({Field0: name_12132378, Field1: h_12132379});
+    d_13347377.karaxEvents.push({Field0: name_13347378, Field1: h_13347379});
   framePtr = F.prev;
 
   
 }
-function wrapEvent_12135097(d_12135099, n_12135100, k_12135101, action_12135102) {
-      function laterWrapper_12205042() {
-          function HEX3Aanonymous_12205048(ev_12205050) {
-              function wrapper_12205051() {
-                var F={procname:":anonymous.wrapper",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\karax.nim",line:0};
+function wrapEvent_13350097(d_13350099, n_13350100, k_13350101, action_13350102) {
+      function laterWrapper_13420042() {
+          function HEX3Aanonymous_13420048(ev_13420050) {
+              function wrapper_13420051() {
+                var F={procname:":anonymous.wrapper",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\karax.nim",line:0};
                 framePtr = F;
                   F.line = 72;
-                  var vHEX60gensym15_12215001 = ev_12205050.target.value;
+                  var vHEX60gensym15_13430001 = ev_13420050.target.value;
                   F.line = 73;
-                  valueHEX3D_11700140(n_12205046, vHEX60gensym15_12215001);
-                  if (!(!((action_12205045 == null)))) {
+                  valueHEX3D_12915140(n_13420046, vHEX60gensym15_13430001);
+                  if (!(!((action_13420045 == null)))) {
                   F.line = 74;
-                  failedAssertImpl_2540480(makeNimstrLit("D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\karax.nim(74, 10) `action != nil` "));
+                  failedAssertImpl_3755480(makeNimstrLit("d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\karax.nim(74, 10) `action != nil` "));
                   }
                   
                   F.line = 75;
-                  action_12205045(ev_12205050, n_12205046);
-                  if (!((value_11700123(n_12205046) == vHEX60gensym15_12215001))) {
+                  action_13420045(ev_13420050, n_13420046);
+                  if (!((value_12915123(n_13420046) == vHEX60gensym15_13430001))) {
                   F.line = 77;
-                  ev_12205050.target.value = value_11700123(n_12205046);
+                  ev_13420050.target.value = value_12915123(n_13420046);
                   }
                   
                 framePtr = F.prev;
@@ -4946,56 +4978,56 @@ function wrapEvent_12135097(d_12135099, n_12135100, k_12135101, action_12135102)
                 
               }
 
-            var F={procname:"laterWrapper.:anonymous",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\karax.nim",line:0};
+            var F={procname:"laterWrapper.:anonymous",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\karax.nim",line:0};
             framePtr = F;
-              if (!((timer_12205047 == null))) {
+              if (!((timer_13420047 == null))) {
               F.line = 121;
-              clearTimeout(timer_12205047);
+              clearTimeout(timer_13420047);
               }
               
               F.line = 122;
-              timer_12205047 = setTimeout(wrapper_12205051, 400);
+              timer_13420047 = setTimeout(wrapper_13420051, 400);
             framePtr = F.prev;
 
             
           }
 
-        var result_12205044 = null;
+        var result_13420044 = null;
 
-        var F={procname:"wrapEvent.laterWrapper",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\karax.nim",line:0};
+        var F={procname:"wrapEvent.laterWrapper",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\karax.nim",line:0};
         framePtr = F;
           F.line = 116;
-          var action_12205045 = action_12135102;
+          var action_13420045 = action_13350102;
           F.line = 117;
-          var n_12205046 = n_12135100;
+          var n_13420046 = n_13350100;
           F.line = 118;
-          var timer_12205047 = null;
+          var timer_13420047 = null;
           F.line = 119;
-          result_12205044 = HEX3Aanonymous_12205048;
+          result_13420044 = HEX3Aanonymous_13420048;
         framePtr = F.prev;
 
-        return result_12205044;
+        return result_13420044;
 
       }
-      function enterWrapper_12170042() {
-          function HEX3Aanonymous_12170047(ev_12170049) {
-            var F={procname:"enterWrapper.:anonymous",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\karax.nim",line:0};
+      function enterWrapper_13385042() {
+          function HEX3Aanonymous_13385047(ev_13385049) {
+            var F={procname:"enterWrapper.:anonymous",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\karax.nim",line:0};
             framePtr = F;
-              if ((ev_12170049.keyCode == 13)) {
+              if ((ev_13385049.keyCode == 13)) {
               F.line = 72;
-              var vHEX60gensym8_12180001 = ev_12170049.target.value;
+              var vHEX60gensym8_13395001 = ev_13385049.target.value;
               F.line = 73;
-              valueHEX3D_11700140(n_12170046, vHEX60gensym8_12180001);
-              if (!(!((action_12170045 == null)))) {
+              valueHEX3D_12915140(n_13385046, vHEX60gensym8_13395001);
+              if (!(!((action_13385045 == null)))) {
               F.line = 74;
-              failedAssertImpl_2540480(makeNimstrLit("D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\karax.nim(74, 10) `action != nil` "));
+              failedAssertImpl_3755480(makeNimstrLit("d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\karax.nim(74, 10) `action != nil` "));
               }
               
               F.line = 75;
-              action_12170045(ev_12170049, n_12170046);
-              if (!((value_11700123(n_12170046) == vHEX60gensym8_12180001))) {
+              action_13385045(ev_13385049, n_13385046);
+              if (!((value_12915123(n_13385046) == vHEX60gensym8_13395001))) {
               F.line = 77;
-              ev_12170049.target.value = value_11700123(n_12170046);
+              ev_13385049.target.value = value_12915123(n_13385046);
               }
               
               }
@@ -5005,49 +5037,49 @@ function wrapEvent_12135097(d_12135099, n_12135100, k_12135101, action_12135102)
             
           }
 
-        var result_12170044 = null;
+        var result_13385044 = null;
 
-        var F={procname:"wrapEvent.enterWrapper",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\karax.nim",line:0};
+        var F={procname:"wrapEvent.enterWrapper",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\karax.nim",line:0};
         framePtr = F;
           F.line = 110;
-          var action_12170045 = action_12135102;
+          var action_13385045 = action_13350102;
           F.line = 111;
-          var n_12170046 = n_12135100;
+          var n_13385046 = n_13350100;
           F.line = 112;
-          result_12170044 = HEX3Aanonymous_12170047;
+          result_13385044 = HEX3Aanonymous_13385047;
         framePtr = F.prev;
 
-        return result_12170044;
+        return result_13385044;
 
       }
-      function stdWrapper_12135104() {
-          function HEX3Aanonymous_12135109(ev_12135111) {
+      function stdWrapper_13350104() {
+          function HEX3Aanonymous_13350109(ev_13350111) {
                 var Tmp1;
                 var Tmp2;
 
-            var F={procname:"stdWrapper.:anonymous",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\karax.nim",line:0};
+            var F={procname:"stdWrapper.:anonymous",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\karax.nim",line:0};
             framePtr = F;
-                if ((n_12135108.kind == 111)) Tmp2 = true; else {                  Tmp2 = (n_12135108.kind == 105);                }                if (Tmp2) Tmp1 = true; else {                  Tmp1 = (n_12135108.kind == 107);                }              if (Tmp1) {
+                if ((n_13350108.kind == 111)) Tmp2 = true; else {                  Tmp2 = (n_13350108.kind == 105);                }                if (Tmp2) Tmp1 = true; else {                  Tmp1 = (n_13350108.kind == 107);                }              if (Tmp1) {
               F.line = 72;
-              var vHEX60gensym1_12145001 = ev_12135111.target.value;
+              var vHEX60gensym1_13360001 = ev_13350111.target.value;
               F.line = 73;
-              valueHEX3D_11700140(n_12135108, vHEX60gensym1_12145001);
-              if (!(!((action_12135107 == null)))) {
+              valueHEX3D_12915140(n_13350108, vHEX60gensym1_13360001);
+              if (!(!((action_13350107 == null)))) {
               F.line = 74;
-              failedAssertImpl_2540480(makeNimstrLit("D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\karax.nim(74, 10) `action != nil` "));
+              failedAssertImpl_3755480(makeNimstrLit("d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\karax.nim(74, 10) `action != nil` "));
               }
               
               F.line = 75;
-              action_12135107(ev_12135111, n_12135108);
-              if (!((value_11700123(n_12135108) == vHEX60gensym1_12145001))) {
+              action_13350107(ev_13350111, n_13350108);
+              if (!((value_12915123(n_13350108) == vHEX60gensym1_13360001))) {
               F.line = 77;
-              ev_12135111.target.value = value_11700123(n_12135108);
+              ev_13350111.target.value = value_12915123(n_13350108);
               }
               
               }
               else {
                 F.line = 107;
-              action_12135107(ev_12135111, n_12135108);
+              action_13350107(ev_13350111, n_13350108);
               }
               
             framePtr = F.prev;
@@ -5055,76 +5087,76 @@ function wrapEvent_12135097(d_12135099, n_12135100, k_12135101, action_12135102)
             
           }
 
-        var result_12135106 = null;
+        var result_13350106 = null;
 
-        var F={procname:"wrapEvent.stdWrapper",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\karax.nim",line:0};
+        var F={procname:"wrapEvent.stdWrapper",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\karax.nim",line:0};
         framePtr = F;
           F.line = 102;
-          var action_12135107 = action_12135102;
+          var action_13350107 = action_13350102;
           F.line = 103;
-          var n_12135108 = n_12135100;
+          var n_13350108 = n_13350100;
           F.line = 104;
-          result_12135106 = HEX3Aanonymous_12135109;
+          result_13350106 = HEX3Aanonymous_13350109;
         framePtr = F.prev;
 
-        return result_12135106;
+        return result_13350106;
 
       }
 
-  var result_12135103 = null;
+  var result_13350103 = null;
 
-  var F={procname:"karax.wrapEvent",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\karax.nim",line:0};
+  var F={procname:"karax.wrapEvent",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\karax.nim",line:0};
   framePtr = F;
     F.line = 124;
-    switch (k_12135101) {
+    switch (k_13350101) {
     case 30:
       F.line = 126;
-      result_12135103 = laterWrapper_12205042();
+      result_13350103 = laterWrapper_13420042();
       F.line = 127;
-      addEventShell_12132375(d_12135099, "keyup", result_12135103);
+      addEventShell_13347375(d_13350099, "keyup", result_13350103);
       break;
     case 29:
       F.line = 129;
-      result_12135103 = enterWrapper_12170042();
+      result_13350103 = enterWrapper_13385042();
       F.line = 130;
-      addEventShell_12132375(d_12135099, "keyup", result_12135103);
+      addEventShell_13347375(d_13350099, "keyup", result_13350103);
       break;
     default: 
       F.line = 132;
-      result_12135103 = stdWrapper_12135104();
+      result_13350103 = stdWrapper_13350104();
       F.line = 133;
-      addEventShell_12132375(d_12135099, toEventName_11700012[chckIndx(k_12135101, 0, (toEventName_11700012).length-1)], result_12135103);
+      addEventShell_13347375(d_13350099, toEventName_12915012[chckIndx(k_13350101, 0, (toEventName_12915012).length-1)], result_13350103);
       break;
     }
   framePtr = F.prev;
 
-  return result_12135103;
+  return result_13350103;
 
 }
-function applyEvents_12245073(n_12245075) {
-  var F={procname:"karax.applyEvents",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\karax.nim",line:0};
+function applyEvents_13460073(n_13460075) {
+  var F={procname:"karax.applyEvents",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\karax.nim",line:0};
   framePtr = F;
     F.line = 145;
-    var dest_12245076 = n_12245075.dom;
+    var dest_13460076 = n_13460075.dom;
     L1: do {
       F.line = 146;
-      var i_12245089 = 0;
+      var i_13460089 = 0;
       F.line = 104;
-      var colontmp__12770132 = 0;
+      var colontmp__14000390 = 0;
       F.line = 146;
-      colontmp__12770132 = (n_12245075.events).length;
+      colontmp__14000390 = (n_13460075.events).length;
       F.line = 106;
-      var i_12770133 = 0;
+      var i_14000391 = 0;
       L2: do {
         F.line = 107;
           L3: while (true) {
-          if (!(i_12770133 < colontmp__12770132)) break L3;
+          if (!(i_14000391 < colontmp__14000390)) break L3;
             F.line = 146;
-            i_12245089 = i_12770133;
+            i_13460089 = i_14000391;
             F.line = 147;
-            n_12245075.events[chckIndx(i_12245089, 0, (n_12245075.events).length-1)]["Field2"] = wrapEvent_12135097(dest_12245076, n_12245075, n_12245075.events[chckIndx(i_12245089, 0, (n_12245075.events).length-1)]["Field0"], n_12245075.events[chckIndx(i_12245089, 0, (n_12245075.events).length-1)]["Field1"]);
+            n_13460075.events[chckIndx(i_13460089, 0, (n_13460075.events).length-1)]["Field2"] = wrapEvent_13350097(dest_13460076, n_13460075, n_13460075.events[chckIndx(i_13460089, 0, (n_13460075.events).length-1)]["Field0"], n_13460075.events[chckIndx(i_13460089, 0, (n_13460075.events).length-1)]["Field1"]);
             F.line = 109;
-            i_12770133 = addInt(i_12770133, 1);
+            i_14000391 = addInt(i_14000391, 1);
           }
       } while(false);
     } while(false);
@@ -5132,30 +5164,30 @@ function applyEvents_12245073(n_12245075) {
 
   
 }
-function applyStyle_11690628(n_11690630, s_11690631) {
-  var F={procname:"vstyles.applyStyle",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\vstyles.nim",line:0};
+function applyStyle_12905628(n_12905630, s_12905631) {
+  var F={procname:"vstyles.applyStyle",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\vstyles.nim",line:0};
   framePtr = F;
     F.line = 324;
-    n_11690630.style = {};
+    n_12905630.style = {};
     L1: do {
       F.line = 325;
-      var i_11690664 = 0;
+      var i_12905664 = 0;
       F.line = 39;
-      var colontmp__12770143 = 0;
+      var colontmp__14000401 = 0;
       F.line = 325;
-      colontmp__12770143 = subInt(s_11690631.length, 1);
+      colontmp__14000401 = subInt(s_12905631.length, 1);
       F.line = 56;
-      var res_12770144 = 0;
+      var res_14000402 = 0;
       L2: do {
         F.line = 57;
           L3: while (true) {
-          if (!(res_12770144 <= colontmp__12770143)) break L3;
+          if (!(res_14000402 <= colontmp__14000401)) break L3;
             F.line = 325;
-            i_11690664 = res_12770144;
+            i_12905664 = res_14000402;
             F.line = 326;
-            n_11690630.style[s_11690631[i_11690664]] = s_11690631[addInt(i_11690664, 1)];
+            n_12905630.style[s_12905631[i_12905664]] = s_12905631[addInt(i_12905664, 1)];
             F.line = 59;
-            res_12770144 = addInt(res_12770144, 2);
+            res_14000402 = addInt(res_14000402, 2);
           }
       } while(false);
     } while(false);
@@ -5163,122 +5195,122 @@ function applyStyle_11690628(n_11690630, s_11690631) {
 
   
 }
-function toDom_12245154(n_12245156, useAttachedNode_12245157, kxi_12245158) {
+function toDom_13460154(n_13460156, useAttachedNode_13460157, kxi_13460158) {
       var Tmp9;
       var Tmp10;
 
-  var result_12245159 = null;
+  var result_13460159 = null;
 
-  var F={procname:"karax.toDom",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\karax.nim",line:0};
+  var F={procname:"karax.toDom",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\karax.nim",line:0};
   framePtr = F;
   BeforeRet: do {
-    if (useAttachedNode_12245157) {
-    if (!((n_12245156.dom == null))) {
-    if (!((n_12245156.id == null))) {
+    if (useAttachedNode_13460157) {
+    if (!((n_13460156.dom == null))) {
+    if (!((n_13460156.id == null))) {
     F.line = 158;
-    kxi_12245158.byId[n_12245156.id] = n_12245156;
+    kxi_13460158.byId[n_13460156.id] = n_13460156;
     }
     
     F.line = 159;
-    result_12245159 = n_12245156.dom;
+    result_13460159 = n_13460156.dom;
     break BeforeRet;
     }
     
     }
     
-    if ((n_12245156.kind == 0)) {
+    if ((n_13460156.kind == 0)) {
     F.line = 161;
-    result_12245159 = document.createTextNode(n_12245156.text);
+    result_13460159 = document.createTextNode(n_13460156.text);
     F.line = 141;
-    n_12245156.dom = result_12245159;
-    if (!((n_12245156.id == null))) {
+    n_13460156.dom = result_13460159;
+    if (!((n_13460156.id == null))) {
     F.line = 142;
-    kxi_12132284[0].byId[n_12245156.id] = n_12245156;
+    kxi_13347284[0].byId[n_13460156.id] = n_13460156;
     }
     
     }
     else {
-    if ((n_12245156.kind == 6)) {
+    if ((n_13460156.kind == 6)) {
     F.line = 164;
-    result_12245159 = document.createElement("div");
+    result_13460159 = document.createElement("div");
     F.line = 165;
-    result_12245159.innerHTML = n_12245156.text;
+    result_13460159.innerHTML = n_13460156.text;
     F.line = 141;
-    n_12245156.dom = result_12245159;
-    if (!((n_12245156.id == null))) {
+    n_13460156.dom = result_13460159;
+    if (!((n_13460156.id == null))) {
     F.line = 142;
-    kxi_12132284[0].byId[n_12245156.id] = n_12245156;
+    kxi_13347284[0].byId[n_13460156.id] = n_13460156;
     }
     
     F.line = 167;
     break BeforeRet;
     }
     else {
-    if ((n_12245156.kind == 3)) {
+    if ((n_13460156.kind == 3)) {
     F.line = 169;
-    var x_12280001 = vcomponents_12041026[0][n_12245156.text](n_12245156.kids);
+    var x_13495001 = vcomponents_13256026[0][n_13460156.text](n_13460156.kids);
     F.line = 170;
-    result_12245159 = toDom_12245154(x_12280001, useAttachedNode_12245157, kxi_12245158);
+    result_13460159 = toDom_13460154(x_13495001, useAttachedNode_13460157, kxi_13460158);
     F.line = 141;
-    n_12245156.dom = result_12245159;
-    if (!((n_12245156.id == null))) {
+    n_13460156.dom = result_13460159;
+    if (!((n_13460156.id == null))) {
     F.line = 142;
-    kxi_12132284[0].byId[n_12245156.id] = n_12245156;
+    kxi_13347284[0].byId[n_13460156.id] = n_13460156;
     }
     
     F.line = 173;
     break BeforeRet;
     }
     else {
-    if ((n_12245156.kind == 4)) {
+    if ((n_13460156.kind == 4)) {
     F.line = 175;
-    result_12245159 = n_12245156.dom;
-    if (!(!((result_12245159 == null)))) {
+    result_13460159 = n_13460156.dom;
+    if (!(!((result_13460159 == null)))) {
     F.line = 176;
-    failedAssertImpl_2540480(makeNimstrLit("D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\karax.nim(176, 12) `result != nil` "));
+    failedAssertImpl_3755480(makeNimstrLit("d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\karax.nim(176, 12) `result != nil` "));
     }
     
     F.line = 141;
-    n_12245156.dom = result_12245159;
-    if (!((n_12245156.id == null))) {
+    n_13460156.dom = result_13460159;
+    if (!((n_13460156.id == null))) {
     F.line = 142;
-    kxi_12132284[0].byId[n_12245156.id] = n_12245156;
+    kxi_13347284[0].byId[n_13460156.id] = n_13460156;
     }
     
     F.line = 179;
     break BeforeRet;
     }
     else {
-    if ((n_12245156.kind == 5)) {
+    if ((n_13460156.kind == 5)) {
     F.line = 181;
-    var x_12315022 = n_12245156;
-    if (!((x_12315022.onAttachImpl == null))) {
+    var x_13530022 = n_13460156;
+    if (!((x_13530022.onAttachImpl == null))) {
     F.line = 182;
-    x_12315022.onAttachImpl(x_12315022);
+    x_13530022.onAttachImpl(x_13530022);
     }
     
-    if (!(!((x_12315022.renderImpl == null)))) {
+    if (!(!((x_13530022.renderImpl == null)))) {
     F.line = 183;
-    failedAssertImpl_2540480(makeNimstrLit("D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\karax.nim(183, 12) `x.renderImpl != nil` "));
+    failedAssertImpl_3755480(makeNimstrLit("d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\karax.nim(183, 12) `x.renderImpl != nil` "));
     }
     
-    if ((x_12315022.expanded == null)) {
+    if ((x_13530022.expanded == null)) {
     F.line = 185;
-    x_12315022.expanded = x_12315022.renderImpl(x_12315022);
+    x_13530022.expanded = x_13530022.renderImpl(x_13530022);
     }
     
-    if (!(!((x_12315022.expanded == null)))) {
+    if (!(!((x_13530022.expanded == null)))) {
     F.line = 187;
-    failedAssertImpl_2540480(makeNimstrLit("D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\karax.nim(187, 12) `x.expanded != nil` "));
+    failedAssertImpl_3755480(makeNimstrLit("d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\karax.nim(187, 12) `x.expanded != nil` "));
     }
     
     F.line = 188;
-    result_12245159 = toDom_12245154(x_12315022.expanded, useAttachedNode_12245157, kxi_12245158);
+    result_13460159 = toDom_13460154(x_13530022.expanded, useAttachedNode_13460157, kxi_13460158);
     F.line = 141;
-    n_12245156.dom = result_12245159;
-    if (!((n_12245156.id == null))) {
+    n_13460156.dom = result_13460159;
+    if (!((n_13460156.id == null))) {
     F.line = 142;
-    kxi_12132284[0].byId[n_12245156.id] = n_12245156;
+    kxi_13347284[0].byId[n_13460156.id] = n_13460156;
     }
     
     F.line = 190;
@@ -5286,214 +5318,214 @@ function toDom_12245154(n_12245156, useAttachedNode_12245157, kxi_12245158) {
     }
     else {
       F.line = 192;
-      result_12245159 = document.createElement(toTag_11700006[chckIndx(n_12245156.kind, 0, (toTag_11700006).length-1)]);
+      result_13460159 = document.createElement(toTag_12915006[chckIndx(n_13460156.kind, 0, (toTag_12915006).length-1)]);
       F.line = 141;
-      n_12245156.dom = result_12245159;
-      if (!((n_12245156.id == null))) {
+      n_13460156.dom = result_13460159;
+      if (!((n_13460156.id == null))) {
       F.line = 142;
-      kxi_12132284[0].byId[n_12245156.id] = n_12245156;
+      kxi_13347284[0].byId[n_13460156.id] = n_13460156;
       }
       
       L1: do {
         F.line = 194;
-        var k_12370016 = null;
+        var k_13585016 = null;
         L2: do {
-          F.line = 307;
-          var i_12770101 = 0;
+          F.line = 305;
+          var i_14000359 = 0;
           F.line = 104;
-          var colontmp__12770102 = 0;
-          F.line = 307;
-          colontmp__12770102 = (n_12245156.kids).length;
+          var colontmp__14000360 = 0;
+          F.line = 305;
+          colontmp__14000360 = (n_13460156.kids).length;
           F.line = 106;
-          var i_12770103 = 0;
+          var i_14000361 = 0;
           L3: do {
             F.line = 107;
               L4: while (true) {
-              if (!(i_12770103 < colontmp__12770102)) break L4;
-                F.line = 307;
-                i_12770101 = i_12770103;
+              if (!(i_14000361 < colontmp__14000360)) break L4;
+                F.line = 305;
+                i_14000359 = i_14000361;
                 F.line = 194;
-                k_12370016 = n_12245156.kids[chckIndx(i_12770101, 0, (n_12245156.kids).length-1)];
+                k_13585016 = n_13460156.kids[chckIndx(i_14000359, 0, (n_13460156.kids).length-1)];
                 F.line = 195;
-                result_12245159.appendChild(toDom_12245154(k_12370016, useAttachedNode_12245157, kxi_12245158));
+                result_13460159.appendChild(toDom_13460154(k_13585016, useAttachedNode_13460157, kxi_13460158));
                 F.line = 109;
-                i_12770103 = addInt(i_12770103, 1);
+                i_14000361 = addInt(i_14000361, 1);
               }
           } while(false);
         } while(false);
       } while(false);
-      if (!((n_12245156.text == null))) {
+      if (!((n_13460156.text == null))) {
       F.line = 198;
-      result_12245159.value = n_12245156.text;
+      result_13460159.value = n_13460156.text;
       }
       
     }
     }}}}
-    if (!((n_12245156.id == null))) {
+    if (!((n_13460156.id == null))) {
     F.line = 200;
-    result_12245159.id = n_12245156.id;
+    result_13460159.id = n_13460156.id;
     }
     
-    if (!((n_12245156.class == null))) {
+    if (!((n_13460156.class == null))) {
     F.line = 202;
-    result_12245159.className = n_12245156.class;
+    result_13460159.className = n_13460156.class;
     }
     
     L5: do {
       F.line = 205;
-      var k_12385001 = null;
+      var k_13600001 = null;
       F.line = 205;
-      var v_12385002 = null;
+      var v_13600002 = null;
       L6: do {
-        F.line = 310;
-        var i_12770114 = 0;
+        F.line = 308;
+        var i_14000372 = 0;
         F.line = 39;
-        var colontmp__12770115 = 0;
-        F.line = 310;
-        colontmp__12770115 = subInt((n_12245156.attrs).length, 2);
+        var colontmp__14000373 = 0;
+        F.line = 308;
+        colontmp__14000373 = subInt((n_13460156.attrs).length, 2);
         F.line = 56;
-        var res_12770116 = 0;
+        var res_14000374 = 0;
         L7: do {
           F.line = 57;
             L8: while (true) {
-            if (!(res_12770116 <= colontmp__12770115)) break L8;
-              F.line = 310;
-              i_12770114 = res_12770116;
+            if (!(res_14000374 <= colontmp__14000373)) break L8;
+              F.line = 308;
+              i_14000372 = res_14000374;
               F.line = 205;
-              k_12385001 = n_12245156.attrs[chckIndx(i_12770114, 0, (n_12245156.attrs).length-1)];
-              F.line = 311;
-              v_12385002 = n_12245156.attrs[chckIndx(addInt(i_12770114, 1), 0, (n_12245156.attrs).length-1)];
-              if (!((v_12385002 == null))) {
+              k_13600001 = n_13460156.attrs[chckIndx(i_14000372, 0, (n_13460156.attrs).length-1)];
+              F.line = 309;
+              v_13600002 = n_13460156.attrs[chckIndx(addInt(i_14000372, 1), 0, (n_13460156.attrs).length-1)];
+              if (!((v_13600002 == null))) {
               F.line = 207;
-              result_12245159.setAttribute(k_12385001, v_12385002);
+              result_13460159.setAttribute(k_13600001, v_13600002);
               }
               
               F.line = 59;
-              res_12770116 = addInt(res_12770116, 2);
+              res_14000374 = addInt(res_14000374, 2);
             }
         } while(false);
       } while(false);
     } while(false);
     F.line = 208;
-    applyEvents_12245073(n_12245156);
-      if (!!((kxi_12245158 == null))) Tmp10 = false; else {        Tmp10 = (n_12245156 == kxi_12245158.toFocusV);      }      if (!Tmp10) Tmp9 = false; else {        Tmp9 = (kxi_12245158.toFocus == null);      }    if (Tmp9) {
+    applyEvents_13460073(n_13460156);
+      if (!!((kxi_13460158 == null))) Tmp10 = false; else {        Tmp10 = (n_13460156 == kxi_13460158.toFocusV);      }      if (!Tmp10) Tmp9 = false; else {        Tmp9 = (kxi_13460158.toFocus == null);      }    if (Tmp9) {
     F.line = 210;
-    kxi_12245158.toFocus = result_12245159;
+    kxi_13460158.toFocus = result_13460159;
     }
     
-    if (!((n_12245156.style == null))) {
+    if (!((n_13460156.style == null))) {
     F.line = 211;
-    applyStyle_11690628(result_12245159, n_12245156.style);
+    applyStyle_12905628(result_13460159, n_13460156.style);
     }
     
   } while (false);
   framePtr = F.prev;
 
-  return result_12245159;
+  return result_13460159;
 
 }
-function replaceById_12410074(id_12410076, newTree_12410077) {
-  var F={procname:"karax.replaceById",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\karax.nim",line:0};
+function replaceById_13625074(id_13625076, newTree_13625077) {
+  var F={procname:"karax.replaceById",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\karax.nim",line:0};
   framePtr = F;
     F.line = 235;
-    var x_12410078 = document.getElementById(id_12410076);
+    var x_13625078 = document.getElementById(id_13625076);
     F.line = 236;
-    x_12410078.parentNode.replaceChild(newTree_12410077, x_12410078);
+    x_13625078.parentNode.replaceChild(newTree_13625077, x_13625078);
     F.line = 237;
-    newTree_12410077.id = id_12410076;
+    newTree_13625077.id = id_13625076;
   framePtr = F.prev;
 
   
 }
-function len_11785014(x_11785016) {
-  var result_11785017 = 0;
+function len_13000014(x_13000016) {
+  var result_13000017 = 0;
 
-  var F={procname:"vdom.len",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\vdom.nim",line:0};
+  var F={procname:"vdom.len",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\vdom.nim",line:0};
   framePtr = F;
-    F.line = 262;
-    result_11785017 = (x_11785016.kids).length;
+    F.line = 260;
+    result_13000017 = (x_13000016.kids).length;
   framePtr = F.prev;
 
-  return result_11785017;
+  return result_13000017;
 
 }
-function HEX5BHEX5D_11785036(x_11785038, idx_11785039) {
-  var result_11785040 = null;
+function HEX5BHEX5D_13000036(x_13000038, idx_13000039) {
+  var result_13000040 = null;
 
-  var F={procname:"vdom.[]",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\vdom.nim",line:0};
+  var F={procname:"vdom.[]",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\vdom.nim",line:0};
   framePtr = F;
-    F.line = 263;
-    result_11785040 = x_11785038.kids[chckIndx(idx_11785039, 0, (x_11785038.kids).length-1)];
+    F.line = 261;
+    result_13000040 = x_13000038.kids[chckIndx(idx_13000039, 0, (x_13000038.kids).length-1)];
   framePtr = F.prev;
 
-  return result_11785040;
+  return result_13000040;
 
 }
-function same_12395072(n_12395074, e_12395075, nesting_12395076) {
+function same_13610072(n_13610074, e_13610075, nesting_13610076) {
       var Tmp1;
       var Tmp2;
 
-  var result_12395078 = false;
+  var result_13610078 = false;
 
-  var F={procname:"karax.same",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\karax.nim",line:0};
+  var F={procname:"karax.same",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\karax.nim",line:0};
   framePtr = F;
   BeforeRet: do {
-    if (kxi_12132284[0].orphans.hasOwnProperty(n_12395074.id)) {
+    if (kxi_13347284[0].orphans.hasOwnProperty(n_13610074.id)) {
     F.line = 214;
-    result_12395078 = true;
+    result_13610078 = true;
     break BeforeRet;
     }
     
-    if ((n_12395074.kind == 5)) {
+    if ((n_13610074.kind == 5)) {
     F.line = 216;
-    result_12395078 = same_12395072(n_12395074.expanded, e_12395075, addInt(nesting_12395076, 1));
+    result_13610078 = same_13610072(n_13610074.expanded, e_13610075, addInt(nesting_13610076, 1));
     }
     else {
-    if ((n_12395074.kind == 6)) {
+    if ((n_13610074.kind == 6)) {
     F.line = 218;
-    result_12395078 = true;
+    result_13610078 = true;
     }
     else {
-      if ((n_12395074.kind == 3)) Tmp1 = true; else {        Tmp1 = (n_12395074.kind == 4);      }    if (Tmp1) {
+      if ((n_13610074.kind == 3)) Tmp1 = true; else {        Tmp1 = (n_13610074.kind == 4);      }    if (Tmp1) {
     F.line = 221;
-    result_12395078 = true;
+    result_13610078 = true;
     }
     else {
-    if ((toTag_11700006[chckIndx(n_12395074.kind, 0, (toTag_11700006).length-1)] == e_12395075.nodeName)) {
+    if ((toTag_12915006[chckIndx(n_13610074.kind, 0, (toTag_12915006).length-1)] == e_13610075.nodeName)) {
     F.line = 223;
-    result_12395078 = true;
-    if (!((n_12395074.kind == 0))) {
-      if (!!((e_12395075.childNodes.length == len_11785014(n_12395074)))) Tmp2 = false; else {        Tmp2 = !((n_12395074.kind == 111));      }    if (Tmp2) {
+    result_13610078 = true;
+    if (!((n_13610074.kind == 0))) {
+      if (!!((e_13610075.childNodes.length == len_13000014(n_13610074)))) Tmp2 = false; else {        Tmp2 = !((n_13610074.kind == 111));      }    if (Tmp2) {
     F.line = 227;
-    rawEcho(makeNimstrLit("expected "), cstrToNimstr((len_11785014(n_12395074))+""), makeNimstrLit(" real "), cstrToNimstr((e_12395075.childNodes.length)+""), makeNimstrLit(" "), cstrToNimstr(toTag_11700006[chckIndx(n_12395074.kind, 0, (toTag_11700006).length-1)]), makeNimstrLit(" nesting "), cstrToNimstr((nesting_12395076)+""));
+    rawEcho(makeNimstrLit("expected "), cstrToNimstr((len_13000014(n_13610074))+""), makeNimstrLit(" real "), cstrToNimstr((e_13610075.childNodes.length)+""), makeNimstrLit(" "), cstrToNimstr(toTag_12915006[chckIndx(n_13610074.kind, 0, (toTag_12915006).length-1)]), makeNimstrLit(" nesting "), cstrToNimstr((nesting_13610076)+""));
     F.line = 228;
-    result_12395078 = false;
+    result_13610078 = false;
     break BeforeRet;
     }
     
     L3: do {
       F.line = 229;
-      var i_12410024 = 0;
+      var i_13625024 = 0;
       F.line = 104;
-      var colontmp__12770150 = 0;
+      var colontmp__14000408 = 0;
       F.line = 229;
-      colontmp__12770150 = len_11785014(n_12395074);
+      colontmp__14000408 = len_13000014(n_13610074);
       F.line = 106;
-      var i_12770151 = 0;
+      var i_14000409 = 0;
       L4: do {
         F.line = 107;
           L5: while (true) {
-          if (!(i_12770151 < colontmp__12770150)) break L5;
+          if (!(i_14000409 < colontmp__14000408)) break L5;
             F.line = 229;
-            i_12410024 = i_12770151;
-            if (!(same_12395072(HEX5BHEX5D_11785036(n_12395074, i_12410024), e_12395075.childNodes[i_12410024], addInt(nesting_12395076, 1)))) {
+            i_13625024 = i_14000409;
+            if (!(same_13610072(HEX5BHEX5D_13000036(n_13610074, i_13625024), e_13610075.childNodes[i_13625024], addInt(nesting_13610076, 1)))) {
             F.line = 230;
-            result_12395078 = false;
+            result_13610078 = false;
             break BeforeRet;
             }
             
             F.line = 109;
-            i_12770151 = addInt(i_12770151, 1);
+            i_14000409 = addInt(i_14000409, 1);
           }
       } while(false);
     } while(false);
@@ -5502,114 +5534,114 @@ function same_12395072(n_12395074, e_12395075, nesting_12395076) {
     }
     else {
       F.line = 232;
-    rawEcho(makeNimstrLit("VDOM: "), cstrToNimstr(toTag_11700006[chckIndx(n_12395074.kind, 0, (toTag_11700006).length-1)]), makeNimstrLit(" DOM: "), cstrToNimstr(e_12395075.nodeName));
+    rawEcho(makeNimstrLit("VDOM: "), cstrToNimstr(toTag_12915006[chckIndx(n_13610074.kind, 0, (toTag_12915006).length-1)]), makeNimstrLit(" DOM: "), cstrToNimstr(e_13610075.nodeName));
     }
     }}}
   } while (false);
   framePtr = F.prev;
 
-  return result_12395078;
+  return result_13610078;
 
 }
-function eq_11655229(a_11655231, b_11655232) {
-  var result_11655233 = false;
+function eq_12870229(a_12870231, b_12870232) {
+  var result_12870233 = false;
 
-  var F={procname:"vstyles.eq",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\vstyles.nim",line:0};
+  var F={procname:"vstyles.eq",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\vstyles.nim",line:0};
   framePtr = F;
   BeforeRet: do {
-    if ((a_11655231 == null)) {
-    if ((b_11655232 == null)) {
+    if ((a_12870231 == null)) {
+    if ((b_12870232 == null)) {
     F.line = 233;
-    result_11655233 = true;
+    result_12870233 = true;
     break BeforeRet;
     }
     else {
       F.line = 234;
-      result_11655233 = false;
+      result_12870233 = false;
       break BeforeRet;
     }
     
     }
     else {
-    if ((b_11655232 == null)) {
+    if ((b_12870232 == null)) {
     F.line = 235;
-    result_11655233 = false;
+    result_12870233 = false;
     break BeforeRet;
     }
     }
-    if (!((a_11655231.length == b_11655232.length))) {
+    if (!((a_12870231.length == b_12870232.length))) {
     F.line = 236;
-    result_11655233 = false;
+    result_12870233 = false;
     break BeforeRet;
     }
     
     L1: do {
       F.line = 237;
-      var i_11660083 = 0;
+      var i_12875083 = 0;
       F.line = 104;
-      var colontmp__12770190 = 0;
+      var colontmp__14000448 = 0;
       F.line = 237;
-      colontmp__12770190 = a_11655231.length;
+      colontmp__14000448 = a_12870231.length;
       F.line = 106;
-      var i_12770191 = 0;
+      var i_14000449 = 0;
       L2: do {
         F.line = 107;
           L3: while (true) {
-          if (!(i_12770191 < colontmp__12770190)) break L3;
+          if (!(i_14000449 < colontmp__14000448)) break L3;
             F.line = 237;
-            i_11660083 = i_12770191;
-            if (!((a_11655231[i_11660083] == b_11655232[i_11660083]))) {
+            i_12875083 = i_14000449;
+            if (!((a_12870231[i_12875083] == b_12870232[i_12875083]))) {
             F.line = 238;
-            result_11655233 = false;
+            result_12870233 = false;
             break BeforeRet;
             }
             
             F.line = 109;
-            i_12770191 = addInt(i_12770191, 1);
+            i_14000449 = addInt(i_14000449, 1);
           }
       } while(false);
     } while(false);
     F.line = 239;
-    result_11655233 = true;
+    result_12870233 = true;
     break BeforeRet;
   } while (false);
   framePtr = F.prev;
 
-  return result_11655233;
+  return result_12870233;
 
 }
-function sameAttrs_11796079(a_11796081, b_11796082) {
-  var result_11796083 = false;
+function sameAttrs_13011079(a_13011081, b_13011082) {
+  var result_13011083 = false;
 
-  var F={procname:"vdom.sameAttrs",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\vdom.nim",line:0};
+  var F={procname:"vdom.sameAttrs",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\vdom.nim",line:0};
   framePtr = F;
   BeforeRet: do {
-    if (((a_11796081.attrs).length == (b_11796082.attrs).length)) {
-    F.line = 315;
-    result_11796083 = true;
+    if (((a_13011081.attrs).length == (b_13011082.attrs).length)) {
+    F.line = 313;
+    result_13011083 = true;
     L1: do {
-      F.line = 316;
-      var i_11796106 = 0;
+      F.line = 314;
+      var i_13011106 = 0;
       F.line = 104;
-      var colontmp__12770194 = 0;
-      F.line = 316;
-      colontmp__12770194 = (a_11796081.attrs).length;
+      var colontmp__14000452 = 0;
+      F.line = 314;
+      colontmp__14000452 = (a_13011081.attrs).length;
       F.line = 106;
-      var i_12770195 = 0;
+      var i_14000453 = 0;
       L2: do {
         F.line = 107;
           L3: while (true) {
-          if (!(i_12770195 < colontmp__12770194)) break L3;
+          if (!(i_14000453 < colontmp__14000452)) break L3;
+            F.line = 314;
+            i_13011106 = i_14000453;
+            if (!((a_13011081.attrs[chckIndx(i_13011106, 0, (a_13011081.attrs).length-1)] == b_13011082.attrs[chckIndx(i_13011106, 0, (b_13011082.attrs).length-1)]))) {
             F.line = 316;
-            i_11796106 = i_12770195;
-            if (!((a_11796081.attrs[chckIndx(i_11796106, 0, (a_11796081.attrs).length-1)] == b_11796082.attrs[chckIndx(i_11796106, 0, (b_11796082.attrs).length-1)]))) {
-            F.line = 318;
-            result_11796083 = false;
+            result_13011083 = false;
             break BeforeRet;
             }
             
             F.line = 109;
-            i_12770195 = addInt(i_12770195, 1);
+            i_14000453 = addInt(i_14000453, 1);
           }
       } while(false);
     } while(false);
@@ -5618,165 +5650,165 @@ function sameAttrs_11796079(a_11796081, b_11796082) {
   } while (false);
   framePtr = F.prev;
 
-  return result_11796083;
+  return result_13011083;
 
 }
-function eq_12410214(a_12410216, b_12410217, recursive_12410218) {
+function eq_13625214(a_13625216, b_13625217, recursive_13625218) {
       var Tmp4;
       var Tmp5;
 
-  var result_12410219 = 0;
+  var result_13625219 = 0;
 
-  var F={procname:"karax.eq",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\karax.nim",line:0};
+  var F={procname:"karax.eq",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\karax.nim",line:0};
   framePtr = F;
   BeforeRet: do {
-    if (!((a_12410216.kind == b_12410217.kind))) {
+    if (!((a_13625216.kind == b_13625217.kind))) {
     F.line = 259;
-    result_12410219 = 1;
+    result_13625219 = 1;
     break BeforeRet;
     }
     
-    if (!((a_12410216.id == b_12410217.id))) {
+    if (!((a_13625216.id == b_13625217.id))) {
     F.line = 262;
-    result_12410219 = 1;
+    result_13625219 = 1;
     break BeforeRet;
     }
     
     F.line = 263;
-    result_12410219 = 3;
-    if (!((a_12410216.index == b_12410217.index))) {
+    result_13625219 = 3;
+    if (!((a_13625216.index == b_13625217.index))) {
     F.line = 266;
-    result_12410219 = 1;
+    result_13625219 = 1;
     break BeforeRet;
     }
     
-    if ((a_12410216.kind == 0)) {
-    if (!((a_12410216.text == b_12410217.text))) {
+    if ((a_13625216.kind == 0)) {
+    if (!((a_13625216.text == b_13625217.text))) {
     F.line = 270;
-    result_12410219 = 1;
+    result_13625219 = 1;
     break BeforeRet;
     }
     
     }
     else {
-    if ((a_12410216.kind == 3)) {
-    if (!((a_12410216.text == b_12410217.text))) {
+    if ((a_13625216.kind == 3)) {
+    if (!((a_13625216.text == b_13625217.text))) {
     F.line = 272;
-    result_12410219 = 1;
+    result_13625219 = 1;
     break BeforeRet;
     }
     
-    if (!((len_11785014(a_12410216) == len_11785014(b_12410217)))) {
+    if (!((len_13000014(a_13625216) == len_13000014(b_13625217)))) {
     F.line = 273;
-    result_12410219 = 1;
+    result_13625219 = 1;
     break BeforeRet;
     }
     
     L1: do {
       F.line = 274;
-      var i_12440008 = 0;
+      var i_13655008 = 0;
       F.line = 104;
-      var colontmp__12770182 = 0;
+      var colontmp__14000440 = 0;
       F.line = 274;
-      colontmp__12770182 = len_11785014(a_12410216);
+      colontmp__14000440 = len_13000014(a_13625216);
       F.line = 106;
-      var i_12770183 = 0;
+      var i_14000441 = 0;
       L2: do {
         F.line = 107;
           L3: while (true) {
-          if (!(i_12770183 < colontmp__12770182)) break L3;
+          if (!(i_14000441 < colontmp__14000440)) break L3;
             F.line = 274;
-            i_12440008 = i_12770183;
-            if ((eq_12410214(HEX5BHEX5D_11785036(a_12410216, i_12440008), HEX5BHEX5D_11785036(b_12410217, i_12440008), recursive_12410218) == 1)) {
+            i_13655008 = i_14000441;
+            if ((eq_13625214(HEX5BHEX5D_13000036(a_13625216, i_13655008), HEX5BHEX5D_13000036(b_13625217, i_13655008), recursive_13625218) == 1)) {
             F.line = 275;
-            result_12410219 = 1;
+            result_13625219 = 1;
             break BeforeRet;
             }
             
             F.line = 109;
-            i_12770183 = addInt(i_12770183, 1);
+            i_14000441 = addInt(i_14000441, 1);
           }
       } while(false);
     } while(false);
     }
     else {
-    if ((a_12410216.kind == 4)) {
-    if ((a_12410216.dom == b_12410217.dom)) {
+    if ((a_13625216.kind == 4)) {
+    if ((a_13625216.dom == b_13625217.dom)) {
     F.line = 278;
-    result_12410219 = 3;
+    result_13625219 = 3;
     break BeforeRet;
     }
     else {
       F.line = 280;
-      result_12410219 = 1;
+      result_13625219 = 1;
       break BeforeRet;
     }
     
     }
     else {
-    if ((a_12410216.kind == 6)) {
-    if (!((a_12410216.text == b_12410217.text))) {
+    if ((a_13625216.kind == 6)) {
+    if (!((a_13625216.text == b_13625217.text))) {
     F.line = 283;
-    result_12410219 = 1;
+    result_13625219 = 1;
     break BeforeRet;
     }
     
     }
     else {
-    if ((b_12410217.kind == 5)) {
-    if (!((a_12410216.text == b_12410217.text))) {
+    if ((b_13625217.kind == 5)) {
+    if (!((a_13625216.text == b_13625217.text))) {
     F.line = 288;
-    result_12410219 = 1;
+    result_13625219 = 1;
     break BeforeRet;
     }
     
-    if (!((a_12410216.key == b_12410217.key))) {
+    if (!((a_13625216.key == b_13625217.key))) {
     F.line = 294;
-    result_12410219 = 1;
+    result_13625219 = 1;
     break BeforeRet;
     }
     
     F.line = 295;
-    result_12410219 = 0;
+    result_13625219 = 0;
     break BeforeRet;
     }
     }}}}
-      if (!((a_12410216.class == b_12410217.class))) Tmp5 = true; else {        Tmp5 = !(eq_11655229(a_12410216.style, b_12410217.style));      }      if (Tmp5) Tmp4 = true; else {        Tmp4 = !(sameAttrs_11796079(a_12410216, b_12410217));      }    if (Tmp4) {
+      if (!((a_13625216.class == b_13625217.class))) Tmp5 = true; else {        Tmp5 = !(eq_12870229(a_13625216.style, b_13625217.style));      }      if (Tmp5) Tmp4 = true; else {        Tmp4 = !(sameAttrs_13011079(a_13625216, b_13625217));      }    if (Tmp4) {
     F.line = 301;
-    result_12410219 = 2;
+    result_13625219 = 2;
     break BeforeRet;
     }
     
-    if (recursive_12410218) {
-    if (!((len_11785014(a_12410216) == len_11785014(b_12410217)))) {
+    if (recursive_13625218) {
+    if (!((len_13000014(a_13625216) == len_13000014(b_13625217)))) {
     F.line = 305;
-    result_12410219 = 1;
+    result_13625219 = 1;
     break BeforeRet;
     }
     
     L6: do {
       F.line = 306;
-      var i_12465008 = 0;
+      var i_13680008 = 0;
       F.line = 104;
-      var colontmp__12770186 = 0;
+      var colontmp__14000444 = 0;
       F.line = 306;
-      colontmp__12770186 = len_11785014(a_12410216);
+      colontmp__14000444 = len_13000014(a_13625216);
       F.line = 106;
-      var i_12770187 = 0;
+      var i_14000445 = 0;
       L7: do {
         F.line = 107;
           L8: while (true) {
-          if (!(i_12770187 < colontmp__12770186)) break L8;
+          if (!(i_14000445 < colontmp__14000444)) break L8;
             F.line = 306;
-            i_12465008 = i_12770187;
-            if (!((eq_12410214(HEX5BHEX5D_11785036(a_12410216, i_12465008), HEX5BHEX5D_11785036(b_12410217, i_12465008), true) == 3))) {
+            i_13680008 = i_14000445;
+            if (!((eq_13625214(HEX5BHEX5D_13000036(a_13625216, i_13680008), HEX5BHEX5D_13000036(b_13625217, i_13680008), true) == 3))) {
             F.line = 308;
-            result_12410219 = 1;
+            result_13625219 = 1;
             break BeforeRet;
             }
             
             F.line = 109;
-            i_12770187 = addInt(i_12770187, 1);
+            i_14000445 = addInt(i_14000445, 1);
           }
       } while(false);
     } while(false);
@@ -5787,110 +5819,110 @@ function eq_12410214(a_12410216, b_12410217, recursive_12410218) {
   } while (false);
   framePtr = F.prev;
 
-  return result_12410219;
+  return result_13625219;
 
 }
-function updateStyles_12470034(newNode_12470036, oldNode_12470037) {
-  var F={procname:"karax.updateStyles",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\karax.nim",line:0};
+function updateStyles_13685034(newNode_13685036, oldNode_13685037) {
+  var F={procname:"karax.updateStyles",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\karax.nim",line:0};
   framePtr = F;
-    if (!((oldNode_12470037.dom == null))) {
-    if (!((newNode_12470036.style == null))) {
+    if (!((oldNode_13685037.dom == null))) {
+    if (!((newNode_13685036.style == null))) {
     F.line = 316;
-    applyStyle_11690628(oldNode_12470037.dom, newNode_12470036.style);
+    applyStyle_12905628(oldNode_13685037.dom, newNode_13685036.style);
     }
     else {
       F.line = 317;
-      oldNode_12470037.dom.style = {m_type: NTI3088293, alignContent: null, alignItems: null, alignSelf: null, all: null, animation: null, animationDelay: null, animationDirection: null, animationDuration: null, animationFillMode: null, animationIterationCount: null, animationName: null, animationPlayState: null, animationTimingFunction: null, backdropFilter: null, backfaceVisibility: null, background: null, backgroundAttachment: null, backgroundBlendMode: null, backgroundClip: null, backgroundColor: null, backgroundImage: null, backgroundOrigin: null, backgroundPosition: null, backgroundRepeat: null, backgroundSize: null, blockSize: null, border: null, borderBlock: null, borderBlockColor: null, borderBlockEnd: null, borderBlockEndColor: null, borderBlockEndStyle: null, borderBlockEndWidth: null, borderBlockStart: null, borderBlockStartColor: null, borderBlockStartStyle: null, borderBlockStartWidth: null, borderBlockStyle: null, borderBlockWidth: null, borderBottom: null, borderBottomColor: null, borderBottomLeftRadius: null, borderBottomRightRadius: null, borderBottomStyle: null, borderBottomWidth: null, borderCollapse: null, borderColor: null, borderEndEndRadius: null, borderEndStartRadius: null, borderImage: null, borderImageOutset: null, borderImageRepeat: null, borderImageSlice: null, borderImageSource: null, borderImageWidth: null, borderInline: null, borderInlineColor: null, borderInlineEnd: null, borderInlineEndColor: null, borderInlineEndStyle: null, borderInlineEndWidth: null, borderInlineStart: null, borderInlineStartColor: null, borderInlineStartStyle: null, borderInlineStartWidth: null, borderInlineStyle: null, borderInlineWidth: null, borderLeft: null, borderLeftColor: null, borderLeftStyle: null, borderLeftWidth: null, borderRadius: null, borderRight: null, borderRightColor: null, borderRightStyle: null, borderRightWidth: null, borderSpacing: null, borderStartEndRadius: null, borderStartStartRadius: null, borderStyle: null, borderTop: null, borderTopColor: null, borderTopLeftRadius: null, borderTopRightRadius: null, borderTopStyle: null, borderTopWidth: null, borderWidth: null, bottom: null, boxDecorationBreak: null, boxShadow: null, boxSizing: null, breakAfter: null, breakBefore: null, breakInside: null, captionSide: null, caretColor: null, clear: null, clip: null, clipPath: null, color: null, colorAdjust: null, columnCount: null, columnFill: null, columnGap: null, columnRule: null, columnRuleColor: null, columnRuleStyle: null, columnRuleWidth: null, columnSpan: null, columnWidth: null, columns: null, contain: null, content: null, counterIncrement: null, counterReset: null, counterSet: null, cursor: null, direction: null, display: null, emptyCells: null, filter: null, flex: null, flexBasis: null, flexDirection: null, flexFlow: null, flexGrow: null, flexShrink: null, flexWrap: null, cssFloat: null, font: null, fontFamily: null, fontFeatureSettings: null, fontKerning: null, fontLanguageOverride: null, fontOpticalSizing: null, fontSize: null, fontSizeAdjust: null, fontStretch: null, fontStyle: null, fontSynthesis: null, fontVariant: null, fontVariantAlternates: null, fontVariantCaps: null, fontVariantEastAsian: null, fontVariantLigatures: null, fontVariantNumeric: null, fontVariantPosition: null, fontVariationSettings: null, fontWeight: null, gap: null, grid: null, gridArea: null, gridAutoColumns: null, gridAutoFlow: null, gridAutoRows: null, gridColumn: null, gridColumnEnd: null, gridColumnStart: null, gridRow: null, gridRowEnd: null, gridRowStart: null, gridTemplate: null, gridTemplateAreas: null, gridTemplateColumns: null, gridTemplateRows: null, hangingPunctuation: null, height: null, hyphens: null, imageOrientation: null, imageRendering: null, inlineSize: null, inset: null, insetBlock: null, insetBlockEnd: null, insetBlockStart: null, insetInline: null, insetInlineEnd: null, insetInlineStart: null, isolation: null, justifyContent: null, justifyItems: null, justifySelf: null, left: null, letterSpacing: null, lineBreak: null, lineHeight: null, listStyle: null, listStyleImage: null, listStylePosition: null, listStyleType: null, margin: null, marginBlock: null, marginBlockEnd: null, marginBlockStart: null, marginBottom: null, marginInline: null, marginInlineEnd: null, marginInlineStart: null, marginLeft: null, marginRight: null, marginTop: null, mask: null, maskBorder: null, maskBorderMode: null, maskBorderOutset: null, maskBorderRepeat: null, maskBorderSlice: null, maskBorderSource: null, maskBorderWidth: null, maskClip: null, maskComposite: null, maskImage: null, maskMode: null, maskOrigin: null, maskPosition: null, maskRepeat: null, maskSize: null, maskType: null, maxBlockSize: null, maxHeight: null, maxInlineSize: null, maxWidth: null, minBlockSize: null, minHeight: null, minInlineSize: null, minWidth: null, mixBlendMode: null, objectFit: null, objectPosition: null, offset: null, offsetAnchor: null, offsetDistance: null, offsetPath: null, offsetRotate: null, opacity: null, order: null, orphans: null, outline: null, outlineColor: null, outlineOffset: null, outlineStyle: null, outlineWidth: null, overflow: null, overflowAnchor: null, overflowBlock: null, overflowInline: null, overflowWrap: null, overflowX: null, overflowY: null, overscrollBehavior: null, overscrollBehaviorBlock: null, overscrollBehaviorInline: null, overscrollBehaviorX: null, overscrollBehaviorY: null, padding: null, paddingBlock: null, paddingBlockEnd: null, paddingBlockStart: null, paddingBottom: null, paddingInline: null, paddingInlineEnd: null, paddingInlineStart: null, paddingLeft: null, paddingRight: null, paddingTop: null, pageBreakAfter: null, pageBreakBefore: null, pageBreakInside: null, paintOrder: null, perspective: null, perspectiveOrigin: null, placeContent: null, placeItems: null, placeSelf: null, pointerEvents: null, position: null, quotes: null, resize: null, right: null, rotate: null, rowGap: null, scale: null, scrollBehavior: null, scrollMargin: null, scrollMarginBlock: null, scrollMarginBlockEnd: null, scrollMarginBlockStart: null, scrollMarginBottom: null, scrollMarginInline: null, scrollMarginInlineEnd: null, scrollMarginInlineStart: null, scrollMarginLeft: null, scrollMarginRight: null, scrollMarginTop: null, scrollPadding: null, scrollPaddingBlock: null, scrollPaddingBlockEnd: null, scrollPaddingBlockStart: null, scrollPaddingBottom: null, scrollPaddingInline: null, scrollPaddingInlineEnd: null, scrollPaddingInlineStart: null, scrollPaddingLeft: null, scrollPaddingRight: null, scrollPaddingTop: null, scrollSnapAlign: null, scrollSnapStop: null, scrollSnapType: null, scrollbar3dLightColor: null, scrollbarArrowColor: null, scrollbarBaseColor: null, scrollbarColor: null, scrollbarDarkshadowColor: null, scrollbarFaceColor: null, scrollbarHighlightColor: null, scrollbarShadowColor: null, scrollbarTrackColor: null, scrollbarWidth: null, shapeImageThreshold: null, shapeMargin: null, shapeOutside: null, tabSize: null, tableLayout: null, textAlign: null, textAlignLast: null, textCombineUpright: null, textDecoration: null, textDecorationColor: null, textDecorationLine: null, textDecorationSkipInk: null, textDecorationStyle: null, textDecorationThickness: null, textEmphasis: null, textEmphasisColor: null, textEmphasisPosition: null, textEmphasisStyle: null, textIndent: null, textJustify: null, textOrientation: null, textOverflow: null, textRendering: null, textShadow: null, textTransform: null, textUnderlineOffset: null, textUnderlinePosition: null, top: null, touchAction: null, transform: null, transformBox: null, transformOrigin: null, transformStyle: null, transition: null, transitionDelay: null, transitionDuration: null, transitionProperty: null, transitionTimingFunction: null, translate: null, unicodeBidi: null, verticalAlign: null, visibility: null, whiteSpace: null, widows: null, width: null, willChange: null, wordBreak: null, wordSpacing: null, writingMode: null, zIndex: null};
+      oldNode_13685037.dom.style = {m_type: NTI4303293, alignContent: null, alignItems: null, alignSelf: null, all: null, animation: null, animationDelay: null, animationDirection: null, animationDuration: null, animationFillMode: null, animationIterationCount: null, animationName: null, animationPlayState: null, animationTimingFunction: null, backdropFilter: null, backfaceVisibility: null, background: null, backgroundAttachment: null, backgroundBlendMode: null, backgroundClip: null, backgroundColor: null, backgroundImage: null, backgroundOrigin: null, backgroundPosition: null, backgroundRepeat: null, backgroundSize: null, blockSize: null, border: null, borderBlock: null, borderBlockColor: null, borderBlockEnd: null, borderBlockEndColor: null, borderBlockEndStyle: null, borderBlockEndWidth: null, borderBlockStart: null, borderBlockStartColor: null, borderBlockStartStyle: null, borderBlockStartWidth: null, borderBlockStyle: null, borderBlockWidth: null, borderBottom: null, borderBottomColor: null, borderBottomLeftRadius: null, borderBottomRightRadius: null, borderBottomStyle: null, borderBottomWidth: null, borderCollapse: null, borderColor: null, borderEndEndRadius: null, borderEndStartRadius: null, borderImage: null, borderImageOutset: null, borderImageRepeat: null, borderImageSlice: null, borderImageSource: null, borderImageWidth: null, borderInline: null, borderInlineColor: null, borderInlineEnd: null, borderInlineEndColor: null, borderInlineEndStyle: null, borderInlineEndWidth: null, borderInlineStart: null, borderInlineStartColor: null, borderInlineStartStyle: null, borderInlineStartWidth: null, borderInlineStyle: null, borderInlineWidth: null, borderLeft: null, borderLeftColor: null, borderLeftStyle: null, borderLeftWidth: null, borderRadius: null, borderRight: null, borderRightColor: null, borderRightStyle: null, borderRightWidth: null, borderSpacing: null, borderStartEndRadius: null, borderStartStartRadius: null, borderStyle: null, borderTop: null, borderTopColor: null, borderTopLeftRadius: null, borderTopRightRadius: null, borderTopStyle: null, borderTopWidth: null, borderWidth: null, bottom: null, boxDecorationBreak: null, boxShadow: null, boxSizing: null, breakAfter: null, breakBefore: null, breakInside: null, captionSide: null, caretColor: null, clear: null, clip: null, clipPath: null, color: null, colorAdjust: null, columnCount: null, columnFill: null, columnGap: null, columnRule: null, columnRuleColor: null, columnRuleStyle: null, columnRuleWidth: null, columnSpan: null, columnWidth: null, columns: null, contain: null, content: null, counterIncrement: null, counterReset: null, counterSet: null, cursor: null, direction: null, display: null, emptyCells: null, filter: null, flex: null, flexBasis: null, flexDirection: null, flexFlow: null, flexGrow: null, flexShrink: null, flexWrap: null, cssFloat: null, font: null, fontFamily: null, fontFeatureSettings: null, fontKerning: null, fontLanguageOverride: null, fontOpticalSizing: null, fontSize: null, fontSizeAdjust: null, fontStretch: null, fontStyle: null, fontSynthesis: null, fontVariant: null, fontVariantAlternates: null, fontVariantCaps: null, fontVariantEastAsian: null, fontVariantLigatures: null, fontVariantNumeric: null, fontVariantPosition: null, fontVariationSettings: null, fontWeight: null, gap: null, grid: null, gridArea: null, gridAutoColumns: null, gridAutoFlow: null, gridAutoRows: null, gridColumn: null, gridColumnEnd: null, gridColumnStart: null, gridRow: null, gridRowEnd: null, gridRowStart: null, gridTemplate: null, gridTemplateAreas: null, gridTemplateColumns: null, gridTemplateRows: null, hangingPunctuation: null, height: null, hyphens: null, imageOrientation: null, imageRendering: null, inlineSize: null, inset: null, insetBlock: null, insetBlockEnd: null, insetBlockStart: null, insetInline: null, insetInlineEnd: null, insetInlineStart: null, isolation: null, justifyContent: null, justifyItems: null, justifySelf: null, left: null, letterSpacing: null, lineBreak: null, lineHeight: null, listStyle: null, listStyleImage: null, listStylePosition: null, listStyleType: null, margin: null, marginBlock: null, marginBlockEnd: null, marginBlockStart: null, marginBottom: null, marginInline: null, marginInlineEnd: null, marginInlineStart: null, marginLeft: null, marginRight: null, marginTop: null, mask: null, maskBorder: null, maskBorderMode: null, maskBorderOutset: null, maskBorderRepeat: null, maskBorderSlice: null, maskBorderSource: null, maskBorderWidth: null, maskClip: null, maskComposite: null, maskImage: null, maskMode: null, maskOrigin: null, maskPosition: null, maskRepeat: null, maskSize: null, maskType: null, maxBlockSize: null, maxHeight: null, maxInlineSize: null, maxWidth: null, minBlockSize: null, minHeight: null, minInlineSize: null, minWidth: null, mixBlendMode: null, objectFit: null, objectPosition: null, offset: null, offsetAnchor: null, offsetDistance: null, offsetPath: null, offsetRotate: null, opacity: null, order: null, orphans: null, outline: null, outlineColor: null, outlineOffset: null, outlineStyle: null, outlineWidth: null, overflow: null, overflowAnchor: null, overflowBlock: null, overflowInline: null, overflowWrap: null, overflowX: null, overflowY: null, overscrollBehavior: null, overscrollBehaviorBlock: null, overscrollBehaviorInline: null, overscrollBehaviorX: null, overscrollBehaviorY: null, padding: null, paddingBlock: null, paddingBlockEnd: null, paddingBlockStart: null, paddingBottom: null, paddingInline: null, paddingInlineEnd: null, paddingInlineStart: null, paddingLeft: null, paddingRight: null, paddingTop: null, pageBreakAfter: null, pageBreakBefore: null, pageBreakInside: null, paintOrder: null, perspective: null, perspectiveOrigin: null, placeContent: null, placeItems: null, placeSelf: null, pointerEvents: null, position: null, quotes: null, resize: null, right: null, rotate: null, rowGap: null, scale: null, scrollBehavior: null, scrollMargin: null, scrollMarginBlock: null, scrollMarginBlockEnd: null, scrollMarginBlockStart: null, scrollMarginBottom: null, scrollMarginInline: null, scrollMarginInlineEnd: null, scrollMarginInlineStart: null, scrollMarginLeft: null, scrollMarginRight: null, scrollMarginTop: null, scrollPadding: null, scrollPaddingBlock: null, scrollPaddingBlockEnd: null, scrollPaddingBlockStart: null, scrollPaddingBottom: null, scrollPaddingInline: null, scrollPaddingInlineEnd: null, scrollPaddingInlineStart: null, scrollPaddingLeft: null, scrollPaddingRight: null, scrollPaddingTop: null, scrollSnapAlign: null, scrollSnapStop: null, scrollSnapType: null, scrollbar3dLightColor: null, scrollbarArrowColor: null, scrollbarBaseColor: null, scrollbarColor: null, scrollbarDarkshadowColor: null, scrollbarFaceColor: null, scrollbarHighlightColor: null, scrollbarShadowColor: null, scrollbarTrackColor: null, scrollbarWidth: null, shapeImageThreshold: null, shapeMargin: null, shapeOutside: null, tabSize: null, tableLayout: null, textAlign: null, textAlignLast: null, textCombineUpright: null, textDecoration: null, textDecorationColor: null, textDecorationLine: null, textDecorationSkipInk: null, textDecorationStyle: null, textDecorationThickness: null, textEmphasis: null, textEmphasisColor: null, textEmphasisPosition: null, textEmphasisStyle: null, textIndent: null, textJustify: null, textOrientation: null, textOverflow: null, textRendering: null, textShadow: null, textTransform: null, textUnderlineOffset: null, textUnderlinePosition: null, top: null, touchAction: null, transform: null, transformBox: null, transformOrigin: null, transformStyle: null, transition: null, transitionDelay: null, transitionDuration: null, transitionProperty: null, transitionTimingFunction: null, translate: null, unicodeBidi: null, verticalAlign: null, visibility: null, whiteSpace: null, widows: null, width: null, willChange: null, wordBreak: null, wordSpacing: null, writingMode: null, zIndex: null};
     }
     
     F.line = 318;
-    oldNode_12470037.dom.className = newNode_12470036.class;
+    oldNode_13685037.dom.className = newNode_13685036.class;
     }
     
     F.line = 319;
-    oldNode_12470037.style = newNode_12470036.style;
+    oldNode_13685037.style = newNode_13685036.style;
     F.line = 320;
-    oldNode_12470037.class = newNode_12470036.class;
+    oldNode_13685037.class = newNode_13685036.class;
   framePtr = F.prev;
 
   
 }
-function takeOverAttr_11735214(newNode_11735216, oldNode_11735217) {
-  var F={procname:"vdom.takeOverAttr",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\vdom.nim",line:0};
+function takeOverAttr_12950214(newNode_12950216, oldNode_12950217) {
+  var F={procname:"vdom.takeOverAttr",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\vdom.nim",line:0};
   framePtr = F;
-    F.line = 246;
-    oldNode_11735217.attrs = newNode_11735216.attrs;
+    F.line = 244;
+    oldNode_12950217.attrs = newNode_12950216.attrs;
   framePtr = F.prev;
 
   
 }
-function updateAttributes_12480052(newNode_12480054, oldNode_12480055) {
-  var F={procname:"karax.updateAttributes",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\karax.nim",line:0};
+function updateAttributes_13695052(newNode_13695054, oldNode_13695055) {
+  var F={procname:"karax.updateAttributes",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\karax.nim",line:0};
   framePtr = F;
-    if (!((oldNode_12480055.dom == null))) {
+    if (!((oldNode_13695055.dom == null))) {
     L1: do {
       F.line = 325;
-      var k_12485009 = null;
+      var k_13700009 = null;
       F.line = 325;
-      var __12485010 = null;
+      var __13700010 = null;
       L2: do {
-        F.line = 310;
-        var i_12770200 = 0;
+        F.line = 308;
+        var i_14000458 = 0;
         F.line = 39;
-        var colontmp__12770201 = 0;
-        F.line = 310;
-        colontmp__12770201 = subInt((oldNode_12480055.attrs).length, 2);
+        var colontmp__14000459 = 0;
+        F.line = 308;
+        colontmp__14000459 = subInt((oldNode_13695055.attrs).length, 2);
         F.line = 56;
-        var res_12770202 = 0;
+        var res_14000460 = 0;
         L3: do {
           F.line = 57;
             L4: while (true) {
-            if (!(res_12770202 <= colontmp__12770201)) break L4;
-              F.line = 310;
-              i_12770200 = res_12770202;
+            if (!(res_14000460 <= colontmp__14000459)) break L4;
+              F.line = 308;
+              i_14000458 = res_14000460;
               F.line = 325;
-              k_12485009 = oldNode_12480055.attrs[chckIndx(i_12770200, 0, (oldNode_12480055.attrs).length-1)];
-              F.line = 311;
-              __12485010 = oldNode_12480055.attrs[chckIndx(addInt(i_12770200, 1), 0, (oldNode_12480055.attrs).length-1)];
+              k_13700009 = oldNode_13695055.attrs[chckIndx(i_14000458, 0, (oldNode_13695055.attrs).length-1)];
+              F.line = 309;
+              __13700010 = oldNode_13695055.attrs[chckIndx(addInt(i_14000458, 1), 0, (oldNode_13695055.attrs).length-1)];
               F.line = 326;
-              oldNode_12480055.dom.removeAttribute(k_12485009);
+              oldNode_13695055.dom.removeAttribute(k_13700009);
               F.line = 59;
-              res_12770202 = addInt(res_12770202, 2);
+              res_14000460 = addInt(res_14000460, 2);
             }
         } while(false);
       } while(false);
     } while(false);
     L5: do {
       F.line = 327;
-      var k_12485011 = null;
+      var k_13700011 = null;
       F.line = 327;
-      var v_12485012 = null;
+      var v_13700012 = null;
       L6: do {
-        F.line = 310;
-        var i_12770208 = 0;
+        F.line = 308;
+        var i_14000466 = 0;
         F.line = 39;
-        var colontmp__12770209 = 0;
-        F.line = 310;
-        colontmp__12770209 = subInt((newNode_12480054.attrs).length, 2);
+        var colontmp__14000467 = 0;
+        F.line = 308;
+        colontmp__14000467 = subInt((newNode_13695054.attrs).length, 2);
         F.line = 56;
-        var res_12770210 = 0;
+        var res_14000468 = 0;
         L7: do {
           F.line = 57;
             L8: while (true) {
-            if (!(res_12770210 <= colontmp__12770209)) break L8;
-              F.line = 310;
-              i_12770208 = res_12770210;
+            if (!(res_14000468 <= colontmp__14000467)) break L8;
+              F.line = 308;
+              i_14000466 = res_14000468;
               F.line = 327;
-              k_12485011 = newNode_12480054.attrs[chckIndx(i_12770208, 0, (newNode_12480054.attrs).length-1)];
-              F.line = 311;
-              v_12485012 = newNode_12480054.attrs[chckIndx(addInt(i_12770208, 1), 0, (newNode_12480054.attrs).length-1)];
-              if (!((v_12485012 == null))) {
+              k_13700011 = newNode_13695054.attrs[chckIndx(i_14000466, 0, (newNode_13695054.attrs).length-1)];
+              F.line = 309;
+              v_13700012 = newNode_13695054.attrs[chckIndx(addInt(i_14000466, 1), 0, (newNode_13695054.attrs).length-1)];
+              if (!((v_13700012 == null))) {
               F.line = 329;
-              oldNode_12480055.dom.setAttribute(k_12485011, v_12485012);
+              oldNode_13695055.dom.setAttribute(k_13700011, v_13700012);
               }
               
               F.line = 59;
-              res_12770210 = addInt(res_12770210, 2);
+              res_14000468 = addInt(res_14000468, 2);
             }
         } while(false);
       } while(false);
@@ -5898,34 +5930,34 @@ function updateAttributes_12480052(newNode_12480054, oldNode_12480055) {
     }
     
     F.line = 330;
-    takeOverAttr_11735214(newNode_12480054, oldNode_12480055);
+    takeOverAttr_12950214(newNode_13695054, oldNode_13695055);
   framePtr = F.prev;
 
   
 }
-function removeAllEventHandlers_12132436(d_12132438) {
-  var F={procname:"karax.removeAllEventHandlers",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\karax.nim",line:0};
+function removeAllEventHandlers_13347436(d_13347438) {
+  var F={procname:"karax.removeAllEventHandlers",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\karax.nim",line:0};
   framePtr = F;
-    if (!((d_12132438.karaxEvents == null))) {
+    if (!((d_13347438.karaxEvents == null))) {
     L1: do {
       F.line = 96;
-      var i_12135041 = 0;
+      var i_13350041 = 0;
       F.line = 104;
-      var colontmp__12770215 = 0;
+      var colontmp__14000473 = 0;
       F.line = 96;
-      colontmp__12770215 = d_12132438.karaxEvents.length;
+      colontmp__14000473 = d_13347438.karaxEvents.length;
       F.line = 106;
-      var i_12770216 = 0;
+      var i_14000474 = 0;
       L2: do {
         F.line = 107;
           L3: while (true) {
-          if (!(i_12770216 < colontmp__12770215)) break L3;
+          if (!(i_14000474 < colontmp__14000473)) break L3;
             F.line = 96;
-            i_12135041 = i_12770216;
+            i_13350041 = i_14000474;
             F.line = 97;
-            d_12132438.removeEventListener(d_12132438.karaxEvents[i_12135041]["Field0"], d_12132438.karaxEvents[i_12135041]["Field1"]);
+            d_13347438.removeEventListener(d_13347438.karaxEvents[i_13350041]["Field0"], d_13347438.karaxEvents[i_13350041]["Field1"]);
             F.line = 109;
-            i_12770216 = addInt(i_12770216, 1);
+            i_14000474 = addInt(i_14000474, 1);
           }
       } while(false);
     } while(false);
@@ -5935,117 +5967,117 @@ function removeAllEventHandlers_12132436(d_12132438) {
 
   
 }
-function mergeEvents_12490014(newNode_12490016, oldNode_12490017, kxi_12490018) {
-  var F={procname:"karax.mergeEvents",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\karax.nim",line:0};
+function mergeEvents_13705014(newNode_13705016, oldNode_13705017, kxi_13705018) {
+  var F={procname:"karax.mergeEvents",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\karax.nim",line:0};
   framePtr = F;
     F.line = 333;
-    var d_12490019 = oldNode_12490017.dom;
-    if (!((d_12490019 == null))) {
+    var d_13705019 = oldNode_13705017.dom;
+    if (!((d_13705019 == null))) {
     F.line = 335;
-    removeAllEventHandlers_12132436(d_12490019);
+    removeAllEventHandlers_13347436(d_13705019);
     }
     
     F.line = 343;
-    oldNode_12490017.events = newNode_12490016.events;
+    oldNode_13705017.events = newNode_13705016.events;
     F.line = 344;
-    applyEvents_12245073(oldNode_12490017);
+    applyEvents_13460073(oldNode_13705017);
   framePtr = F.prev;
 
   
 }
-function addPatch_12495414(kxi_12495416, ka_12495417, parenta_12495418, currenta_12495419, na_12495420, oldNode_12495421) {
-  var F={procname:"karax.addPatch",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\karax.nim",line:0};
+function addPatch_13710414(kxi_13710416, ka_13710417, parenta_13710418, currenta_13710419, na_13710420, oldNode_13710421) {
+  var F={procname:"karax.addPatch",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\karax.nim",line:0};
   framePtr = F;
     F.line = 361;
-    var L_12495422 = kxi_12495416.patchLen;
-    if (((kxi_12495416.patches).length <= L_12495422)) {
+    var L_13710422 = kxi_13710416.patchLen;
+    if (((kxi_13710416.patches).length <= L_13710422)) {
     F.line = 364;
-    kxi_12495416.patches.push({k: ka_12495417, parent: parenta_12495418, current: currenta_12495419, newNode: na_12495420, oldNode: oldNode_12495421});;
+    kxi_13710416.patches.push({k: ka_13710417, parent: parenta_13710418, current: currenta_13710419, newNode: na_13710420, oldNode: oldNode_13710421});;
     }
     else {
       F.line = 367;
-      kxi_12495416.patches[chckIndx(L_12495422, 0, (kxi_12495416.patches).length-1)].k = ka_12495417;
+      kxi_13710416.patches[chckIndx(L_13710422, 0, (kxi_13710416.patches).length-1)].k = ka_13710417;
       F.line = 368;
-      kxi_12495416.patches[chckIndx(L_12495422, 0, (kxi_12495416.patches).length-1)].parent = parenta_12495418;
+      kxi_13710416.patches[chckIndx(L_13710422, 0, (kxi_13710416.patches).length-1)].parent = parenta_13710418;
       F.line = 369;
-      kxi_12495416.patches[chckIndx(L_12495422, 0, (kxi_12495416.patches).length-1)].current = currenta_12495419;
+      kxi_13710416.patches[chckIndx(L_13710422, 0, (kxi_13710416.patches).length-1)].current = currenta_13710419;
       F.line = 370;
-      kxi_12495416.patches[chckIndx(L_12495422, 0, (kxi_12495416.patches).length-1)].newNode = na_12495420;
+      kxi_13710416.patches[chckIndx(L_13710422, 0, (kxi_13710416.patches).length-1)].newNode = na_13710420;
       F.line = 371;
-      kxi_12495416.patches[chckIndx(L_12495422, 0, (kxi_12495416.patches).length-1)].oldNode = oldNode_12495421;
+      kxi_13710416.patches[chckIndx(L_13710422, 0, (kxi_13710416.patches).length-1)].oldNode = oldNode_13710421;
     }
     
     F.line = 372;
-    kxi_12495416.patchLen = addInt(kxi_12495416.patchLen, 1);
+    kxi_13710416.patchLen = addInt(kxi_13710416.patchLen, 1);
   framePtr = F.prev;
 
   
 }
-function diff_12540230(newNode_12540232, oldNode_12540233, parent_12540234, current_12540235, kxi_12540236) {
+function diff_13755230(newNode_13755232, oldNode_13755233, parent_13755234, current_13755235, kxi_13755236) {
         var Tmp1;
             var Tmp6;
 
-  var F={procname:"karax.diff",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\karax.nim",line:0};
+  var F={procname:"karax.diff",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\karax.nim",line:0};
   framePtr = F;
   BeforeRet: do {
     F.line = 463;
-    var result_12540401 = eq_12410214(newNode_12540232, oldNode_12540233, false);
+    var result_13755401 = eq_13625214(newNode_13755232, oldNode_13755233, false);
     F.line = 464;
-    switch (result_12540401) {
+    switch (result_13755401) {
     case 0:
       F.line = 466;
-      kxi_12540236.components.push({oldNode: oldNode_12540233, newNode: newNode_12540232, parent: parent_12540234, current: current_12540235});;
+      kxi_13755236.components.push({oldNode: oldNode_13755233, newNode: newNode_13755232, parent: parent_13755234, current: current_13755235});;
       break;
     case 3:
     case 2:
       F.line = 471;
-      newNode_12540232.dom = oldNode_12540233.dom;
-      if ((result_12540401 == 2)) {
+      newNode_13755232.dom = oldNode_13755233.dom;
+      if ((result_13755401 == 2)) {
       F.line = 473;
-      updateStyles_12470034(newNode_12540232, oldNode_12540233);
+      updateStyles_13685034(newNode_13755232, oldNode_13755233);
       F.line = 474;
-      updateAttributes_12480052(newNode_12540232, oldNode_12540233);
-      if ((oldNode_12540233.kind == 0)) {
+      updateAttributes_13695052(newNode_13755232, oldNode_13755233);
+      if ((oldNode_13755233.kind == 0)) {
       F.line = 476;
-      oldNode_12540233.text = newNode_12540232.text;
+      oldNode_13755233.text = newNode_13755232.text;
       F.line = 477;
-      oldNode_12540233.dom.nodeValue = newNode_12540232.text;
+      oldNode_13755233.dom.nodeValue = newNode_13755232.text;
       }
       
       }
       
-        if (!(((newNode_12540232.events).length == 0))) Tmp1 = true; else {          Tmp1 = !(((oldNode_12540233.events).length == 0));        }      if (Tmp1) {
+        if (!(((newNode_13755232.events).length == 0))) Tmp1 = true; else {          Tmp1 = !(((oldNode_13755233.events).length == 0));        }      if (Tmp1) {
       F.line = 480;
-      mergeEvents_12490014(newNode_12540232, oldNode_12540233, kxi_12540236);
+      mergeEvents_13705014(newNode_13755232, oldNode_13755233, kxi_13755236);
       }
       
       F.line = 482;
-      var newLength_12550006 = len_11785014(newNode_12540232);
+      var newLength_13765006 = len_13000014(newNode_13755232);
       F.line = 483;
-      var oldLength_12550007 = len_11785014(oldNode_12540233);
-      if (((newLength_12550006 == 0) && (oldLength_12550007 == 0))) {
+      var oldLength_13765007 = len_13000014(oldNode_13755233);
+      if (((newLength_13765006 == 0) && (oldLength_13765007 == 0))) {
       F.line = 484;
       break BeforeRet;
       }
       
       F.line = 485;
-      var minLength_12550008 = nimMin(newLength_12550006, oldLength_12550007);
-      if (!((oldNode_12540233.kind == newNode_12540232.kind))) {
+      var minLength_13765008 = nimMin(newLength_13765006, oldLength_13765007);
+      if (!((oldNode_13755233.kind == newNode_13755232.kind))) {
       F.line = 487;
-      failedAssertImpl_2540480(makeNimstrLit("D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\karax.nim(487, 12) `oldNode.kind == newNode.kind` "));
+      failedAssertImpl_3755480(makeNimstrLit("d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\karax.nim(487, 12) `oldNode.kind == newNode.kind` "));
       }
       
       F.line = 488;
-      var commonPrefix_12560202 = 0;
+      var commonPrefix_13775202 = 0;
       L2: do {
         F.line = 491;
           L3: while (true) {
-          if (!(commonPrefix_12560202 < minLength_12550008)) break L3;
-            if ((eq_12410214(HEX5BHEX5D_11785036(newNode_12540232, commonPrefix_12560202), HEX5BHEX5D_11785036(oldNode_12540233, commonPrefix_12560202), true) == 3)) {
+          if (!(commonPrefix_13775202 < minLength_13765008)) break L3;
+            if ((eq_13625214(HEX5BHEX5D_13000036(newNode_13755232, commonPrefix_13775202), HEX5BHEX5D_13000036(oldNode_13755233, commonPrefix_13775202), true) == 3)) {
             F.line = 493;
-            addPatch_12495414(kxi_12540236, 5, null, null, HEX5BHEX5D_11785036(newNode_12540232, commonPrefix_12560202), HEX5BHEX5D_11785036(oldNode_12540233, commonPrefix_12560202));
+            addPatch_13710414(kxi_13755236, 5, null, null, HEX5BHEX5D_13000036(newNode_13755232, commonPrefix_13775202), HEX5BHEX5D_13000036(oldNode_13755233, commonPrefix_13775202));
             F.line = 494;
-            commonPrefix_12560202 = addInt(commonPrefix_12560202, 1);
+            commonPrefix_13775202 = addInt(commonPrefix_13775202, 1);
             }
             else {
               F.line = 496;
@@ -6055,20 +6087,20 @@ function diff_12540230(newNode_12540232, oldNode_12540233, parent_12540234, curr
           }
       } while(false);
       F.line = 499;
-      var oldPos_12560214 = subInt(oldLength_12550007, 1);
+      var oldPos_13775214 = subInt(oldLength_13765007, 1);
       F.line = 500;
-      var newPos_12560215 = subInt(newLength_12550006, 1);
+      var newPos_13775215 = subInt(newLength_13765006, 1);
       L4: do {
         F.line = 501;
           L5: while (true) {
-            if (!(commonPrefix_12560202 <= oldPos_12560214)) Tmp6 = false; else {              Tmp6 = (commonPrefix_12560202 <= newPos_12560215);            }          if (!Tmp6) break L5;
-            if ((eq_12410214(HEX5BHEX5D_11785036(newNode_12540232, newPos_12560215), HEX5BHEX5D_11785036(oldNode_12540233, oldPos_12560214), true) == 3)) {
+            if (!(commonPrefix_13775202 <= oldPos_13775214)) Tmp6 = false; else {              Tmp6 = (commonPrefix_13775202 <= newPos_13775215);            }          if (!Tmp6) break L5;
+            if ((eq_13625214(HEX5BHEX5D_13000036(newNode_13755232, newPos_13775215), HEX5BHEX5D_13000036(oldNode_13755233, oldPos_13775214), true) == 3)) {
             F.line = 503;
-            addPatch_12495414(kxi_12540236, 5, null, null, HEX5BHEX5D_11785036(newNode_12540232, newPos_12560215), HEX5BHEX5D_11785036(oldNode_12540233, oldPos_12560214));
+            addPatch_13710414(kxi_13755236, 5, null, null, HEX5BHEX5D_13000036(newNode_13755232, newPos_13775215), HEX5BHEX5D_13000036(oldNode_13755233, oldPos_13775214));
             F.line = 504;
-            oldPos_12560214 = subInt(oldPos_12560214, 1);
+            oldPos_13775214 = subInt(oldPos_13775214, 1);
             F.line = 505;
-            newPos_12560215 = subInt(newPos_12560215, 1);
+            newPos_13775215 = subInt(newPos_13775215, 1);
             }
             else {
               F.line = 507;
@@ -6078,67 +6110,67 @@ function diff_12540230(newNode_12540232, oldNode_12540233, parent_12540234, curr
           }
       } while(false);
       F.line = 509;
-      var pos_12570018 = addInt(nimMin(oldPos_12560214, newPos_12560215), 1);
+      var pos_13785018 = addInt(nimMin(oldPos_13775214, newPos_13775215), 1);
       L7: do {
         F.line = 511;
-        var i_12570024 = 0;
+        var i_13785024 = 0;
         F.line = 66;
-        var colontmp__12770157 = 0;
+        var colontmp__14000415 = 0;
         F.line = 511;
-        colontmp__12770157 = subInt(pos_12570018, 1);
+        colontmp__14000415 = subInt(pos_13785018, 1);
         F.line = 77;
-        var res_12770158 = commonPrefix_12560202;
+        var res_14000416 = commonPrefix_13775202;
         L8: do {
           F.line = 78;
             L9: while (true) {
-            if (!(res_12770158 <= colontmp__12770157)) break L9;
+            if (!(res_14000416 <= colontmp__14000415)) break L9;
               F.line = 511;
-              i_12570024 = res_12770158;
+              i_13785024 = res_14000416;
               F.line = 512;
-              diff_12540230(HEX5BHEX5D_11785036(newNode_12540232, i_12570024), HEX5BHEX5D_11785036(oldNode_12540233, i_12570024), current_12540235, current_12540235.childNodes[chckIndx(i_12570024, 0, (current_12540235.childNodes).length-1)], kxi_12540236);
+              diff_13755230(HEX5BHEX5D_13000036(newNode_13755232, i_13785024), HEX5BHEX5D_13000036(oldNode_13755233, i_13785024), current_13755235, current_13755235.childNodes[chckIndx(i_13785024, 0, (current_13755235.childNodes).length-1)], kxi_13755236);
               F.line = 80;
-              res_12770158 = addInt(res_12770158, 1);
+              res_14000416 = addInt(res_14000416, 1);
             }
         } while(false);
       } while(false);
-      if ((addInt(oldPos_12560214, 1) == oldLength_12550007)) {
+      if ((addInt(oldPos_13775214, 1) == oldLength_13765007)) {
       L10: do {
         F.line = 515;
-        var i_12570030 = 0;
+        var i_13785030 = 0;
         F.line = 77;
-        var res_12770164 = pos_12570018;
+        var res_14000422 = pos_13785018;
         L11: do {
           F.line = 78;
             L12: while (true) {
-            if (!(res_12770164 <= newPos_12560215)) break L12;
+            if (!(res_14000422 <= newPos_13775215)) break L12;
               F.line = 515;
-              i_12570030 = res_12770164;
+              i_13785030 = res_14000422;
               F.line = 516;
-              addPatch_12495414(kxi_12540236, 2, current_12540235, null, HEX5BHEX5D_11785036(newNode_12540232, i_12570030), null);
+              addPatch_13710414(kxi_13755236, 2, current_13755235, null, HEX5BHEX5D_13000036(newNode_13755232, i_13785030), null);
               F.line = 80;
-              res_12770164 = addInt(res_12770164, 1);
+              res_14000422 = addInt(res_14000422, 1);
             }
         } while(false);
       } while(false);
       }
       else {
         F.line = 518;
-        var before_12570031 = current_12540235.childNodes[chckIndx(addInt(oldPos_12560214, 1), 0, (current_12540235.childNodes).length-1)];
+        var before_13785031 = current_13755235.childNodes[chckIndx(addInt(oldPos_13775214, 1), 0, (current_13755235.childNodes).length-1)];
         L13: do {
           F.line = 519;
-          var i_12570037 = 0;
+          var i_13785037 = 0;
           F.line = 77;
-          var res_12770170 = pos_12570018;
+          var res_14000428 = pos_13785018;
           L14: do {
             F.line = 78;
               L15: while (true) {
-              if (!(res_12770170 <= newPos_12560215)) break L15;
+              if (!(res_14000428 <= newPos_13775215)) break L15;
                 F.line = 519;
-                i_12570037 = res_12770170;
+                i_13785037 = res_14000428;
                 F.line = 520;
-                addPatch_12495414(kxi_12540236, 3, current_12540235, before_12570031, HEX5BHEX5D_11785036(newNode_12540232, i_12570037), null);
+                addPatch_13710414(kxi_13755236, 3, current_13755235, before_13785031, HEX5BHEX5D_13000036(newNode_13755232, i_13785037), null);
                 F.line = 80;
-                res_12770170 = addInt(res_12770170, 1);
+                res_14000428 = addInt(res_14000428, 1);
               }
           } while(false);
         } while(false);
@@ -6146,35 +6178,35 @@ function diff_12540230(newNode_12540232, oldNode_12540233, parent_12540234, curr
       
       L16: do {
         F.line = 522;
-        var i_12570043 = 0;
+        var i_13785043 = 0;
         F.line = 77;
-        var res_12770176 = pos_12570018;
+        var res_14000434 = pos_13785018;
         L17: do {
           F.line = 78;
             L18: while (true) {
-            if (!(res_12770176 <= oldPos_12560214)) break L18;
+            if (!(res_14000434 <= oldPos_13775214)) break L18;
               F.line = 522;
-              i_12570043 = res_12770176;
+              i_13785043 = res_14000434;
               F.line = 523;
-              addPatch_12495414(kxi_12132284[0], 4, null, null, null, HEX5BHEX5D_11785036(oldNode_12540233, i_12570043));
+              addPatch_13710414(kxi_13347284[0], 4, null, null, null, HEX5BHEX5D_13000036(oldNode_13755233, i_13785043));
               F.line = 525;
-              addPatch_12495414(kxi_12540236, 1, current_12540235, current_12540235.childNodes[chckIndx(i_12570043, 0, (current_12540235.childNodes).length-1)], null, null);
+              addPatch_13710414(kxi_13755236, 1, current_13755235, current_13755235.childNodes[chckIndx(i_13785043, 0, (current_13755235.childNodes).length-1)], null, null);
               F.line = 80;
-              res_12770176 = addInt(res_12770176, 1);
+              res_14000434 = addInt(res_14000434, 1);
             }
         } while(false);
       } while(false);
       break;
     case 1:
       F.line = 527;
-      addPatch_12495414(kxi_12132284[0], 4, null, null, null, oldNode_12540233);
+      addPatch_13710414(kxi_13347284[0], 4, null, null, null, oldNode_13755233);
       F.line = 528;
-      addPatch_12495414(kxi_12540236, 0, parent_12540234, current_12540235, newNode_12540232, null);
+      addPatch_13710414(kxi_13755236, 0, parent_13755234, current_13755235, newNode_13755232, null);
       break;
     case 4:
       if (true) {
       F.line = 529;
-      failedAssertImpl_2540480(makeNimstrLit("D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\karax.nim(529, 26) `false` eq returned usenewNode"));
+      failedAssertImpl_3755480(makeNimstrLit("d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\karax.nim(529, 26) `false` eq returned usenewNode"));
       }
       
       break;
@@ -6184,94 +6216,94 @@ function diff_12540230(newNode_12540232, oldNode_12540233, parent_12540234, curr
 
   
 }
-function applyComponents_12590429(kxi_12590431) {
+function applyComponents_13805429(kxi_13805431) {
             var Tmp3;
 
-  var F={procname:"karax.applyComponents",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\karax.nim",line:0};
+  var F={procname:"karax.applyComponents",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\karax.nim",line:0};
   framePtr = F;
     F.line = 537;
-    var i_12590433 = 0;
+    var i_13805433 = 0;
     L1: do {
       F.line = 540;
         L2: while (true) {
-        if (!(i_12590433 < (kxi_12590431.components).length)) break L2;
+        if (!(i_13805433 < (kxi_13805431.components).length)) break L2;
           F.line = 541;
-          var x_12590439 = kxi_12590431.components[chckIndx(i_12590433, 0, (kxi_12590431.components).length-1)].oldNode;
+          var x_13805439 = kxi_13805431.components[chckIndx(i_13805433, 0, (kxi_13805431.components).length-1)].oldNode;
           F.line = 542;
-          var newNode_12590440 = kxi_12590431.components[chckIndx(i_12590433, 0, (kxi_12590431.components).length-1)].newNode;
-            if (!!((x_12590439.changedImpl == null))) Tmp3 = false; else {              Tmp3 = x_12590439.changedImpl(x_12590439, newNode_12590440);            }          if (Tmp3) {
+          var newNode_13805440 = kxi_13805431.components[chckIndx(i_13805433, 0, (kxi_13805431.components).length-1)].newNode;
+            if (!!((x_13805439.changedImpl == null))) Tmp3 = false; else {              Tmp3 = x_13805439.changedImpl(x_13805439, newNode_13805440);            }          if (Tmp3) {
           F.line = 548;
-          var current_12595201 = kxi_12590431.components[chckIndx(i_12590433, 0, (kxi_12590431.components).length-1)].current;
+          var current_13810201 = kxi_13805431.components[chckIndx(i_13805433, 0, (kxi_13805431.components).length-1)].current;
           F.line = 549;
-          var parent_12595202 = kxi_12590431.components[chckIndx(i_12590433, 0, (kxi_12590431.components).length-1)].parent;
+          var parent_13810202 = kxi_13805431.components[chckIndx(i_13805433, 0, (kxi_13805431.components).length-1)].parent;
           F.line = 550;
-          x_12590439.updatedImpl(x_12590439, newNode_12590440);
+          x_13805439.updatedImpl(x_13805439, newNode_13805440);
           F.line = 551;
-          var oldExpanded_12595203 = x_12590439.expanded;
+          var oldExpanded_13810203 = x_13805439.expanded;
           F.line = 552;
-          x_12590439.expanded = x_12590439.renderImpl(x_12590439);
+          x_13805439.expanded = x_13805439.renderImpl(x_13805439);
           F.line = 555;
-          x_12590439.renderedVersion = x_12590439.version;
-          if ((oldExpanded_12595203 == null)) {
+          x_13805439.renderedVersion = x_13805439.version;
+          if ((oldExpanded_13810203 == null)) {
           F.line = 557;
-          addPatch_12495414(kxi_12132284[0], 4, null, null, null, x_12590439);
+          addPatch_13710414(kxi_13347284[0], 4, null, null, null, x_13805439);
           F.line = 558;
-          addPatch_12495414(kxi_12590431, 0, parent_12595202, current_12595201, x_12590439.expanded, null);
+          addPatch_13710414(kxi_13805431, 0, parent_13810202, current_13810201, x_13805439.expanded, null);
           }
           else {
             F.line = 562;
-            diff_12540230(x_12590439.expanded, oldExpanded_12595203, parent_12595202, current_12595201, kxi_12590431);
+            diff_13755230(x_13805439.expanded, oldExpanded_13810203, parent_13810202, current_13810201, kxi_13805431);
           }
           
           }
           
           F.line = 577;
-          i_12590433 = addInt(i_12590433, 1);
+          i_13805433 = addInt(i_13805433, 1);
         }
     } while(false);
     F.line = 578;
-    if (kxi_12590431.components.length < 0) { for (var i=kxi_12590431.components.length;i<0;++i) kxi_12590431.components.push(({oldNode: null, newNode: null, parent: null, current: null})); }
-               else { kxi_12590431.components.length = 0; };
+    if (kxi_13805431.components.length < 0) { for (var i=kxi_13805431.components.length;i<0;++i) kxi_13805431.components.push(({oldNode: null, newNode: null, parent: null, current: null})); }
+               else { kxi_13805431.components.length = 0; };
   framePtr = F.prev;
 
   
 }
-function moveDom_12500063(dest_12500065, src_12500066) {
-  var F={procname:"karax.moveDom",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\karax.nim",line:0};
+function moveDom_13715063(dest_13715065, src_13715066) {
+  var F={procname:"karax.moveDom",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\karax.nim",line:0};
   framePtr = F;
     F.line = 386;
-    dest_12500065.dom = src_12500066.dom;
+    dest_13715065.dom = src_13715066.dom;
     F.line = 387;
-    src_12500066.dom = null;
-    if (!((dest_12500065.id == null))) {
+    src_13715066.dom = null;
+    if (!((dest_13715065.id == null))) {
     F.line = 389;
-    kxi_12132284[0].byId[dest_12500065.id] = dest_12500065;
+    kxi_13347284[0].byId[dest_13715065.id] = dest_13715065;
     }
     
-    if (!((len_11785014(dest_12500065) == len_11785014(src_12500066)))) {
+    if (!((len_13000014(dest_13715065) == len_13000014(src_13715066)))) {
     F.line = 390;
-    failedAssertImpl_2540480(makeNimstrLit("D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\karax.nim(390, 10) `dest.len == src.len` "));
+    failedAssertImpl_3755480(makeNimstrLit("d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\karax.nim(390, 10) `dest.len == src.len` "));
     }
     
     L1: do {
       F.line = 391;
-      var i_12515208 = 0;
+      var i_13730208 = 0;
       F.line = 104;
-      var colontmp__12770227 = 0;
+      var colontmp__14000485 = 0;
       F.line = 391;
-      colontmp__12770227 = len_11785014(dest_12500065);
+      colontmp__14000485 = len_13000014(dest_13715065);
       F.line = 106;
-      var i_12770228 = 0;
+      var i_14000486 = 0;
       L2: do {
         F.line = 107;
           L3: while (true) {
-          if (!(i_12770228 < colontmp__12770227)) break L3;
+          if (!(i_14000486 < colontmp__14000485)) break L3;
             F.line = 391;
-            i_12515208 = i_12770228;
+            i_13730208 = i_14000486;
             F.line = 392;
-            moveDom_12500063(HEX5BHEX5D_11785036(dest_12500065, i_12515208), HEX5BHEX5D_11785036(src_12500066, i_12515208));
+            moveDom_13715063(HEX5BHEX5D_13000036(dest_13715065, i_13730208), HEX5BHEX5D_13000036(src_13715066, i_13730208));
             F.line = 109;
-            i_12770228 = addInt(i_12770228, 1);
+            i_14000486 = addInt(i_14000486, 1);
           }
       } while(false);
     } while(false);
@@ -6279,48 +6311,48 @@ function moveDom_12500063(dest_12500065, src_12500066) {
 
   
 }
-function HEX5BHEX5DHEX3D_11785054(x_11785056, idx_11785057, y_11785058) {
-  var F={procname:"vdom.[]=",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\vdom.nim",line:0};
+function HEX5BHEX5DHEX3D_13000054(x_13000056, idx_13000057, y_13000058) {
+  var F={procname:"vdom.[]=",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\vdom.nim",line:0};
   framePtr = F;
-    F.line = 264;
-    x_11785056.kids[chckIndx(idx_11785057, 0, (x_11785056.kids).length-1)] = y_11785058;
+    F.line = 262;
+    x_13000056.kids[chckIndx(idx_13000057, 0, (x_13000056.kids).length-1)] = y_13000058;
   framePtr = F.prev;
 
   
 }
-function applyPatch_12515222(kxi_12515224) {
-  var F={procname:"karax.applyPatch",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\karax.nim",line:0};
+function applyPatch_13730222(kxi_13730224) {
+  var F={procname:"karax.applyPatch",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\karax.nim",line:0};
   framePtr = F;
     L1: do {
       F.line = 395;
-      var i_12515232 = 0;
+      var i_13730232 = 0;
       F.line = 106;
-      var i_12770221 = 0;
+      var i_14000479 = 0;
       L2: do {
         F.line = 107;
           L3: while (true) {
-          if (!(i_12770221 < kxi_12515224.patchLen)) break L3;
+          if (!(i_14000479 < kxi_13730224.patchLen)) break L3;
             F.line = 395;
-            i_12515232 = i_12770221;
+            i_13730232 = i_14000479;
             F.line = 396;
-            var p_12515233 = nimCopy(null, kxi_12515224.patches[chckIndx(i_12515232, 0, (kxi_12515224.patches).length-1)], NTI12132209);
+            var p_13730233 = nimCopy(null, kxi_13730224.patches[chckIndx(i_13730232, 0, (kxi_13730224.patches).length-1)], NTI13347209);
             F.line = 397;
-            switch (p_12515233.k) {
+            switch (p_13730233.k) {
             case 0:
               F.line = 399;
-              var nn_12515234 = toDom_12245154(p_12515233.newNode, true, kxi_12515224);
-              if ((p_12515233.parent == null)) {
+              var nn_13730234 = toDom_13460154(p_13730233.newNode, true, kxi_13730224);
+              if ((p_13730233.parent == null)) {
               F.line = 401;
-              replaceById_12410074(kxi_12515224.rootId, nn_12515234);
+              replaceById_13625074(kxi_13730224.rootId, nn_13730234);
               }
               else {
-                if ((p_12515233.current.parentNode == p_12515233.parent)) {
+                if ((p_13730233.current.parentNode == p_13730233.parent)) {
                 F.line = 404;
-                p_12515233.parent.replaceChild(nn_12515234, p_12515233.current);
+                p_13730233.parent.replaceChild(nn_13730234, p_13730233.current);
                 }
                 else {
                   F.line = 406;
-                p_12515233.parent.appendChild(nn_12515234);
+                p_13730233.parent.appendChild(nn_13730234);
                 }
                 
               }
@@ -6328,247 +6360,247 @@ function applyPatch_12515222(kxi_12515224) {
               break;
             case 5:
               F.line = 408;
-              moveDom_12500063(p_12515233.newNode, p_12515233.oldNode);
+              moveDom_13715063(p_13730233.newNode, p_13730233.oldNode);
               break;
             case 1:
               F.line = 410;
-              p_12515233.parent.removeChild(p_12515233.current);
+              p_13730233.parent.removeChild(p_13730233.current);
               break;
             case 2:
               F.line = 412;
-              var nn_12515250 = toDom_12245154(p_12515233.newNode, true, kxi_12515224);
+              var nn_13730250 = toDom_13460154(p_13730233.newNode, true, kxi_13730224);
               F.line = 413;
-              p_12515233.parent.appendChild(nn_12515250);
+              p_13730233.parent.appendChild(nn_13730250);
               break;
             case 3:
               F.line = 415;
-              var nn_12515251 = toDom_12245154(p_12515233.newNode, true, kxi_12515224);
+              var nn_13730251 = toDom_13460154(p_13730233.newNode, true, kxi_13730224);
               F.line = 416;
-              p_12515233.parent.insertBefore(nn_12515251, p_12515233.current);
+              p_13730233.parent.insertBefore(nn_13730251, p_13730233.current);
               break;
             case 4:
               F.line = 418;
-              var n_12515252 = p_12515233.oldNode;
-              if (!((n_12515252.id == null))) {
+              var n_13730252 = p_13730233.oldNode;
+              if (!((n_13730252.id == null))) {
               F.line = 419;
-              delete kxi_12515224.byId[n_12515252.id];
+              delete kxi_13730224.byId[n_13730252.id];
               }
               
-              if ((n_12515252.kind == 5)) {
+              if ((n_13730252.kind == 5)) {
               F.line = 421;
-              var x_12520018 = n_12515252;
-              if (!((x_12520018.onDetachImpl == null))) {
+              var x_13735018 = n_13730252;
+              if (!((x_13735018.onDetachImpl == null))) {
               F.line = 422;
-              x_12520018.onDetachImpl(x_12520018);
+              x_13735018.onDetachImpl(x_13735018);
               }
               
               }
               
-              if (!(kxi_12515224.surpressRedraws)) {
+              if (!(kxi_13730224.surpressRedraws)) {
               F.line = 424;
-              n_12515252.dom = null;
+              n_13730252.dom = null;
               }
               
               break;
             }
             F.line = 109;
-            i_12770221 = addInt(i_12770221, 1);
+            i_14000479 = addInt(i_14000479, 1);
           }
       } while(false);
     } while(false);
     F.line = 425;
-    kxi_12515224.patchLen = 0;
+    kxi_13730224.patchLen = 0;
     L4: do {
       F.line = 426;
-      var i_12525013 = 0;
+      var i_13740013 = 0;
       F.line = 106;
-      var i_12770224 = 0;
+      var i_14000482 = 0;
       L5: do {
         F.line = 107;
           L6: while (true) {
-          if (!(i_12770224 < kxi_12515224.patchLenV)) break L6;
+          if (!(i_14000482 < kxi_13730224.patchLenV)) break L6;
             F.line = 426;
-            i_12525013 = i_12770224;
+            i_13740013 = i_14000482;
             F.line = 427;
-            var p_12525014 = nimCopy(null, kxi_12515224.patchesV[chckIndx(i_12525013, 0, (kxi_12515224.patchesV).length-1)], NTI12132211);
+            var p_13740014 = nimCopy(null, kxi_13730224.patchesV[chckIndx(i_13740013, 0, (kxi_13730224.patchesV).length-1)], NTI13347211);
             F.line = 428;
-            HEX5BHEX5DHEX3D_11785054(p_12525014.parent, p_12525014.pos, p_12525014.newChild);
-            if (!(!((p_12525014.newChild.dom == null)))) {
+            HEX5BHEX5DHEX3D_13000054(p_13740014.parent, p_13740014.pos, p_13740014.newChild);
+            if (!(!((p_13740014.newChild.dom == null)))) {
             F.line = 429;
-            failedAssertImpl_2540480(makeNimstrLit("D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\karax.nim(429, 12) `p.newChild.dom != nil` "));
+            failedAssertImpl_3755480(makeNimstrLit("d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\karax.nim(429, 12) `p.newChild.dom != nil` "));
             }
             
             F.line = 109;
-            i_12770224 = addInt(i_12770224, 1);
+            i_14000482 = addInt(i_14000482, 1);
           }
       } while(false);
     } while(false);
     F.line = 430;
-    kxi_12515224.patchLenV = 0;
+    kxi_13730224.patchLenV = 0;
   framePtr = F.prev;
 
   
 }
-function dodraw_12655262(kxi_12655264) {
-  var F={procname:"karax.dodraw",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\karax.nim",line:0};
+function dodraw_13870262(kxi_13870264) {
+  var F={procname:"karax.dodraw",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\karax.nim",line:0};
   framePtr = F;
   BeforeRet: do {
-    if ((kxi_12655264.renderer == null)) {
+    if ((kxi_13870264.renderer == null)) {
     F.line = 634;
     break BeforeRet;
     }
     
     F.line = 635;
-    var rdata_12655269 = {hashPart: window.location.hash};
+    var rdata_13870269 = {hashPart: window.location.hash};
     F.line = 636;
-    var newtree_12655270 = kxi_12655264.renderer(rdata_12655269);
+    var newtree_13870270 = kxi_13870264.renderer(rdata_13870269);
     F.line = 637;
-    kxi_12655264.runCount = addInt(kxi_12655264.runCount, 1);
+    kxi_13870264.runCount = addInt(kxi_13870264.runCount, 1);
     F.line = 638;
-    newtree_12655270.id = kxi_12655264.rootId;
+    newtree_13870270.id = kxi_13870264.rootId;
     F.line = 639;
-    kxi_12655264.toFocus = null;
-    if ((kxi_12655264.currentTree == null)) {
+    kxi_13870264.toFocus = null;
+    if ((kxi_13870264.currentTree == null)) {
     F.line = 641;
-    var asdom_12655285 = toDom_12245154(newtree_12655270, true, kxi_12655264);
+    var asdom_13870285 = toDom_13460154(newtree_13870270, true, kxi_13870264);
     F.line = 642;
-    replaceById_12410074(kxi_12655264.rootId, asdom_12655285);
+    replaceById_13625074(kxi_13870264.rootId, asdom_13870285);
     }
     else {
-      if (!(same_12395072(kxi_12655264.currentTree, document.getElementById(kxi_12655264.rootId), 0))) {
+      if (!(same_13610072(kxi_13870264.currentTree, document.getElementById(kxi_13870264.rootId), 0))) {
       F.line = 644;
-      failedAssertImpl_2540480(makeNimstrLit("D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\karax.nim(644, 14) `same(kxi.currentTree, document.getElementById(kxi.rootId))` "));
+      failedAssertImpl_3755480(makeNimstrLit("d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\karax.nim(644, 14) `same(kxi.currentTree, document.getElementById(kxi.rootId))` "));
       }
       
       F.line = 645;
-      var olddom_12665201 = document.getElementById(kxi_12655264.rootId);
+      var olddom_13880201 = document.getElementById(kxi_13870264.rootId);
       F.line = 646;
-      diff_12540230(newtree_12655270, kxi_12655264.currentTree, null, olddom_12665201, kxi_12655264);
+      diff_13755230(newtree_13870270, kxi_13870264.currentTree, null, olddom_13880201, kxi_13870264);
     }
     
     F.line = 650;
-    applyComponents_12590429(kxi_12655264);
+    applyComponents_13805429(kxi_13870264);
     F.line = 655;
-    applyPatch_12515222(kxi_12655264);
+    applyPatch_13730222(kxi_13870264);
     F.line = 656;
-    kxi_12655264.currentTree = newtree_12655270;
-    if (!(same_12395072(kxi_12655264.currentTree, document.getElementById(kxi_12655264.rootId), 0))) {
+    kxi_13870264.currentTree = newtree_13870270;
+    if (!(same_13610072(kxi_13870264.currentTree, document.getElementById(kxi_13870264.rootId), 0))) {
     F.line = 657;
-    failedAssertImpl_2540480(makeNimstrLit("D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\karax.nim(657, 12) `same(kxi.currentTree, document.getElementById(kxi.rootId))` "));
+    failedAssertImpl_3755480(makeNimstrLit("d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\karax.nim(657, 12) `same(kxi.currentTree, document.getElementById(kxi.rootId))` "));
     }
     
-    if (!((kxi_12655264.postRenderCallback == null))) {
+    if (!((kxi_13870264.postRenderCallback == null))) {
     F.line = 660;
-    kxi_12655264.postRenderCallback(rdata_12655269);
+    kxi_13870264.postRenderCallback(rdata_13870269);
     }
     
-    if (!((kxi_12655264.toFocus == null))) {
+    if (!((kxi_13870264.toFocus == null))) {
     F.line = 664;
-    kxi_12655264.toFocus.focus();
+    kxi_13870264.toFocus.focus();
     }
     
     F.line = 665;
-    kxi_12655264.renderId = 0;
+    kxi_13870264.renderId = 0;
   } while (false);
   framePtr = F.prev;
 
   
 }
-function init_12680646(ev_12680648) {
-    function HEX3Aanonymous_12680649() {
-      var F={procname:"init.:anonymous",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\karax.nim",line:0};
+function init_13895646(ev_13895648) {
+    function HEX3Aanonymous_13895649() {
+      var F={procname:"init.:anonymous",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\karax.nim",line:0};
       framePtr = F;
         F.line = 690;
-        dodraw_12655262(kxi_12132284[0]);
+        dodraw_13870262(kxi_13347284[0]);
       framePtr = F.prev;
 
       
     }
 
-  var F={procname:"karax.init",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\karax.nim",line:0};
+  var F={procname:"karax.init",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\karax.nim",line:0};
   framePtr = F;
     F.line = 690;
-    kxi_12132284[0].renderId = window.requestAnimationFrame(HEX3Aanonymous_12680649);
+    kxi_13347284[0].renderId = window.requestAnimationFrame(HEX3Aanonymous_13895649);
   framePtr = F.prev;
 
   
 }
-function redraw_12680414(kxi_12680416) {
-    function HEX3Aanonymous_12680601() {
-      var F={procname:"redraw.:anonymous",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\karax.nim",line:0};
+function redraw_13895414(kxi_13895416) {
+    function HEX3Aanonymous_13895601() {
+      var F={procname:"redraw.:anonymous",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\karax.nim",line:0};
       framePtr = F;
         F.line = 683;
-        dodraw_12655262(kxi_12680416);
+        dodraw_13870262(kxi_13895416);
       framePtr = F.prev;
 
       
     }
 
-  var F={procname:"karax.redraw",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\karax.nim",line:0};
+  var F={procname:"karax.redraw",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\karax.nim",line:0};
   framePtr = F;
-    if ((kxi_12680416.renderId == 0)) {
+    if ((kxi_13895416.renderId == 0)) {
     F.line = 683;
-    kxi_12680416.renderId = window.requestAnimationFrame(HEX3Aanonymous_12680601);
+    kxi_13895416.renderId = window.requestAnimationFrame(HEX3Aanonymous_13895601);
     }
     
   framePtr = F.prev;
 
   
 }
-function setRenderer_12680678(renderer_12680683, root_12680684, clientPostRenderCallback_12680688) {
-    function HEX3Aanonymous_12685135() {
-      var F={procname:"setRenderer.:anonymous",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\karax.nim",line:0};
+function setRenderer_13895678(renderer_13895683, root_13895684, clientPostRenderCallback_13895688) {
+    function HEX3Aanonymous_13900135() {
+      var F={procname:"setRenderer.:anonymous",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\karax.nim",line:0};
       framePtr = F;
         F.line = 713;
-        redraw_12680414(kxi_12132284[0]);
+        redraw_13895414(kxi_13347284[0]);
       framePtr = F.prev;
 
       
     }
 
-  var result_12680689 = null;
+  var result_13895689 = null;
 
-  var F={procname:"karax.setRenderer",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\karax.nim",line:0};
+  var F={procname:"karax.setRenderer",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\karax.nim",line:0};
   framePtr = F;
-    if ((document.getElementById(root_12680684) == null)) {
+    if ((document.getElementById(root_13895684) == null)) {
     F.line = 699;
-    var msg_12680695 = (("Could not find a <div> with id=" + root_12680684) + ". Karax needs it as its rendering target.");
+    var msg_13895695 = (("Could not find a <div> with id=" + root_13895684) + ". Karax needs it as its rendering target.");
     F.line = 701;
-    raiseException({message: cstrToNimstr(msg_12680695), parent: null, m_type: NTI2427617, name: null, trace: [], up: null}, "Exception");
+    raiseException({message: cstrToNimstr(msg_13895695), parent: null, m_type: NTI3644617, name: null, trace: [], up: null}, "Exception");
     }
     
     F.line = 703;
-    result_12680689 = {rootId: root_12680684, renderer: renderer_12680683, postRenderCallback: clientPostRenderCallback_12680688, patches: newSeq_12685012(60), patchesV: newSeq_12685064(30), components: [], surpressRedraws: false, byId: {}, orphans: {}, currentTree: null, toFocus: null, toFocusV: null, renderId: 0, patchLen: 0, patchLenV: 0, runCount: 0};
+    result_13895689 = {rootId: root_13895684, renderer: renderer_13895683, postRenderCallback: clientPostRenderCallback_13895688, patches: newSeq_13900012(60), patchesV: newSeq_13900064(30), components: [], surpressRedraws: false, byId: {}, orphans: {}, currentTree: null, toFocus: null, toFocusV: null, renderId: 0, patchLen: 0, patchLenV: 0, runCount: 0};
     F.line = 711;
-    kxi_12132284[0] = result_12680689;
+    kxi_13347284[0] = result_13895689;
     F.line = 712;
-    window.onload = init_12680646;
+    window.onload = init_13895646;
     F.line = 713;
-    window.onhashchange = HEX3Aanonymous_12685135;
+    window.onhashchange = HEX3Aanonymous_13900135;
   framePtr = F.prev;
 
-  return result_12680689;
+  return result_13895689;
 
 }
-function setRenderer_12685238(renderer_12685242, root_12685243, clientPostRenderCallback_12685246) {
-    function wrapRenderer_12685248(data_12685250) {
-      var result_12685251 = null;
+function setRenderer_13900238(renderer_13900242, root_13900243, clientPostRenderCallback_13900246) {
+    function wrapRenderer_13900248(data_13900250) {
+      var result_13900251 = null;
 
-      var F={procname:"setRenderer.wrapRenderer",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\karax.nim",line:0};
+      var F={procname:"setRenderer.wrapRenderer",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\karax.nim",line:0};
       framePtr = F;
         F.line = 718;
-        result_12685251 = renderer_12685242();
+        result_13900251 = renderer_13900242();
       framePtr = F.prev;
 
-      return result_12685251;
+      return result_13900251;
 
     }
-    function wrapPostRender_12685265(data_12685267) {
-      var F={procname:"setRenderer.wrapPostRender",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\karax.nim",line:0};
+    function wrapPostRender_13900265(data_13900267) {
+      var F={procname:"setRenderer.wrapPostRender",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\karax.nim",line:0};
       framePtr = F;
-        if (!((clientPostRenderCallback_12685246 == null))) {
+        if (!((clientPostRenderCallback_13900246 == null))) {
         F.line = 720;
-        clientPostRenderCallback_12685246();
+        clientPostRenderCallback_13900246();
         }
         
       framePtr = F.prev;
@@ -6576,104 +6608,334 @@ function setRenderer_12685238(renderer_12685242, root_12685243, clientPostRender
       
     }
 
-  var result_12685247 = null;
+  var result_13900247 = null;
 
-  var F={procname:"karax.setRenderer",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\karax.nim",line:0};
+  var F={procname:"karax.setRenderer",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\karax.nim",line:0};
   framePtr = F;
     F.line = 717;
-    result_12685247 = setRenderer_12680678(wrapRenderer_12685248, root_12685243, wrapPostRender_12685265);
+    result_13900247 = setRenderer_13895678(wrapRenderer_13900248, root_13900243, wrapPostRender_13900265);
   framePtr = F.prev;
 
-  return result_12685247;
+  return result_13900247;
 
 }
-function newVNode_11795428(kind_11795430) {
-  var result_11795431 = null;
+function newVNode_13010428(kind_13010430) {
+  var result_13010431 = null;
 
-  var F={procname:"vdom.newVNode",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\vdom.nim",line:0};
+  var F={procname:"vdom.newVNode",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\vdom.nim",line:0};
   framePtr = F;
-    F.line = 278;
-    result_11795431 = {kind: kind_11795430, index: -1, m_type: NTI11700031, id: null, class: null, text: null, kids: [], attrs: [], events: [], style: null, dom: null};
+    F.line = 276;
+    result_13010431 = {kind: kind_13010430, index: -1, m_type: NTI12915031, id: null, class: null, text: null, kids: [], attrs: [], events: [], style: null, dom: null};
   framePtr = F.prev;
 
-  return result_11795431;
+  return result_13010431;
 
 }
-function add_11785072(parent_11785074, kid_11785075) {
-  var F={procname:"vdom.add",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\vdom.nim",line:0};
+function add_13000072(parent_13000074, kid_13000075) {
+  var F={procname:"vdom.add",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\vdom.nim",line:0};
   framePtr = F;
-    F.line = 270;
-    parent_11785074.kids.push(kid_11785075);;
+    F.line = 268;
+    parent_13000074.kids.push(kid_13000075);;
   framePtr = F.prev;
 
   
 }
-function tree_11795445(kind_11795447, kids_11795449) {
-  var result_11795450 = null;
+function tree_13010445(kind_13010447, kids_13010449) {
+  var result_13010450 = null;
 
-  var F={procname:"vdom.tree",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\vdom.nim",line:0};
+  var F={procname:"vdom.tree",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\vdom.nim",line:0};
   framePtr = F;
-    F.line = 281;
-    result_11795450 = newVNode_11795428(kind_11795447);
+    F.line = 279;
+    result_13010450 = newVNode_13010428(kind_13010447);
     L1: do {
-      F.line = 282;
-      var k_11795483 = null;
-      var k_11795483_Idx = 0;
+      F.line = 280;
+      var k_13010483 = null;
+      var k_13010483_Idx = 0;
       F.line = 8;
-      var i_12770233 = 0;
+      var i_14000497 = 0;
       L2: do {
         F.line = 9;
           L3: while (true) {
-          if (!(i_12770233 < (kids_11795449).length)) break L3;
-            F.line = 282;
-            k_11795483 = kids_11795449; k_11795483_Idx = chckIndx(i_12770233, 0, (kids_11795449).length-1);
-            F.line = 283;
-            add_11785072(result_11795450, k_11795483[k_11795483_Idx]);
+          if (!(i_14000497 < (kids_13010449).length)) break L3;
+            F.line = 280;
+            k_13010483 = kids_13010449; k_13010483_Idx = chckIndx(i_14000497, 0, (kids_13010449).length-1);
+            F.line = 281;
+            add_13000072(result_13010450, k_13010483[k_13010483_Idx]);
             F.line = 11;
-            i_12770233 = addInt(i_12770233, 1);
+            i_14000497 = addInt(i_14000497, 1);
           }
       } while(false);
     } while(false);
   framePtr = F.prev;
 
-  return result_11795450;
+  return result_13010450;
 
 }
-function text_11795582(s_11795584) {
-  var result_11795585 = null;
-
-  var F={procname:"vdom.text",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\src\\karax\\vdom.nim",line:0};
+function addEventListener_13015014(n_13015016, event_13015017, handler_13015018) {
+  var F={procname:"vdom.addEventListener",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\vdom.nim",line:0};
   framePtr = F;
-    F.line = 293;
-    result_11795585 = {kind: 0, text: toJSStr(s_11795584), index: -1, m_type: NTI11700031, id: null, class: null, kids: [], attrs: [], events: [], style: null, dom: null};
+    F.line = 319;
+    n_13015016.events.push({Field0: event_13015017, Field1: handler_13015018, Field2: null});;
   framePtr = F.prev;
 
-  return result_11795585;
-
+  
 }
-function createDom_12767014() {
-  var result_12767016 = null;
+function addEventHandler_13905118(n_13905120, k_13905121, action_13905122, kxi_13905123) {
+    function wrapper_13905124(ev_13905126, n_13905127) {
+      var F={procname:"addEventHandler.wrapper",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\karax.nim",line:0};
+      framePtr = F;
+        F.line = 746;
+        action_13905122(ev_13905126, n_13905127);
+        if (!(kxi_13905123.surpressRedraws)) {
+        F.line = 747;
+        redraw_13895414(kxi_13905123);
+        }
+        
+      framePtr = F.prev;
 
-  var F={procname:"helloworld.createDom",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\examples\\helloworld.nim",line:0};
+      
+    }
+
+  var F={procname:"karax.addEventHandler",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\karax.nim",line:0};
   framePtr = F;
-    F.line = 4;
-    F.line = 4;
-    var tmp_12767053 = tree_11795445(43, []);
-    F.line = 5;
-    add_11785072(tmp_12767053, text_11795582(makeNimstrLit("Hello World!")));
-    result_12767016 = tmp_12767053;
+    F.line = 748;
+    addEventListener_13015014(n_13905120, k_13905121, wrapper_13905124);
   framePtr = F.prev;
 
-  return result_12767016;
+  
+}
+function inViewport_4330523(el_4330525) {
+    var Tmp1;
+    var Tmp2;
+    var Tmp3;
+
+  var result_4330526 = false;
+
+  var F={procname:"dom.inViewport",prev:framePtr,filename:"C:\\Users\\blue\\.choosenim\\toolchains\\nim-#devel\\lib\\js\\dom.nim",line:0};
+  framePtr = F;
+    F.line = 1703;
+    var rect_4330527 = el_4330525.getBoundingClientRect();
+    F.line = 1705;
+    if (!(0.0 <= rect_4330527.top)) Tmp3 = false; else {      Tmp3 = (0.0 <= rect_4330527.left);    }    if (!Tmp3) Tmp2 = false; else {      Tmp2 = (rect_4330527.bottom <= (window.innerHeight || document.documentElement.clientHeight));    }    if (!Tmp2) Tmp1 = false; else {      Tmp1 = (rect_4330527.right <= (window.innerWidth || document.documentElement.clientWidth));    }    result_4330526 = Tmp1;
+  framePtr = F.prev;
+
+  return result_4330526;
 
 }
-var F={procname:"module helloworld",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\examples\\helloworld.nim",line:0};
+function scrollEvent_13982099(ev_13982101, n_13982102) {
+      var Tmp1;
+
+  var F={procname:"scrollapp_simple.scrollEvent",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\experiments\\scrollapp_simple.nim",line:0};
+  framePtr = F;
+    F.line = 11;
+    var d_13982103 = n_13982102.dom;
+      if (!!((d_13982103 == null))) Tmp1 = false; else {        Tmp1 = inViewport_4330523(d_13982103.lastChild);      }    if (Tmp1) {
+    L2: do {
+      F.line = 14;
+      var i_13985018 = 0;
+      F.line = 77;
+      var res_14000501 = 1;
+      L3: do {
+        F.line = 78;
+          L4: while (true) {
+          if (!(res_14000501 <= 50)) break L4;
+            F.line = 14;
+            i_13985018 = res_14000501;
+            F.line = 15;
+            entries_13982043[0].push(("Loaded Entry " + ((i_13985018)+'')));;
+            F.line = 80;
+            res_14000501 = addInt(res_14000501, 1);
+          }
+      } while(false);
+    } while(false);
+    }
+    
+  framePtr = F.prev;
+
+  
+}
+function setAttr_12880040(s_12880042, a_12880043, value_12880044) {
+  var F={procname:"vstyles.setAttr",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\vstyles.nim",line:0};
+  framePtr = F;
+  BeforeRet: do {
+    F.line = 245;
+    var i_12880046 = 0;
+    L1: do {
+      F.line = 246;
+        L2: while (true) {
+        if (!(i_12880046 < s_12880042.length)) break L2;
+          if ((s_12880042[i_12880046] == a_12880043)) {
+          F.line = 248;
+          s_12880042[addInt(i_12880046, 1)] = value_12880044;
+          F.line = 249;
+          break BeforeRet;
+          }
+          else {
+          if ((a_12880043 < s_12880042[i_12880046])) {
+          F.line = 251;
+          s_12880042.push("");
+          F.line = 252;
+          s_12880042.push("");
+          L3: do {
+            F.line = 254;
+            var j_12885063 = 0;
+            F.line = 6;
+            var colontmp__14000514 = 0;
+            F.line = 6;
+            var colontmp__14000515 = 0;
+            F.line = 254;
+            colontmp__14000514 = subInt(s_12880042.length, 1);
+            F.line = 254;
+            colontmp__14000515 = addInt(i_12880046, 3);
+            F.line = 28;
+            var res_14000516 = colontmp__14000514;
+            L4: do {
+              F.line = 29;
+                L5: while (true) {
+                if (!(colontmp__14000515 <= res_14000516)) break L5;
+                  F.line = 254;
+                  j_12885063 = res_14000516;
+                  F.line = 255;
+                  s_12880042[j_12885063] = s_12880042[subInt(j_12885063, 2)];
+                  F.line = 256;
+                  s_12880042[subInt(j_12885063, 1)] = s_12880042[subInt(j_12885063, 3)];
+                  F.line = 31;
+                  res_14000516 = subInt(res_14000516, 2);
+                }
+            } while(false);
+          } while(false);
+          F.line = 257;
+          s_12880042[i_12880046] = a_12880043;
+          F.line = 258;
+          s_12880042[addInt(i_12880046, 1)] = value_12880044;
+          F.line = 259;
+          break BeforeRet;
+          }
+          }
+          F.line = 260;
+          i_12880046 = addInt(i_12880046, 2);
+        }
+    } while(false);
+    F.line = 261;
+    s_12880042.push(a_12880043);
+    F.line = 262;
+    s_12880042.push(value_12880044);
+  } while (false);
+  framePtr = F.prev;
+
+  
+}
+function setAttr_12885183(s_12885185, attr_12885186, value_12885187) {
+  var F={procname:"vstyles.setAttr",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\vstyles.nim",line:0};
+  framePtr = F;
+    if (!(!((value_12885187 == null)))) {
+    F.line = 266;
+    failedAssertImpl_3755480(makeNimstrLit("d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\vstyles.nim(266, 12) `value != nil` value must not be nil"));
+    }
+    
+    F.line = 267;
+    setAttr_12880040(s_12885185, toStyleAttrName_12870006[chckIndx(attr_12885186, 0, (toStyleAttrName_12870006).length-1)], value_12885187);
+  framePtr = F.prev;
+
+  
+}
+function style_12905033(pairs_12905037) {
+  var result_12905038 = null;
+
+  var F={procname:"vstyles.style",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\vstyles.nim",line:0};
+  framePtr = F;
+    F.line = 283;
+    result_12905038 = new Array(0);
+    L1: do {
+      F.line = 287;
+      var x_12905239 = null;
+      F.line = 8;
+      var i_14000510 = 0;
+      L2: do {
+        F.line = 9;
+          L3: while (true) {
+          if (!(i_14000510 < (pairs_12905037).length)) break L3;
+            F.line = 287;
+            x_12905239 = pairs_12905037[chckIndx(i_14000510, 0, (pairs_12905037).length-1)];
+            F.line = 288;
+            setAttr_12885183(result_12905038, x_12905239["Field0"], x_12905239["Field1"]);
+            F.line = 11;
+            i_14000510 = addInt(i_14000510, 1);
+          }
+      } while(false);
+    } while(false);
+  framePtr = F.prev;
+
+  return result_12905038;
+
+}
+function text_13010801(s_13010803) {
+  var result_13010804 = null;
+
+  var F={procname:"vdom.text",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\src\\karax\\vdom.nim",line:0};
+  framePtr = F;
+    F.line = 294;
+    result_13010804 = {kind: 0, text: s_13010803, index: -1, m_type: NTI12915031, id: null, class: null, kids: [], attrs: [], events: [], style: null, dom: null};
+  framePtr = F.prev;
+
+  return result_13010804;
+
+}
+function createDom_13985040() {
+  var result_13985042 = null;
+
+  var F={procname:"scrollapp_simple.createDom",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\experiments\\scrollapp_simple.nim",line:0};
+  framePtr = F;
+    F.line = 18;
+    F.line = 19;
+    var tmp_13985078 = tree_13010445(43, []);
+    F.line = 19;
+    addEventHandler_13905118(tmp_13985078, 9, scrollEvent_13982099, kxi_13347284[0]);
+    F.line = 19;
+    tmp_13985078.style = style_12905033([{Field0: 98, Field1: "400px"}, {Field0: 132, Field1: "scroll"}]);
+    L1: do {
+      F.line = 21;
+      var x_14000214 = null;
+      var x_14000214_Idx = 0;
+      F.line = 199;
+      var i_14000492 = 0;
+      F.line = 200;
+      var L_14000493 = (entries_13982043[0]).length;
+      L2: do {
+        F.line = 201;
+          L3: while (true) {
+          if (!(i_14000492 < L_14000493)) break L3;
+            F.line = 21;
+            x_14000214 = entries_13982043[0]; x_14000214_Idx = chckIndx(i_14000492, 0, (entries_13982043[0]).length-1);
+            F.line = 22;
+            var tmp_13985084 = tree_13010445(43, []);
+            F.line = 23;
+            add_13000072(tmp_13985084, text_13010801(x_14000214[x_14000214_Idx]));
+            F.line = 23;
+            add_13000072(tmp_13985078, tmp_13985084);
+            F.line = 203;
+            i_14000492 = addInt(i_14000492, 1);
+            if (!(((entries_13982043[0]).length == L_14000493))) {
+            F.line = 204;
+            failedAssertImpl_3755480(makeNimstrLit("C:\\Users\\blue\\.choosenim\\toolchains\\nim-#devel\\lib\\system\\iterators.nim(204, 11) `len(a) == L` the length of the seq changed while iterating over it"));
+            }
+            
+          }
+      } while(false);
+    } while(false);
+    result_13985042 = tmp_13985078;
+  framePtr = F.prev;
+
+  return result_13985042;
+
+}
+var F={procname:"module scrollapp_simple",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\experiments\\scrollapp_simple.nim",line:0};
 framePtr = F;
-setRenderer_12685238(createDom_12767014, "ROOT", null);
+setRenderer_13900238(createDom_13985040, "ROOT", null);
 framePtr = F.prev;
-var F={procname:"module helloworld",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\examples\\helloworld.nim",line:0};
+var F={procname:"module scrollapp_simple",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\experiments\\scrollapp_simple.nim",line:0};
 framePtr = F;
 framePtr = F.prev;
-var F={procname:"module helloworld",prev:framePtr,filename:"D:\\QQPCmgr\\Desktop\\karax\\examples\\helloworld.nim",line:0};
+var F={procname:"module scrollapp_simple",prev:framePtr,filename:"d:\\QQPCmgr\\Desktop\\karax\\experiments\\scrollapp_simple.nim",line:0};
 framePtr = F;
 framePtr = F.prev;

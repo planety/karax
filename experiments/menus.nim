@@ -1,7 +1,6 @@
 ## Example program that shows how to create menus with Karax.
 
-include prelude
-import jstrutils, kdom
+import ../src/karax/[prelude, jstrutils, kdom]
 
 proc contentA(): VNode =
   result = buildHtml(tdiv):
