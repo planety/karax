@@ -7,7 +7,7 @@
 ##
 ## Localization has not yet been implemented.
 
-import languages, jdict, jstrutils
+import ./languages, ./jdict, ./jstrutils
 
 var currentLanguage = Language.enUS
 

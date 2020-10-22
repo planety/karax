@@ -1,6 +1,9 @@
 ## This module implements some small zero-overhead 'JsonNode' type
 ## and helper that maps directly to JavaScript objects.
 
+import std/macros
+
+
 type
   JsonNode* {.importc.} = ref object
 
@@ -34,8 +37,6 @@ proc getFNum*(x: JsonNode): cstring {.importcpp: "#".}
 
 iterator items*(x: JsonNode): JsonNode =
   for i in 0..<len(x): yield x[i]
-
-import macros
 
 proc toJson(x: NimNode): NimNode {.compiletime.} =
   case x.kind

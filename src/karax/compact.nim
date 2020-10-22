@@ -1,9 +1,10 @@
 ## Components in Karax are built by the ``.component`` macro annotation.
 
 when defined(js):
-  import jdict, kdom
+  import ./jdict, ./kdom
 
-import macros, vdom, tables, strutils, kbase
+import std/[macros, tables, strutils]
+import ./vdom, ./kbase
 
 when defined(js):
   var

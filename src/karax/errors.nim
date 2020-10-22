@@ -1,6 +1,6 @@
 ## Error handling logic for form input validation.
 
-import karax, jdict
+import ./karax, ./jdict
 
 var
   gerrorMsgs = newJDict[cstring, cstring]()
