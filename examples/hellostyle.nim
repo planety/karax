@@ -1,5 +1,5 @@
-include karax / prelude
-import karax / vstyles
+import ../src/karax/prelude
+import ../src/karax/vstyles
 
 proc createDom(): VNode =
   result = buildHtml(tdiv):
@@ -11,7 +11,7 @@ proc createDom(): VNode =
     tdiv(style = style((fontStyle, "italic".kstring), (color, "orange".kstring))):
       text "italic orange"
     # can use a string directly
-    tdiv(style = "font-style: oblique; color: pink".toCss):
+    tdiv(style = "font-style: oblique; color: pink".toCSS):
       text "oblique pink"
 
 setRenderer createDom

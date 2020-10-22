@@ -1,6 +1,6 @@
 
-include "../karax/karax"
-import "../karax/karaxdsl"
+include ../src/karax/karax
+import ../src/karax/karaxdsl
 
 proc hasDom(n: Vnode) =
   if n.kind in {VNodeKind.component, VNodeKind.vthunk, VNodeKind.dthunk}:

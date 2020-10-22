@@ -1,7 +1,7 @@
 
 
-include karax / prelude
-import karax / kdom
+import ../src/karax/prelude
+import ../src/karax/kdom
 
 proc myInput: VNode =
   result = buildHtml:

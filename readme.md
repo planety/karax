@@ -39,7 +39,7 @@ is used ends up in the generated JavaScript code.
 The simplest Karax program looks like this:
 
 ```nim
-include karax / prelude
+import karax / prelude
 
 proc createDom(): VNode =
   result = buildHtml(tdiv):
@@ -79,7 +79,7 @@ construction so that it composes with all of Nim's control flow constructs:
 
 
 ```nim
-include karax / prelude
+import karax / prelude
 import random
 
 proc createDom(): VNode =
@@ -111,7 +111,7 @@ Karax does not change the DOM's event model much, here is a program
 that writes "Hello simulated universe" on a button click:
 
 ```nim
-include karax / prelude
+import karax / prelude
 # alternatively: import karax / [kbase, vdom, kdom, vstyles, karax, karaxdsl, jdict, jstrutils, jjson]
 
 var lines: seq[kstring] = @[]
@@ -140,7 +140,7 @@ Karax's DSL is quite flexible when it comes to event handlers, so the
 following syntax is also supported:
 
 ```nim
-include karax / prelude
+import karax / prelude
 from sugar import `=>`
 
 var lines: seq[kstring] = @[]

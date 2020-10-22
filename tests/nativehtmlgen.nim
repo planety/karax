@@ -1,6 +1,6 @@
 ## Simple test that shows Karax can also do client-side HTML rendering.
 
-import "../karax" / [karaxdsl, vdom]
+import ../src/karax/[karaxdsl, vdom]
 
 when defined(js):
   {.error: "Use 'nim c' to compile this example".}

@@ -1,6 +1,6 @@
-include karax / prelude
+import ../src/karax/prelude
 from sugar import `=>`
-import karax / errors
+import ../src/karax/errors
 
 proc loginField(desc, field, class: kstring;
                 validator: proc (field: kstring): proc ()): VNode =

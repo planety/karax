@@ -371,16 +371,16 @@ proc addPatch(kxi: KaraxInstance; ka: PatchKind; parenta, currenta: Node;
     kxi.patches[L].oldNode = oldNode
   inc kxi.patchLen
 
-proc addPatchV(kxi: KaraxInstance; parent: VNode; pos: int; newChild: VNode) =
-  let L = kxi.patchLenV
-  if L >= kxi.patchesV.len:
-    # allocate more space:
-    kxi.patchesV.add(PatchV(parent: parent, newChild: newChild, pos: pos))
-  else:
-    kxi.patchesV[L].parent = parent
-    kxi.patchesV[L].newChild = newChild
-    kxi.patchesV[L].pos = pos
-  inc kxi.patchLenV
+# proc addPatchV(kxi: KaraxInstance; parent: VNode; pos: int; newChild: VNode) =
+#   let L = kxi.patchLenV
+#   if L >= kxi.patchesV.len:
+#     # allocate more space:
+#     kxi.patchesV.add(PatchV(parent: parent, newChild: newChild, pos: pos))
+#   else:
+#     kxi.patchesV[L].parent = parent
+#     kxi.patchesV[L].newChild = newChild
+#     kxi.patchesV[L].pos = pos
+#   inc kxi.patchLenV
 
 proc moveDom(dest, src: VNode) =
   dest.dom = src.dom

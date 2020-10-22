@@ -12,5 +12,9 @@ requires "ws"
 requires "dotenv"
 skipDirs = @["examples", "experiments", "tests"]
 
-bin = @["karax/tools/karun"]
+bin = @["src/karax/tools/karun"]
 installExt = @["nim"]
+
+
+task tests, "Test all":
+  exec "nim c -r tests/tester.nim"

@@ -1,4 +1,4 @@
-include karax / prelude
+import ../src/karax / prelude
 
 proc createDom(): VNode =
   result = buildHtml(tdiv):

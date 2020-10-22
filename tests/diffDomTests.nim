@@ -1,5 +1,6 @@
 
-import kdom, vdom, times, karax, karaxdsl, jdict, jstrutils, parseutils, sequtils
+import ../src/karax/[kdom, vdom, karax, karaxdsl, jdict, jstrutils]
+import std/[parseutils, sequtils, times]
 
 var
   entries: seq[cstring]

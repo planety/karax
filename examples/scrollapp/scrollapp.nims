@@ -1,1 +1,1 @@
---path: "../.."
+setCommand("js")

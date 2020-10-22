@@ -1,6 +1,6 @@
 ## This demo shows how you can develop your own stateful components with Karax.
 
-import vdom, vstyles, karax, karaxdsl, jdict, jstrutils, kdom
+import ../../src/karax/[vdom, vstyles, karax, karaxdsl, jstrutils, kdom]
 
 type
   Carousel = ref object of VComponent

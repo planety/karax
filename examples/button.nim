@@ -1,4 +1,4 @@
-include karax / prelude
+import ../src/karax/prelude
 
 var lines: seq[kstring] = @[]
 

@@ -1,4 +1,4 @@
-include ../karax/prelude
+import ../src/karax/prelude
 
 block:
   type
