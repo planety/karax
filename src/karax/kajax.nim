@@ -3,10 +3,9 @@
 ## This module implements support for `ajax`:idx: socket
 ## handling.
 
-import karax
-import jsffi except `&`
-import jscore
-import dom
+import ./karax
+import std/jsffi except `&`
+import std/dom
 
 type
   ProgressEvent* {.importc.}= object

@@ -1,5 +1,5 @@
 
-import jdict
+import ./jdict
 
 type
   Message = enum

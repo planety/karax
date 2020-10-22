@@ -3,10 +3,10 @@ see examples/hellostyle.nim
 ]##
 
 import std/[macros, strutils]
-import kbase
+import ./kbase
 
 when defined(js):
-  import kdom, jdict
+  import ./kdom, ./jdict
 
 type
   StyleAttr* {.pure.} = enum

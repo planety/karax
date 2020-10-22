@@ -5,3 +5,6 @@ karax/tools/karun
 *.exe
 app.js
 app.html
+src/karax/config.nims
+.gitignore
+src/karax/*.js

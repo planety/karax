@@ -1,6 +1,6 @@
 ## Karax -- Single page applications for Nim.
 
-import kdom, vdom, jstrutils, compact, jdict, vstyles
+import ./kdom, ./vdom, ./jstrutils, ./compact, ./jdict, ./vstyles
 
 export kdom.Event, kdom.Blob
 

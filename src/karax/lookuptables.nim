@@ -1,7 +1,6 @@
-
 import std/[macros]
-import ./kbase
 from std/strutils import `%`
+import ./kbase
 
 macro fieldNamesAsArray*(t: typed; pattern = "$1"): untyped =
   var impl = getTypeImpl(getTypeImpl(t)[1])

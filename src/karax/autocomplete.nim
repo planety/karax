@@ -1,5 +1,7 @@
 
-import karax, karaxdsl, vdom, kdom, jstrutils
+import ./karax, ./karaxdsl, ./jstrutils
+import ./vdom
+import ./kdom
 
 type
   AutocompleteState* = ref object
@@ -38,7 +40,7 @@ proc autocomplete*(s: AutocompleteState; onselection: proc(s: cstring)): VNode =
       for c in s.choices:
         if v.len == 0 or c.containsIgnoreCase(v): s.candidates.add(c)
 
-  proc onkeydown(ev: Event; n: VNode) =
+  proc onkeydown(ev: KeyboardEvent; n: VNode) =
     const
       LEFT = 37
       UP = 38
@@ -153,7 +155,7 @@ when isMainModule:
 
   proc main(): VNode =
     result = buildHtml(tdiv):
-      autocomplete(s, proc (s: cstring) = echo "now ", s)#:
+      autocomplete(s, proc (s: cstring) = echo "now ", s) #:
       #  proc onchange(ev: Event; n: VNode) =
       #    echo "now selected ", n.kind
 
