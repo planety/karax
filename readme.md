@@ -80,7 +80,7 @@ construction so that it composes with all of Nim's control flow constructs:
 
 ```nim
 import karax / prelude
-import random
+import rand
 
 proc createDom(): VNode =
   result = buildHtml(tdiv):
