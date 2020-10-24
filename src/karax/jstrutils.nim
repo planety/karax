@@ -1,5 +1,8 @@
 # cstring handling utilities for performance
 
+proc toUpperCase*(s: cstring): cstring {.importcpp: "toUpperCase", nodecl.}
+proc toLowerCase*(s: cstring): cstring {.importcpp: "toLowerCase", nodecl.}
+
 proc split*(s, sep: cstring): seq[cstring] {.importcpp, nodecl.}
 
 proc split*(s, sep: cstring; max: int): seq[cstring] {.importcpp, nodecl.}

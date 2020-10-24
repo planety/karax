@@ -1,14 +1,14 @@
-include karaxprelude
-import future, sequtils
+import ../src/karax/prelude
+import std/[sugar, sequtils, jsconsole]
 
 type
   CustomRef = ref object of VComponent
 
 method onAttach(r: CustomRef) =
-  kout(cstring"custom ref attached")
+  console.log(cstring"custom ref attached")
 
 method onDetach(r: CustomRef) =
-  kout(cstring"custom ref detached")
+  console.log(cstring"custom ref detached")
 
 var
   modelData = @[5, 2, 4]
@@ -22,12 +22,12 @@ proc onClick(ev: Event, n: VNode) =
   modelData.add(0)
 
 proc showRefs() =
-  kout(refA)
-  kout(refB)
-  kout(refC)
+  console.log(refA)
+  console.log(refB)
+  console.log(refC)
   for i in 0 ..< refSeq.len:
-    kout(refSeq[i].vnode)
-  #kout(refSeq.map(nref => nref.vnode))
+    console.log(refSeq[i].vnode)
+  #console.log(refSeq.map(nref => nref.vnode))
 
 proc secureRefSlot(i: int): VComponent =
   while refSeq.len <= i:

@@ -33,7 +33,8 @@ var
 proc registerTranslation*(lang: Language; t: Translation) = translations[lang] = t
 
 proc addTranslation*(lang: Language; key, val: cstring) =
-  if translations[lang].isNil: translations[lang] = newJDict[cstring, cstring]()
+  if translations[lang] == nil:
+    translations[lang] = newJDict[cstring, cstring]()
   translations[lang][key] = val
 
 proc translate(x: cstring): cstring =

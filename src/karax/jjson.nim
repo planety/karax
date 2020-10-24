@@ -12,7 +12,12 @@ proc `[]`*(obj: JsonNode; index: int): JsonNode {.importcpp: "#[#]".}
 proc `[]=`*[T](obj: JsonNode; fieldname: cstring; value: T)
   {.importcpp: "#[#] = #".}
 proc length(x: JsonNode): int {.importcpp: "#.length".}
-proc len*(x: JsonNode): int = (if x.isNil: 0 else: x.length)
+
+proc len*(x: JsonNode): int =
+  if x == nil: 
+    result = 0
+  else:
+    result = x.length
 
 proc newJsonNode*(fields: varargs[(cstring, JsonNode)]): JsonNode =
   result = JsonNode()
@@ -36,7 +41,8 @@ proc getStr*(x: JsonNode): cstring {.importcpp: "#".}
 proc getFNum*(x: JsonNode): cstring {.importcpp: "#".}
 
 iterator items*(x: JsonNode): JsonNode =
-  for i in 0..<len(x): yield x[i]
+  for i in 0..<len(x):
+    yield x[i]
 
 proc toJson(x: NimNode): NimNode {.compiletime.} =
   case x.kind
@@ -49,10 +55,11 @@ proc toJson(x: NimNode): NimNode {.compiletime.} =
     for i in 0 ..< x.len:
       x[i].expectKind nnkExprColonExpr
       let key = x[i][0]
-      let a = if x[i].kind in {nnkIdent, nnkSym, nnkAccQuoted}:
-                newLit($key)
-              else:
-                key
+      let a = 
+        if x[i].kind in {nnkIdent, nnkSym, nnkAccQuoted}:
+          newLit($key)
+        else:
+          key
       result.add newTree(nnkPar, newCall(bindSym"cstring", a), toJson(x[i][1]))
   of nnkCurly:
     x.expectLen(0)

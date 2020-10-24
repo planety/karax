@@ -8,7 +8,7 @@ when defined(js):
   import karax
 
 const
-  StmtContext = ["kout", "inc", "echo", "dec", "!"]
+  StmtContext = ["inc", "echo", "dec", "!"]
   SpecialAttrs = ["id", "class", "value", "index", "style"]
 
 proc getName(n: NimNode): string =

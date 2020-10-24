@@ -264,9 +264,6 @@ proc `[]`*(x: VNode; idx: int): VNode = x.kids[idx]
 proc `[]=`*(x: VNode; idx: int; y: VNode) = x.kids[idx] = y
 
 proc add*(parent, kid: VNode) =
-  when not defined(js) and not defined(nimNoNil):
-    if parent.kids.isNil:
-      parent.kids = @[]
   parent.kids.add kid
 
 proc delete*(parent: VNode; position: int) =

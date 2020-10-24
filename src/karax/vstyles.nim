@@ -229,13 +229,21 @@ else:
   proc add*(a: VStyle; x: string) = add(a[], x)
 
 proc eq*(a, b: VStyle): bool =
-  if a.isNil:
-    if b.isNil: return true
-    else: return false
-  elif b.isNil: return false
-  if a.len != b.len: return false
-  for i in 0..<a.len:
-    if a[i] != b[i]: return false
+  if a == nil:
+    if b == nil:
+      return true
+    else:
+      return false
+  elif b == nil:
+    return false
+
+  if a.len != b.len:
+    return false
+
+  for i in 0 ..< a.len:
+    if a[i] != b[i]:
+      return false
+
   return true
 
 proc setAttr*(s: VStyle; a, value: kstring) {.noSideEffect.} =

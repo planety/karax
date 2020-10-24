@@ -7,9 +7,6 @@ export kdom.Event, kdom.Blob
 when defined(nimNoNil):
   {.experimental: "notnil".}
 
-proc kout*[T](x: T) {.importc: "console.log", varargs, deprecated.}
-  ## the preferred way of debugging karax applications. Now deprecated,
-  ## you can now use ``system.echo`` instead.
 
 type
   PatchKind = enum
@@ -206,14 +203,16 @@ proc toDom*(n: VNode; useAttachedNode: bool; kxi: KaraxInstance = nil): Node =
     if v != nil:
       result.setAttr(k, v)
   applyEvents(n)
-  if kxi != nil and n == kxi.toFocusV and kxi.toFocus.isNil:
+  if kxi != nil and n == kxi.toFocusV and kxi.toFocus == nil:
     kxi.toFocus = result
-  if not n.style.isNil: applyStyle(result, n.style)
+  if n.style != nil:
+    applyStyle(result, n.style)
 
 proc same(n: VNode, e: Node; nesting = 0): bool =
-  if kxi.orphans.contains(n.id): return true
+  if kxi.orphans.contains(n.id):
+    return true
   if n.kind == VNodeKind.component:
-    result = same(VComponent(n).expanded, e, nesting+1)
+    result = same(VComponent(n).expanded, e, nesting + 1)
   elif n.kind == VNodeKind.verbatim:
     result = true
   elif n.kind == VNodeKind.vthunk or n.kind == VNodeKind.dthunk:
@@ -286,7 +285,7 @@ proc eq(a, b: VNode; recursive: bool): EqResult =
     if a.text != b.text:
       when defined(profileKarax): inc reasons[deComponent]
       return different
-    #if VComponent(a).key.isNil and VComponent(b).key.isNil:
+    #if VComponent(a).key == nil and VComponent(b).key == nil:
     #  when defined(profileKarax): inc reasons[deComponent]
     #  return different
     if VComponent(a).key != VComponent(b).key:
@@ -344,15 +343,17 @@ proc mergeEvents(newNode, oldNode: VNode; kxi: KaraxInstance) =
   applyEvents(oldNode)
 
 when false:
+  import jsconsole
+
   proc printV(n: VNode; depth: cstring = "") =
-    kout depth, cstring($n.kind), cstring"key ", n.index
+    console.log depth, cstring($n.kind), cstring"key ", n.index
     #for k, v in pairs(n.style):
-    #  kout depth, "style: ", k, v
+    #  console.log depth, "style: ", k, v
     if n.kind == VNodeKind.component:
       let nn = VComponent(n)
       if nn.expanded != nil: printV(nn.expanded, ">>" & depth)
     elif n.kind == VNodeKind.text:
-      kout depth, n.text
+      console.log depth, n.text
     for i in 0 ..< n.len:
       printV(n[i], depth & "  ")
 
@@ -371,16 +372,17 @@ proc addPatch(kxi: KaraxInstance; ka: PatchKind; parenta, currenta: Node;
     kxi.patches[L].oldNode = oldNode
   inc kxi.patchLen
 
-# proc addPatchV(kxi: KaraxInstance; parent: VNode; pos: int; newChild: VNode) =
-#   let L = kxi.patchLenV
-#   if L >= kxi.patchesV.len:
-#     # allocate more space:
-#     kxi.patchesV.add(PatchV(parent: parent, newChild: newChild, pos: pos))
-#   else:
-#     kxi.patchesV[L].parent = parent
-#     kxi.patchesV[L].newChild = newChild
-#     kxi.patchesV[L].pos = pos
-#   inc kxi.patchLenV
+when false:
+  proc addPatchV(kxi: KaraxInstance; parent: VNode; pos: int; newChild: VNode) =
+    let L = kxi.patchLenV
+    if L >= kxi.patchesV.len:
+      # allocate more space:
+      kxi.patchesV.add(PatchV(parent: parent, newChild: newChild, pos: pos))
+    else:
+      kxi.patchesV[L].parent = parent
+      kxi.patchesV[L].newChild = newChild
+      kxi.patchesV[L].pos = pos
+    inc kxi.patchLenV
 
 proc moveDom(dest, src: VNode) =
   dest.dom = src.dom
@@ -388,7 +390,7 @@ proc moveDom(dest, src: VNode) =
   if dest.id != nil:
     kxi.byId[dest.id] = dest
   assert dest.len == src.len
-  for i in 0..<dest.len:
+  for i in 0 ..< dest.len:
     moveDom(dest[i], src[i])
 
 proc applyPatch(kxi: KaraxInstance) =
@@ -481,7 +483,8 @@ proc diff(newNode, oldNode: VNode; parent, current: Node; kxi: KaraxInstance) =
 
     let newLength = newNode.len
     let oldLength = oldNode.len
-    if newLength == 0 and oldLength == 0: return
+    if newLength == 0 and oldLength == 0:
+      return
     let minLength = min(newLength, oldLength)
 
     assert oldNode.kind == newNode.kind
@@ -631,7 +634,8 @@ proc avoidDomDiffing*(kxi: KaraxInstance = kxi) =
   kxi.currentTree = nil
 
 proc dodraw(kxi: KaraxInstance) =
-  if kxi.renderer.isNil: return
+  if kxi.renderer == nil:
+    return
   let rdata = RouterData(hashPart: hashPart)
   let newtree = kxi.renderer(rdata)
   inc kxi.runCount
@@ -656,7 +660,7 @@ proc dodraw(kxi: KaraxInstance) =
   kxi.currentTree = newtree
   doAssert same(kxi.currentTree, document.getElementById(kxi.rootId))
 
-  if not kxi.postRenderCallback.isNil:
+  if kxi.postRenderCallback != nil:
     kxi.postRenderCallback(rdata)
 
   # now that it's part of the DOM, give it the focus:
@@ -695,7 +699,7 @@ proc setRenderer*(renderer: proc (data: RouterData): VNode,
                     proc (data: RouterData) = nil): KaraxInstance {.
                     discardable.} =
   ## Setup Karax. Usually the return value can be ignored.
-  if document.getElementById(root).isNil:
+  if document.getElementById(root) == nil:
     let msg = "Could not find a <div> with id=" & root &
               ". Karax needs it as its rendering target."
     raise newException(Exception, $msg)
@@ -717,7 +721,8 @@ proc setRenderer*(renderer: proc (): VNode, root: cstring = "ROOT",
   ## Setup Karax. Usually the return value can be ignored.
   proc wrapRenderer(data: RouterData): VNode = result = renderer()
   proc wrapPostRender(data: RouterData) =
-    if clientPostRenderCallback != nil: clientPostRenderCallback()
+    if clientPostRenderCallback != nil:
+      clientPostRenderCallback()
   setRenderer(wrapRenderer, root, wrapPostRender)
 
 proc setInitializer*(renderer: proc (data: RouterData): VNode, root: cstring = "ROOT",
@@ -744,7 +749,8 @@ proc addEventHandler*(n: VNode; k: EventKind; action: EventHandler;
   ## a ``redraw``.
   proc wrapper(ev: Event; n: VNode) =
     action(ev, n)
-    if not kxi.surpressRedraws: redraw(kxi)
+    if not kxi.surpressRedraws:
+      redraw(kxi)
   addEventListener(n, k, wrapper)
 
 proc addEventHandler*(n: VNode; k: EventKind; action: proc();

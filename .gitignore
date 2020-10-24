@@ -8,3 +8,9 @@ app.html
 src/karax/config.nims
 .gitignore
 src/karax/*.js
+tests/*js
+examples/*js
+examples/*/*js
+test.js
+test.html
+src/karax/tools/karun.js
