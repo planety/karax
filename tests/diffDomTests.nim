@@ -1,6 +1,6 @@
 
 import ../src/karax/[kdom, vdom, karax, karaxdsl, jdict, jstrutils]
-import std/[parseutils, sequtils, times]
+import std/[parseutils, sequtils, times, jsconsole]
 
 var
   entries: seq[cstring]
@@ -13,12 +13,12 @@ proc reset() =
 proc checkOrder(order: seq[int]): bool =
   var ul = getElementById("ul")
   if ul == nil or len(ul.children) != len(order):
-    kout ul, len(order)
+    console.log ul, len(order)
     return false
   var pos = 0
   for child in ul.children:
     if child.id != $order[pos]:
-      kout pos
+      console.log pos
       return false
     inc pos
   return true

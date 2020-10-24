@@ -24,10 +24,10 @@ proc autocomplete*(s: AutocompleteState; onselection: proc(s: cstring)): VNode =
     onselection(inp.dom.value)
     when false:
       if inp.dom != nil:
-        echo "setting to A ", inp.dom.value.isNil
+        echo "setting to A ", inp.dom.value == nil
         result.text = inp.dom.value
       else:
-        echo "setting to B ", inp.text.isNil
+        echo "setting to B ", inp.text == nil
         result.text = inp.text
       for e in result.events:
         if e[0] == EventKind.onchange:

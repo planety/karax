@@ -1,3 +1,5 @@
+import jsconsole
+
 var
   linkCounter: int
 
@@ -94,7 +96,7 @@ proc suffix*(s, prefix: cstring): cstring =
   if s.startsWith(prefix):
     result = s.substr(prefix.len)
   else:
-    kout(cstring"bug! " & s & cstring" does not start with " & prefix)
+    console.log(cstring"bug! " & s & cstring" does not start with " & prefix)
 
 proc suffixAsInt*(s, prefix: cstring): int = parseInt(suffix(s, prefix))
 
@@ -149,9 +151,9 @@ when false:
   var plugins {.exportc.}: seq[(string, proc())] = @[]
 
   proc onInput(val: cstring) =
-    kout val
+    console.log val
     if val == "dyn":
-    kout(plugins.len)
+    console.log(plugins.len)
     if plugins.len > 0:
       plugins[0][1]()
 

@@ -1,5 +1,6 @@
 
 import ../src/karax/[vdom, karax, karaxdsl, jdict, jstrutils, compact]
+import std/jsconsole
 
 type
   Filter = enum
@@ -66,7 +67,7 @@ proc createEntry(id: int; d: cstring;
           onenter = editEntry, value = d, setFocus)
 
 proc myscroll(ev: Event; n: VNode) =
-  kout cstring"scrolling event here"
+  console.log cstring"scrolling event here"
 
 proc createDom(): VNode =
   result = buildHtml(tdiv(class="todomvc-wrapper")):

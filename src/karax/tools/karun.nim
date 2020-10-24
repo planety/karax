@@ -71,7 +71,7 @@ proc watchBuild(filePath: string, selectedCss: string, rest: string) {.thread.} 
       if ".git" in path:
         continue
       var (_, _, ext) = splitFile(path)
-      if ext in [".scss",".sass",".less",".styl",".pcss",".postcss"]:
+      if ext in ["css", ".scss",".sass",".less",".styl",".pcss",".postcss"]:
         continue
       if files.hasKey(path):
         if files[path] != getLastModificationTime(path):
@@ -83,7 +83,7 @@ proc watchBuild(filePath: string, selectedCss: string, rest: string) {.thread.} 
           continue
         files[path] = getLastModificationTime(path)
 
-proc serve(){.thread.} =
+proc serve() {.thread.} =
   serveStatic()
 
 proc main =
