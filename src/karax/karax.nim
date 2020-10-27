@@ -136,11 +136,12 @@ template detach(n: VNode) =
 
 template attach(n: VNode) =
   n.dom = result
-  if n.id != nil: kxi.byId[n.id] = n
+  if n.id != nil:
+    kxi.byId[n.id] = n
 
 proc applyEvents(n: VNode) =
   let dest = n.dom
-  for i in 0..<len(n.events):
+  for i in 0 ..< len(n.events):
     n.events[i][2] = wrapEvent(dest, n, n.events[i][0], n.events[i][1])
 
 proc getVNodeById*(id: cstring; kxi: KaraxInstance = kxi): VNode =
@@ -152,7 +153,8 @@ proc getVNodeById*(id: cstring; kxi: KaraxInstance = kxi): VNode =
 proc toDom*(n: VNode; useAttachedNode: bool; kxi: KaraxInstance = nil): Node =
   if useAttachedNode:
     if n.dom != nil:
-      if n.id != nil: kxi.byId[n.id] = n
+      if n.id != nil:
+        kxi.byId[n.id] = n
       return n.dom
   if n.kind == VNodeKind.text:
     result = document.createTextNode(n.text)
@@ -250,7 +252,7 @@ when defined(profileKarax):
     reasons: array[DifferEnum, int]
 
   proc echa(a: array[DifferEnum, int]) =
-    for i in low(DifferEnum)..high(DifferEnum):
+    for i in low(DifferEnum) .. high(DifferEnum):
       echo i, " value: ", a[i]
 
 proc eq(a, b: VNode; recursive: bool): EqResult =
@@ -816,7 +818,8 @@ proc runLater*(action: proc(); later = 400): Timeout {.discardable.} =
 proc setInputText*(n: VNode; s: cstring) =
   ## Sets the text of input elements.
   n.text = s
-  if n.dom != nil: n.dom.value = s
+  if n.dom != nil:
+    n.dom.value = s
 
 proc toChecked*(checked: bool): cstring =
   (if checked: cstring"checked" else: cstring(nil))

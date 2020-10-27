@@ -62,6 +62,7 @@ type
     onblur, ## An element lost the focus.
     onchange, ## The selected value of an element was changed.
     onscroll, ## The user scrolled within an element.
+    onselect, ## The onselect event occurs after some text has been selected in an element.
 
     onmousedown, ## A pointing device button (usually a mouse) is pressed
                  ## on an element.
@@ -102,9 +103,9 @@ type
     ontransitionend,
     ontransitionrun,
     ontransitionstart,
-    
+
     onwheel # fires when the user rotates a wheel button on a pointing device.
-    
+
 macro buildLookupTables(): untyped =
   var a = newTree(nnkBracket)
   for i in low(VNodeKind) .. high(VNodeKind):

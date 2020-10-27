@@ -9,7 +9,7 @@ proc serverJS(ctx: Context) {.async.} =
   await staticFileResponse(ctx, "app.js", "")
 
 var app = newApp()
-app.use(staticFileMiddleware("/assets"))
+app.use(staticFileMiddleware("/assets", "/styles"))
 app.get("/", serverHTML)
 app.get("/app.js", serverJS)
 app.run()

@@ -122,13 +122,13 @@ proc createDom(data: RouterData): VNode =
   elif data.hashPart == "#/active": filter = active
   result = buildHtml(tdiv(class="todomvc-wrapper")):
     section(class = "todoapp"):
+      var entriesCount = 0
+      var completedCount = 0
       makeHeader()
       section(class = "main"):
         input(class = "toggle-all", `type` = "checkbox", id = "toggle", onclick = onAllDone)
         label(`for` = "toggle"):
           text "Mark all as complete"
-        var entriesCount = 0
-        var completedCount = 0
         ul(class = "todo-list"):
           #for i, d in pairs(entries):
           for i in 0..entriesLen-1:

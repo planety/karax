@@ -1,0 +1,25 @@
+//
+// Base styles
+//
+
+.alert {
+  // position: relative;
+  // padding: $alert-padding-y $alert-padding-x;
+  // // background-color: $primary;
+  // // border-color: $primary;
+  // color: $white;
+  // // border: $alert-border-width solid transparent;
+  // margin-bottom: $alert-margin-bottom;
+  // border-radius: 1px;
+  // @include button-size($btn-padding-y, $btn-padding-x, $btn-font-size, $btn-border-radius);
+  box-sizing: border-box;
+  position: relative;
+  padding: 5px 12px;
+  margin-bottom: 16px;
+  border-radius: 3px;
+}
+
+.alert-success {
+  background-color: #f6ffed;
+  border: 1px solid #b7eb8f;
+}

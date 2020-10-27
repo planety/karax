@@ -17,7 +17,7 @@ proc getName(n: NimNode): string =
     result = $n
   of nnkAccQuoted:
     result = ""
-    for i in 0..<n.len:
+    for i in 0 ..< n.len:
       result.add getName(n[i])
   of nnkStrLit..nnkTripleStrLit:
     result = n.strVal
@@ -107,45 +107,56 @@ proc tcall2(n, tmpContext: NimNode): NimNode =
     let ck = isComponent(op)
     if ck != ComponentKind.None:
       let tmp = genSym(nskLet, "tmp")
-      let call = if ck == ComponentKind.Tag:
-                   newCall(bindSym"tree", newDotExpr(bindSym"VNodeKind", n[0]))
-                 elif ck == ComponentKind.VNode:
-                   newCall(bindSym"vthunk", newLit(op))
-                 else:
-                   newCall(bindSym"dthunk", newLit(op))
-      result = newTree(
-        if tmpContext == nil: nnkStmtListExpr else: nnkStmtList,
-        newLetStmt(tmp, call))
+      let call =
+        if ck == ComponentKind.Tag:
+          newCall(bindSym"tree", newDotExpr(bindSym"VNodeKind", n[0]))
+        elif ck == ComponentKind.VNode:
+          newCall(bindSym"vthunk", newLit(op))
+        else:
+          newCall(bindSym"dthunk", newLit(op))
+
+
+      var res =
+        newTree(
+            if tmpContext == nil:
+              nnkStmtListExpr
+          else:
+            nnkStmtList,
+          newLetStmt(tmp, call)
+          )
+
+
       for i in 1 ..< n.len:
         # named parameters are transformed into attributes or events:
         let x = n[i]
         if x.kind == nnkExprEqExpr:
           let key = getName x[0]
           if key.startsWith("on"):
-            result.add newCall(evHandler(),
+            res.add newCall(evHandler(),
               tmp, newDotExpr(bindSym"EventKind", x[0]), x[1], ident("kxi"))
           elif eqIdent(key, "style") and x[1].kind == nnkTableConstr:
-            result.add newDotAsgn(tmp, key, newCall("style", toKstring x[1]))
+            res.add newDotAsgn(tmp, key, newCall("style", toKstring x[1]))
           elif key in SpecialAttrs:
-            result.add newDotAsgn(tmp, key, x[1])
+            res.add newDotAsgn(tmp, key, x[1])
             if key == "value":
-              result.add newCall(bindSym"setAttr", tmp, newLit(key), x[1])
+              res.add newCall(bindSym"setAttr", tmp, newLit(key), x[1])
           elif eqIdent(key, "setFocus"):
-            result.add newCall(key, tmp, x[1], ident"kxi")
+            res.add newCall(key, tmp, x[1], ident"kxi")
           elif eqIdent(key, "events"):
-            result.add newCall(bindSym"mergeEvents", tmp, x[1])
+            res.add newCall(bindSym"mergeEvents", tmp, x[1])
           else:
-            result.add newCall(bindSym"setAttr", tmp, newLit(key), x[1])
+            res.add newCall(bindSym"setAttr", tmp, newLit(key), x[1])
         elif ck != ComponentKind.Tag:
           call.add x
         elif eqIdent(x, "setFocus"):
-          result.add newCall(x, tmp, bindSym"true", ident"kxi")
+          res.add newCall(x, tmp, bindSym"true", ident"kxi")
         else:
-          result.add tcall2(x, tmp)
+          res.add tcall2(x, tmp)
       if tmpContext == nil:
-        result.add tmp
+        res.add tmp
       else:
-        result.add newCall(bindSym"add", tmpContext, tmp)
+        res.add newCall(bindSym"add", tmpContext, tmp)
+      result = newBlockStmt(res)
     elif tmpContext != nil and op notin StmtContext:
       var hasEventHandlers = false
       for i in 1..<n.len:
@@ -160,7 +171,7 @@ proc tcall2(n, tmpContext: NimNode): NimNode =
         var slicedCall = newCall(n[0])
         let ex = newTree(nnkStmtListExpr)
         ex.add newEmptyNode() # will become the let statement
-        for i in 1..<n.len:
+        for i in 1 ..< n.len:
           let it = n[i]
           if it.kind in {nnkProcDef, nnkStmtList}:
             ex.add tcall2(it, tmp)
@@ -168,7 +179,7 @@ proc tcall2(n, tmpContext: NimNode): NimNode =
             slicedCall.add it
         ex[0] = newLetStmt(tmp, slicedCall)
         ex.add tmp
-        result = newCall(bindSym"add", tmpContext, ex)
+        result = newCall(bindSym"add", tmpContext, newBlockStmt(ex))
     elif op == "!" and n.len == 2:
       result = n[1]
     else:
@@ -177,7 +188,7 @@ proc tcall2(n, tmpContext: NimNode): NimNode =
     result = n
 
 macro buildHtml*(tag, children: untyped): VNode =
-  let kids = newProc(procType=nnkDo, body=children)
+  let kids = newProc(procType = nnkDo, body = children)
   expectKind kids, nnkDo
   var call: NimNode
   if tag.kind in nnkCallKinds:
@@ -190,7 +201,7 @@ macro buildHtml*(tag, children: untyped): VNode =
     echo repr result
 
 macro buildHtml*(children: untyped): VNode =
-  let kids = newProc(procType=nnkDo, body=children)
+  let kids = newProc(procType = nnkDo, body = children)
   expectKind kids, nnkDo
   result = tcall2(body(kids), nil)
   when defined(debugKaraxDsl):
