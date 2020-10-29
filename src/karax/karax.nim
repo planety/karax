@@ -338,7 +338,7 @@ proc mergeEvents(newNode, oldNode: VNode; kxi: KaraxInstance) =
   if d != nil:
     removeAllEventHandlers(d)
     when false:
-      for i in 0..<oldNode.events.len:
+      for i in 0 .. <oldNode.events.len:
         let k = oldNode.events[i][0]
         let name = case k
                   of EventKind.onkeyuplater, EventKind.onkeyupenter: cstring"keyup"

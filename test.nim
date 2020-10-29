@@ -1,55 +1,105 @@
 import src/karax/prelude
-import std/[strformat]
+import src/karax/jdict
+import strformat
 
-# Tips
-# toJSStr converts byte sequence to JS str.
-# math, strformat, times, algorithm, parseutils, math
-
-# Concept
-
-# dom, 
-
-# import parseutils
-
-proc setVNodeAttrs(n: var VNode, attrs: openArray[(string, string)]) =
-  for (key, value) in attrs:
-    if value.len > 0:
-      n.setAttr(key, value)
-    else:
-      n.setAttr(key)
+var globalTables = newJDict[int, int]()
+var globalCounter = -1
 
 
 type
-  MenuMode* {.pure.} = enum
-    horizontal, vertical
+  State = tuple
+    value: int
+    setValue: proc(newValue: int) {.closure.}
 
-  BaseMenuItem* = object
-    className: string
-    index: int
-    disabled: bool
 
-  BaseMenu* = object
-    className: string
-    defaultIdx: int
-    mode: MenuMode
-    onSelect: proc (idx: int)
+proc useState(initial: int): State =
+  inc globalCounter
 
-proc initMenuItem*(className = "", disabled = false): BaseMenuItem =
-  BaseMenuItem(className: className, disabled: disabled)
+  let times = globalCounter
 
-proc menuItemName*(baseMenuItem: BaseMenuItem): string =
-  result = "menu-item"
+  if times in globalTables:
+    discard
+  else:
+    globalTables[times] = initial
 
-  if baseMenuItem.className.len > 0:
-    result.add fmt"menu-{baseMenuItem.className}"
+  proc setState(newValue: int) =
+    echo newValue
+    globalTables[times] = newValue
 
-  if baseMenuItem.disabled:
-    result.add "is-disabled"
+  result = (globalTables[times], setState)
 
-proc build(baseMenuItem: BaseMenuItem, attrs: openArray[(string, string)]): VNode =
-  let className = menuItemName(baseMenuItem)
+proc stat(): VNode =
+  var (state, setState) = useState(0)
+  echo fmt"{state = }"
+  result = buildHtml(tdiv):
+    h2: text $state
 
-  result = buildHtml:
-    li(className = className)
+    button:
+      proc onClick(ev: Event, n: VNode) =
+        inc state
+        setState(state)
+      text "Click Me"
 
-  result.setVNodeAttrs(attrs)
+proc hello(): VNode =
+  globalCounter = -1
+
+  var (state, setState) = useState(0)
+  result = buildHtml(tdiv):
+    h1(): text $state
+    button:
+      proc onClick(ev: Event, n: VNode) =
+        inc state
+        setState(state)
+      text "Click Me"
+
+    stat()
+
+
+setRenderer hello
+
+
+# type
+#   State[T] = tuple
+#     value: T
+#     setState: proc (newState: T) {.closure.}
+
+# proc useState[T](defaultValue: T): State[T] =
+#   var defaultValue = defaultValue
+#   let setState = proc (newState: T) =
+#     defaultValue = newState
+
+#   result = (defaultValue, setState)
+
+# proc hello() =
+#   let (state, setState) = useState[int](0)
+#   setState(state + 1)
+#   echo state
+
+# for i in 0 ..< 10:
+#   hello()
+
+# type
+#   State = tuple
+#     value: int
+#     setState: proc (newState: int) {.closure, gcsafe.}
+
+# var defaultVal: int
+# var first = true
+
+
+# proc useState(defaultValue: int): State =
+#   if first:
+#     defaultVal = defaultValue
+#     first = false
+#   let setState = proc (newState: int) {.closure, gcsafe.} =
+#     defaultVal = newState
+
+#   result = (defaultVal, setState)
+
+# proc hello() =
+#   let (state, setState) = useState(0)
+#   setState(state + 1)
+#   echo state
+
+# for i in 0 ..< 10:
+#   hello()

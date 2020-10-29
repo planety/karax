@@ -117,7 +117,7 @@ macro buildLookupTables(): untyped =
         toUpperAscii(x)
     a.add(newCall("kstring", newLit(y)))
   var e = newTree(nnkBracket)
-  for i in low(EventKind)..high(EventKind):
+  for i in low(EventKind) .. high(EventKind):
     e.add(newCall("kstring", newLit(substr($i, 2))))
 
   template tmpl(a, e) {.dirty.} =
@@ -148,6 +148,7 @@ type
     when false:
       hash*: Hash
       validHash*: bool
+    data*: seq[int]
     style*: VStyle ## the style that should be applied to the virtual node.
     dom*: Node ## the attached real DOM node. Can be 'nil' if the virtual node
                ## is not part of the virtual DOM anymore.

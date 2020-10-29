@@ -1,5 +1,5 @@
 import src/karax/prelude
-import std/[strformat]
+import std/[strformat, dom]
 
 # Tips
 # toJSStr converts byte sequence to JS str.
@@ -11,21 +11,20 @@ import std/[strformat]
 
 # import parseutils
 
-proc setVNodeAttrs(n: var VNode, attrs: openArray[(string, string)]) =
+template setVNodeAttrs(n: var VNode, attrs: openArray[(string, string)]) =
   for (key, value) in attrs:
     if value.len > 0:
       n.setAttr(key, value)
     else:
       n.setAttr(key)
 
-
 type
   MenuMode* {.pure.} = enum
     horizontal, vertical
 
   BaseMenuItem* = object
-    className: string
     index: int
+    className: string
     disabled: bool
 
   OnSelectCallback* = proc(idx: int): EventHandler
@@ -35,67 +34,73 @@ type
     defaultIdx: int
     mode: MenuMode
 
-  MenuContext* = object
-    idx: int
+  MenuContext* = ref object
+    index: int
     onSelect: OnSelectCallback
 
-proc initMenuItem*(className = "", disabled = false): BaseMenuItem =
-  BaseMenuItem(className: className, disabled: disabled)
+proc initMenuItem*(index: int, className = "", disabled = false): BaseMenuItem =
+  BaseMenuItem(index: index, className: className, disabled: disabled)
 
-proc menuItemName*(baseMenuItem: BaseMenuItem): string =
+proc menuItemClass*(baseMenuItem: BaseMenuItem, ctx: MenuContext): string =
   result = "menu-item"
 
   if baseMenuItem.className.len > 0:
-    result.add fmt"menu-{baseMenuItem.className}"
+    result.add fmt" menu-{baseMenuItem.className}"
 
   if baseMenuItem.disabled:
-    result.add "is-disabled"
+    result.add " is-disabled"
+
+  if ctx.index == baseMenuItem.index:
+    result.add " is-active"
 
 proc build(
   baseMenuItem: BaseMenuItem,
-  menuCtx: var MenuContext,
+  ctx: var MenuContext,
   attrs: openArray[(string, string)]
 ): VNode =
-  let className = menuItemName(baseMenuItem)
-
+  let className = menuItemClass(baseMenuItem, ctx)
   result = buildHtml:
     li(class = className):
-      proc onclick(ev: Event, n: VNode) =
-        inc menuCtx.idx
-        menuCtx.onSelect(menuCtx.idx)(ev, n)
+      proc onClick(ev: Event, n: VNode) =
+        ctx.index = baseMenuItem.index
+        if ctx.onSelect != nil and (not baseMenuItem.disabled):
+          ctx.onSelect(ctx.index)(ev, n)
 
   result.setVNodeAttrs(attrs)
 
 proc registerMenuItem*(
+  index: int,
+  ctx: var MenuContext,
   className = "",
   disabled = false,
-  menuCtx: var MenuContext,
   attrs: openArray[(string, string)] = {:}
 ): VNode =
-  let baseMenuItem = BaseMenuItem(className: className, disabled: disabled)
-  build(baseMenuItem, menuCtx, attrs)
+  let baseMenuItem = BaseMenuItem(index: index, className: className, disabled: disabled)
+  build(baseMenuItem, ctx, attrs)
 
 template MenuItem*(className = "", disabled = false, attrs: openArray[(string, string)] = {:}): VNode =
   mixin menuCtx
+  mixin menuInternalIndex
   when not declared(menuCtx):
     static:
-      raise newException(ValueError, "MenuItem must be used with Menu")
-  registerMenuItem(className, disabled, menuCtx, attrs)
+      raise newException(ValueError, "MenuItem must be used with Menu!")
+
+  inc menuInternalIndex
+  registerMenuItem(menuInternalIndex, menuCtx, className, disabled, attrs)
 
 proc initMenu*(className = "", mode = MenuMode.horizontal): BaseMenu =
   BaseMenu(className: className, mode: mode)
 
-proc menuName*(baseMenu: BaseMenu): string =
+proc menuClass*(baseMenu: BaseMenu): string =
   result = "menu"
 
   if baseMenu.className.len > 0:
     result.add fmt" menu-{baseMenu.className}"
 
-  if baseMenu.mode == MenuMode.vertical:
-    result.add fmt" menu-{baseMenu.mode}"
+  result.add fmt" menu-{baseMenu.mode}"
 
 proc build*(baseMenu: BaseMenu, attrs: openArray[(string, string)]): VNode =
-  let className = menuName(baseMenu)
+  let className = menuClass(baseMenu)
 
   result = buildHtml:
     ul(class = className)
@@ -106,43 +111,29 @@ proc registerMenu(className = "", mode = MenuMode.horizontal, attrs: openArray[(
   let baseMenu = BaseMenu(className: className, mode: mode)
   build(baseMenu, attrs)
 
-import dom
-
-proc hello(idx: int): EventHandler =
-  result = proc (ev: Event, n: VNode) =
-    window.alert $(idx)
-
-template Menu*(className = "", mode = MenuMode.horizontal, callback: OnSelectCallback = hello,
+template Menu*(ctx: MenuContext, className = "", mode = MenuMode.horizontal, callback: OnSelectCallback = nil,
       attrs: openArray[(string, string)] = {:}): VNode =
-  var menuCtx {.inject, used.} = MenuContext(onSelect: callback)
+  var menuCtx {.inject.} = ctx
+  var menuInternalIndex {.inject.} = -1
   registerMenu(className, mode, attrs)
 
 
 when true:
-  setRenderer proc(): VNode =
-    result = buildHtml(tdiv):
-      text "Select text:"
-      input(`type` = "text", value = "Hello world!"):
-        proc onselect(ev: Event, n: VNode) =
-          window.alert("You have selected some of the text: ")
-
-      br()
-
-      text "Select text:"
-      textarea(cols = "20", rows = "5"):
-        text "Hello world!"
-        proc onselect() =
-          window.alert("You have selected some of the text.")
-
-when false:
   block:
+    proc hello(idx: int): EventHandler =
+      result = proc (ev: Event, n: VNode) =
+        window.alert $(idx)
+
+    var ctx1 = MenuContext(index: 0, onSelect: hello)
+    var ctx2 = MenuContext(index: 0)
+
     setRenderer proc(): VNode =
       result = buildHtml(tdiv):
         link(rel="stylesheet", `type` = "text/css", href = "styles/index.css")
-        Menu(callback = hello):
+        Menu(ctx1):
           MenuItem:
             text "one is one"
-          MenuItem:
+          MenuItem(disabled = true):
             text "two is two"
           MenuItem:
             text "three is three"
@@ -150,13 +141,14 @@ when false:
         br()
 
         p:
-          Menu:
-            tdiv:
-              MenuItem: text "Hello"
-          Menu: MenuItem
+          Menu(ctx2, mode = MenuMode.vertical):
+            MenuItem:
+              text "one is one"
+            MenuItem:
+              text "two is two"
+            MenuItem:
+              text "three is three"
 
-        Menu:
-          MenuItem: text "Prologue"
 
 type
   AlertType* = enum
@@ -681,3 +673,19 @@ when false:
           echo "now selected ", n.kind
 
   setRenderer(main)
+
+when false:
+  setRenderer proc(): VNode =
+    result = buildHtml(tdiv):
+      text "Select text:"
+      input(`type` = "text", value = "Hello world!"):
+        proc onselect(ev: Event, n: VNode) =
+          window.alert("You have selected some of the text: ")
+
+      br()
+
+      text "Select text:"
+      textarea(cols = "20", rows = "5"):
+        text "Hello world!"
+        proc onselect() =
+          window.alert("You have selected some of the text.")
